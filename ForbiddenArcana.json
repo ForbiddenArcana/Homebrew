@@ -1,0 +1,1886 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "FA",
+				"abbreviation": "FA",
+				"full": "ForbiddenArcana",
+				"authors": [
+					"ForbiddenArcana"
+				],
+				"convertedBy": [
+					"ForbiddenArcana"
+				],
+				"version": "1.0",
+				"targetSchema": "1.2.0",
+				"color": "ff00ff"
+			}
+		]
+	},
+	"feat": [
+		{
+			"name": "Blade Master",
+			"source": "FA",
+			"entries": [
+				{
+                    "type": "inset",
+                    "entries": [
+                        "This feat is taken/modified from the Cormyr: Land of the Purple Dragon: https://www.dmsguild.com/product/281159/Cormyr-Land-of-the-Purple-Dragon"
+                    ]
+                },
+				"You have trained extensively with the use of bladed weapons, perhaps with a professional instructor such as a master-at-arms. You know how to use bladed weapons not only for attack, but also for defense.",
+				{
+					"type": "list",
+					"items": [
+						"When you draw a greatsword, longsword, scimitar, rapier, dagger, or shortsword you may use a bonus action to make an attack with the pommel of your weapon. This attack deals no damage but if it hits, your next attack before the end of your turn has advantage.",
+						"When you miss a melee attack using a greatsword, longsword, scimitar, rapier, dagger, or shortsword you may pull the weapon back in a swift draw cut. You may expend your reaction and make an additional attack with the weapon against the same target.",
+						"When an enemy would hit you with a melee weapon attack that is not a critical hit, you may use your reaction to make an attack roll with your greatsword, longsword, scimitar, rapier, dagger, or shortsword. This attack deals no damage but if the result of your attack roll equals or exceeds their attack roll, their attack misses."
+					]
+				}
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "I Just Think They're Neat",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                    ]
+                },
+				"Cursed magic items don't count against the total number of items that you can attune to."
+			],
+			"source": "FA",
+			"featureType": [
+				"EI"
+			]
+		},
+		{
+			"name": "Mariner",
+			"entries": [
+				{
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from UA Waterborne Adventures: https://media.wizards.com/2015/downloads/dnd/UA_Waterborne_v3.pdf"
+                    ]
+                },
+				"As long as you are not wearing heavy armor or using a shield, you have a swimming speed equal to your walking speed, and you gain a +1 bonus to AC."
+			],
+			"source": "FA",
+			"featureType": [
+				"FS:F",
+				"FS:P",
+				"FS:R"
+			]
+		},
+		{
+			"name": "Disorienting Blow",
+			"consumes": {
+				"name": "Superiority Dice"
+			},
+			"entries": [
+				"When you hit a creature with a weapon attack, you can expend one superiority die to disorient the target, forcing the target to make a Constitution saving throw. On a failed save, it has disadvantage on the next attack roll it makes before the end of its next turn, and if that attack hits, roll the superiority die twice and subtract the sum from the damage it deals."
+			],
+			"source": "FA",
+			"featureType": [
+				"MV:B"
+			]
+		},
+		{
+			"name": "Compacted Spell",
+			"consumes": {
+				"name": "Sorcery Points",
+				"amount": 1
+			},
+			"entries": [
+				"When you cast a spell that affects an area, you can spend one sorcery point to reduce the radius or side length of the area by a number of feet up to 5 times your Charisma modifier (min 5'). If the spell deals extra damage when upcast, it deals extra damage as though upcast by one level per 5' reduced.",
+				"Line spells can be reduced by a number of feet up to 20 times your Charisma modifier (min 20'), but only gains the extra damage of being upcast by one level per 20' reduced."
+			],
+			"source": "FA",
+			"featureType": [
+				"MM"
+			]
+		},
+		{
+			"name": "Improvised Spell",
+			"consumes": {
+				"name": "Sorcery Points",
+				"amount": 2
+			},
+			"entries": [
+				"You may spend two sorcery points to cast a spell you don't know on the sorcerer spell list."
+			],
+			"source": "FA",
+			"featureType": [
+				"MM"
+			]
+		}
+	],
+	"race": [
+		{
+			"name": "Merfolk",
+			"source": "FA",
+			"ability": [
+				{
+					"cha": 2,
+					"con": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 10,
+				"swim": 50
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"aquan": true
+				}
+			],
+			"traitTags": [
+				"Uncommon Race",
+				"Amphibious",
+				"Skill Proficiency",
+				"Weapon Proficiency"
+			],
+			"entries": [
+				{
+                    "type": "inset",
+                    "entries": [
+                        "This race is taken/modified from Call from the Deep: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                    ]
+                },
+				{
+					"name": "Age",
+					"entries": [
+						"Merfolk mature at the same rate as humans and have lifespans of similar length to theirs."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Merfolk are around six feet tall including their tails, and weight between 200 and 250 pounds. Your size is medium."
+					]
+				},
+				{
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 10 feet, and you have a swimming speed of 50 feet."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"type": "entries",
+					"entries": [
+						"You can breathe air and water."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"type": "entries",
+					"entries": [
+						"You are used to navigating the murky depths of the sea and have superior vision in dim and dark conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"name": "Deep Sea Survivors",
+					"type": "entries",
+					"entries": [
+						"You're naturally gifted in survival techniques, especially underwater. You gain proficiency in the Perception and Survival skills. While swimming, moving a creature that you have grappled while they are incapacitated does not half your speed. Additionally, while swimming, you can dash or disengage as a bonus action. You have resistance to cold damage, and also ignore any drawbacks related to being underwater including high pressure, and strong currents."
+					]
+				},
+				{
+					"name": "Mercantile Culture",
+					"entries": [
+						"Merfolk culture is frequently based around trading with surface dwellers. Because of this, merfolk gain a knack for trade. You add your proficiency to checks made to bargain and communicate with merchants and traders."
+					]
+				},
+				{
+					"name": "Innate Spellcasting",
+					"entries": [
+						"You know the {@spell Shape Water|XGE} cantrip. Charisma is your spellcasting modifier for this spell."
+					]
+				},
+				{
+					"name": "Underwater Weapons Training",
+					"entries": [
+						"You gain proficiency with spears, javelins and tridents. Ranged attacks with these weapons don’t automatically miss a target beyond 30 feet."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Aquan."
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"0": [
+							"Shape Water|XGE"
+						]
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"survival": true,
+					"perception": true
+				}
+			],
+			"weaponProficiencies": [
+				{
+					"spear|phb": true,
+					"javelin|phb": true,
+					"trident|phb": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Merfolk are aquatic humanoids with the upper body of a human and the lower body of a fish. They are common throughout the oceans of the Forgotten Realms, and their settlements are as varied in colour, culture and outlook as the human races of the surface. Most merfolk communities are semi-nomadic, as the aquatic folk lack the skills to forge metal or carve stone. Instead, their settlements are founded in undersea caverns, coral mazes, and sunken cities.",
+					"Many merfolk communities survive by trading with other undersea communities, such as tritons and sea elves. Because craft and trade is part of almost all merfolk cultures, these folk are renowned for their ability to barter with the best merchants of the realms.",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Merfolk Names",
+								"entries": [
+									"Merfolk names are not dissimilar to human names in sound and flow, though sometimes contain more vowel sounds to make them easier to pronounce beneath the waves. Merfolk family names are passed down either the matriarchal or patriarchal line, depending on the culture.",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Male Names:",
+												"entry": "Elliros, Berriamo, Lharo, Pahua, Uthario"
+											},
+											{
+												"type": "item",
+												"name": "Female Names:",
+												"entry": "Antinua, Elhara, Nissailin, Seraphima"
+											},
+											{
+												"type": "item",
+												"name": "Family Names:",
+												"entry": "Greatwave, Pearlswell, Redcoral, Reefsilver, Southsea"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CallfromtheDeep/creature/merfolk.webp"
+						}
+					}
+				]
+			}
+		}
+	],
+    "spell": [
+		{
+			"name": "Blasting Blade",
+			"source": "FA",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+                "m": "a melee weapon worth at least 1sp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "round"
+					}
+				}
+			],
+			"entries": [
+				"You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then becomes sheathed in surging energy. If the target does not move at least 5 feet before the end of its next turn, the energy field detonates and the target takes 1d8 force damage.",
+                "This spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 force damage to the target on a hit, and the damage the target takes for not moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8)."
+			],
+            "damageInflict": [
+				"force"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Warlock",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Forget",
+			"source": "FA",
+			"level": 0,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+                "v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 8,
+						"type": "hours"
+					}
+				}
+			],
+			"entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from the Compendium of Forgotten Secrets Awakening: https://www.genfantasypress.com/"
+                    ]
+                },
+				"You temporarily suppress a memory, sealing it away from your mind. You can choose either one period of time, a single person, group, or activity, or any other singular thing, such as a plan or proficiency in a single skill. Any creature other than you attempting to access this memory via magic or other means must make a Wisdom saving throw. If they succeed, this spell ends. When the spell ends, the memory returns and springs to your mind, fresh and vivid."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Warlock",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Pressure Stream",
+			"source": "FA",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+                "v": true,
+				"s": true,
+                "m": "garnet dust worth at least 5sp"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                    ]
+                },
+				"A wire-thin stream of pressurized water shoots from your finger, with devastating yet precise cutting power at point-blank range. Make a melee spell attack against a creature or object you can reach. On a hit, the target takes 1d8 piercing damage. If the target is a creature or object made of inorganic material such as stone, crystal, or metal, the spell deals maximum damage to it. You can’t target an object that is being worn or carried by an unwilling creature.",
+                "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+			],
+            "scalingLevelDice": {
+				"label": "piercing damage",
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
+            "damageInflict": [
+				"piercing"
+			],
+            "spellAttack": [
+				"M"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Rippling Orb",
+			"source": "FA",
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 30,
+					"type": "feet"
+				}
+			},
+			"components": {
+                "v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                    ]
+                },
+				"You hurl a rippling fist-sized mass of water at a creature within range. Make a ranged spell attack against the target. On a hit, the creature takes 1d6 bludgeoning damage, and if the creature is Large or smaller, it is pushed up to 10 feet away from you.",
+                "This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+			],
+            "scalingLevelDice": {
+				"label": "piercing damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "2d6",
+					"11": "3d6",
+					"17": "4d6"
+				}
+			},
+            "damageInflict": [
+				"bludgeoning"
+			],
+            "spellAttack": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Aura of Alertness",
+			"source": "FA",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+                "v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"concentration": true,
+					"duration": {
+						"amount": 10,
+						"type": "minute",
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"Refreshing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each friendly creature in the aura (including you) gains a +4 bonus to initiative checks.",
+                "Additionally, any effect on a friendly creature within the aura which is rendering it incapacitated but which may be ended by use of an action (as with Sleep or Hypnotic Pattern) may instead be ended with the use of a bonus action."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Enhance Potion",
+			"source": "FA",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+                "v": true,
+                "s": true,
+                "m": "alchemist supplies"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 24,
+						"type": "hour"
+					}
+				}
+			],
+			"entries": [
+				"Using your Alchemist's Supplies, you can enhance a potion. You touch a potion or an Experiemental Elixir and choose one of the following effects:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "entries": [
+                                "If the potion has a duration, you may double the duration of the potion, up to a maximum of one additional hour. When you cast this spell using a spell slot of 2nd level or higher and choose this option, the maximum additional time increases by one hour for each slot level above 1st."
+                            ]
+                        },
+                        {
+                            "entries": [
+                                "If the potion deals damage or heals, you roll one additional die to determine the healing or damage done. When you cast this spell using a spell slot of 2nd level or higher, you roll an additional die to determine the healing or damage done for each slot level above 1st."
+                            ]
+                        }
+                    ]
+                },
+                "These effects last for the spell's duration, or until you cast this spell again on the same potion."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+        {
+			"name": "Iota's Exploding Squid",
+			"source": "FA",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 60,
+					"type": "feet"
+				}
+			},
+			"components": {
+                "s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                    ]
+                },
+                "You summon a squid and fling it at a creature within range. Make a ranged spell attack against the target. On a hit, the squid explodes in a burst of ink. The target takes 1d12 piercing damage and becomes blinded until the end of your next turn."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you summon an additional squid for each slot level above 1st. You can fling them at one target or several."
+					]
+				}
+			],
+            "damageInflict": [
+				"piercing"
+			],
+            "spellAttack": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+                    {
+						"name": "Bard",
+						"source": "PHB"
+					},
+                    {
+						"name": "Druid",
+						"source": "PHB"
+					},
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Warlock",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Rimesworn Blade",
+			"source": "FA",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+                "v": true,
+                "s": true,
+                "m": "a martial weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "turn",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from the Compendium of Forgotten Secrets Awakening: https://www.genfantasypress.com/"
+                    ]
+                },
+                "The first time you take the Attack action during your turn, you can cast this spell to infuse your martial weapon with chilling cold and coat the exterior with brittle ice. The first time you hit with this weapon, the target takes an additional 1d8 cold damage, shattering the ice on your weapon. The target and creatures within 10 feet of the target other than you must make a Dexterity saving throw. If they fail, they take 1d8 piercing damage. If you do not hit a creature with the martial weapon on your turn, the ice dissipates."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, either the cold or piercing damage (your choice) increases by 1d8 per slot level above 1st."
+					]
+				}
+			],
+            "damageInflict": [
+				"cold",
+                "piercing"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Riptide",
+			"source": "FA",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"amount": 60,
+					"type": "feet"
+				}
+			},
+			"components": {
+                "v": true,
+                "s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"concentration": true,
+					"duration": {
+						"amount": 1,
+						"type": "minute",
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                    ]
+                },
+                "You create a fast current within a body of water, forming a line 90 feet long and 10 feet wide in a direction of your choice extending away from a point you can see within range. Each creature that starts its turn in the line must succeed on a Strength saving throw or be knocked prone and pushed 30 feet in the direction following the line. A creature in the line must spend 2 feet of movement for every 1 foot that it moves when moving against the tide."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, each creature in the line moving against the tide must spend an extra 1 foot of movement for every 1 foot it moves for every two slot levels above 1st."
+					]
+				}
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Artificer",
+						"source": "TCE"
+					},
+                    {
+						"name": "Druid",
+						"source": "PHB"
+					},
+                    {
+						"name": "Ranger",
+						"source": "PHB"
+					},
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Salt Spray",
+			"source": "FA",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+                "v": true,
+                "s": true,
+                "m": "a vial of salt water"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                    ]
+                },
+                "A burst of salty ocean mist erupts from your palms. Each creature in a 15-foot cone make a Dexterity saving throw. On a failed save, a target takes an additional 1d4 necrotic damage each time it takes any piercing or slashing damage before the start of your next turn."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the additional damage increases by 1d4 for every two slot levels above 1st."
+					]
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+            "damageInflict": [
+				"necrotic"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Artificer",
+						"source": "TCE"
+					},
+                    {
+						"name": "Cleric",
+						"source": "PHB"
+					},
+                    {
+						"name": "Druid",
+						"source": "PHB"
+					},
+                    {
+						"name": "Ranger",
+						"source": "PHB"
+					},
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Waterspout",
+			"source": "FA",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+                "v": true,
+                "s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"concentration": true,
+					"duration": {
+						"amount": 1,
+						"type": "minute",
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                    ]
+                },
+                "You cause a spout of water to emerge from a 5-foot-square on the ground. Water emerges to fill a 20-foot-tall cylinder with a 5-foot diameter that rises from the chosen square and lasts for the duration.",
+                "A creature that enters the area for the first time on a turn or starts its turn there must make a Dexterity saving throw, which it can choose to fail. On a failed save, a creature is pushed to the top of the cylinder. On a successful save, a creature is pushed 5 feet out of the area into an unoccupied space of the creature’s choice. If no unoccupied space is available, the creature automatically fails the saving throw.",
+                "The force of the water is enough to keep creatures aloft, though it is impossible for a creature to stand at the top of the waterspout unless it can normally stand on water. A creature that can’t stand on water is prone while it remains at the top of the cylinder. Water created by this spell vanishes when the spell ends."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the height of the cylinder increases by 10 feet for each slot level above 1st."
+					]
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Druid",
+						"source": "PHB"
+					},
+                    {
+						"name": "Ranger",
+						"source": "PHB"
+					},
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Cold Snap",
+			"source": "FA",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+                "v": true,
+                "s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+               "A swirling burst of freezing wind erupts at a point you choose within range. Each creature in a 5-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 cold damage on a failed save, or half as much on a successful one.",
+               "The ground in the area is covered with slick ice, making it difficult terrain until the start of your next turn."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+            "damageInflict": [
+				"cold"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Cleric",
+						"source": "PHB"
+					},
+                    {
+						"name": "Druid",
+						"source": "PHB"
+					},
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Dark Secret",
+			"source": "FA",
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+                "v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from the Compendium of Forgotten Secrets Awakening: https://www.genfantasypress.com/"
+                    ]
+                },
+               "You whisper a phrase into the mind of the target, unknown to you but clear and terrifying to them. Until the end of your next turn, you have advantage on all ability checks, attack rolls, and saving throws involving your target or actions it has taken. During this time, the target has disadvantage on all ability checks and attack rolls involving you or actions you have taken. Targets that are immune to being frightened are immune to this effect."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you can choose one additional target per spell slot level above 2nd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Bard",
+						"source": "PHB"
+					},
+                    {
+						"name": "Paladin",
+						"source": "PHB"
+					},
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Greater Witch Bolt",
+			"source": "FA",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 45
+				}
+			},
+			"components": {
+                "v": true,
+                "s": true,
+                "m": "an object struck by lightning"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+               "A beam of crackling, blue energy lances out towards two creatures within range. Make a ranged spell attack against each target. On a hit, the creature takes 2d6 lightning damage, and a sustained arc of lightning forms between you and that target.",
+               "On each of your subsequent turns for the spell's duration, you can use an action to rejuvenate the arcs. The arc to a creature is broken if that creature is outside the spell's range or behind total cover when you use this action. Each creature that is still linked to you by an arc after you've taken this action takes 2d6 lightning damage.",
+               "You can use your reaction when a target is reduced to 0 hit points to attempt to shift the arc to another creature within 10' of the target. Make a ranged spell attack against the new target; on a hit, the sustained arc shifts to link you and the new target. Hit or miss, until the start of your next turn you can attempt to shift targets when linked creatures are reduced to 0 hit points without requiring your reaction.",
+               "The spell ends if all arcs are broken, if you don't use an action on your turn to sustain the arcs, or if you are holding objects other than the focus or material component you used to cast the spell in both hands."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"For each slot level above 2nd, you may target an additional creature and the initial damage increases by 1d6."
+					]
+				}
+			],
+            "damageInflict": [
+				"lightning"
+			],
+            "spellAttack": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Warlock",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Lightning Charged",
+			"source": "FA",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+                "v": true,
+                "s": true,
+                "m": "a lightning rod"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+               "You channel lightning energy into a creature. The energy is harmless to the creature, but escapes in dangerous bursts to other nearby creatures.",
+               "Every time that creature strikes another creature with a melee attack, a spell with a range of touch, is struck by another creature with a melee attack, or ends their turn while grappling or being grappled by another creature, they deal 1d6 lightning damage to that creature.",
+               "Once this spell has discharged 6 times (dealing up to 6d6 damage), the spell ends."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"The spell can discharge an additional 2 times (dealing 2d6 more damage) before the spell ends for each slot level above 2nd."
+					]
+				}
+			],
+            "damageInflict": [
+				"lightning"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+        {
+			"name": "Psychic Anchor",
+			"source": "FA",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+                "v": true,
+                "s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                    ]
+                },
+               "Choose a creature you can see within range. The target must make an Intelligence saving throw or become bound by a psychic anchor, which weighs it down and slows its movements. While weighed down, the creature’s speed is reduced by 20 feet, it has disadvantage on attack rolls, ability checks, and saving throws that use Strength or Dexterity, and it sinks 30 feet at the start of its turn if it is swimming. At the end of each of its turns, the target can make another Intelligence saving throw. On a success, the spell ends on the target."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you can target one additional target for each slot level above 2nd. The targets must be within 30 feet of each other when you target them."
+					]
+				}
+			],
+            "savingThrow": [
+				"intelligence"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Bard",
+						"source": "PHB"
+					},
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Warlock",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Skystrike",
+			"source": "FA",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+                    "condition": "when you are falling or after jumping"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from the Compendium of Forgotten Secrets Awakening: https://www.genfantasypress.com/"
+                    ]
+                },
+               "When you cast this spell, choose a point on the ground within 15 feet of where you would land. You instantly crash to the ground at that point, accompanied by a flash of lightning. You take no falling damage, but if you land on a creature or a space within 5 feet of a creature, it takes 1d6 lightning damage for every 10 feet you fell to a maximum of 4d6. If you land on a creature, you immediately move to the nearest open space instead."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd-level or higher, the maximum damage increases by 2d6 for each spell slot level above 2nd."
+					]
+				}
+			],
+            "damageInflict": [
+				"lightning"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Cleric",
+						"source": "PHB"
+					},
+                    {
+						"name": "Druid",
+						"source": "PHB"
+					},
+                    {
+						"name": "Paladin",
+						"source": "PHB"
+					},
+                    {
+						"name": "Ranger",
+						"source": "PHB"
+					},
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Sword Smash",
+			"source": "FA",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+                "m": "a dagger or sword"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+               "You summon a giant sword of light at a point within range, which immediately crashes down in a line 30' long and 10' wide. Each creature in the area must succeed on a Dexterity saving throw or take 2d10 radiant damage and be knocked prone. A creature knocked prone by the spell must repeat the saving throw the first time it tries to stand up before the end of its next turn, falling prone again on a failure."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"For each slot level above 2nd, the damage increases by 1d10 and the length of the line increases by 10'."
+					]
+				}
+			],
+            "damageInflict": [
+				"radiant"
+			],
+            "conditionInflict": [
+				"prone"
+			],
+            "savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Bard",
+						"source": "PHB"
+					},
+                    {
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+        {
+			"name": "Xandala's Hopeful Hyacinth",
+			"source": "FA",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+                "m": "a weapon worth at least 1sp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+               "As part of the action to cast this spell, you may take the Attack Action to summon a swirl of purple hyacinth petals to surround your weapon, filling you with hope and enabling you to strike with great power. Each successful hit you make with this weapon before the spell ends, the target must make a Wisdom saving throw or have a new effect apply. Once you've made three weapon attacks the spell ends, regardless of whether the attacks hit.",
+               {
+                   "type": "entries",
+                   "entries": [
+                       {
+                            "type": "entries",
+                            "name": "1st hit",
+                            "entries": [
+                                "If the target fails their saving throw, its movement speed is halved and it must use its reaction to move as far as its speed allows away from you."
+                            ]
+                       },
+                       {
+                            "type": "entries",
+                            "name": "2nd hit",
+                            "entries": [
+                                "If the target fails their saving throw, it takes 2d6 damage and cannot take reactions until the end of your next turn. Choose one of the d6s. The number rolled on that die determines the spell's damage type, as shown below."
+                            ]
+                       },
+                       {
+                        "type": "entries",
+                        "name": "3rd hit",
+                        "entries": [
+                            "If the target fails their saving throw, it takes 3d6 damage and is incapacitated until the end of its next turn. Choose one of the d6s. The number rolled on that die determines the spell's damage type, as shown below."
+                        ]
+                   }
+                   ]
+               },
+               {
+                   "type": "table",
+                   "colLabels": [
+                       "d6",
+                       "Damage Type"
+                   ],
+                   "rows": [
+                       [
+                            "1",
+                            "Acid"
+                       ],
+                       [
+                           "2",
+                           "Cold"
+                       ],
+                       [
+                           "3",
+                           "Fire"
+                       ],
+                       [
+                           "4",
+                           "Lightning"
+                       ],
+                       [
+                           "5",
+                           "Psychic"
+                       ],
+                       [
+                           "6",
+                           "Thunder"
+                       ]
+                   ]
+               },
+               "If you roll the same number on two of the d6s on the 2nd or 3rd hit, the chaotic energy leaps from the target to a different creature of your choice within 10 feet of it. The creature takes the same damage as was rolled from the spell."
+			],
+            "damageInflict": [
+				"acid",
+                "cold",
+                "fire",
+                "lightning",
+                "psychic",
+                "thunder"
+			],
+            "conditionInflict": [
+				"incapacitated"
+			],
+            "savingThrow": [
+				"wisdom"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+    ],
+    "subclass": [
+		{
+			"name": "Sunken Herald",
+			"shortName": "Sunken Herald",
+			"source": "FA",
+			"subclassSpells": [
+				"Primal Savagery",
+				"Ensnaring Strike",
+				"Arms of Hadar",
+				"Alter Self",
+				"Phantasmal Force",
+				"Hunger of Hadar",
+				"Call Lightning",
+				"Summon Aberation",
+				"Hallucinatory Terrain",
+				"Contagion",
+                "Synaptic Static"
+			],
+			"subclassFeatures": [
+				"Sunken Herald|Sorcerer||Sunken Herald|FA|1",
+				"Weird Reconstruction|Sorcerer||Sunken Herald|FA|6",
+                "Monstrous Mass|Sorcerer||Sunken Herald|FA|14",
+                "Pelagic Nightmare|Sorcerer||Sunken Herald|FA|18"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"s1": [
+							"primal savagery",
+							"ensnaring strike",
+                            "arms of hadar"
+						],
+						"s2": [
+							"alter self",
+							"phantasmal force"
+						],
+						"s3": [
+							"hunger of hadar",
+							"call lightning"
+						],
+						"s4": [
+							"summon aberation",
+							"hallucinatory terrain"
+						],
+						"s5": [
+							"contagion",
+							"synaptic static"
+						]
+					}
+				}
+			],
+			"className": "Sorcerer",
+			"classSource": "PHB"
+		}
+    ],
+    "subclassFeature": [
+		{
+			"name": "Sunken Herald",
+			"source": "FA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Sunken Herald",
+			"subclassSource": "FA",
+			"level": 1,
+			"entries": [
+				"Your innate magic comes from strange undersea powers, spawned from creatures of the deep that lurk in furtive darkness. Krakens, merrow, sea hags and other marine horrors often abduct thralls from the surface, controlling them with hypnotic magic before discarding them and leaving them forever changed. You have a connection to one of these thralls—or could even be one of these thralls yourself—as the descendant of a deep scion, a child stolen by a sea hag, or someone anointed as an acolyte by a circle of kraken priests. Your inextricable connection to the depths warps your body and soul into strange, alien forms that terrify your terrestrial allies. Above all, the sea lures your mind, bringing you both calm and deep foreboding near the open waters.",
+                "Regardless of the source of your power, you fill those that lay eyes upon you with dread. The terrors of the depths and the horrors that live on the cold, black seafloor weave their way into your magic and your very body. Despite this, powerful Sunken Heralds tend to become the leaders of far-reaching cults and powerful secret societies.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spell List|Sorcerer||Sunken Herald|FA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Between Worlds|Sorcerer||Sunken Herald|FA|1"
+				},
+                {
+                    "type": "refSubclassFeature",
+					"subclassFeature": "Malleable Flesh|Sorcerer||Sunken Herald|FA|1"
+                }
+			]
+		},
+		{
+			"name": "Expanded Spell List",
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Sunken Herald Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"Cantrip",
+							"{@spell Primal Savagery|XGE}"
+						],
+						[
+							"1st",
+							"{@spell Ensnaring Strike}, {@spell Arms of Hadar}"
+						],
+						[
+							"2nd",
+							"{@spell Alter Self}, {@spell Phantasmal Force}"
+						],
+						[
+							"3rd",
+							"{@spell Hunger of Hadar}, {@spell Call Lightning}"
+						],
+						[
+							"4th",
+							"{@spell Summon Aberration|TCE}, {@spell Hallucinatory Terrain}"
+						],
+						[
+							"5th",
+							"{@spell Contagion}, {@spell Synaptic Static|XGE}"
+						]
+					]
+				}
+			],
+			"source": "FA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Sunken Herald",
+			"subclassSource": "FA",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Between Worlds",
+			"entries": [
+				"Your foul ancestry grants you abilities some consider unnatural. At 1st level, you learn Deep Speech, can breathe both air and water, and have a swim speed equal to your walking speed. Additionally, you can walk across the surface of liquid water as if it were solid ground."
+			],
+			"source": "FA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Sunken Herald",
+			"subclassSource": "FA",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Malleable Flesh",
+			"source": "FA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Sunken Herald",
+			"subclassSource": "FA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, you can cause the magic that flows through your veins to shift and change your body to suit your needs. When you cast a spell of 1st level or higher, you can modify your body in one of the ways listed below. If you cast a spell of 2nd level or higher, you can choose one additional feature for each slot level above 1st.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							 "type": "entries",
+							 "name": "Elongated Limbs",
+							 "entries": [
+								 "Your arms and legs snap and stretch unnaturally, tripling in length. Your reach is increased to 10 feet on your turns, and your speed increases by 10 feet."
+							 ]
+						},
+						{
+							 "type": "entries",
+							 "name": "Freakish Graft",
+							 "entries": [
+								 "Your flesh swells and expands before lashing out to one object, structure or creature within 30 feet, mingling them together. You can’t be disarmed of the item or drop it. If you are holding a structure or object too large for you to move, you can’t be moved more than 30 feet away from that object. If you target a creature, you may attempt to grapple them."
+							 ]
+						},
+						{
+							"type": "entries",
+							"name": "Mucosal Escape",
+							"entries": [
+								"Thick, foul slime coats your skin. You have advantage on checks to avoid being grappled, and opportunity attacks against you are made at disadvantage."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Net of Veins",
+							"entries": [
+								"Your wrists burst into a web of blood vessels that anchor on structures and objects that aren’t being worn or carried within 60 feet of you. Your net of veins moves with you, centered on you, as they continuously attach to objects and structures in areas you enter and detach from where you leave. Until this effect ends, you have advantage on checks and saves to avoid being knocked prone and can use a bonus action to pull a Small or smaller object within range that isn’t being worn or carried into your space."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Predator's Claws",
+							"entries": [
+								"Your nails lengthen and sharpen into thin, translucent spindles. You can make unarmed strikes with these claws, using Constitution in place of Strength for the attack roll. On a hit, your claws do 1d8 + Constitution modifier magical slashing damage. You also gain a climb speed equal to your walking speed."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Salt and Sunder",
+							"entries": [
+								"Corrosive brine drips from your hands, which become pitted and blackened. Your attacks and spells deal double damage against objects."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Weird Reconstruction",
+			"source": "FA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Sunken Herald",
+			"subclassSource": "FA",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, the bizarre biology that gave you life allows you to reform your body in horrific ways. When you take damage you can use your reaction to reduce the damage taken by your sorcerer level. If your sorcerer level is greater than the damage taken, you gain the difference as temporary hit points. If the source of damage was a creature and it can see you, it must make a Wisdom saving throw. On a failed save, the target is frightened of you until the end of your next turn.",
+				"You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Monstrous Mass",
+			"source": "FA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Sunken Herald",
+			"subclassSource": "FA",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, your contorting, inhuman body terrifies and disorients your enemies. When you activate Malleable Flesh by casting a spell of 6th level or higher, each creature of your choice that is within 60 feet of you must make a Wisdom saving throw against your sorcerer spell save DC. On a failed save, a target is frightened of you until your transformation ends. While transformed in this way, frightened creatures have disadvantage on saving throws against your spells. A creature repeats the saving throw at the end of its turn, ending the effect on itself on a success. After the effect ends or it succeeds the saving throw, it is immune to this effect for 24 hours."
+			]
+		},
+		{
+			"name": "Pelagic Nightmare",
+			"source": "FA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Sunken Herald",
+			"subclassSource": "FA",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Starting at 18th level, you can spend 5 sorcery points as an action to temporarily manifest images of an ancient, sunken city around yourself for 1 minute. All light within 120 feet of you is reduced to dim light, and creatures of your choice must use their swimming speed to move through the area, rather than their walking speed, and can’t benefit from cover. When you create this effect, you can designate any number of creatures you can see to be unaffected by the visions of ocean depths. When a designated creature casts a spell or makes an attack while in the area, it can treat any point within 120 feet of you as the origin of the effect, as though it were standing in that space."
+			]
+		}
+    ]
+}
