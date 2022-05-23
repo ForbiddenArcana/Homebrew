@@ -41,6 +41,22 @@
 		}
 	],
 	"optionalfeature": [
+        {
+			"name": "Replicate Magic Item",
+			"entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This artificer infusion is a buffed version of the original feature published in Tasha's Cauldron of Everything."
+                    ]
+                },
+				"Using this infusion, you replicate a particular magic item. You can use this infusion multiple times at once; each time you do so, choose a magic item that you can make with it according to the original TCE feature. When you finish a short rest, you can replace the item you replicated with another one following the same prerequisites. If any charges or uses were expended for the old item, the same amount are expended for the new one."
+			],
+			"source": "FA",
+			"featureType": [
+				"AI"
+			]
+		},
 		{
 			"name": "I Just Think They're Neat",
 			"prerequisite": [
@@ -92,6 +108,45 @@
 			},
 			"entries": [
 				"When you hit a creature with a weapon attack, you can expend one superiority die to disorient the target, forcing the target to make a Constitution saving throw. On a failed save, it has disadvantage on the next attack roll it makes before the end of its next turn, and if that attack hits, roll the superiority die twice and subtract the sum from the damage it deals."
+			],
+			"source": "FA",
+			"featureType": [
+				"MV:B"
+			]
+		},
+        {
+			"name": "Quick Load",
+			"consumes": {
+				"name": "Superiority Dice"
+			},
+			"entries": [
+				"When you make an attack with a ranged weapon, you can expend one superiority die to ignore the weapon's Loading property, load it without a free hand, and sheathe it without using an object interaction until the end of your turn. Add the superiority die to the damage roll of the next attack you make with the weapon that hits before the end of your turn."
+			],
+			"source": "FA",
+			"featureType": [
+				"MV:B"
+			]
+		},
+        {
+			"name": "Staggering Attack",
+			"consumes": {
+				"name": "Superiority Dice"
+			},
+			"entries": [
+				"When you hit a creature no more than two sizes larger than you with a two-handed melee weapon attack, you can expend one superiority die to try to stagger it. Add the superiority die to the attack's damage roll, and the creature must succeed on a Strength saving throw or have its speed reduced to 0 and be rendered breathless and unable to speak until the end of its next turn."
+			],
+			"source": "FA",
+			"featureType": [
+				"MV:B"
+			]
+		},
+        {
+			"name": "Whirling Defense",
+			"consumes": {
+				"name": "Superiority Dice"
+			},
+			"entries": [
+				"As a bonus action on your turn while wielding a melee weapon, you can expend one superiority die to zealously guard every space in your reach until the start of your next turn. Roll the superiority die and add it to the AC of other creatures of your choice within your reach. Creatures moving through the area (including yourself) must spend 2 feet of movement for each foot they move."
 			],
 			"source": "FA",
 			"featureType": [
