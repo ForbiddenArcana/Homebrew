@@ -129,6 +129,284 @@
 		}
 	],
 	"race": [
+        {
+			"name": "Grung",
+			"source": "FA",
+			"ability": [
+				{
+					"dex": 2,
+					"con": 1
+				}
+			],
+			"size": [
+				"S"
+			],
+			"speed": {
+				"walk": 25,
+				"climb": 25
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"grung": true
+				}
+			],
+			"traitTags": [
+				"Monstrous Race",
+				"Amphibious",
+				"Skill Proficiency"
+			],
+			"entries": [
+				{
+                    "type": "inset",
+                    "entries": [
+                        "This race is taken/modified from One Grung Above: http://citrusbolt.net/files/dnd/One%20Grung%20Above.pdf"
+                    ]
+                },
+				{
+					"name": "Age",
+					"entries": [
+						"Grung mature to adulthood in a single year, but have been known to live up to 50 years."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Grung stand between 2½ and 3½ feet tall and average about 30 pounds. Your size is small."
+					]
+				},
+				{
+					"name": "Speed",
+					"entries": [
+						"You have a walking speed of 25 feet and a climb speed of 25 feet."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"type": "entries",
+					"entries": [
+						"You can breathe air and water."
+					]
+				},
+                {
+					"name": "Arboreal Alertness",
+					"type": "entries",
+					"entries": [
+						"You have proficiency in the Perception skill and with the grung whistle stick."
+					]
+				},
+				{
+					"name": "Poison Immunity",
+					"type": "entries",
+					"entries": [
+						"You're immune to poison damage and the {@condition poisoned} condition."
+					]
+				},
+				{
+					"name": "Poisonous Skin",
+					"type": "entries",
+					"entries": [
+						"Any creature that comes into direct contact with your skin for the first time on its turn must succeed on a Constitution saving throw or become {@condition poisoned} until the start of its next turn.",
+                        "You can also apply this poison to any weapon as part of an attack with the weapon. If the target takes any damage from the attack, they must succeed on a Constitution saving throw or take 2d4 poison damage.",
+                        "In either case, the DC for the saving throw is equal to 8 + your proficiency bonus + your Constitution modifier."
+					]
+				},
+				{
+					"name": "Standing Leap",
+					"entries": [
+						"Your long jump is up to 25 feet and your high jump is up to 15 feet, with or without a running start."
+					]
+				},
+				{
+					"name": "Water Dependency",
+					"entries": [
+						"If you fail to immerse yourself in water for at least 1 hour during a day, you suffer one level of {@condition exhaustion} at the end of that day. You can only recover from this exhaustion through magic or by immersing yourself in water for at least 1 hour."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Grung."
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Vibrant, colourful jungle frogs. 'nuff said.",
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Grung Names",
+								"entries": [
+									"Grung names tend to be segmented into two to five syllables by contractive single-letter consonants such as d, b, and r. There's no particular difference between male and female names, and grung don't use family names. Instead, as a tribe grows and names must be more distinguishable, additional syllables are added to the names. Grung usually pick a name for themselves when they mature, being nameless or going by temporary names while they're tadpoles, but they sometimes take on their temporary name permanently.",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Names:",
+												"entry": "b'Loop, d'Ahten'khan, d'Lek'b'Len, m'Tee'r'Gah"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+        {
+			"name": "Half-Dhampir",
+			"source": "FA",
+			"ability": [
+				{
+					"str": 1,
+                    "dex": 1,
+                    "con": 1,
+					"cha": 1
+				}
+			],
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"entries": [
+						"Half-dhampir mature at the same rate as their mortal parent's race, but age half as quickly."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Half-dhampir are the same size as their mortal parent's race but slightly lighter. Your size is medium."
+					]
+				},
+				{
+					"name": "Speed",
+					"entries": [
+						"You have a walking speed of 30 feet."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"type": "entries",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't perceive colour in darkness, only shades of grey."
+					]
+				},
+				{
+					"name": "Vampiric Heritage",
+					"type": "entries",
+					"entries": [
+						"You are resistant to necrotic damage, and can cast {@spell Charm Person|PHB} at 1st level. Once you reach 3rd level, you can cast {@spell Spider Climb|PHB} at 2nd level. Once you reach 5th level, you can cast {@spell Gaseous Form|PHB} and {@spell Vampiric Touch|PHB} at 3rd level. Once you cast any of these spells, you must finish a long rest before you can cast that spell again using this trait. When you cast any of these spells in this way, Charisma is your spellcasting ability, they don't require any material components, and the ranges of Spider Climb and Gaseous Form become Self. If you take any radiant damage, you lose use of this trait and your darkvision until the end of your next turn, and you have disadvantage on the concentration saving throw for an innately-cast spell."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"1": {
+                            "daily": {
+                                "1": [
+                                    "Charm Person|PHB"
+                                ]
+                            }
+                        },
+						"3": {
+                            "daily": {
+                                "1": [
+                                    "Spider Climb|PHB"
+                                ]
+                            }
+                        },
+						"5": {
+                            "daily": {
+                                "1": [
+                                    "Gaseous Form|PHB",
+                                    "Vampiric Touch|PHB"
+                                ]
+                            }
+                        }
+					}
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Dhampir are the result of a vampire's union with a mortal, possessing many of the vampire's strengths and lacking most of its weaknesses. Most significantly, they still experience the vampire's eternal thirst for the blood of the living, though they don't require it to survive. Only some dhampir manage the restraint to control their urges.",
+					"Half-dhampir are one step further removed, being the offspring of a dhampir and a mortal. As such, they possess only a few of the vampire's strengths in a limited capacity, but none of the weaknesses. They might experience a slight craving for blood when particularly hungry, but one that can be satisfied by slightly-undercooked meat. Taking radiant damage temporarily suppresses their inherited abilities, but doesn't sting any more than it would for another mortal."
+				]
+			}
+		},
+        {
+			"name": "Human (Adept)",
+			"source": "FA",
+            "raceName": "Human",
+            "raceSource": "PHB",
+            "size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 2
+					}
+				}
+			],
+			"entries": [
+				{
+					"name": "Human Versatility",
+					"entries": [
+						"Your age, size, speed, and languages known are all the same as any other human, but you gain the benefits of the {@feat Magic Initiate} and {@feat Skilled} feats."
+					]
+				}
+			]
+		},
 		{
 			"name": "Merfolk",
 			"source": "FA",
@@ -200,19 +478,19 @@
 					"name": "Deep Sea Survivors",
 					"type": "entries",
 					"entries": [
-						"You're naturally gifted in survival techniques, especially underwater. You gain proficiency in the Perception and Survival skills. While swimming, moving a creature that you have grappled while they are incapacitated does not half your speed. Additionally, while swimming, you can dash or disengage as a bonus action. You have resistance to cold damage, and also ignore any drawbacks related to being underwater including high pressure, and strong currents."
-					]
-				},
-				{
-					"name": "Mercantile Culture",
-					"entries": [
-						"Merfolk culture is frequently based around trading with surface dwellers. Because of this, merfolk gain a knack for trade. You add your proficiency to checks made to bargain and communicate with merchants and traders."
+						"You're naturally gifted in survival techniques, especially underwater. You gain proficiency in the Perception and Survival skills. While swimming, moving a creature that you have grappled while they are incapacitated does not halve your speed. Additionally, while swimming, you can {@action Dash} or {@action Disengage} as a bonus action. You have resistance to cold damage, and also ignore any drawbacks related to being underwater including high pressure, and strong currents."
 					]
 				},
 				{
 					"name": "Innate Spellcasting",
 					"entries": [
 						"You know the {@spell Shape Water|XGE} cantrip. Charisma is your spellcasting modifier for this spell."
+					]
+				},
+				{
+					"name": "Mercantile Culture",
+					"entries": [
+						"Merfolk culture is frequently based around trading with surface dwellers. Because of this, merfolk gain a knack for trade. You add your proficiency to checks made to bargain and communicate with merchants and traders."
 					]
 				},
 				{
@@ -299,7 +577,278 @@
 					}
 				]
 			}
-		}
+		},
+		{
+			"name": "Warforged (Base)",
+			"source": "FA",
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"languageProficiencies": [
+				{
+					"common": true
+				}
+			],
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"entries": [
+				{
+                    "type": "inset",
+                    "entries": [
+                        "This race is a slightly nerfed version of the original Warforged Unearthed Arcana, while they still had distinct subraces. Those three subraces have also been modified as follows:",
+                        "{@race Warforged (Envoy)|FA}",
+                        "{@race Warforged (Juggernaut)|FA}",
+                        "{@race Warforged (Skirmisher)|FA}"
+                    ]
+                },
+				{
+					"name": "Age",
+					"entries": [
+						"Warforged have no known maximum lifespan, and have shown no signs of deterioration from age at up to 50 years old."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Warforged come in a variety of heights and forms, but are humanoid in appearance. Your size is medium."
+					]
+				},
+				{
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"name": "Integrated Protection",
+					"type": "entries",
+					"entries": [
+						"You have built-in armour, but can't use any armour except shields. If another feature lets you add your proficiency bonus to your AC, you may double it if you're armoured. Each time you finish a long rest, choose one of the following protection modes:",
+                        {
+                            "type": "table",
+                            "caption": "Integrated Protection Modes",
+                            "colLabels": [
+                                "Mode",
+                                "Prerequisite",
+                                "Natural AC"
+                            ],
+                            "colStyles": [
+                                "text-center",
+                                "text-center",
+                                "text-center"
+                            ],
+                            "rows": [
+                                [
+                                    "Unarmoured core",
+                                    "None",
+                                    "11 + Dex mod"
+                                ],
+                                [
+                                    "Darkwood shielding",
+                                    "Light armour proficiency",
+                                    "10 + proficiency bonus + Dex mod"
+                                ],
+                                [
+                                    "Composite plating",
+                                    "Medium armour proficiency",
+                                    "12 + proficiency bonus + Dex mod (max 2)"
+                                ],
+                                [
+                                    "Heavy plating",
+                                    "Heavy armour proficiency",
+                                    "14 + proficiency bonus"
+                                ]
+                            ]
+                        }
+                    ]
+				},
+				{
+					"name": "Sentry's Rest",
+					"type": "entries",
+					"entries": [
+						"When you take a long rest, you must spend at least six hours of it in an inactive, motionless state. You appear unconscious, but can see and hear as normal."
+					]
+				},
+				{
+					"name": "Warforged Resilience",
+					"type": "entries",
+					"entries": [
+						"You have resistance to poison damage and advantage on saving throws against being {@condition poisoned} or becoming diseased. You don't need to eat, drink, breathe, or sleep, and magic can't put you to sleep."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Warforged are formed from a blend of organic and non-organic materials. Root-like cords infused with alchemical fluids serve as their muscles, wrapped around a framework of steel, darkwood, or stone. Armoured plates form a protective outer shell and reinforce joints. Warforged share a common facial design, with a hinged jaw and crystal eyes embedded beneath a reinforced brow ridge. Beyond these common elements of warforged design, the precise materials and build of a warforged vary based on the purpose for which it was designed. Warforged are tough and resilient, both physically and mentally, and tend to be the most loyal and determined servants, friends, and leaders. They can also be the most cold-hearted of killers.",
+                    {
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Warforged Names",
+								"entries": [
+									"Warforged often take on names reflective of their occupation or purpose, or adopt a nickname given to them by a comrade. Some take on the names of fallen friends or mentors; others take on the name of a culture they've become entangled with. Still others choose the name of a location that has great meaning to them.",
+									{
+										"type": "list",
+										"style": "list-hang-notitle",
+										"items": [
+											{
+												"type": "item",
+												"name": "Names:",
+												"entry": "Anchor, Banner, Bastion, Blade, Blue, Bow, Church, Crunch, Crystal, Dagger, Dent, Five, Glaive, Hammer, Iron, Lucky, Mace, Pants, Pierce, Red, Rusty, Scout, Seven, Shield, Slash, Smith, Spike, Stone, Temple, Vault, Wall, Wood"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+        {
+            "name": "Warforged (Envoy)",
+            "source": "FA",
+            "size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ],
+                        "count": 3
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Integrated Tool",
+                    "entries": [
+                        "Choose a tool you're proficient with. It becomes integrated into your body, and you double your proficiency bonus for any ability checks you make with it."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Specialized Design",
+                    "entries": [
+                        "You gain proficiency in one skill of your choice and a total of two additional tools or languages."
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "hasFluff": false,
+            "hasFluffImages": false,
+            "skillProficiencies": [
+                {
+                    "anyStandard": 1
+                }
+            ],
+            "toolProficiencies": [
+                {
+                    "anyStandard": 1
+                }
+            ],
+            "languageProficiencies": [
+                {
+                    "anyStandard": 1
+                }
+            ]
+        },
+        {
+            "name": "Warforged (Juggernaut)",
+            "source": "FA",
+            "size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+            "ability": [
+                {
+                    "str": 2,
+                    "con": 1
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Powerful Build",
+                    "entries": [
+                        "Your carrying capacity - and the weight you can push, drag, and lift - is doubled."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Powerful Strike",
+                    "entries": [
+                        "As an action, you can make one unarmed strike which is Heavy and Versatile. The damage dice are a number of d4s (Versatile: d6s) equal to your proficiency bonus."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Siege Weapon",
+                    "entries": [
+                        "You deal double damage to objects, and have advantage on Strength checks to break down doors or perform similar feats."
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "hasFluff": false,
+            "hasFluffImages": false
+        },
+        {
+            "name": "Warforged (Skirmisher)",
+            "source": "FA",
+            "size": [
+				"M"
+			],
+			"speed": {
+				"walk": 40
+			},
+            "ability": [
+                {
+                    "dex": 2,
+                    "int": 1
+                }
+            ],
+            "entries": [
+                {
+                    "name": "Quick Mind",
+                    "entries": [
+                        "You can give yourself a bonus to initiative rolls equal to your Intelligence modifier."
+                    ],
+                    "type": "entries"
+                },
+                {
+                    "name": "Swift",
+                    "entries": [
+                        "Your walking speed increases by 10 feet."
+                    ],
+                    "type": "entries"
+                }
+            ],
+            "hasFluff": false,
+            "hasFluffImages": false
+        }
 	],
     "spell": [
 		{
