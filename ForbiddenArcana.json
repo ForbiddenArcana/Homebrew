@@ -1250,7 +1250,7 @@
 				}
 			],
 			"entries": [
-				"Using your Alchemist's Supplies, you can enhance a potion. You touch a potion or an Experiemental Elixir and choose one of the following effects:",
+				"Using your Alchemist's Supplies, you can enhance a potion. You touch a potion or an Experimental Elixir and choose one of the following effects:",
                 {
                     "type": "list",
                     "items": [
@@ -1649,6 +1649,50 @@
                     {
 						"name": "Wizard",
 						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Poisoned Weapon",
+			"source": "FA",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "self"
+			},
+			"components": {
+                "s": true,
+				"m": "A poisoner's kit or alchemist supplies"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"concentration": true,
+					"duration": {
+						"amount": 1,
+						"type": "minute",
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"As a bonus action, you touch a weapon and coat it with a poisonous substance. The next time that weapon deals damage during the spell's duration, it deals an additional 2d6 poison damage. Additionally, if the target is a creature it must make a Constitution Saving Throw or become poisoned for the duration of the spell. A creature may repeat the saving throw at the end of its turn, ending the effect on a success."
+			],
+            "savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Artificer",
+						"source": "TCE"
 					}
 				]
 			}
@@ -2236,6 +2280,159 @@
 					},
                     {
 						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Bulwark of Protection",
+			"source": "FA",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+                "v": true,
+                "s": true,
+				"m": "A weapon worth at least 1 sp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"concentration": true,
+					"duration": {
+						"amount": 1,
+						"type": "minute",
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"You stab the the weapon into the ground, and a 15 ft radius dome of shimmering, translucent force appears around and above you and remains stationary for the duration. Spells and other magical effects can't pass through the dome or be cast through it. Weapon attacks and ammunition from weapon attacks likewise can't pass through the dome.",
+				"A creature can only pass through the dome once per turn.",
+				"When a friendly creature enters the dome on its turn or starts its turn there, it gains  1d6 temporary hitpoints. The temporary hitpoints are lost upon exiting the dome.",
+				"In addition, any friendly creature in the dome can't be frightened, and they can choose to no longer be frightened if they are (no action required).",
+				"At the start of each of your turns, a friendly creature occupying the center space of the dome regains  1d6 hitpoints."
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Worn Talons of Manshoon",
+			"source": "FA",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+                "s": true,
+				"m": "A clay claw with three talons"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Choose a point you can see on the ground within range. The ground transmutes into grasping claws of stone and earth which lash out at in a 15 ft radius circle centered on that point. Each creature in that area must make a Strength Saving Throw.",
+				"A creature takes 5d6 bludgeoning damage on a failed save and is restrained until the end of your next turn, or half as much on a successful saving throw and isn't restrained. "
+			],
+            "damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Grasping Roots",
+			"source": "FA",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+                "s": true,
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"concentration": true,
+					"duration": {
+						"amount": 1,
+						"type": "minute",
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"Roots sprout from the ground in a 30' radius centered on a point that you can see within range. The affected area becomes difficult terrain. When you cast this spell, you can direct the roots to lash out at a creature you can see within 30' of the roots. That creature must succeed on a Dexterity saving throw or be pulled 30' directly towards the center of the roots.",
+				"Until the spell ends, you can direct the roots to lash out again as a bonus action on each of your turns."
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
 						"source": "PHB"
 					}
 				]
