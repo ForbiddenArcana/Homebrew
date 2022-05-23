@@ -32,9 +32,9 @@
 				{
 					"type": "list",
 					"items": [
-						"When you draw a greatsword, longsword, scimitar, rapier, dagger, or shortsword you may use a bonus action to make an attack with the pommel of your weapon. This attack deals no damage but if it hits, your next attack before the end of your turn has advantage.",
-						"When you miss a melee attack using a greatsword, longsword, scimitar, rapier, dagger, or shortsword you may pull the weapon back in a swift draw cut. You may expend your reaction and make an additional attack with the weapon against the same target.",
-						"When an enemy would hit you with a melee weapon attack that is not a critical hit, you may use your reaction to make an attack roll with your greatsword, longsword, scimitar, rapier, dagger, or shortsword. This attack deals no damage but if the result of your attack roll equals or exceeds their attack roll, their attack misses."
+						"When you draw a greatsword, longsword, scimitar, rapier, dagger, or shortsword, you may use a bonus action to make an attack with the pommel of your weapon. This attack deals no damage, but if it hits, your next attack before the end of your turn has advantage.",
+						"When you miss a melee attack using a greatsword, longsword, scimitar, rapier, dagger, or shortsword, you can pull the weapon back in a swift draw cut as a reaction. Make an additional attack with the weapon against the same target.",
+						"When an enemy would hit you with a melee weapon attack that is not a critical hit, you may use your reaction to make an attack roll with your greatsword, longsword, scimitar, rapier, dagger, or shortsword. This attack deals no damage, but if the result of your attack roll equals or exceeds their attack roll, their attack misses."
 					]
 				}
 			]
@@ -57,7 +57,7 @@
 				{
                     "type": "inset",
                     "entries": [
-                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                        "This eldritch invocation is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
                     ]
                 },
 				"Cursed magic items don't count against the total number of items that you can attune to."
@@ -73,7 +73,7 @@
 				{
                     "type": "inset",
                     "entries": [
-                        "This spell is taken/modified from UA Waterborne Adventures: https://media.wizards.com/2015/downloads/dnd/UA_Waterborne_v3.pdf"
+                        "This fighting style is taken/modified from UA Waterborne Adventures: https://media.wizards.com/2015/downloads/dnd/UA_Waterborne_v3.pdf"
                     ]
                 },
 				"As long as you are not wearing heavy armor or using a shield, you have a swimming speed equal to your walking speed, and you gain a +1 bonus to AC."
