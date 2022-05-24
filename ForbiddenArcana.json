@@ -27,8 +27,8 @@
 					"type": "list",
 					"items": [
 						"You can share your space with the ally and receive none of the normal penalties for doing so. When you do, you gain a bonus to attacks and saving throws equal to half their proficiency bonus, and a +1 bonus to AC.",
-						"When you are within 10' of the ally and you both must make a saving throw against an effect, you may choose to use their bonus instead of your own.",
-						"When you are within 10' of the ally on their turn and they make an attack or force an enemy to make a saving throw, you can use your reaction to make a preemptive weapon attack against the same enemy. If your attack hits, their attack has advantage or their target has disadvantage on their saving throw."
+						"When you are within 10 feet of the ally and you both must make a saving throw against an effect, you may choose to use their bonus instead of your own.",
+						"When you are within 10 feet of the ally on their turn and they make an attack or force an enemy to make a saving throw, you can use your reaction to make a preemptive weapon attack against the same enemy. If your attack hits, their attack has advantage or their target has disadvantage on their saving throw."
 					]
 				},
                 "When you're fighting near multiple allies who have taken this feat, you can choose which of their bonuses to use, but the bonuses don't stack."
@@ -74,7 +74,7 @@
 				{
 					"type": "list",
 					"items": [
-						"As a reaction on your first turn in combat, you can rally your comrades into a more favourable position: choose a number of your allies up to your proficiency bonus within 60'. If they can see or hear you, they can immediately use their reaction to move up to half their speed without provoking opportunity attacks. You can choose to instead use this reaction at the end of the first round.",
+						"As a reaction on your first turn in combat, you can rally your comrades into a more favourable position: choose a number of your allies up to your proficiency bonus within 60 feet. If they can see or hear you, they can immediately use their reaction to move up to half their speed without provoking opportunity attacks. You can choose to instead use this reaction at the end of the first round.",
 						"You gain a +2 bonus to initiative checks."
 					]
 				}
@@ -307,7 +307,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You have darkvision with a range of 15'. If you gain darkvision from any other source, its range is increased by 15' for you.",
+						"You have darkvision with a range of 15 feet. If you gain darkvision from any other source, its range is increased by 15 feet for you.",
                         "You have advantage on Perception checks relying on senses other than sight."
 					]
 				}
@@ -391,7 +391,7 @@
 			"entries": [
 				"You know exactly where to strike a creature to make it loosen its grasp.",
                 "You may add your proficiency bonus to grapple checks (to grapple or to avoid or break a grapple), and may make such ability checks using Intelligence instead of Strength or Dexterity.",
-                "When you succeed on a check to break free from a grapple, your speed increases by 15' until the end of your turn. Additionally, the creature that grappled you must make a Constitution saving throw, DC equal to 8 + your proficiency bonus + the modifier of the ability you used to break the grapple. If it fails, it's {@condition incapacitated} for a period of time depending on its size relative to yours (see the table below). If it fails the saving throw by 5 or more, it's {@condition stunned} instead of incapacitated.",
+                "When you succeed on a check to break free from a grapple, your speed increases by 15 feet until the end of your turn. Additionally, the creature that grappled you must make a Constitution saving throw, DC equal to 8 + your proficiency bonus + the modifier of the ability you used to break the grapple. If it fails, it's {@condition incapacitated} for a period of time depending on its size relative to yours (see the table below). If it fails the saving throw by 5 or more, it's {@condition stunned} instead of incapacitated.",
 				{
                     "type": "table",
                     "colLabels": [
@@ -911,8 +911,8 @@
 				"amount": 1
 			},
 			"entries": [
-				"When you cast a spell that affects an area, you can spend one sorcery point to reduce the radius or side length of the area by a number of feet up to 5 times your Charisma modifier (min 5'). If the spell deals extra damage when upcast, it deals extra damage as though upcast by one level per 5' reduced.",
-				"Line spells can be reduced by a number of feet up to 20 times your Charisma modifier (min 20'), but only gains the extra damage of being upcast by one level per 20' reduced."
+				"When you cast a spell that affects an area, you can spend one sorcery point to reduce the radius or side length of the area by a number of feet up to 5 times your Charisma modifier (min 5 feet). If the spell deals extra damage when upcast, it deals extra damage as though upcast by one level per 5 feet reduced.",
+				"Line spells can be reduced by a number of feet up to 20 times your Charisma modifier (min 20 feet), but only gains the extra damage of being upcast by one level per 20 feet reduced."
 			],
 			"source": "FA",
 			"featureType": [
@@ -1953,7 +1953,7 @@
 				}
 			],
 			"entries": [
-				"Refreshing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each friendly creature in the aura (including you) gains a +4 bonus to initiative checks.",
+				"Refreshing energy radiates from you in a 30-foot-radius aura. Until the spell ends, the aura moves with you, centered on you. Each friendly creature in the aura (including you) gains a +3 bonus to initiative checks.",
                 "Additionally, any effect on a friendly creature within the aura which is rendering it incapacitated but which may be ended by use of an action (as with Sleep or Hypnotic Pattern) may instead be ended with the use of a bonus action."
 			],
 			"classes": {
@@ -2061,7 +2061,7 @@
                         "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
                     ]
                 },
-                "You summon a squid and fling it at a creature within range. Make a ranged spell attack against the target. On a hit, the squid explodes in a burst of ink. The target takes 1d12 piercing damage and becomes blinded until the end of your next turn."
+                "You summon a squid and fling it at a creature within range. Make a ranged spell attack against the target. On a hit, the squid explodes in a burst of ink. The target takes {@damage 1d12} piercing damage and becomes blinded until the end of your next turn."
 			],
             "entriesHigherLevel": [
 				{
@@ -2191,13 +2191,13 @@
                         "This spell is taken/modified from the Compendium of Forgotten Secrets Awakening: https://www.genfantasypress.com/"
                     ]
                 },
-                "The first time you take the Attack action during your turn, you can cast this spell to infuse your martial weapon with chilling cold and coat the exterior with brittle ice. The first time you hit with this weapon, the target takes an additional 1d8 cold damage, shattering the ice on your weapon. The target and creatures within 10 feet of the target other than you must make a Dexterity saving throw. If they fail, they take 1d8 piercing damage. If you do not hit a creature with the martial weapon on your turn, the ice dissipates."
+                "The first time you take the Attack action during your turn, you can cast this spell to infuse your martial weapon with chilling cold and coat the exterior with brittle ice. The first time you hit with this weapon, the target takes an additional {@damage 1d8} cold damage, shattering the ice on your weapon. The target and creatures within 10 feet of the target other than you must make a Dexterity saving throw. If they fail, they take {@damage 1d8} piercing damage. If you do not hit a creature with the martial weapon on your turn, the ice dissipates."
 			],
             "entriesHigherLevel": [
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, either the cold or piercing damage (your choice) increases by 1d8 per slot level above 1st."
+						"When you cast this spell using a spell slot of 2nd level or higher, either the cold or piercing damage (your choice) increases by {@damage 1d8} per slot level above 1st."
 					]
 				}
 			],
@@ -2330,13 +2330,13 @@
                         "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
                     ]
                 },
-                "A burst of salty ocean mist erupts from your palms. Each creature in a 15-foot cone make a Dexterity saving throw. On a failed save, a target takes an additional 1d4 necrotic damage each time it takes any piercing or slashing damage before the start of your next turn."
+                "A burst of salty ocean mist erupts from your palms. Each creature in a 15-foot cone make a Dexterity saving throw. On a failed save, a target takes an additional {@damage 1d4} necrotic damage each time it takes any piercing or slashing damage before the start of your next turn."
 			],
             "entriesHigherLevel": [
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the additional damage increases by 1d4 for every two slot levels above 1st."
+						"When you cast this spell using a spell slot of 3rd level or higher, the additional damage increases by {@damage 1d4} for every two slot levels above 1st."
 					]
 				}
 			],
@@ -2623,7 +2623,7 @@
 			"entries": [
                "A beam of crackling, blue energy lances out towards two creatures within range. Make a ranged spell attack against each target. On a hit, the creature takes {@damage 2d6} lightning damage, and a sustained arc of lightning forms between you and that target.",
                "On each of your subsequent turns for the spell's duration, you can use an action to rejuvenate the arcs. The arc to a creature is broken if that creature is outside the spell's range or behind total cover when you use this action. Each creature that is still linked to you by an arc after you've taken this action takes {@damage 2d6} lightning damage.",
-               "You can use your reaction when a target is reduced to 0 hit points to attempt to shift the arc to another creature within 10' of the target. Make a ranged spell attack against the new target; on a hit, the sustained arc shifts to link you and the new target. Hit or miss, until the start of your next turn you can attempt to shift targets when linked creatures are reduced to 0 hit points without requiring your reaction.",
+               "You can use your reaction when a target is reduced to 0 hit points to attempt to shift the arc to another creature within 10 feet of the target. Make a ranged spell attack against the new target; on a hit, the sustained arc shifts to link you and the new target. Hit or miss, until the start of your next turn you can attempt to shift targets when linked creatures are reduced to 0 hit points without requiring your reaction.",
                "The spell ends if all arcs are broken, if you don't use an action on your turn to sustain the arcs, or if you are holding objects other than the focus or material component you used to cast the spell in both hands."
 			],
             "entriesHigherLevel": [
@@ -2703,7 +2703,7 @@
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"The spell can discharge an additional 2 times (dealing 2d6 more damage) before the spell ends for each slot level above 2nd."
+						"The spell can discharge an additional 2 times (dealing up to 2d6 more damage) before the spell ends for each slot level above 2nd."
 					]
 				}
 			],
@@ -2898,13 +2898,13 @@
 				}
 			],
 			"entries": [
-               "You summon a giant sword of light at a point within range, which immediately crashes down in a line 30' long and 10' wide. Each creature in the area must succeed on a Dexterity saving throw or take {@damage 1d12} radiant damage and be knocked prone. A creature knocked prone by the spell must repeat the saving throw the first time it tries to stand up before the end of its next turn, falling prone again on a failure."
+               "You summon a giant sword of light at a point within range, which immediately crashes down in a line 30 feet long and 10 feet wide. Each creature in the area must succeed on a Dexterity saving throw or take {@damage 1d12} radiant damage and be knocked prone. A creature knocked prone by the spell must repeat the saving throw the first time it tries to stand up before the end of its next turn, falling prone again on a failure."
 			],
             "entriesHigherLevel": [
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"For each slot level above 2nd, the damage increases by 1d12 and the length of the line increases by 10'."
+						"For each slot level above 2nd, the damage increases by {@damage 1d12} and the length of the line increases by 10 feet."
 					]
 				}
 			],
@@ -3086,7 +3086,7 @@
 				}
 			],
 			"entries": [
-				"You stab the the weapon into the ground, and a 15 ft radius dome of shimmering, translucent force appears around and above you and remains stationary for the duration. Spells and other magical effects can't pass through the dome or be cast through it. Weapon attacks and ammunition from weapon attacks likewise can't pass through the dome.",
+				"You stab the the weapon into the ground, and a 15-foot-radius dome of shimmering, translucent force appears around and above you and remains stationary for the duration. Spells and other magical effects can't pass through the dome or be cast through it. Weapon attacks and ammunition from weapon attacks likewise can't pass through the dome.",
 				"A creature can only pass through the dome once per turn.",
 				"When a friendly creature enters the dome on its turn or starts its turn there, it gains {@dice 1d6} temporary hitpoints. The temporary hitpoints are lost upon exiting the dome.",
 				"In addition, any friendly creature in the dome can't be frightened, and they can choose to no longer be frightened if they are (no action required).",
@@ -3129,7 +3129,7 @@
 				}
 			],
 			"entries": [
-				"Choose a point you can see on the ground within range. The ground transmutes into grasping claws of stone and earth which lash out at in a 15 ft radius circle centered on that point. Each creature in that area must make a Strength Saving Throw.",
+				"Choose a point you can see on the ground within range. The ground transmutes into grasping claws of stone and earth which lash out at in a 15-foot-radius circle centered on that point. Each creature in that area must make a Strength Saving Throw.",
 				"A creature takes {@damage 4d6} bludgeoning damage on a failed save and is restrained until the end of your next turn, or half as much on a successful saving throw and isn't restrained. "
 			],
             "damageInflict": [
@@ -3188,7 +3188,7 @@
 				}
 			],
 			"entries": [
-				"Roots sprout from the ground in a 30' radius centered on a point that you can see within range. The affected area becomes difficult terrain. When you cast this spell, you can direct the roots to lash out at a creature you can see within 30' of the roots. That creature must succeed on a Dexterity saving throw or be pulled 30' towards the center of the roots, following the most direct path possible.",
+				"Roots sprout from the ground in a 30-foot-radius circle centered on a point that you can see within range. The affected area becomes difficult terrain. When you cast this spell, you can direct the roots to lash out at a creature you can see within 30 feet of the roots. That creature must succeed on a Dexterity saving throw or be pulled 30 feet towards the center of the roots, following the most direct path possible.",
 				"Until the spell ends, you can direct the roots to lash out again as a bonus action on each of your turns."
 			],
 			"savingThrow": [
@@ -3391,9 +3391,9 @@
                         "This spell is taken/modified from the Darkhold: Secrets of the Zhentarim: https://www.dmsguild.com/product/324679/Darkhold-Secrets-of-the-Zhentarim"
                     ]
                 },
-				"A gleaming white sphere resembling the moon briefly flashes into existence at a point you choose within range. You can choose to manifest this sphere as a full moon or a lunar eclipse.",
-				"When a full moon is manifested, each creature within a 30 foot radius must make a Constitution saving throw. On a failed save, a creature takes {@damage 7d6} radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isn't blinded.",
-				"When a lunar eclipse is manifested, each creature within a 30ft radius must make a Wisdom saving throw. On a failed save, a creature takes {@damage 7d6} necrotic damage and is frightened of all hostile creatures for 1 minute. On a successful save, it takes half as much damage and isn't frightened.",
+				"A gleaming white 30-foot-radius sphere resembling the moon briefly flashes into existence at a point you choose within range. You can choose to manifest this sphere as a full moon or a lunar eclipse.",
+				"When a full moon is manifested, each creature within the area must make a Constitution saving throw. On a failed save, a creature takes {@damage 7d6} radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isn't blinded.",
+				"When a lunar eclipse is manifested, each creature within the area must make a Wisdom saving throw. On a failed save, a creature takes {@damage 7d6} necrotic damage and is frightened of all hostile creatures for 1 minute. On a successful save, it takes half as much damage and isn't frightened.",
 				"A creature blinded or frightened by this spell makes another saving throw at the end of each of its turns. On a successful save, the effect ends.",
 				"Lycanthropes have disadvantage on these saving throws."
 			],
