@@ -1933,9 +1933,10 @@
 				}
 			],
 			"range": {
-				"type": "point",
+				"type": "radius",
 				"distance": {
-					"type": "self"
+					"type": "feet",
+                    "amount": 30
 				}
 			},
 			"components": {
@@ -3101,6 +3102,140 @@
 				]
 			}
 		},
+        {
+			"name": "Needlestorm",
+			"source": "FA",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+                "v": true,
+                "s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"concentration": true,
+					"duration": {
+						"amount": 10,
+						"type": "minute",
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"A 30-foot-radius sphere within range becomes lightly obscured by thousands of hard needles and thorns which emit a strong pine scent. Creatures other than you within the area take {@damage 3d4} piercing damage the first time on each of their turns that their eyes are exposed. They can cover their eyes at the start of their turn to avoid this damage and are blinded until the start of their next turn. If they uncover their eyes in the meantime, they immediately take the damage. Creatures that don't have eyes don't take this damage. Creatures other than you also take {@damage 1d4} piercing damage for every 5 feet they travel within the area.",
+				"The needles and thorns form disorienting patterns, and count as natural phenomena. You can attempt to Hide even if you are obscured only by the needles and their scent."
+			],
+            "entriesHigherLevel": [
+                {
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the radius of the sphere increases by 5 feet per slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+				"piercing"
+			],
+            "conditionInflict": [
+				"blinded"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Druid",
+						"source": "PHB"
+					},
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    }
+				]
+			}
+		},
+        {
+			"name": "Shielding Storm",
+			"source": "FA",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+                "v": true,
+                "s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"amount": 1,
+						"type": "minute"
+					}
+				}
+			],
+			"entries": [
+				"When you cast this spell, choose up to 3 objects within range that aren't being worn or carried by another creature and that weigh 1 to 5 pounds. These objects fly to you and float around you in a shielding manner. For the duration of the spell, you have a bonus to your AC and your Dexterity saving throws equal to the number of objects shielding you. When an attack misses you by an amount equal to or less than this bonus, or you pass a Dex save by that margin, one of the objects is struck and ceases to be affected by the spell.",
+				"As a bonus action, you can send one of the objects flying up to 30 feet in a straight line. If the object would strike a creature, the creature must succeed on a Dexterity saving throw to dodge it. If the object strikes a creature or solid surface, the object and whatever it hits both take {@damage 4d6} bludgeoning damage. The object then ceases to be affected by the spell."
+			],
+            "entriesHigherLevel": [
+                {
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, you can affect one additional object within range per slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Artificer",
+						"source": "TCE"
+					},
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+						"name": "Warlock",
+						"source": "PHB"
+					},
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+				]
+			}
+		},
 		{
 			"name": "Xorn Talons of Manshoon",
 			"source": "FA",
@@ -3202,6 +3337,81 @@
 					},
 					{
 						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Shackles of Pain",
+			"source": "FA",
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+                "s": true,
+				"v": true,
+                "m": {
+                    "text": "silvered manacles worth 10 gp",
+                    "cost": 1000
+                }
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"concentration": true,
+					"duration": {
+						"amount": 1,
+						"type": "minute",
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"You link your vitality to the psyche of another creature you can see within range. The target must succeed on a Charisma saving throw or become linked to you by spectral shackles for the spell's duration. Each time you take damage, the shackled target takes psychic damage equal to half the damage you took. A target shackled to you can make another Charisma saving throw at the end of each of its turns, breaking free of the shackles on a success."
+			],
+            "damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+                    {
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
 						"source": "PHB"
 					}
 				]
@@ -3417,6 +3627,54 @@
 					},
                     {
 						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Tree Sprint",
+			"source": "FA",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+                "distance": {
+                    "type": "self"
+                }
+			},
+			"components": {
+                "s": true,
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"concentration": true,
+					"duration": {
+						"amount": 1,
+						"type": "minute",
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. If you pass into one of those trees, you likewise learn the location of other trees of the same kind within 500 feet of the new tree, and can pass into one of them by spending another 5 feet of movement. If you have no movement left or step out of a tree, you appear within 5 feet of the final tree you entered. You must end each turn outside a tree."
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
 						"source": "PHB"
 					}
 				]
