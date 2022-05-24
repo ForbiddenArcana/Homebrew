@@ -3667,5 +3667,259 @@
 				"Starting at 18th level, you can spend 5 sorcery points as an action to temporarily manifest images of an ancient, sunken city around yourself for 1 minute. All light within 120 feet of you is reduced to dim light, and creatures of your choice must use their swimming speed to move through the area, rather than their walking speed, and can’t benefit from cover. When you create this effect, you can designate any number of creatures you can see to be unaffected by the visions of ocean depths. When a designated creature casts a spell or makes an attack while in the area, it can treat any point within 120 feet of you as the origin of the effect, as though it were standing in that space."
 			]
 		}
-    ]
+    ],
+	"variantrule": [
+		{
+			"name": "0 Hit Points",
+			"entries": [
+				"You are still aware of your surroundings and can speak."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Backgrounds",
+			"entries": [
+				"All background features have been replaced by your choice of any {@filter Half Feat|feats|ability bonus=str;dex;con;int;wis;cha} (without the stat increase) except Resilient."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Bonus Actions",
+			"entries": [
+				"You can use your action as an extra bonus action, but can't use it to take the same bonus action twice on a turn."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Spell Rider Effects",
+			"entries": [
+				"Creatures immune to the damage type of the spell don't suffer the rider effect."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Casting Times",
+			"entries": [
+				"You may cast spells with a casting time of a bonus action or reaction as an action.",
+				"Bonus-action-cast cantrips don't restrict action-cast spells."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Critical Hits",
+			"entries": [
+				"When a player character scores a critical hit, instead of rolling an additional weapon damage die, they add the maximum possible result of the die to the roll. Damage dice from spells and abilities are not maximized.",
+				"This rule does not apply to monsters."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Falling",
+			"entries": [
+				"You fall 500' at the start of your first midair turn, and 1000' on subsequent turns.", 
+				"You don't land prone after deliberate falls of 20' or less.",
+				"If forced over an edge, you get a Dexterity saving throw to grab the edge if it is within reach and you have a free hand. You may choose to drop something you are holding to be allowed to attempt the saving throw.", 
+				"You can choose to fall immeditately during your turn, but it is considered willing movement and will provoke attacks of opportunity."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Identifying Spells",
+			"entries": [
+				"You identify spells on your spell list and of a level you can cast; if it's of a higher level, you must succeed on an Arcana check at advantage, DC equal to 10 + the spell level. If the spell is not on your spell list, you must make the check regardless of level and you don't have advantage.", 
+				"If you didn't see it being cast, you must examine its effects for a minute."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Initiative",
+			"entries": [
+				"For player characters, Initiative is an Intelligence ability check with your Dexterity score as tie-breaker.",
+				"Monsters continue to use Dexterity for initiative rolls."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Known Spells",
+			"entries": [
+				"You can swap one Spellcasting known spell per long rest. You can swap one Pact Magic known spell per long rest, but the new spell must be the same level (see these charts: https://homebrewery.naturalcrit.com/share/1NaRUxDE3IKD) for creating a Warlock at higher than 1st level). You can swap one cantrip per level-up."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Potions",
+			"entries": [
+				"Potions can be consumed or administered to another creature as a bonus action. If consumed or administered as an action, the dice for healing potions are maximized."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Prolonged Tasks",
+			"entries": [
+				"You can use non-spellcasting discrete abilities to help with a prolonged task, but continuous spellcasting counts as its own prolonged task (and thus can't be combined effectively with duties such as lookout, navigation, or foraging)."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Saving Throws",
+			"entries": [
+				"You can choose to fail any saving throw."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Stress and Agitation/Exhaustion",
+			"entries": [
+				"When your character experiences something traumatic or stressful, you may apply a level of stress to them. Each level of stress imposes a cumulative -1 penalty to all attacks, ability checks, and saving throws.", 
+				"Once you reach 3 levels of stress, you must make a Charisma saving throw when you finish sleeping, with a DC equal to 10 + your levels of stress, or gain a level of agitation. When you finish sleeping with 2 or fewer levels of stress, you reduce your agitation by one level. If you don't sleep at all, these effects trigger when you would have slept.",
+				{
+                    "type": "table",
+					"caption": "Agitation",
+                    "colLabels": [
+                        "Level",
+                        "Effect"
+                    ],
+                    "colStyles": [
+                        "text-center",
+                        "text-left"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "You have disadvantage on ability checks based on Intelligence, Wisdom or Charisma."
+                        ],
+                        [
+                            "2",
+                            "You may not take reactions, except for the trigger of a readied action."
+                        ],
+                        [
+                            "3",
+                            "You have disadvantage on attacks and saving throws based on Intelligence, Wisdom or Charisma. Enemies have advantage on saving throws where the DC is calculated based on your Intelligence, Wisdom or Charisma."
+                        ],
+                        [
+                            "4",
+                            "You must make a DC 12 Constitution saving throw versus exhaustion at the end of each long rest. When you fail an important ability check or task, you take {@dice 1d12} minus CHA mod psychic damage (minimum of 1)."
+                        ],
+						[
+                            "5",
+                            "You can use an action or a bonus action on your turn, not both, and can only make one attack. You also suffer the effects of one {@table Long-Term Madness} effect."
+                        ],
+						[
+                            "6",
+                            "You fall unconscious for {@dice 1d4} hours and gain an {@table Indefinite Madness}. When you wake up, you return to 5 levels of agitation, but gain a level of exhaustion."
+                        ]
+                    ]
+                },
+				{
+                    "type": "table",
+					"caption": "Exhaustion",
+                    "colLabels": [
+                        "Level",
+                        "Effect"
+                    ],
+                    "colStyles": [
+                        "text-center",
+                        "text-left"
+                    ],
+                    "rows": [
+                        [
+                            "1",
+                            "You have disadvantage on ability checks based on Strength, Dexterity or Constitution."
+                        ],
+                        [
+                            "2",
+                            "Your speed is halved."
+                        ],
+                        [
+                            "3",
+                            "You have disadvantage on attacks and saving throws based on Strength, Dexterity or Constitution. Enemies have advantage on saving throws where the DC is calculated based on your Strength, Dexterity or Constitution."
+                        ],
+                        [
+                            "4",
+                            "Your maximum HP is halved."
+                        ],
+						[
+                            "5",
+                            "Your speed is reduced to 0 and cannot be raised higher."
+                        ],
+						[
+                            "6",
+                            "You die."
+                        ]
+                    ]
+                }
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Inspiration",
+			"entries": [
+				"After any d20 roll, you can spend inspiration to reroll it. You must use the new roll."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Spell Scrolls",
+			"entries": [
+				"If you have the Spellcasting or Pact Magic feature and use a spell scroll to cast or copy a spell that is on your spell list, you don't need to make an ability check.",
+				"If you have the Spellcasting or Pact Magic feature, you can use a spell scroll to cast a spell that is not on your spell list, but must succeed on a spellcasting ability check, DC equal to 10 plus the spell's level, or else the scroll is wasted."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Tasha's Optional Features",
+			"entries": [
+				"All additional options for existing features (fighting styles, metamagic options, etc.) are approved for use. All other features must be approved on a case-by-case basis by the current DM."
+			],
+			"source": "FA"
+		},
+		{
+			"name": "Compressed Economy",
+			"entries": [
+				"To make copper/silver pieces useful and fix basic problems with the economy, prices listed by the corresponding coin have been adjusted as follows. This conveniently results in the following approximate comparison to our market:",
+				{
+                    "type": "table",
+                    "colLabels": [
+                        "Coin",
+                        "Listed Price Adjustment",
+						"Approx. CAD Value",
+						"Typical Uses"
+                    ],
+                    "colStyles": [
+                        "text-center",
+                        "text-left",
+						"text-center",
+						"text-left"
+                    ],
+                    "rows": [
+                        [
+                            "Copper",
+                            "None",
+							"$5",
+							"Food, trinkets, tips, wooden weapons"
+                        ],
+                        [
+                            "Silver",
+                            "None",
+							"$50",
+							"Clothes, tools, daily pay, simple weapons"
+                        ],
+                        [
+                            "Gold",
+                            "Divide by 10 (eyeball if result is below 10sp)",
+							"$500",
+							"Armour, livestock, rent, martial weapons"
+                        ],
+                        [
+                            "Platinum",
+                            "Divide by 10",
+							"$5000",
+							"Bulk goods, housing, siege weapons"
+                        ]
+                    ]
+                }
+			],
+			"source": "FA"
+		}
+	]
 }
