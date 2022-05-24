@@ -1688,8 +1688,8 @@
 				}
 			],
 			"entries": [
-				"You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then becomes sheathed in surging energy. If the target does not move at least 5 feet before the end of its next turn, the energy field detonates and the target takes 1d8 force damage.",
-                "This spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra 1d8 force damage to the target on a hit, and the damage the target takes for not moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8)."
+				"You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet of you. On a hit, the target suffers the weapon attack's normal effects and then becomes sheathed in surging energy. If the target does not move at least 5 feet before the end of its next turn, the energy field detonates and the target takes {@damage 1d8} force damage.",
+                "This spell's damage increases when you reach certain levels. At 5th level, the melee attack deals an extra {@damage 1d8} force damage to the target on a hit, and the damage the target takes for not moving increases to {@damage 2d8}. Both damage rolls increase by 1d8 at 11th level ({@damage 2d8} and {@damage 3d8}) and again at 17th level ({@damage 3d8} and {@damage 4d8})."
 			],
             "damageInflict": [
 				"force"
@@ -1754,6 +1754,9 @@
                 },
 				"You temporarily suppress a memory, sealing it away from your mind. You can choose either one period of time, a single person, group, or activity, or any other singular thing, such as a plan or proficiency in a single skill. Any creature other than you attempting to access this memory via magic or other means must make a Wisdom saving throw. If they succeed, this spell ends. When the spell ends, the memory returns and springs to your mind, fresh and vivid."
 			],
+            "savingThrow": [
+                "wisdom"
+            ],
 			"classes": {
 				"fromClassList": [
 					{
@@ -1809,8 +1812,8 @@
                         "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
                     ]
                 },
-				"A wire-thin stream of pressurized water shoots from your finger, with devastating yet precise cutting power at point-blank range. Make a melee spell attack against a creature or object you can reach. On a hit, the target takes 1d8 piercing damage. If the target is a creature or object made of inorganic material such as stone, crystal, or metal, the spell deals maximum damage to it. You can’t target an object that is being worn or carried by an unwilling creature.",
-                "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+				"A wire-thin stream of pressurized water shoots from your finger, with devastating yet precise cutting power at point-blank range. Make a melee spell attack against a creature or object you can reach. On a hit, the target takes {@damage 1d8} piercing damage. If the target is a creature or object made of inorganic material such as stone, crystal, or metal, the spell deals maximum damage to it. You can’t target an object that is being worn or carried by an unwilling creature.",
+                "The spell’s damage increases by 1d8 when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
 			],
             "scalingLevelDice": {
 				"label": "piercing damage",
@@ -1882,8 +1885,8 @@
                         "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
                     ]
                 },
-				"You hurl a rippling fist-sized mass of water at a creature within range. Make a ranged spell attack against the target. On a hit, the creature takes 1d6 bludgeoning damage, and if the creature is Large or smaller, it is pushed up to 10 feet away from you.",
-                "This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
+				"You hurl a rippling fist-sized mass of water at a creature within range. Make a ranged spell attack against the target. On a hit, the creature takes {@damage 1d6} bludgeoning damage, and if the creature is Large or smaller, it is pushed up to 10 feet away from you.",
+                "This spell’s damage increases by 1d6 when you reach 5th level ({@damage 2d6}), 11th level ({@damage 3d6}), and 17th level ({@damage 4d6})."
 			],
             "scalingLevelDice": {
 				"label": "piercing damage",
@@ -2062,7 +2065,7 @@
                         "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
                     ]
                 },
-                "You summon a squid and fling it at a creature within range. Make a ranged spell attack against the target. On a hit, the squid explodes in a burst of ink. The target takes {@damage 1d12} piercing damage and becomes blinded until the end of your next turn."
+                "You summon a squid and fling it at a creature within range. Make a ranged spell attack against the target. On a hit, the squid explodes in a burst of ink. The target takes {@damage 1d12} piercing damage and becomes {@condition blinded} until the end of your next turn."
 			],
             "entriesHigherLevel": [
 				{
@@ -2075,6 +2078,9 @@
             "damageInflict": [
 				"piercing"
 			],
+            "conditionInflict": [
+                "blinded"
+            ],
             "spellAttack": [
 				"R"
 			],
@@ -2140,8 +2146,14 @@
 				}
 			],
 			"entries": [
-				"As a bonus action, you touch a weapon and coat it with a poisonous substance. The next time that weapon deals damage during the spell's duration, it deals an additional {@damage 2d6} poison damage. Additionally, if the target is a creature it must make a Constitution Saving Throw or become poisoned for the duration of the spell. A creature may repeat the saving throw at the end of its turn, ending the effect on a success."
+				"As a bonus action, you touch a weapon and coat it with a poisonous substance. The next time that weapon deals damage during the spell's duration, it deals an additional {@damage 2d6} poison damage. Additionally, if the target is a creature it must make a Constitution saving throw or become {@condition poisoned} for the duration of the spell. A creature may repeat the saving throw at the end of its turn, ending the effect on a success."
 			],
+            "damageInflict": [
+                "poison"
+            ],
+            "conditionInflict": [
+                "poisoned"
+            ],
             "savingThrow": [
 				"constitution"
 			],
@@ -2255,7 +2267,7 @@
                         "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
                     ]
                 },
-                "You create a fast current within a body of water, forming a line 90 feet long and 10 feet wide in a direction of your choice extending away from a point you can see within range. Each creature that starts its turn in the line must succeed on a Strength saving throw or be knocked prone and pushed 30 feet in the direction following the line. A creature in the line must spend 2 feet of movement for every 1 foot that it moves when moving against the tide."
+                "You create a fast current within a body of water, forming a line 90 feet long and 10 feet wide in a direction of your choice extending away from a point you can see within range. Each creature that starts its turn in the line must succeed on a Strength saving throw or be knocked {@condition prone} and pushed 30 feet in the direction following the line. A creature in the line must spend 2 feet of movement for every 1 foot that it moves when moving against the tide."
 			],
             "entriesHigherLevel": [
 				{
@@ -2265,6 +2277,9 @@
 					]
 				}
 			],
+            "conditionInflict": [
+                "prone"
+            ],
 			"savingThrow": [
 				"strength"
 			],
@@ -2341,11 +2356,11 @@
 					]
 				}
 			],
-			"savingThrow": [
-				"dexterity"
-			],
             "damageInflict": [
 				"necrotic"
+			],
+			"savingThrow": [
+				"dexterity"
 			],
 			"classes": {
 				"fromClassList": [
@@ -2418,7 +2433,7 @@
                 },
                 "You cause a spout of water to emerge from a 5-foot-square on the ground. Water emerges to fill a 20-foot-tall cylinder with a 5-foot diameter that rises from the chosen square and lasts for the duration.",
                 "A creature that enters the area for the first time on a turn or starts its turn there must make a Dexterity saving throw, which it can choose to fail. On a failed save, a creature is pushed to the top of the cylinder. On a successful save, a creature is pushed 5 feet out of the area into an unoccupied space of the creature’s choice. If no unoccupied space is available, the creature automatically fails the saving throw.",
-                "The force of the water is enough to keep creatures aloft, though it is impossible for a creature to stand at the top of the waterspout unless it can normally stand on water. A creature that can’t stand on water is prone while it remains at the top of the cylinder. Water created by this spell vanishes when the spell ends."
+                "The force of the water is enough to keep creatures aloft, though it is impossible for a creature to stand at the top of the waterspout unless it can normally stand on water. A creature that can’t stand on water is {@condition prone} while it remains at the top of the cylinder. Water created by this spell vanishes when the spell ends."
 			],
             "entriesHigherLevel": [
 				{
@@ -2428,6 +2443,9 @@
 					]
 				}
 			],
+            "conditionInflict": [
+                "prone"
+            ],
 			"savingThrow": [
 				"dexterity"
 			],
@@ -2497,11 +2515,11 @@
 					]
 				}
 			],
-			"savingThrow": [
-				"constitution"
-			],
             "damageInflict": [
 				"cold"
+			],
+			"savingThrow": [
+				"constitution"
 			],
 			"classes": {
 				"fromClassList": [
@@ -2899,13 +2917,13 @@
 				}
 			],
 			"entries": [
-               "You summon a giant sword of light at a point within range, which immediately crashes down in a line 30 feet long and 10 feet wide. Each creature in the area must succeed on a Dexterity saving throw or take {@damage 1d12} radiant damage and be knocked prone. A creature knocked prone by the spell must repeat the saving throw the first time it tries to stand up before the end of its next turn, falling prone again on a failure."
+               "You summon a giant sword of light at a point within range, which immediately crashes down in a line 30 feet long and 10 feet wide. Each creature in the area must succeed on a Dexterity saving throw or take {@damage 2d10} radiant damage and be knocked {@condition prone}. A creature knocked prone by the spell must repeat the saving throw the first time it tries to stand up before the end of its next turn, falling {@condition prone} again on a failure."
 			],
             "entriesHigherLevel": [
 				{
 					"name": "At Higher Levels",
 					"entries": [
-						"For each slot level above 2nd, the damage increases by {@damage 1d12} and the length of the line increases by 10 feet."
+						"For each slot level above 2nd, the damage increases by {@damage 1d10} and the length of the line increases by 10 feet."
 					]
 				}
 			],
@@ -2978,14 +2996,14 @@
                             "type": "entries",
                             "name": "2nd hit",
                             "entries": [
-                                "If the target fails their saving throw, it takes 2d6 damage and cannot take reactions until the end of your next turn. Choose one of the d6s. The number rolled on that die determines the spell's damage type, as shown below."
+                                "If the target fails their saving throw, it takes {@damage 2d6} damage and cannot take reactions until the end of your next turn. Choose one of the d6s. The number rolled on that die determines the spell's damage type, as shown below."
                             ]
                        },
                        {
                         "type": "entries",
                         "name": "3rd hit",
                         "entries": [
-                            "If the target fails their saving throw, it takes 3d6 damage and is incapacitated until the end of its next turn. Choose one of the d6s. The number rolled on that die determines the spell's damage type, as shown below."
+                            "If the target fails their saving throw, it takes {@damage 3d6} damage and is {@condition incapacitated} until the end of its next turn. Choose one of the d6s. The number rolled on that die determines the spell's damage type, as shown below."
                         ]
                    }
                    ]
@@ -3136,7 +3154,7 @@
 				}
 			],
 			"entries": [
-				"A 30-foot-radius sphere within range becomes lightly obscured by thousands of hard needles and thorns which emit a strong pine scent. Creatures other than you within the area take {@damage 3d4} piercing damage the first time on each of their turns that their eyes are exposed. They can cover their eyes at the start of their turn to avoid this damage and are blinded until the start of their next turn. If they uncover their eyes in the meantime, they immediately take the damage. Creatures that don't have eyes don't take this damage. Creatures other than you also take {@damage 1d4} piercing damage for every 5 feet they travel within the area.",
+				"A 30-foot-radius sphere within range becomes lightly obscured by thousands of hard needles and thorns which emit a strong pine scent. Creatures other than you within the area take {@damage 3d4} piercing damage the first time on each of their turns that their eyes are exposed. They can cover their eyes at the start of their turn to avoid this damage and are {@condition blinded} until the start of their next turn. If they uncover their eyes in the meantime, they immediately take the damage. Creatures that don't have eyes don't take this damage. Creatures other than you also take {@damage 1d4} piercing damage for every 5 feet they travel within the area.",
 				"The needles and thorns form disorienting patterns, and count as natural phenomena. You can attempt to Hide even if you are obscured only by the needles and their scent."
 			],
             "entriesHigherLevel": [
@@ -3198,7 +3216,7 @@
 				}
 			],
 			"entries": [
-				"When you cast this spell, choose up to 3 objects within range that aren't being worn or carried by another creature and that weigh 1 to 5 pounds. These objects fly to you and float around you in a shielding manner. For the duration of the spell, you have a bonus to your AC and your Dexterity saving throws equal to the number of objects shielding you. When an attack misses you by an amount equal to or less than this bonus, or you pass a Dex save by that margin, one of the objects is struck and ceases to be affected by the spell.",
+				"When you cast this spell, choose up to 3 objects within range that aren't being worn or carried by another creature and that weigh 1 to 5 pounds. These objects fly to you and float around you in a shielding manner. For the duration of the spell, you have a bonus to your AC and your Dexterity saving throws equal to the number of objects shielding you. When an attack misses you by an amount equal to or less than this bonus, or you pass a Dexterity saving throw by that margin, one of the objects is struck and ceases to be affected by the spell.",
 				"As a bonus action, you can send one of the objects flying up to 30 feet in a straight line. If the object would strike a creature, the creature must succeed on a Dexterity saving throw to dodge it. If the object strikes a creature or solid surface, the object and whatever it hits both take {@damage 4d6} bludgeoning damage. The object then ceases to be affected by the spell."
 			],
             "entriesHigherLevel": [
@@ -3265,7 +3283,7 @@
 			],
 			"entries": [
 				"Choose a point you can see on the ground within range. The ground transmutes into grasping claws of stone and earth which lash out at in a 15-foot-radius circle centered on that point. Each creature in that area must make a Strength Saving Throw.",
-				"A creature takes {@damage 4d6} bludgeoning damage on a failed save and is restrained until the end of your next turn, or half as much on a successful saving throw and isn't restrained. "
+				"A creature takes {@damage 4d6} bludgeoning damage on a failed save and is {@condition restrained} until the end of your next turn, or half as much on a successful saving throw and isn't restrained. "
 			],
             "damageInflict": [
 				"bludgeoning"
@@ -3602,8 +3620,8 @@
                     ]
                 },
 				"A gleaming white 30-foot-radius sphere resembling the moon briefly flashes into existence at a point you choose within range. You can choose to manifest this sphere as a full moon or a lunar eclipse.",
-				"When a full moon is manifested, each creature within the area must make a Constitution saving throw. On a failed save, a creature takes {@damage 7d6} radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isn't blinded.",
-				"When a lunar eclipse is manifested, each creature within the area must make a Wisdom saving throw. On a failed save, a creature takes {@damage 7d6} necrotic damage and is frightened of all hostile creatures for 1 minute. On a successful save, it takes half as much damage and isn't frightened.",
+				"When a full moon is manifested, each creature within the area must make a Constitution saving throw. On a failed save, a creature takes {@damage 7d6} radiant damage and is {@condition blinded} for 1 minute. On a successful save, it takes half as much damage and isn't blinded.",
+				"When a lunar eclipse is manifested, each creature within the area must make a Wisdom saving throw. On a failed save, a creature takes {@damage 7d6} necrotic damage and is {@condition frightened} of all hostile creatures for 1 minute. On a successful save, it takes half as much damage and isn't frightened.",
 				"A creature blinded or frightened by this spell makes another saving throw at the end of each of its turns. On a successful save, the effect ends.",
 				"Lycanthropes have disadvantage on these saving throws."
 			],
@@ -3675,6 +3693,124 @@
 					},
 					{
 						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Rolling Ring of Earth and Fire",
+			"source": "FA",
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+                "m": "a drop of water and a white stone"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+                "The ground erupts and fire blasts out in a 60' radius sphere centered on you. The sphere spreads around corners and through cover. Each creature other than you within the area must make a Dexterity saving throw and then is knocked {@condition prone}. On a failed save, the creature takes {@damage 12d6} bludgeoning damage and {@damage 12d6} fire damage, and is {@condition stunned} for one minute. On a success, they take half as much damage and aren't stunned. A creature stunned by this spell can make a Constitution saving throw at the end of each of its turns, ending the effect on a success. The affected area becomes difficult terrain."
+			],
+            "damageInflict": [
+				"bludgeoning",
+                "fire"
+			],
+            "conditionInflict": [
+				"prone",
+                "stunned"
+			],
+            "savingThrow": [
+				"dexterity",
+                "constitution"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Druid",
+						"source": "PHB"
+					},
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "The Ole Switcheroo",
+			"source": "FA",
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+                "m": {
+                    "text": "a small statuette of yourself worth 150 gp, which the spell consumes",
+                    "cost": 15000,
+                    "consume": true
+                }
+			},
+			"duration": [
+				{
+					"type": "permanent",
+                    "ends": [
+                        "dispel"
+                    ]
+				}
+			],
+			"entries": [
+                "When you cast this spell for the first time, you conjure a partially-real illusory duplicate of yourself which appears within 5 feet of you and retains all personality, memories, and statistics, but is formed without any equipment. It appears nonmagical to spells and magical effects, such as {@spell Detect Magic|PHB}. It can gain knowledge, but lacks the ability to meaningfully change. Thus, it can't gain levels or other abilities, nor can it ever react differently to a situation than you would have at the moment you conjured it if you had the knowledge it currently possesses. While your double exists, it can cast spells using your spell slots - it has no spell slots of its own.",
+                "Either of you can cast the spell again to either create a new double, or to teleport the other (if willing) to an unoccupied space within 60 feet of the caster. The teleportation option does not require the spell's material component. Either way, when the spell is cast again by either of you while a double lives, you gain all the memories and knowledge your double possesses and can distinguish them from your own. The double's max HP then becomes 1 hit point, and it dies at the end of its next turn; this cannot be prevented by any means. The double is reduced to ash when it dies, and cannot be returned from death. The spell ends upon its death."
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Bard",
+						"source": "PHB"
+					},
+                    {
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+                    {
+						"name": "Warlock",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
 						"source": "PHB"
 					}
 				]
