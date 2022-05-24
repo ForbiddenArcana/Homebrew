@@ -2107,6 +2107,53 @@
 			}
 		},
         {
+			"name": "Poisoned Weapon",
+			"source": "FA",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+                "s": true,
+				"m": "A poisoner's kit or alchemist supplies"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"concentration": true,
+					"duration": {
+						"amount": 1,
+						"type": "minute",
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"As a bonus action, you touch a weapon and coat it with a poisonous substance. The next time that weapon deals damage during the spell's duration, it deals an additional {@damage 2d6} poison damage. Additionally, if the target is a creature it must make a Constitution Saving Throw or become poisoned for the duration of the spell. A creature may repeat the saving throw at the end of its turn, ending the effect on a success."
+			],
+            "savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			}
+		},
+        {
 			"name": "Rimesworn Blade",
 			"source": "FA",
 			"level": 1,
@@ -2404,53 +2451,6 @@
 				]
 			}
 		},
-		{
-			"name": "Poisoned Weapon",
-			"source": "FA",
-			"level": 1,
-			"school": "T",
-			"time": [
-				{
-					"number": 1,
-					"unit": "bonus"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"components": {
-                "s": true,
-				"m": "A poisoner's kit or alchemist supplies"
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"concentration": true,
-					"duration": {
-						"amount": 1,
-						"type": "minute",
-						"upTo": true
-					}
-				}
-			],
-			"entries": [
-				"As a bonus action, you touch a weapon and coat it with a poisonous substance. The next time that weapon deals damage during the spell's duration, it deals an additional {@damage 2d6} poison damage. Additionally, if the target is a creature it must make a Constitution Saving Throw or become poisoned for the duration of the spell. A creature may repeat the saving throw at the end of its turn, ending the effect on a success."
-			],
-            "savingThrow": [
-				"constitution"
-			],
-			"classes": {
-				"fromClassList": [
-                    {
-						"name": "Artificer",
-						"source": "TCE"
-					}
-				]
-			}
-		},
         {
 			"name": "Cold Snap",
 			"source": "FA",
@@ -2518,67 +2518,6 @@
 					},
                     {
 						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
-		},
-		{
-			"name": "Sword Smash",
-			"source": "FA",
-			"level": 2,
-			"school": "V",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 10
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-                "m": "a dagger or sword"
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-               "You summon a giant sword of light at a point within range, which immediately crashes down in a line 30' long and 10' wide. Each creature in the area must succeed on a Dexterity saving throw or take {@damage 2d10} radiant damage and be knocked prone. A creature knocked prone by the spell must repeat the saving throw the first time it tries to stand up before the end of its next turn, falling prone again on a failure."
-			],
-            "entriesHigherLevel": [
-				{
-					"name": "At Higher Levels",
-					"entries": [
-						"For each slot level above 2nd, the damage increases by 1d10 and the length of the line increases by 10'."
-					]
-				}
-			],
-            "damageInflict": [
-				"radiant"
-			],
-            "conditionInflict": [
-				"prone"
-			],
-            "savingThrow": [
-				"dexterity"
-			],
-			"classes": {
-				"fromClassList": [
-                    {
-						"name": "Bard",
-						"source": "PHB"
-					},
-                    {
-						"name": "Paladin",
 						"source": "PHB"
 					}
 				]
@@ -2930,7 +2869,67 @@
 				]
 			}
 		},
-
+		{
+			"name": "Sword Smash",
+			"source": "FA",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+                "m": "a dagger or sword"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+               "You summon a giant sword of light at a point within range, which immediately crashes down in a line 30' long and 10' wide. Each creature in the area must succeed on a Dexterity saving throw or take {@damage 1d12} radiant damage and be knocked prone. A creature knocked prone by the spell must repeat the saving throw the first time it tries to stand up before the end of its next turn, falling prone again on a failure."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"For each slot level above 2nd, the damage increases by 1d12 and the length of the line increases by 10'."
+					]
+				}
+			],
+            "damageInflict": [
+				"radiant"
+			],
+            "conditionInflict": [
+				"prone"
+			],
+            "savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Bard",
+						"source": "PHB"
+					},
+                    {
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
         {
 			"name": "Xandala's Hopeful Hyacinth",
 			"source": "FA",
@@ -3189,7 +3188,7 @@
 				}
 			],
 			"entries": [
-				"Roots sprout from the ground in a 30' radius centered on a point that you can see within range. The affected area becomes difficult terrain. When you cast this spell, you can direct the roots to lash out at a creature you can see within 30' of the roots. That creature must succeed on a Dexterity saving throw or be pulled 30' directly towards the center of the roots.",
+				"Roots sprout from the ground in a 30' radius centered on a point that you can see within range. The affected area becomes difficult terrain. When you cast this spell, you can direct the roots to lash out at a creature you can see within 30' of the roots. That creature must succeed on a Dexterity saving throw or be pulled 30' towards the center of the roots, following the most direct path possible.",
 				"Until the spell ends, you can direct the roots to lash out again as a bonus action on each of your turns."
 			],
 			"savingThrow": [
@@ -3203,72 +3202,6 @@
 					},
 					{
 						"name": "Ranger",
-						"source": "PHB"
-					}
-				]
-			}
-		},
-		{
-			"name": "Lunar Manifestation",
-			"source": "FA",
-			"level": 5,
-			"school": "E",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 120
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-                "m": "A meteorite Shard"
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				{
-                    "type": "inset",
-                    "entries": [
-                        "This spell is taken/modified from the Darkhold: Secrets of the Zhentarim: https://www.dmsguild.com/product/324679/Darkhold-Secrets-of-the-Zhentarim"
-                    ]
-                },
-				"A gleaming white sphere resembling the moon briefly flashes into existence at a point you choose within range. You can choose to manifest this sphere as a full moon or a lunar eclipse.",
-				"When a full moon is manifested, each creature within a 30 foot radius must make a Constitution saving throw. On a failed save, a creature takes {@damage 7d6} radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isn't blinded.",
-				"When a lunar eclipse is manifested, each creature within a 30ft radius must make a Wisdom saving throw. On a failed save, a creature takes {@damage 7d6} necrotic damage and is frightened of all hostile creatures for 1 minute. On a successful save, it takes half as much damage and isn't frightened.",
-				"A creature blinded or frightened by this spell makes another saving throw at the end of each of its turns. On a successful save, the effect ends.",
-				"Lycanthropes have disadvantage on these saving throws."
-			],
-            "damageInflict": [
-				"radiant",
-				"necrotic"
-			],
-            "conditionInflict": [
-				"blinded",
-				"frightened"
-			],
-            "savingThrow": [
-				"constitution",
-				"wisdom"
-			],
-			"classes": {
-				"fromClassList": [
-                    {
-						"name": "Cleric",
-						"source": "PHB"
-					},
-                    {
-						"name": "Druid",
 						"source": "PHB"
 					}
 				]
@@ -3350,39 +3283,39 @@
 			}
 		},
         {
-              "name": "Gravity Smash",
-              "source": "FA",
-              "level": 5,
-              "school": "E",
-              "time": [
-                  {
-                      "number": 1,
-                      "unit": "action"
-                  }
-              ],
-              "range": {
-                  "type": "point",
-                  "distance": {
-                      "type": "feet",
-                      "amount": 120
-                  }
-              },
-              "components": {
-                  "v": true,
-                  "s": true
-              },
-              "duration": [
-                  {
-                      "type": "timed",
-                      "concentration": true,
-                      "duration": {
-                          "amount": 1,
-                          "type": "round",
-                          "upTo": true
-                      }
-                  }
-              ],
-              "entries": [
+            "name": "Gravity Smash",
+            "source": "FA",
+            "level": 5,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "amount": 1,
+                        "type": "round",
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
                 {
                     "type": "inset",
                     "entries": [
@@ -3391,38 +3324,104 @@
                 },
                 "You strike the ground, choosing a point you can see within range to begin accumulating gravity. All creatures in the area begin to levitate up to 20ft into the air and remain suspended there for the duration. A target without a flying speed can only move by pushing or pulling against a fixed object or surface within reach (such as a wall or a ceiling), which allows it to move as if it were climbing.",
                 "When the spell ends at the start of your next turn, the gravity reaches a critical magnitude, smashing all creatures in the cylinder downwards; each creature in the area must make a Strength saving throw. On a failure, a creature takes {@damage 6d10} force damage. On a success, a creature takes half as much damage. If the spell ends before the start of your next turn, the damage it deals on a failed saving throw is {@damage 3d10} instead."
-      			],
-              "entriesHigherLevel": [
+            ],
+            "entriesHigherLevel": [
+                {
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@damage 1d10} for each slot level above 5th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "classes": {
+                "fromClassList": [
                     {
-                        "name": "At Higher Levels",
-                        "entries": [
-                            " When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@damage 1d10} for each slot level above 5th."
-                        ]
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
                     }
-              ],
-              "damageInflict": [
-                  "force"
-              ],
-              "savingThrow": [
-                  "strength"
-              ],
-              "classes": {
-                  "fromClassList": [
-                      {
-                          "name": "Sorcerer",
-                          "source": "PHB"
-                      },
-                      {
-                          "name": "Wizard",
-                          "source": "PHB"
-                      },
-                      {
-                          "name": "Warlock",
-                          "source": "PHB"
-                      }
-                  ]
-              }
-          }
+                ]
+            }
+        }, 
+		{
+			"name": "Lunar Manifestation",
+			"source": "FA",
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+                "m": "A meteorite Shard"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				{
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from the Darkhold: Secrets of the Zhentarim: https://www.dmsguild.com/product/324679/Darkhold-Secrets-of-the-Zhentarim"
+                    ]
+                },
+				"A gleaming white sphere resembling the moon briefly flashes into existence at a point you choose within range. You can choose to manifest this sphere as a full moon or a lunar eclipse.",
+				"When a full moon is manifested, each creature within a 30 foot radius must make a Constitution saving throw. On a failed save, a creature takes {@damage 7d6} radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isn't blinded.",
+				"When a lunar eclipse is manifested, each creature within a 30ft radius must make a Wisdom saving throw. On a failed save, a creature takes {@damage 7d6} necrotic damage and is frightened of all hostile creatures for 1 minute. On a successful save, it takes half as much damage and isn't frightened.",
+				"A creature blinded or frightened by this spell makes another saving throw at the end of each of its turns. On a successful save, the effect ends.",
+				"Lycanthropes have disadvantage on these saving throws."
+			],
+            "damageInflict": [
+				"radiant",
+				"necrotic"
+			],
+            "conditionInflict": [
+				"blinded",
+				"frightened"
+			],
+            "savingThrow": [
+				"constitution",
+				"wisdom"
+			],
+			"classes": {
+				"fromClassList": [
+                    {
+						"name": "Cleric",
+						"source": "PHB"
+					},
+                    {
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			}
+		}
     ],
     "subclass": [
 		{
