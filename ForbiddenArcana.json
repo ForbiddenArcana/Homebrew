@@ -3341,6 +3341,12 @@
                 }
             ],
             "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is a buffed version of {@spell Grasping Vine} published in the Player's Handbook."
+                    ]
+                },
                 "Roots sprout from the ground in a 30-foot-radius circle centered on a point that you can see within range. The affected area becomes difficult terrain. When you cast this spell, you can direct the roots to lash out at a creature you can see within 30 feet of the roots. That creature must succeed on a Dexterity saving throw or be pulled 30 feet towards the center of the roots, following the most direct path possible.",
                 "Until the spell ends, you can direct the roots to lash out again as a bonus action on each of your turns."
             ],
@@ -3398,6 +3404,12 @@
                 }
             ],
             "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from Heliana's Guide to Monster Hunting (https://monsterhunting5e.backerkit.com/hosted_preorders) and Divinity: Original Sin II"
+                    ]
+                },
                 "You link your vitality to the psyche of another creature you can see within range. The target must succeed on a Charisma saving throw or become linked to you by spectral shackles for the spell's duration. Each time you take damage, the shackled target takes psychic damage equal to half the damage you took. A target shackled to you can make another Charisma saving throw at the end of each of its turns, breaking free of the shackles on a success."
             ],
             "damageInflict": [
@@ -3683,6 +3695,12 @@
                 }
             ],
             "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is a buffed version of {@spell Tree Stride} published in the Player's Handbook."
+                    ]
+                },
                 "You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. If you pass into one of those trees, you likewise learn the location of other trees of the same kind within 500 feet of the new tree, and can pass into one of them by spending another 5 feet of movement. If you have no movement left or step out of a tree, you appear within 5 feet of the final tree you entered. You must end each turn outside a tree."
             ],
             "classes": {
@@ -3830,7 +3848,7 @@
                 "Borrowed Knowledge|SCC",
                 "Nystul's Magic Aura",
                 "Elemental Weapon",
-                "Intellect Fortress",
+                "Intellect Fortress|TCE",
                 "Fabricate",
                 "Otiluke's Resilient Sphere",
                 "Circle of Power",
@@ -3855,7 +3873,7 @@
                         ],
                         "s3": [
                             "elemental weapon",
-                            "intellect fortress"
+                            "intellect fortress|tce"
                         ],
                         "s4": [
                             "fabricate",
@@ -4176,6 +4194,59 @@
             ]
         },
         {
+            "name": "Stone Sorcery",
+            "shortName": "Stone",
+            "source": "FA",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassSpells": [
+                "Blade Ward",
+                "Compelled Duel",
+                "Wrathful Smite",
+                "Branding Smite",
+                "Earthbind|XGE",
+                "Erupting Earth|XGE",
+                "Shielding Storm|FA",
+                "Stone Shape",
+                "Stoneskin",
+                "Banishing Smite",
+                "Wall of Stone"
+            ],
+            "subclassFeatures": [
+                "Stone Sorcery|Sorcerer||Stone|FA|1",
+                "Stone Aegis|Sorcerer||Stone|FA|6",
+                "Stone's Edge|Sorcerer||Stone|FA|14",
+                "Earth Master's Aegis|Sorcerer||Stone|FA|18"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "s1": [
+                            "blade ward",
+                            "compelled duel",
+                            "wrathful smite"
+                        ],
+                        "s2": [
+                            "branding smite",
+                            "earthbind|xge"
+                        ],
+                        "s3": [
+                            "erupting earth|xge",
+                            "shielding storm|fa"
+                        ],
+                        "s4": [
+                            "stone shape",
+                            "stoneskin"
+                        ],
+                        "s5": [
+                            "banishing smite",
+                            "wall of stone"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
             "name": "Sunken Herald",
             "shortName": "Sunken Herald",
             "source": "FA",
@@ -4286,7 +4357,7 @@
                         ],
                         [
                             "3rd",
-                            "{@spell Elemental Weapon}, {@spell Intellect Fortress}"
+                            "{@spell Elemental Weapon}, {@spell Intellect Fortress|TCE}"
                         ],
                         [
                             "4th",
@@ -4378,6 +4449,12 @@
             "subclassSource": "FA",
             "level": 3,
             "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This subclass is mildly nerfed from The Griffon's Saddlebag: https://www.thegriffonssaddlebag.com/"
+                    ]
+                },
                 "Born from the frigid and daunting Everglacier, barbarians who follow Path of the Glacier have learned to harbor the resolute stillness, patience, and unwavering determination and destruction of the icy landscape. These warriors transform their bodies into powerful moving bunkers that are as difficult to take down as they are to escape from.",
                 "Barbarians that follow this path are often trained hunters who enjoy the patient stalking of prey. They thrive on the peril they impose on their fleeing targets, and take special pride in their slow-and-steady approach.",
                 {
@@ -4647,8 +4724,158 @@
                 "At 18th level, you gain the ability to charge your bonded weapon with the energy of your spells. On your turn, you can use a bonus action to cast an arcane knight spell with a casting time of 1 action or bonus action into your bonded weapon. The next time you hit a creature with your bonded weapon, you may choose to release the contained spell, casting it instantaneously.", 
                 "If the spell targets an area, it must be centered on the bonded weapon. If the spell targets one or more creatures, the creature hit by the weapon must be one of them. The creature hit by your bonded weapon has disadvantage on saving throws triggered by the stored spell. If the spell requires an attack roll against the creature hit by your bonded weapon, the spell attack has advantage.",
                 "The spell is stored in your weapon for up to 1 minute, or until you lose concentration."
-			]
-		},
+            ]
+        },
+        {
+            "name": "Stone Sorcery",
+            "source": "FA",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "FA",
+            "level": 1,
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This subclass is a tweak of the Unearthed Arcana Stone Sorcerer that never got published."
+                    ]
+                },
+                "Your magic springs from a mystical link between your soul and the magic of elemental earth. You might trace a distant ancestor to the Plane of Earth, or your family might have earned a mighty boon in return for a service to the dao lords. Whatever your past, the magic of elemental earth is yours to command.",
+                "Your link to earth magic grants you extraordinary resilience, and stone sorcerers have a natural affinity for combat. A steel blade feels like a natural extension of your body, and sorcerers with this origin have a knack for wielding both shields and weapons. In combat your place is amid the fray. You rely on your elemental nature to shield you from harm and your magic and metal weapons to overwhelm your foes.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Expanded Spell List|Sorcerer||Stone|FA|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Bonus Proficiencies|Sorcerer||Stone|FA|1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Stone's Durability|Sorcerer||Stone|FA|1"
+                }
+            ]
+        },
+        {
+            "name": "Expanded Spell List",
+            "source": "FA",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "FA",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                {
+                    "type": "table",
+                    "caption": "Stone Sorcery Expanded Spells",
+                    "colLabels": [
+                        "Spell Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "Cantrip",
+                            "{@spell Blade Ward}"
+                        ],
+                        [
+                            "1st",
+                            "{@spell Compelled Duel}, {@spell Wrathful Smite}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell Branding Smite}, {@spell Earthbind|XGE}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell Erupting Earth|XGE}, {@spell Shielding Storm|FA}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell Stone Shape}, {@spell Stoneskin}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Banishing Smite}, {@spell Wall of Stone}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bonus Proficiencies",
+            "source": "FA",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "FA",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "At 1st level, you gain proficiency with shields, simple weapons, and martial weapons."
+            ]
+        },
+        {
+            "name": "Stone's Durability",
+            "source": "FA",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "FA",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "At 1st level, your connection to stone gives you extra fortitude. Your hit point maximum increases by 1, and it increases by 1 again whenever you gain a level in this class.",
+                "Your base AC is 13 + your Constitution modifier if you aren't wearing armor, and your skin assumes a stony appearance."
+            ]
+        },
+        {
+            "name": "Stone Aegis",
+            "source": "FA",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "FA",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Starting at 6th level, your command of earth magic grows stronger, allowing you to harness it for your allies' protection.",
+                "As a bonus action, you can grant an aegis to one allied creature you can see within 60 feet of you. The aegis is a dim, gray aura of earth magic that protects the target. Any bludgeoning, piercing, or slashing damage the target takes is reduced by 2 + your sorcerer level divided by 4. This effect lasts for 1 minute, until you use it again, or you dismiss it (no action required).",
+                "In addition, when a creature you can see within 60 feet of you hits the protected target with a melee attack, you can use your reaction to teleport to an unoccupied space you can see within 5 feet of the attacker. You can teleport only if you and the attacker are on the same surface. You can then make one melee weapon attack against the attacker. If that attack hits, it deals an extra {@damage 1d10} force damage. This extra damage increases to {@damage 2d10} at 11th level and {@damage 3d10} at 17th level.",
+                "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a short or long rest."
+            ]
+        },
+        {
+            "name": "Stone's Edge",
+            "source": "FA",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "FA",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Starting at 14th level, your mastery of earth magic allows you to add the force of elemental earth to your spells. When you cast a spell that deals damage, choose one creature damaged by that spell on the round you cast it. That creature takes extra force damage equal to half your sorcerer level. This feature can be used only once per casting of a spell."
+            ]
+        },
+        {
+            "name": "Earth Master's Aegis",
+            "source": "FA",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Stone",
+            "subclassSource": "FA",
+            "level": 18,
+            "header": 2,
+            "entries": [
+                "Beginning at 18th level, when you use your Stone Aegis to protect an ally, you can choose up to three creatures to gain its benefits."
+            ]
+        },
         {
             "name": "Sunken Herald",
             "source": "FA",
@@ -4658,6 +4885,12 @@
             "subclassSource": "FA",
             "level": 1,
             "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This subclass taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                    ]
+                },
                 "Your innate magic comes from strange undersea powers, spawned from creatures of the deep that lurk in furtive darkness. Krakens, merrow, sea hags and other marine horrors often abduct thralls from the surface, controlling them with hypnotic magic before discarding them and leaving them forever changed. You have a connection to one of these thralls—or could even be one of these thralls yourself—as the descendant of a deep scion, a child stolen by a sea hag, or someone anointed as an acolyte by a circle of kraken priests. Your inextricable connection to the depths warps your body and soul into strange, alien forms that terrify your terrestrial allies. Above all, the sea lures your mind, bringing you both calm and deep foreboding near the open waters.",
                 "Regardless of the source of your power, you fill those that lay eyes upon you with dread. The terrors of the depths and the horrors that live on the cold, black seafloor weave their way into your magic and your very body. Despite this, powerful Sunken Heralds tend to become the leaders of far-reaching cults and powerful secret societies.",
                 {
@@ -4889,14 +5122,14 @@
                 "You fall 500' at the start of your first midair turn, and 1000' on subsequent turns.", 
                 "You don't land prone after deliberate falls of 20' or less.",
                 "If forced over an edge, you get a Dexterity saving throw to grab the edge if it is within reach and you have a free hand. You may choose to drop something you are holding to be allowed to attempt the saving throw.", 
-                "You can choose to fall immeditately during your turn, but it is considered willing movement and will provoke attacks of opportunity."
+                "You can choose to fall immediately during your turn, but it won't be considered forced movement if you do."
             ],
             "source": "FA"
         },
         {
             "name": "Identifying Spells",
             "entries": [
-                "You identify spells on your spell list and of a level you can cast; if it's of a higher level, you must succeed on an Arcana check at advantage, DC equal to 10 + the spell level. If the spell is not on your spell list, you must make the check regardless of level and you don't have advantage.", 
+                "You automatically identify spells on your spell list and of a level you can cast; if it's of a higher level, you must succeed on an Arcana check at advantage, DC equal to 10 + the spell level. If the spell is not on your spell list, you must make the check regardless of level and you don't have advantage.", 
                 "If you didn't see it being cast, you must examine its effects for a minute."
             ],
             "source": "FA"
