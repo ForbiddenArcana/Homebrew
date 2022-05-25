@@ -3341,6 +3341,12 @@
                 }
             ],
             "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is a buffed version of {@spell Grasping Vine} published in the Player's Handbook."
+                    ]
+                },
                 "Roots sprout from the ground in a 30-foot-radius circle centered on a point that you can see within range. The affected area becomes difficult terrain. When you cast this spell, you can direct the roots to lash out at a creature you can see within 30 feet of the roots. That creature must succeed on a Dexterity saving throw or be pulled 30 feet towards the center of the roots, following the most direct path possible.",
                 "Until the spell ends, you can direct the roots to lash out again as a bonus action on each of your turns."
             ],
@@ -3398,6 +3404,12 @@
                 }
             ],
             "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from Heliana's Guide to Monster Hunting (https://monsterhunting5e.backerkit.com/hosted_preorders) and Divinity: Original Sin II"
+                    ]
+                },
                 "You link your vitality to the psyche of another creature you can see within range. The target must succeed on a Charisma saving throw or become linked to you by spectral shackles for the spell's duration. Each time you take damage, the shackled target takes psychic damage equal to half the damage you took. A target shackled to you can make another Charisma saving throw at the end of each of its turns, breaking free of the shackles on a success."
             ],
             "damageInflict": [
@@ -3683,6 +3695,12 @@
                 }
             ],
             "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is a buffed version of {@spell Tree Stride} published in the Player's Handbook."
+                    ]
+                },
                 "You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. If you pass into one of those trees, you likewise learn the location of other trees of the same kind within 500 feet of the new tree, and can pass into one of them by spending another 5 feet of movement. If you have no movement left or step out of a tree, you appear within 5 feet of the final tree you entered. You must end each turn outside a tree."
             ],
             "classes": {
@@ -4138,6 +4156,12 @@
             "subclassSource": "FA",
             "level": 3,
             "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This subclass is mildly nerfed from The Griffon's Saddlebag: https://www.thegriffonssaddlebag.com/"
+                    ]
+                },
                 "Born from the frigid and daunting Everglacier, barbarians who follow Path of the Glacier have learned to harbor the resolute stillness, patience, and unwavering determination and destruction of the icy landscape. These warriors transform their bodies into powerful moving bunkers that are as difficult to take down as they are to escape from.",
                 "Barbarians that follow this path are often trained hunters who enjoy the patient stalking of prey. They thrive on the peril they impose on their fleeing targets, and take special pride in their slow-and-steady approach.",
                 {
@@ -4228,6 +4252,12 @@
             "subclassSource": "FA",
             "level": 1,
             "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This subclass is a tweak of the Unearthed Arcana Stone Sorcerer that never got published."
+                    ]
+                },
                 "Your magic springs from a mystical link between your soul and the magic of elemental earth. You might trace a distant ancestor to the Plane of Earth, or your family might have earned a mighty boon in return for a service to the dao lords. Whatever your past, the magic of elemental earth is yours to command.",
                 "Your link to earth magic grants you extraordinary resilience, and stone sorcerers have a natural affinity for combat. A steel blade feels like a natural extension of your body, and sorcerers with this origin have a knack for wielding both shields and weapons. In combat your place is amid the fray. You rely on your elemental nature to shield you from harm and your magic and metal weapons to overwhelm your foes.",
                 {
@@ -4372,6 +4402,12 @@
             "subclassSource": "FA",
             "level": 1,
             "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This subclass taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                    ]
+                },
                 "Your innate magic comes from strange undersea powers, spawned from creatures of the deep that lurk in furtive darkness. Krakens, merrow, sea hags and other marine horrors often abduct thralls from the surface, controlling them with hypnotic magic before discarding them and leaving them forever changed. You have a connection to one of these thralls—or could even be one of these thralls yourself—as the descendant of a deep scion, a child stolen by a sea hag, or someone anointed as an acolyte by a circle of kraken priests. Your inextricable connection to the depths warps your body and soul into strange, alien forms that terrify your terrestrial allies. Above all, the sea lures your mind, bringing you both calm and deep foreboding near the open waters.",
                 "Regardless of the source of your power, you fill those that lay eyes upon you with dread. The terrors of the depths and the horrors that live on the cold, black seafloor weave their way into your magic and your very body. Despite this, powerful Sunken Heralds tend to become the leaders of far-reaching cults and powerful secret societies.",
                 {
