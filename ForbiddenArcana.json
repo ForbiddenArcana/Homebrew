@@ -1405,7 +1405,7 @@
                 {
                     "type": "inset",
                     "entries": [
-                        "This race is a slightly nerfed version of the original Warforged Unearthed Arcana, while they still had distinct subraces. Those three subraces have also been modified as follows:",
+                        "This race is a slightly nerfed version of the original Warforged Unearthed Arcana, while they still had distinct subraces. Those subraces have also been modified for use with this race as follows:",
                         "{@race Warforged (Envoy)|FA}",
                         "{@race Warforged (Juggernaut)|FA}",
                         "{@race Warforged (Skirmisher)|FA}"
@@ -3819,9 +3819,75 @@
     ],
     "subclass": [
         {
+            "name": "Infuser",
+            "shortName": "Infuser",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSpells": [
+                "Detect Magic",
+                "Identify",
+                "Borrowed Knowledge|SCC",
+                "Nystul's Magic Aura",
+                "Elemental Weapon",
+                "Intellect Fortress",
+                "Fabricate",
+                "Otiluke's Resilient Sphere",
+                "Circle of Power",
+                "Creation"
+            ],
+            "subclassFeatures": [
+                "Infuser|Artificer|TCE|Infuser|FA|3",
+                "Magical Swiftness|Artificer|TCE|Infuser|FA|5",
+                "Reinfusion|Artificer|TCE|Infuser|FA|9",
+                "Master Infuser|Artificer|TCE|Infuser|FA|15"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "s1": [
+                            "detect magic",
+                            "identify"
+                        ],
+                        "s2": [
+                            "borrowed knowledge|scc",
+                            "nystul's magic aura"
+                        ],
+                        "s3": [
+                            "elemental weapon",
+                            "intellect fortress"
+                        ],
+                        "s4": [
+                            "fabricate",
+                            "otiluke's resilient sphere"
+                        ],
+                        "s5": [
+                            "circle of power",
+                            "creation"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Path of the Glacier",
+            "shortName": "Glacier",
+            "source": "FA",
+            "className": "Barbarian",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "Path of the Glacier|Barbarian||Glacier|FA|3",
+                "Cold Fortress|Barbarian||Glacier|FA|6",
+                "Deep Sleep|Barbarian||Glacier|FA|10",
+                "Avalanche Stomp|Barbarian||Glacier|FA|14"
+            ]
+        },
+        {
             "name": "Sunken Herald",
             "shortName": "Sunken Herald",
             "source": "FA",
+            "className": "Sorcerer",
+            "classSource": "PHB",
             "subclassSpells": [
                 "Primal Savagery",
                 "Ensnaring Strike",
@@ -3867,12 +3933,239 @@
                         ]
                     }
                 }
-            ],
-            "className": "Sorcerer",
-            "classSource": "PHB"
+            ]
         }
     ],
     "subclassFeature": [
+        {
+            "name": "Infuser",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Infuser",
+            "subclassSource": "FA",
+            "level": 3,
+            "entries": [
+                "Artificer Infusers focus on the creation of magic items above all else, diving deep into that field rather than adopting side projects like other artificers might.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Expanded Spell List|Artificer|TCE|Infuser|FA|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Personal Design|Artificer|TCE|Infuser|FA|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Improved Infuse Item|Artificer|TCE|Infuser|FA|3"
+                }
+            ]
+        },
+        {
+            "name": "Expanded Spell List",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Infuser",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                {
+                    "type": "table",
+                    "caption": "Infuser Expanded Spells",
+                    "colLabels": [
+                        "Spell Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell Detect Magic}, {@spell Identify}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell Borrowed Knowledge|SCC}, {@spell Nystul's Magic Aura}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell Elemental Weapon}, {@spell Intellect Fortress}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell Fabricate}, {@spell Otiluke's Resilient Sphere}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Circle of Power}, {@spell Creation}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Personal Design",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Infuser",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "At 3rd level, you create a customized variant of a tool or weapon you possess and are proficient with. If you customize a tool with this feature, you can add a bonus of {@dice 1d4} to the result of ability checks you make with it. This bonus increases at 5th level in this class ({@dice 1d6}), 9th level in this class ({@dice 1d8}), and 15th level in this class ({@dice 1d10}). If you customize a weapon with this feature, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.",
+                "When you finish a short or long rest, you can create a new personal design, but you can only maintain one at a time."
+            ]
+        },
+        {
+            "name": "Improved Infuse Item",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Infuser",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Starting at 3rd level, you can infuse an additional item. You can infuse a second additional item when you reach 5th level in this class, a third when you reach 9th level in this class, and a fourth when you reach 15th level in this class. All of these additional infusions must be the Replicate Magic Item infusion.",
+                "When you finish a short rest, you can replace one of your infused items with a new infusion on the same object or a new object. If any charges or uses were expended for the old infusion, the same amount are expended for the new one."
+            ]
+        },
+        {
+            "name": "Magical Swiftness",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Infuser",
+            "subclassSource": "FA",
+            "level": 5,
+            "header": 2,
+            "entries": [
+                "Beginning at 5th level, when you use your action to cast a spell, activate a magic item, or attack with a customized weapon of your Personal Design, you can make a single weapon attack as a bonus action."
+            ]
+        },
+        {
+            "name": "Reinfusion",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Infuser",
+            "subclassSource": "FA",
+            "level": 9,
+            "header": 2,
+            "entries": [
+                "Starting at 9th level, you can touch one of your infused items which has charges or limited daily uses and use an action to restore all of its charges or uses. You must finish a long rest before you can use this feature again. Starting at 15th level, you can use this feature twice between long rests, but must use it on different items.",
+                "If any of your infused items force a saving throw against a flat DC, you can choose whether it uses the flat DC or your Artificer spell save DC when you infuse the item."
+            ]
+        },
+        {
+            "name": "Master Infuser",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Infuser",
+            "subclassSource": "FA",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "At 15th level, you can add a single infusion to items which are already magical (two infusions total on non-magical items).",
+                "If you craft a magic item with a rarity of rare or very rare, it takes you a quarter of the normal time, and it costs you half as much of the usual gold."
+            ]
+        },
+        {
+            "name": "Path of the Glacier",
+            "source": "FA",
+            "className": "Barbarian",
+            "classSource": "PHB",
+            "subclassShortName": "Glacier",
+            "subclassSource": "FA",
+            "level": 3,
+            "entries": [
+                "Born from the frigid and daunting Everglacier, barbarians who follow Path of the Glacier have learned to harbor the resolute stillness, patience, and unwavering determination and destruction of the icy landscape. These warriors transform their bodies into powerful moving bunkers that are as difficult to take down as they are to escape from.",
+                "Barbarians that follow this path are often trained hunters who enjoy the patient stalking of prey. They thrive on the peril they impose on their fleeing targets, and take special pride in their slow-and-steady approach.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Permafrost|Barbarian||Glacier|FA|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Frostbite|Barbarian||Glacier|FA|3"
+                }
+            ]
+        },
+        {
+            "name": "Permafrost",
+            "source": "FA",
+            "className": "Barbarian",
+            "classSource": "PHB",
+            "subclassShortName": "Glacier",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Starting when you choose this path at 3rd level, your skin becomes icy, granting you resistance to cold damage.",
+                "In addition, your rage is a cold and patient well of power. When your rage would end early due to you either not attacking or taking damage, you can choose to maintain it instead. You can use this feature a number of times equal to your Constitution modifier (minimum of 1). You regain all expended uses when you finish a long rest."
+            ]
+        },
+        {
+            "name": "Frostbite",
+            "source": "FA",
+            "className": "Barbarian",
+            "classSource": "PHB",
+            "subclassShortName": "Glacier",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Also at 3rd level, you can unleash the unforgiving cold inside of you with your attacks. Once on each of your turns while you're raging, you can release a burst of sheer cold when you hit a target with a melee weapon attack. When you do, that target takes an extra {@damage 1d6} cold damage from the attack. This damage increases when you reach certain levels in this class, increasing to {@damage 2d6} cold damage at 10th level and {@damage 3d6} at 14th level.",
+                "When a creature takes cold damage in this way, its speed is reduced by 10 feet until the start of your next turn."
+            ]
+        },
+        {
+            "name": "Cold Fortress",
+            "source": "FA",
+            "className": "Barbarian",
+            "classSource": "PHB",
+            "subclassShortName": "Glacier",
+            "subclassSource": "FA",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "By 6th level, you learn to further channel the icy resilience within you. When you enter a rage and are not wearing any armor, your skin becomes shielded by a protective layer of frost. This frost grants you a number of temporary hit points equal to {@dice 1d12} + your Constitution modifier that last until you stop raging.",
+                "You can use a bonus action on your following turns while you're raging to expend a Hit Die to gain these temporary hit points again. When you do, the number of temporary hit points you gain is equal to the roll of the expended Hit Die + your Constitution modifier."
+            ]
+        },
+        {
+            "name": "Deep Sleep",
+            "source": "FA",
+            "className": "Barbarian",
+            "classSource": "PHB",
+            "subclassShortName": "Glacier",
+            "subclassSource": "FA",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "At 10th level, you can choose to enter a deep state of hibernation when you begin a long rest. While resting in this way, you're cold to the touch and appear dead to all outward inspection and to spells used to determine your status. Noise and other distractions fail to wake you.",
+                "You awake from this rest after 6 hours, when you take damage, or when a creature uses its action to slap you awake. If you finish a continuous 6 hours of sleep in this way, you gain the benefits of finishing a long rest, and you regain all expended Hit Dice. If interrupted, you can still complete a normal long rest."
+            ]
+        },
+        {
+            "name": "Avalanche Stomp",
+            "source": "FA",
+            "className": "Barbarian",
+            "classSource": "PHB",
+            "subclassShortName": "Glacier",
+            "subclassSource": "FA",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "At 14th level, you become as mighty as an unstoppable glacier. As an action, you can stomp the ground to send out a magical tremor. All creatures of your choice within 15 feet of you must make a Dexterity saving throw (DC 8 + your proficiency bonus + your Strength modifier). On a failed save, a creature takes bludgeoning damage equal to {@damage 3d6} + your Strength modifier and is knocked {@condition prone}. If you take this action while you're raging, your rage doesn't end due to not attacking on your turn."
+            ]
+        },
         {
             "name": "Sunken Herald",
             "source": "FA",
@@ -3900,6 +4193,13 @@
         },
         {
             "name": "Expanded Spell List",
+            "source": "FA",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Sunken Herald",
+            "subclassSource": "FA",
+            "level": 1,
+            "header": 1,
             "entries": [
                 {
                     "type": "table",
@@ -3939,27 +4239,20 @@
                         ]
                     ]
                 }
-            ],
-            "source": "FA",
-            "className": "Sorcerer",
-            "classSource": "PHB",
-            "subclassShortName": "Sunken Herald",
-            "subclassSource": "FA",
-            "level": 1,
-            "header": 1
+            ]
         },
         {
             "name": "Between Worlds",
-            "entries": [
-                "Your foul ancestry grants you abilities some consider unnatural. At 1st level, you learn Deep Speech, can breathe both air and water, and have a swim speed equal to your walking speed. Additionally, you can walk across the surface of liquid water as if it were solid ground."
-            ],
             "source": "FA",
             "className": "Sorcerer",
             "classSource": "PHB",
             "subclassShortName": "Sunken Herald",
             "subclassSource": "FA",
             "level": 1,
-            "header": 1
+            "header": 1,
+            "entries": [
+                "Your foul ancestry grants you abilities some consider unnatural. At 1st level, you learn Deep Speech, can breathe both air and water, and have a swim speed equal to your walking speed. Additionally, you can walk across the surface of liquid water as if it were solid ground."
+            ]
         },
         {
             "name": "Malleable Flesh",
@@ -4031,7 +4324,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "At 6th level, the bizarre biology that gave you life allows you to reform your body in horrific ways. When you take damage you can use your reaction to reduce the damage taken by your sorcerer level. If your sorcerer level is greater than the damage taken, you gain the difference as temporary hit points. If the source of damage was a creature and it can see you, it must make a Wisdom saving throw. On a failed save, the target is frightened of you until the end of your next turn.",
+                "At 6th level, the bizarre biology that gave you life allows you to reform your body in horrific ways. When you take damage you can use your reaction to reduce the damage taken by your sorcerer level. If your sorcerer level is greater than the damage taken, you gain the difference as temporary hit points. If the source of damage was a creature and it can see you, it must make a Wisdom saving throw. On a failed save, the target is {@condition frightened} of you until the end of your next turn.",
                 "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a long rest."
             ]
         },
@@ -4045,7 +4338,7 @@
             "level": 14,
             "header": 2,
             "entries": [
-                "At 14th level, your contorting, inhuman body terrifies and disorients your enemies. When you activate Malleable Flesh by casting a spell of 6th level or higher, each creature of your choice that is within 60 feet of you must make a Wisdom saving throw against your sorcerer spell save DC. On a failed save, a target is frightened of you until your transformation ends. While transformed in this way, frightened creatures have disadvantage on saving throws against your spells. A creature repeats the saving throw at the end of its turn, ending the effect on itself on a success. After the effect ends or it succeeds the saving throw, it is immune to this effect for 24 hours."
+                "At 14th level, your contorting, inhuman body terrifies and disorients your enemies. When you activate Malleable Flesh by casting a spell of 6th level or higher, each creature of your choice that is within 60 feet of you must make a Wisdom saving throw against your sorcerer spell save DC. On a failed save, a target is {@condition frightened} of you until your transformation ends. While transformed in this way, frightened creatures have disadvantage on saving throws against your spells. A creature repeats the saving throw at the end of its turn, ending the effect on itself on a success. After the effect ends or it succeeds the saving throw, it is immune to this effect for 24 hours."
             ]
         },
         {
