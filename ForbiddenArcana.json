@@ -3848,7 +3848,7 @@
                 "Borrowed Knowledge|SCC",
                 "Nystul's Magic Aura",
                 "Elemental Weapon",
-                "Intellect Fortress",
+                "Intellect Fortress|TCE",
                 "Fabricate",
                 "Otiluke's Resilient Sphere",
                 "Circle of Power",
@@ -3873,7 +3873,7 @@
                         ],
                         "s3": [
                             "elemental weapon",
-                            "intellect fortress"
+                            "intellect fortress|tce"
                         ],
                         "s4": [
                             "fabricate",
@@ -3912,8 +3912,8 @@
                 "Wrathful Smite",
                 "Branding Smite",
                 "Earthbind|XGE",
+                "Erupting Earth|XGE",
                 "Shielding Storm|FA",
-                "Erupting Earth",
                 "Stone Shape",
                 "Stoneskin",
                 "Banishing Smite",
@@ -3938,7 +3938,7 @@
                             "earthbind|xge"
                         ],
                         "s3": [
-                            "erupting earth",
+                            "erupting earth|xge",
                             "shielding storm|fa"
                         ],
                         "s4": [
@@ -4064,7 +4064,7 @@
                         ],
                         [
                             "3rd",
-                            "{@spell Elemental Weapon}, {@spell Intellect Fortress}"
+                            "{@spell Elemental Weapon}, {@spell Intellect Fortress|TCE}"
                         ],
                         [
                             "4th",
@@ -4310,7 +4310,7 @@
                         ],
                         [
                             "3rd",
-                            "{@spell Erupting Earth}, {@spell Shielding Storm|FA}"
+                            "{@spell Erupting Earth|XGE}, {@spell Shielding Storm|FA}"
                         ],
                         [
                             "4th",
