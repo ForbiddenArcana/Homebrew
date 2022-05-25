@@ -3883,6 +3883,299 @@
             ]
         },
         {
+            "name": "Arcane Knight",
+            "shortName": "Arcane Knight",
+            "source": "FA",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "spellcastingAbility": "int",
+			"casterProgression": "1/3",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Arcane Knight",
+							"source": "FA"
+						}
+					],
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|subclass=Fighter: Eldritch Knight}",
+						"{@filter Spells Known|spells|subclass=Fighter: Eldritch Knight}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							2,
+							3
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							4
+						],
+						[
+							2,
+							5
+						],
+						[
+							2,
+							6
+						],
+						[
+							2,
+							6
+						],
+						[
+							3,
+							7
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							8
+						],
+						[
+							3,
+							9
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							10
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							11
+						],
+						[
+							3,
+							12
+						],
+						[
+							3,
+							13
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"subclasses": [
+						{
+							"name": "Arcane Knight",
+							"source": "FA"
+						}
+					],
+					"colLabels": [
+						"{@filter 1st|spells|level=1|subclass=Fighter: Eldritch Knight}",
+						"{@filter 2nd|spells|level=2|subclass=Fighter: Eldritch Knight}",
+						"{@filter 3rd|spells|level=3|subclass=Fighter: Eldritch Knight}",
+						"{@filter 4th|spells|level=4|subclass=Fighter: Eldritch Knight}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+            "subclassFeatures": [
+                "Arcane Knight|Fighter|PHB|Arcane Knight|FA|3",
+                "Battle Casting|Fighter|PHB|Arcane Knight|FA|7",
+                "Mystic Aegis|Fighter|PHB|Arcane Knight|FA|10",
+                "Improved Battle Casting|Fighter|PHB|Arcane Knight|FA|15",
+                "Arcane Channeling|Fighter|PHB|Arcane Knight|FA|18"
+            ]
+        },
+        {
             "name": "Sunken Herald",
             "shortName": "Sunken Herald",
             "source": "FA",
@@ -4166,6 +4459,196 @@
                 "At 14th level, you become as mighty as an unstoppable glacier. As an action, you can stomp the ground to send out a magical tremor. All creatures of your choice within 15 feet of you must make a Dexterity saving throw (DC 8 + your proficiency bonus + your Strength modifier). On a failed save, a creature takes bludgeoning damage equal to {@damage 3d6} + your Strength modifier and is knocked {@condition prone}. If you take this action while you're raging, your rage doesn't end due to not attacking on your turn."
             ]
         },
+        {
+            "name": "Arcane Knight",
+            "source": "FA",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Arcane Knight",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "This subclass is absolutely most certainly not an in-place replacement for Eldritch Knight. I am not salty that they literally cannot cast spells if they want to use a shield, or that they are horribly multi-attribute dependant, or that their extra attack is crippled by their own features. This subclass is just yet another spellsword that accomplishes the Eldritch Knight fantasy without being god awful at what it's supposed to do. An Eldritch Knight should be as good at casting as a Bladesinger is at fighting. Thank you for coming to my Ted Talk.",
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellcasting|Fighter||Arcane Knight|FA|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Weapon Bond|Fighter||Arcane Knight|FA|3"
+                },
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Guardian|Fighter||Arcane Knight|FA|3"
+				}
+            ]
+        },
+        {
+			"name": "Spellcasting",
+			"source": "FA",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "FA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter wizard spell list|spells|class=wizard}.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"You learn two cantrips of your choice from the {@filter wizard spell list|spells|class=wizard}. You learn an additional wizard cantrip of your choice at 10th level."
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Spell Slots",
+							"entries": [
+								"The Arcane Knight Spellcasting table shows how many spell slots you have to cast your {@filter wizard spells|spells|class=wizard} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+								"For example, if you know the 1st-level spell {@spell shield} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell shield} using either slot."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Spells Known of 1st-Level and Higher",
+							"entries": [
+								"You know three 1st-level wizard spells of your choice, two of which you must choose from the abjuration and evocation spells on the wizard spell list.",
+								"The Spells Known column of the Arcane Knight Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
+								"The spells you learn at 8th, 14th, and 20th level can come from any school of magic.",
+								"Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Spellcasting Ability",
+							"entries": [
+								"Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
+								{
+									"type": "abilityDc",
+									"name": "Spell",
+									"attributes": [
+										"int"
+									]
+								},
+								{
+									"type": "abilityAttackMod",
+									"name": "Spell",
+									"attributes": [
+										"int"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+        },
+        {
+			"name": "Weapon Bond",
+			"source": "FA",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "FA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+                "At 3rd level, you gain the ability to perform a ritual to invest a weapon with your personal arcane energy. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.",
+                "Once the ritual is complete, the weapon is treated as a magic weapon. You may use your bonded weapon as an arcane focus for your arcane knight spells. As long as you can move the arm you are wielding your bonded weapon with, you may cast spells as if the hand you hold it in is empty. If the weapon is on the same plane of existence, you can summon it as a bonus action on your turn, causing it to teleport instantly to your hand.",
+                "You may only have a bond with one weapon at a time. Bonding with a second weapon will break the bond with the first after the ritual's completion."
+			]
+        },
+        {
+			"name": "Arcane Guardian",
+			"source": "FA",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "FA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+                "At 3rd level, you learn the spells {@spell Shield} and {@spell Absorb Elements|XGE}, which do not count towards your arcane knight spells known.",
+                "You gain the ability to project your wards of abjuration outwards to shield others from harm. You may use your reaction to cast {@spell Shield} or {@spell Absorb Elements|XGE} on allies within 15ft as a reaction to them being hit by an attack, or taking acid, cold, fire, lightning or thunder damage. If the target has the Spellcasting or Pact Magic feature, the target may expend one of their spell slots in place of your own to cast the spell."
+			]
+        },
+        {
+			"name": "Battle Casting",
+			"source": "FA",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "FA",
+			"level": 7,
+			"header": 2,
+			"entries": [
+                "At 7th level, you gain the ability to cast minor spells from the movements of your weapon. Whenever you take the attack action, you may cast a cantrip with a casting time of 1 action or bonus action in place of one weapon attack you normally would make."
+			]
+        },
+        {
+			"name": "Mystic Aegis",
+			"source": "FA",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "FA",
+			"level": 10,
+			"header": 2,
+			"entries": [
+                "At 10th level, you learn a special way of casting {@spell Shield} and {@spell Absorb Elements|XGE}. When you cast {@spell Shield} or {@spell Absorb Elements|XGE} at 1st-level using one of your spell slots, it is empowered in one of the following ways:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your target is granted temporary hit-points equal to 2d10 plus your Intelligence modifier (minimum of 1)",
+                        "All creatures of your choice within 10 feet of the target take 2d10 plus your Intelligence modifier (minimum of 1) of force damage"
+                    ]
+                },
+                "If you cast {@spell Shield} or {@spell Absorb Elements|XGE} at 2nd-level or higher, you can instead empower it in both ways."
+			]
+        },
+        {
+			"name": "Improved Battle Casting",
+			"source": "FA",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "FA",
+			"level": 15,
+			"header": 2,
+			"entries": [
+                "At 15th level, you can cast more powerful spells with the movements of your weapon. When you take the attack action, you may cast any arcane knight spell you know with a casting time of 1 action or bonus action in place of one weapon attack you normally would make."
+			]
+        },
+        {
+			"name": "Arcane Channeling",
+			"source": "FA",
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "FA",
+			"level": 18,
+			"header": 2,
+			"entries": [
+                "At 18th level, you gain the ability to charge your bonded weapon with the energy of your spells. On your turn, you can use a bonus action to cast an arcane knight spell with a casting time of 1 action or bonus action into your bonded weapon. The next time you hit a creature with your bonded weapon, you may choose to release the contained spell, casting it instantaneously.", 
+                "If the spell targets an area, it must be centered on the bonded weapon. If the spell targets one or more creatures, the creature hit by the weapon must be one of them. The creature hit by your bonded weapon has disadvantage on saving throws triggered by the stored spell. If the spell requires an attack roll against the creature hit by your bonded weapon, the spell attack has advantage.",
+                "The spell is stored in your weapon for up to 1 minute, or until you lose concentration."
+			]
+		},
         {
             "name": "Sunken Herald",
             "source": "FA",
