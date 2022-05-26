@@ -3952,6 +3952,18 @@
             ]
         },
         {
+            "name": "College of Shanties",
+            "shortName": "Shanties",
+            "source": "FA",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassFeatures": [
+                "College of Shanties|Bard||Shanties|FA|3",
+                "Know the Ropes|Bard||Shanties|FA|6",
+                "Sea Medley|Bard||Shanties|FA|14"
+            ]
+        },
+        {
             "name": "Arcane Knight",
             "shortName": "Arcane Knight",
             "source": "FA",
@@ -4770,6 +4782,126 @@
             "entries": [
                 "At 14th level, you become as mighty as an unstoppable glacier. As an action, you can stomp the ground to send out a magical tremor. All creatures of your choice within 15 feet of you must make a Dexterity saving throw (DC 8 + your proficiency bonus + your Strength modifier). On a failed save, a creature takes bludgeoning damage equal to {@damage 3d6} + your Strength modifier and is knocked {@condition prone}. If you take this action while you're raging, your rage doesn't end due to not attacking on your turn."
             ]
+        },
+        {
+            "name": "College of Shanties",
+            "source": "FA",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Shanties",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This subclass taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                    ]
+                },
+                "The College of Shanties is an “informal” college, a loose community of tradesmen that work in environments with harsh, repetitive labor. Far from studying theory or undertaking long apprenticeships, a shantyman learns practical skills on the job.",
+                "It's a common turn of phrase that “a good shantyman is worth four extra hands on the rope.” The bards of this college support their allies by working alongside them and leading by example. They know the perfect tune for every situation, from drinking and carousing (skills they generally excel at) to working and fighting.",
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Three Sheets to the Wind|Bard||Shanties|FA|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blow the Man Down|Bard||Shanties|FA|3"
+                }
+            ]
+        },
+        {
+			"name": "Three Sheets to the Wind",
+			"source": "FA",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Shanties",
+			"subclassSource": "FA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+                "When you join the College of Shanties at 3rd level, you gain proficiency with {@item brewer's supplies|PHB} and you can choose to use a mug or tankard as a spellcasting focus for your bard spells in place of a musical instrument.",
+                "Your quick wit has been known to get you both in and out of trouble. You learn the {@spell vicious mockery} cantrip, which doesn't count against the number of bard cantrips you know. If you already know this cantrip, then you learn a different {@filter bard cantrip|spells|class=bard;level=cantrip} of your choice."
+			]
+        },
+        {
+			"name": "Blow the Man Down",
+			"source": "FA",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Shanties",
+			"subclassSource": "FA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+                "At 3rd level, you gain the ability to coordinate your allies with raucous songs. As a bonus action, you can expend one use of your Bardic Inspiration to start performing a sea shanty.",
+                "While singing a sea shanty, when a hostile creature within range misses you or an ally with an attack, you can use your reaction to improvise a jeer or insult into the lyrics and cast {@spell vicious mockery}, targeting that creature.",
+                "The particular shanty you choose to sing gives additional benefets. Choose from one of the following options:",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                             "type": "entries",
+                             "name": "Haul Away Joe",
+                             "entries": [
+                                 "Once per turn, when a creature within range provokes an opportunity attack you can impose disadvantage on the attack roll."
+                             ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Blood Red Roses",
+                            "entries": [
+                                "Once per turn, when a creature within range makes a melee attack roll and misses, you can allow it to reroll the attack roll against a different target within range."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Fiddler's Green",
+                            "entries": [
+                                "Once per turn, when a creature within range makes a saving throw, you can give that creature advantage on the save."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Drunken Sailor",
+                            "entries": [
+                                "Once per turn, when a creature within range fails a saving throw you can cause them to stumble 10 feet in a direction of your choice."
+                            ]
+                        }
+                    ]
+                },
+                "The performance lasts for up to 1 minute or until your concentration ends (as if you were concentrating on a spell), and can be used on any creature that can hear you within 15 feet of you. It ends early if you are incapacitated, become unable to speak, start a new performance, or end it voluntarily (no action required).",
+                "The range of your performance improves when you reach certain levels in this class, increasing to 20 feet at 5th level, 25 feet at 10th level, and 30 feet at 15th level."
+			]
+        },
+        {
+			"name": "Know the Ropes",
+			"source": "FA",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Shanties",
+			"subclassSource": "FA",
+			"level": 6,
+			"header": 2,
+			"entries": [
+                "At 6th level, you've learned to keep perfect tempo while you focus on the task at hand. You no longer need to concentrate on your shanty performances.",
+                "In addition, you gain the ability to weave your shanties with the disruptive power of your Countercharm ability. While you are performing, any ally in range is affected by your Countercharm."
+			]
+        },
+        {
+			"name": "Sea Medley",
+			"source": "FA",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Shanties",
+			"subclassSource": "FA",
+			"level": 14,
+			"header": 2,
+			"entries": [
+                "At 14th level, your mastery of the form allows you to seamlessly flow from one song to another. When you start your performance you can choose two options instead of one.",
+                "Additionally, while you are performing, each creature of your choice within range gain a bonus to {@skill Performance} checks equal to your Charisma modifier (minimum of +1)."
+			]
         },
         {
             "name": "Arcane Knight",
