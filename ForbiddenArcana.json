@@ -3964,290 +3964,330 @@
             ]
         },
         {
+            "name": "Entropy Domain",
+            "shortName": "Entropy",
+            "source": "FA",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "1": [
+                            "detect magic",
+                            "inflict wounds"
+                        ],
+                        "3": [
+                            "silence",
+                            "darkness"
+                        ],
+                        "5": [
+                            "dispel magic",
+                            "counterspell"
+                        ],
+                        "7": [
+                            "dimension door",
+                            "death ward"
+                        ],
+                        "9": [
+                            "circle of power",
+                            "hallow"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Entropy Domain|Cleric||Entropy|FA|1",
+                "Channel Divinity: Arcane Disruption|Cleric||Entropy|FA|2",
+                "Entropic Retaliation|Cleric||Entropy|FA|6",
+                "Potent Spellcasting|Cleric||Entropy|FA|8",
+                "Emissary of Entropy|Cleric||Entropy|FA|17"
+            ]
+        },
+        {
             "name": "Arcane Knight",
             "shortName": "Arcane Knight",
             "source": "FA",
             "className": "Fighter",
             "classSource": "PHB",
             "spellcastingAbility": "int",
-			"casterProgression": "1/3",
-			"cantripProgression": [
-				0,
-				0,
-				2,
-				2,
-				2,
-				2,
-				2,
-				2,
-				2,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3
-			],
-			"spellsKnownProgression": [
-				0,
-				0,
-				3,
-				4,
-				4,
-				4,
-				5,
-				6,
-				6,
-				7,
-				8,
-				8,
-				9,
-				10,
-				10,
-				11,
-				11,
-				11,
-				12,
-				13
-			],
-			"subclassTableGroups": [
-				{
-					"subclasses": [
-						{
-							"name": "Arcane Knight",
-							"source": "FA"
-						}
-					],
-					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|subclass=Fighter: Eldritch Knight}",
-						"{@filter Spells Known|spells|subclass=Fighter: Eldritch Knight}"
-					],
-					"rows": [
-						[
-							0,
-							0
-						],
-						[
-							0,
-							0
-						],
-						[
-							2,
-							3
-						],
-						[
-							2,
-							4
-						],
-						[
-							2,
-							4
-						],
-						[
-							2,
-							4
-						],
-						[
-							2,
-							5
-						],
-						[
-							2,
-							6
-						],
-						[
-							2,
-							6
-						],
-						[
-							3,
-							7
-						],
-						[
-							3,
-							8
-						],
-						[
-							3,
-							8
-						],
-						[
-							3,
-							9
-						],
-						[
-							3,
-							10
-						],
-						[
-							3,
-							10
-						],
-						[
-							3,
-							11
-						],
-						[
-							3,
-							11
-						],
-						[
-							3,
-							11
-						],
-						[
-							3,
-							12
-						],
-						[
-							3,
-							13
-						]
-					]
-				},
-				{
-					"title": "Spell Slots per Spell Level",
-					"subclasses": [
-						{
-							"name": "Arcane Knight",
-							"source": "FA"
-						}
-					],
-					"colLabels": [
-						"{@filter 1st|spells|level=1|subclass=Fighter: Eldritch Knight}",
-						"{@filter 2nd|spells|level=2|subclass=Fighter: Eldritch Knight}",
-						"{@filter 3rd|spells|level=3|subclass=Fighter: Eldritch Knight}",
-						"{@filter 4th|spells|level=4|subclass=Fighter: Eldritch Knight}"
-					],
-					"rowsSpellProgression": [
-						[
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							2,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							1
-						]
-					]
-				}
-			],
+            "casterProgression": "1/3",
+            "cantripProgression": [
+                0,
+                0,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+            ],
+            "spellsKnownProgression": [
+                0,
+                0,
+                3,
+                4,
+                4,
+                4,
+                5,
+                6,
+                6,
+                7,
+                8,
+                8,
+                9,
+                10,
+                10,
+                11,
+                11,
+                11,
+                12,
+                13
+            ],
+            "subclassTableGroups": [
+                {
+                    "subclasses": [
+                        {
+                            "name": "Arcane Knight",
+                            "source": "FA"
+                        }
+                    ],
+                    "colLabels": [
+                        "{@filter Cantrips Known|spells|level=0|subclass=Fighter: Eldritch Knight}",
+                        "{@filter Spells Known|spells|subclass=Fighter: Eldritch Knight}"
+                    ],
+                    "rows": [
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            3
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            4
+                        ],
+                        [
+                            2,
+                            5
+                        ],
+                        [
+                            2,
+                            6
+                        ],
+                        [
+                            2,
+                            6
+                        ],
+                        [
+                            3,
+                            7
+                        ],
+                        [
+                            3,
+                            8
+                        ],
+                        [
+                            3,
+                            8
+                        ],
+                        [
+                            3,
+                            9
+                        ],
+                        [
+                            3,
+                            10
+                        ],
+                        [
+                            3,
+                            10
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            11
+                        ],
+                        [
+                            3,
+                            12
+                        ],
+                        [
+                            3,
+                            13
+                        ]
+                    ]
+                },
+                {
+                    "title": "Spell Slots per Spell Level",
+                    "subclasses": [
+                        {
+                            "name": "Arcane Knight",
+                            "source": "FA"
+                        }
+                    ],
+                    "colLabels": [
+                        "{@filter 1st|spells|level=1|subclass=Fighter: Eldritch Knight}",
+                        "{@filter 2nd|spells|level=2|subclass=Fighter: Eldritch Knight}",
+                        "{@filter 3rd|spells|level=3|subclass=Fighter: Eldritch Knight}",
+                        "{@filter 4th|spells|level=4|subclass=Fighter: Eldritch Knight}"
+                    ],
+                    "rowsSpellProgression": [
+                        [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            2,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            3,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            2,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            2,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1
+                        ],
+                        [
+                            4,
+                            3,
+                            3,
+                            1
+                        ]
+                    ]
+                }
+            ],
             "subclassFeatures": [
                 "Arcane Knight|Fighter|PHB|Arcane Knight|FA|3",
                 "Battle Casting|Fighter|PHB|Arcane Knight|FA|7",
@@ -4802,39 +4842,39 @@
                 "The College of Shanties is an “informal” college, a loose community of tradesmen that work in environments with harsh, repetitive labor. Far from studying theory or undertaking long apprenticeships, a shantyman learns practical skills on the job.",
                 "It's a common turn of phrase that “a good shantyman is worth four extra hands on the rope.” The bards of this college support their allies by working alongside them and leading by example. They know the perfect tune for every situation, from drinking and carousing (skills they generally excel at) to working and fighting.",
                 {
-					"type": "refSubclassFeature",
-					"subclassFeature": "Three Sheets to the Wind|Bard||Shanties|FA|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Blow the Man Down|Bard||Shanties|FA|3"
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Three Sheets to the Wind|Bard||Shanties|FA|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Blow the Man Down|Bard||Shanties|FA|3"
                 }
             ]
         },
         {
-			"name": "Three Sheets to the Wind",
-			"source": "FA",
-			"className": "Bard",
-			"classSource": "PHB",
-			"subclassShortName": "Shanties",
-			"subclassSource": "FA",
-			"level": 3,
-			"header": 1,
-			"entries": [
+            "name": "Three Sheets to the Wind",
+            "source": "FA",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Shanties",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
                 "When you join the College of Shanties at 3rd level, you gain proficiency with {@item brewer's supplies|PHB} and you can choose to use a mug or tankard as a spellcasting focus for your bard spells in place of a musical instrument.",
                 "Your quick wit has been known to get you both in and out of trouble. You learn the {@spell vicious mockery} cantrip, which doesn't count against the number of bard cantrips you know. If you already know this cantrip, then you learn a different {@filter bard cantrip|spells|class=bard;level=cantrip} of your choice."
-			]
+            ]
         },
         {
-			"name": "Blow the Man Down",
-			"source": "FA",
-			"className": "Bard",
-			"classSource": "PHB",
-			"subclassShortName": "Shanties",
-			"subclassSource": "FA",
-			"level": 3,
-			"header": 1,
-			"entries": [
+            "name": "Blow the Man Down",
+            "source": "FA",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Shanties",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
                 "At 3rd level, you gain the ability to coordinate your allies with raucous songs. As a bonus action, you can expend one use of your Bardic Inspiration to start performing a sea shanty.",
                 "While singing a sea shanty, when a hostile creature within range misses you or an ally with an attack, you can use your reaction to improvise a jeer or insult into the lyrics and cast {@spell vicious mockery}, targeting that creature.",
                 "The particular shanty you choose to sing gives additional benefets. Choose from one of the following options:",
@@ -4873,35 +4913,157 @@
                 },
                 "The performance lasts for up to 1 minute or until your concentration ends (as if you were concentrating on a spell), and can be used on any creature that can hear you within 15 feet of you. It ends early if you are incapacitated, become unable to speak, start a new performance, or end it voluntarily (no action required).",
                 "The range of your performance improves when you reach certain levels in this class, increasing to 20 feet at 5th level, 25 feet at 10th level, and 30 feet at 15th level."
-			]
+            ]
         },
         {
-			"name": "Know the Ropes",
-			"source": "FA",
-			"className": "Bard",
-			"classSource": "PHB",
-			"subclassShortName": "Shanties",
-			"subclassSource": "FA",
-			"level": 6,
-			"header": 2,
-			"entries": [
+            "name": "Know the Ropes",
+            "source": "FA",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Shanties",
+            "subclassSource": "FA",
+            "level": 6,
+            "header": 2,
+            "entries": [
                 "At 6th level, you've learned to keep perfect tempo while you focus on the task at hand. You no longer need to concentrate on your shanty performances.",
                 "In addition, you gain the ability to weave your shanties with the disruptive power of your Countercharm ability. While you are performing, any ally in range is affected by your Countercharm."
-			]
+            ]
         },
         {
-			"name": "Sea Medley",
-			"source": "FA",
-			"className": "Bard",
-			"classSource": "PHB",
-			"subclassShortName": "Shanties",
-			"subclassSource": "FA",
-			"level": 14,
-			"header": 2,
-			"entries": [
+            "name": "Sea Medley",
+            "source": "FA",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassShortName": "Shanties",
+            "subclassSource": "FA",
+            "level": 14,
+            "header": 2,
+            "entries": [
                 "At 14th level, your mastery of the form allows you to seamlessly flow from one song to another. When you start your performance you can choose two options instead of one.",
                 "Additionally, while you are performing, each creature of your choice within range gain a bonus to {@skill Performance} checks equal to your Charisma modifier (minimum of +1)."
-			]
+            ]
+        },
+        {
+            "name": "Entropy Domain",
+            "source": "FA",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Entropy",
+            "subclassSource": "FA",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This subclass is taken/modified from The Lost City of Mezro: https://www.dmsguild.com/product/258780/Lost-City-of-Mezro"
+                    ]
+                },
+                "Heretics preach of a void at the center of the universe that dying gods created to devour the Weave. The necrotic energy it emits is called “Entropy”: a potent force that clerics can harness to shield themselves from magic and annihilate arcane casters. The chained god Tharizdun claims this domain, while in Chessenta, a giant sphere of annihilation is worshipped as an aspect of Entropy itself. Cultists who wield the power go by many names: thaumatoclasts, entropomancers, or entropists.",
+                {
+                    "type": "table",
+                    "caption": "Entropy Domain Spells",
+                    "colLabels": [
+                        "Cleric Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell detect magic}, {@spell inflict wounds}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell silence}, {@spell darkness}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell dispel magic}, {@spell counterspell}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell dimension door}, {@spell death ward}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell circle of power}, {@spell hallow}"
+                        ]
+                    ]
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Sanctity of Body|Cleric||Entropy|FA|1"
+                }
+            ]
+        },
+        {
+            "name": "Sanctity of Body",
+            "source": "FA",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Entropy",
+            "subclassSource": "FA",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "When you choose this domain at 1st level, you perform a ritual to anchor your soul to the material plane. You have advantage when making death saving throws."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Arcane Disruption",
+            "source": "FA",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Entropy",
+            "subclassSource": "FA",
+            "level": 2,
+            "header": 2,
+            "entries": [
+                "Starting at 2nd level, you can use your Channel Divinity to disrupt the flow of magic in your vicinity. As an action, you conjure an aura of disruptive energy that radiates from you in a 15-foot radius. The aura lasts for one minute or until you are {@condition incapacitated}. The aura moves with you, centered on you. While inside the aura, any creature that attempts to cast a spell must first succeed on a Constitution saving throw. If they fail the save, their spell fails to cast and the spell slot is wasted."
+            ]
+        },
+        {
+            "name": "Entropic Retaliation",
+            "source": "FA",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Entropy",
+            "subclassSource": "FA",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Starting at 6th level, when you or an ally within 30 feet of you takes damage from a spell, you can use your reaction to cause the caster to make a Constitution saving throw. If the caster fails its saving throw, it gains one level of {@condition exhaustion}."
+            ]
+        },
+        {
+            "name": "Potent Spellcasting",
+            "source": "FA",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Entropy",
+            "subclassSource": "FA",
+            "level": 8,
+            "header": 2,
+            "entries": [
+                "At 8th level, you add your Wisdom modifier to the damage you deal with any cantrip."
+            ]
+        },
+        {
+            "name": "Emissary of Entropy",
+            "source": "FA",
+            "className": "Cleric",
+            "classSource": "PHB",
+            "subclassShortName": "Entropy",
+            "subclassSource": "FA",
+            "level": 17,
+            "header": 2,
+            "entries": [
+                "At 17th level, you have advantage on saving throws against spells. In addition, when you succeed on a saving throw against a spell, you gain 5 temporary hit points for each slot level of the spell."
+            ]
         },
         {
             "name": "Arcane Knight",
@@ -4915,145 +5077,145 @@
             "entries": [
                 "This subclass is absolutely most certainly not an in-place replacement for Eldritch Knight. I am not salty that they literally cannot cast spells if they want to use a shield, or that they are horribly multi-attribute dependent, or that their extra attack is crippled by their own features. This subclass is just yet another spellsword that accomplishes the Eldritch Knight fantasy without being god awful at what it's supposed to do. An Eldritch Knight should be as good at casting as a Bladesinger is at fighting. Thank you for coming to my Ted Talk.",
                 {
-					"type": "refSubclassFeature",
-					"subclassFeature": "Spellcasting|Fighter||Arcane Knight|FA|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Weapon Bond|Fighter||Arcane Knight|FA|3"
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Spellcasting|Fighter||Arcane Knight|FA|3"
                 },
                 {
-					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Guardian|Fighter||Arcane Knight|FA|3"
-				}
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Weapon Bond|Fighter||Arcane Knight|FA|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Arcane Guardian|Fighter||Arcane Knight|FA|3"
+                }
             ]
         },
         {
-			"name": "Spellcasting",
-			"source": "FA",
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Arcane Knight",
-			"subclassSource": "FA",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter wizard spell list|spells|class=wizard}.",
-				{
-					"type": "entries",
-					"name": "Cantrips",
-					"entries": [
-						"You learn two cantrips of your choice from the {@filter wizard spell list|spells|class=wizard}. You learn an additional wizard cantrip of your choice at 10th level."
-					]
-				},
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Spell Slots",
-							"entries": [
-								"The Arcane Knight Spellcasting table shows how many spell slots you have to cast your {@filter wizard spells|spells|class=wizard} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-								"For example, if you know the 1st-level spell {@spell shield} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell shield} using either slot."
-							]
-						}
-					]
-				},
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Spells Known of 1st-Level and Higher",
-							"entries": [
-								"You know three 1st-level wizard spells of your choice, two of which you must choose from the abjuration and evocation spells on the wizard spell list.",
-								"The Spells Known column of the Arcane Knight Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
-								"The spells you learn at 8th, 14th, and 20th level can come from any school of magic.",
-								"Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic."
-							]
-						}
-					]
-				},
-				{
-					"type": "entries",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Spellcasting Ability",
-							"entries": [
-								"Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
-								{
-									"type": "abilityDc",
-									"name": "Spell",
-									"attributes": [
-										"int"
-									]
-								},
-								{
-									"type": "abilityAttackMod",
-									"name": "Spell",
-									"attributes": [
-										"int"
-									]
-								}
-							]
-						}
-					]
-				}
-			]
+            "name": "Spellcasting",
+            "source": "FA",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Arcane Knight",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter wizard spell list|spells|class=wizard}.",
+                {
+                    "type": "entries",
+                    "name": "Cantrips",
+                    "entries": [
+                        "You learn two cantrips of your choice from the {@filter wizard spell list|spells|class=wizard}. You learn an additional wizard cantrip of your choice at 10th level."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Spell Slots",
+                            "entries": [
+                                "The Arcane Knight Spellcasting table shows how many spell slots you have to cast your {@filter wizard spells|spells|class=wizard} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+                                "For example, if you know the 1st-level spell {@spell shield} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell shield} using either slot."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Spells Known of 1st-Level and Higher",
+                            "entries": [
+                                "You know three 1st-level wizard spells of your choice, two of which you must choose from the abjuration and evocation spells on the wizard spell list.",
+                                "The Spells Known column of the Arcane Knight Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
+                                "The spells you learn at 8th, 14th, and 20th level can come from any school of magic.",
+                                "Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Spellcasting Ability",
+                            "entries": [
+                                "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
+                                {
+                                    "type": "abilityDc",
+                                    "name": "Spell",
+                                    "attributes": [
+                                        "int"
+                                    ]
+                                },
+                                {
+                                    "type": "abilityAttackMod",
+                                    "name": "Spell",
+                                    "attributes": [
+                                        "int"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
-			"name": "Weapon Bond",
-			"source": "FA",
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Arcane Knight",
-			"subclassSource": "FA",
-			"level": 3,
-			"header": 1,
-			"entries": [
+            "name": "Weapon Bond",
+            "source": "FA",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Arcane Knight",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
                 "At 3rd level, you gain the ability to perform a ritual to invest a weapon with your personal arcane energy. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.",
                 "Once the ritual is complete, the weapon is treated as a magic weapon. You may use your bonded weapon as an arcane focus for your arcane knight spells. As long as you can move the arm you are wielding your bonded weapon with, you may cast spells as if the hand you hold it in is empty. If the weapon is on the same plane of existence, you can summon it as a bonus action on your turn, causing it to teleport instantly to your hand.",
                 "You may only have a bond with one weapon at a time. Bonding with a second weapon will break the bond with the first after the ritual's completion."
-			]
+            ]
         },
         {
-			"name": "Arcane Guardian",
-			"source": "FA",
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Arcane Knight",
-			"subclassSource": "FA",
-			"level": 3,
-			"header": 1,
-			"entries": [
+            "name": "Arcane Guardian",
+            "source": "FA",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Arcane Knight",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
                 "At 3rd level, you learn the spells {@spell Shield} and {@spell Absorb Elements|XGE}, which do not count towards your arcane knight spells known.",
                 "You gain the ability to project your wards of abjuration outwards to shield others from harm. You may use your reaction to cast {@spell Shield} or {@spell Absorb Elements|XGE} on allies within 15ft as a reaction to them being hit by an attack, or taking acid, cold, fire, lightning or thunder damage. If the target has the Spellcasting or Pact Magic feature, the target may expend one of their spell slots in place of your own to cast the spell."
-			]
+            ]
         },
         {
-			"name": "Battle Casting",
-			"source": "FA",
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Arcane Knight",
-			"subclassSource": "FA",
-			"level": 7,
-			"header": 2,
-			"entries": [
+            "name": "Battle Casting",
+            "source": "FA",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Arcane Knight",
+            "subclassSource": "FA",
+            "level": 7,
+            "header": 2,
+            "entries": [
                 "At 7th level, you gain the ability to cast minor spells from the movements of your weapon. Whenever you take the attack action, you may cast a cantrip with a casting time of 1 action or bonus action in place of one weapon attack you normally would make."
-			]
+            ]
         },
         {
-			"name": "Mystic Aegis",
-			"source": "FA",
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Arcane Knight",
-			"subclassSource": "FA",
-			"level": 10,
-			"header": 2,
-			"entries": [
+            "name": "Mystic Aegis",
+            "source": "FA",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Arcane Knight",
+            "subclassSource": "FA",
+            "level": 10,
+            "header": 2,
+            "entries": [
                 "At 10th level, you learn a special way of casting {@spell Shield} and {@spell Absorb Elements|XGE}. When you cast {@spell Shield} or {@spell Absorb Elements|XGE} at 1st-level using one of your spell slots, it is empowered in one of the following ways:",
                 {
                     "type": "list",
@@ -5063,31 +5225,31 @@
                     ]
                 },
                 "If you cast {@spell Shield} or {@spell Absorb Elements|XGE} at 2nd-level or higher, you can instead empower it in both ways."
-			]
+            ]
         },
         {
-			"name": "Improved Battle Casting",
-			"source": "FA",
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Arcane Knight",
-			"subclassSource": "FA",
-			"level": 15,
-			"header": 2,
-			"entries": [
+            "name": "Improved Battle Casting",
+            "source": "FA",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Arcane Knight",
+            "subclassSource": "FA",
+            "level": 15,
+            "header": 2,
+            "entries": [
                 "At 15th level, you can cast more powerful spells with the movements of your weapon. When you take the attack action, you may cast any arcane knight spell you know with a casting time of 1 action or bonus action in place of one weapon attack you normally would make."
-			]
+            ]
         },
         {
-			"name": "Arcane Channeling",
-			"source": "FA",
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Arcane Knight",
-			"subclassSource": "FA",
-			"level": 18,
-			"header": 2,
-			"entries": [
+            "name": "Arcane Channeling",
+            "source": "FA",
+            "className": "Fighter",
+            "classSource": "PHB",
+            "subclassShortName": "Arcane Knight",
+            "subclassSource": "FA",
+            "level": 18,
+            "header": 2,
+            "entries": [
                 "At 18th level, you gain the ability to charge your bonded weapon with the energy of your spells. On your turn, you can use a bonus action to cast an arcane knight spell with a casting time of 1 action or bonus action into your bonded weapon. The next time you hit a creature with your bonded weapon, you may choose to release the contained spell, casting it instantaneously.", 
                 "If the spell targets an area, it must be centered on the bonded weapon. If the spell targets one or more creatures, the creature hit by the weapon must be one of them. The creature hit by your bonded weapon has disadvantage on saving throws triggered by the stored spell. If the spell requires an attack roll against the creature hit by your bonded weapon, the spell attack has advantage.",
                 "The spell is stored in your weapon for up to 1 minute, or until you lose concentration."
