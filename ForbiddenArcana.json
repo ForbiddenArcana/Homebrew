@@ -3837,6 +3837,57 @@
     ],
     "subclass": [
         {
+            "name": "Defiler",
+            "shortName": "Defiler",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSpells": [
+                "Grease",
+                "Ray of Sickness",
+                "Protection from Poison",
+                "Ray of Enfeeblement",
+                "Hunger of Hadar",
+                "Magic Circle",
+                "Blight",
+                "Halucinatory Terrain",
+                "Cloudkill",
+                "Contagion"
+            ],
+            "subclassFeatures": [
+                "Defiler|Artificer|TCE|Defiler|FA|3",
+                "Creeping Corruption|Artificer|TCE|Defiler|FA|5",
+                "Reduced Casualties|Artificer|TCE|Defiler|FA|9",
+                "Profane Empowerment|Artificer|TCE|Defiler|FA|15"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "s1": [
+                            "grease",
+                            "ray of sickness"
+                        ],
+                        "s2": [
+                            "protection from poison",
+                            "ray of enfeeblement"
+                        ],
+                        "s3": [
+                            "hunger of hadar",
+                            "magic circle"
+                        ],
+                        "s4": [
+                            "blight",
+                            "hallucinatory terrain"
+                        ],
+                        "s5": [
+                            "cloudkill",
+                            "contagion"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
             "name": "Infuser",
             "shortName": "Infuser",
             "source": "FA",
@@ -4302,6 +4353,190 @@
     ],
     "subclassFeature": [
         {
+            "name": "Defiler",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Defiler",
+            "subclassSource": "FA",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This subclass is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                    ]
+                },
+                "A Defiler is a master of deadly substances both caustic and corruptive, using foul mixtures to create sickeningly permanent effects. Any battlefield a Defiler enters is hauntingly marked with cruel magic that scars the landscape and mutilates its victims. Valued for scorched-earth warfare, members of the specialization are summoned when morals and long-term consequences no longer matter.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Defiler Spells|Artificer|TCE|Defiler|FA|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Bonus Proficiencies|Artificer|TCE|Defiler|FA|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tainted Ground|Artificer|TCE|Defiler|FA|3"
+                }
+            ]
+        },
+        {
+            "name": "Defiler Spells",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Defiler",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                {
+                    "type": "table",
+                    "caption": "Defiler Expanded Spells",
+                    "colLabels": [
+                        "Spell Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell Grease}, {@spell Ray of Sickness}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell Protection from Poison}, {@spell Ray of Enfeeblement}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell Hunger of Hadar}, {@spell Magic Circle}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell Blight}, {@spell Hallucinatory Terrain}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Cloudkill}, {@spell Contagion}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bonus Proficiencies",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Defiler",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "When you adopt this specialization at 3rd level, you gain proficiency with the {@item poisoner's kit|PHB}, and can use it as a spellcasting focus for your artificer spells. If you already have this proficiency, you gain proficiency with one other type of {@filter artisan's tools|items|type=artisan's tools} of your choice."
+            ]
+        },
+        {
+            "name": "Tainted Ground",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Defiler",
+            "subclassSource": "FA",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "At 3rd level, you learn to magically salt the earth around you, corrupting it and sickening creatures that enter the contaminated area. As an action, you can use a {@item poisoner's kit|PHB} to befoul a 10-foot cube you can see within 60 feet of you, choosing one of the options listed below. The area becomes corrupted for 1 minute, until you use this feature again, or until it is dispelled by a {@spell Dispel Magic} spell. An area affected by this feature remains forever scarred and unable to support any kind of plant or animal life after the effect ends. You are immune to the effects of Tainted Ground that you create.",
+                "You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). You regain all expended uses when you finish a long rest.",
+                "You can use a bonus action to spread the corruption to one adjacent 10-foot cube of your choice. The new cube must have at least one face adjacent to another cube of Tainted Ground, and has the same effect as it.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                             "type": "entries",
+                             "name": "Corrosive Smog",
+                             "entries": [
+                                 "Foul, heavy smoke fills the area, scouring the eyes and lungs and lightly obscuring the area. When a creature enters the area for the first time on a turn or starts its turn there, it takes {@dice 1d6} acid damage and must succeed on a Constitution saving throw against your artificer spell save DC or become {@condition blinded} until the start of its next turn. This damage increases when you reach higher levels in this class, to {@dice 2d6} at 5th level, {@dice 3d6} at 9th level, and {@dice 4d6} at 15th level."
+                             ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Draining Tar",
+                            "entries": [
+                                "Sticky black tar fills the area, coating any objects not being worn or carried within it. For every 1 foot a creature moves through this area, it must expend 4 feet of movement. When a creature enters the area for the first time on a turn or starts its turn there, it takes {@dice 1d6} necrotic damage. This damage increases when you reach higher levels in this class, to {@dice 2d6} at 5th level, {@dice 3d6} at 9th level, and {@dice 4d6} at 15th level."
+                            ]
+                       },
+                       {
+                            "type": "entries",
+                            "name": "Raging Inferno",
+                            "entries": [
+                                "Intense supernatural flames burn within the area, igniting flammable objects in the area that aren't being worn or carried. When a creature enters the area for the first time on a turn or starts its turn there, it takes {@dice 1d10} fire damage. This damage increases when you reach higher levels in this class, to {@dice 2d10} at 5th level, {@dice 3d10} at 9th level, and {@dice 4d10} at 15th level."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Vile Radiation",
+                            "entries": [
+                                "Sickly bright light fills the area, befouling all it touches. When a creature enters the area for the first time on a turn or starts its turn there, it takes {@dice 1d6} radiant damage and must succeed on a Constitution saving throw against your artificer spell save DC or become {@condition poisoned} until the start of its next turn. This damage increases when you reach higher levels in this class, to {@dice 2d6} at 5th level, {@dice 3d6} at 9th level, and {@dice 4d6} at 15th level."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Creeping Corruption",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Defiler",
+            "subclassSource": "FA",
+            "level": 5,
+            "header": 2,
+            "entries": [
+                "Starting at 5th level, you can use your Tainted Ground to channel your foul magics. When you cast an artificer spell while standing within an area of Tainted Ground, you choose any point covered by Tainted Ground. The spell is cast as if you were at the chosen point, but you must use your own senses. After you cast a spell of 1st level or higher in this way, you can cause the Tainted Ground to spreads to a number of 10-foot-cubes equal to the spell's level. Each new cube must have at least one face adjacent to another cube of Tainted Ground."
+            ]
+        },
+        {
+            "name": "Reduced Casualties",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Defiler",
+            "subclassSource": "FA",
+            "level": 9,
+            "header": 2,
+            "entries": [
+                "Starting at 9th level, you learn how to protect others from your own powers. When you cast an artificer spell or create an area of Tainted Ground, you can designate any number of creatures you can see to be immune to its effects."
+            ]
+        },
+        {
+            "name": "Profane Empowerment",
+            "source": "FA",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassShortName": "Defiler",
+            "subclassSource": "FA",
+            "level": 15,
+            "header": 2,
+            "entries": [
+                "By 15th level, your exposure to horrific pollutants allows you to become one with the contaminants:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Creatures of your choice have resistance to the damage type dealt by your Tainted Ground while standing in it",
+                        "If you start your turn within an area of Tainted Ground, your speed is increased by 10 feet until the end of the turn",
+                        "When you cast an artificer spell that deals damage while standing in a patch of Tainted Ground, you can choose to change the spell's damage type to the same type that the Tainted Ground deals"
+                    ]
+                }
+            ]
+        },
+        {
             "name": "Infuser",
             "source": "FA",
             "className": "Artificer",
@@ -4546,7 +4781,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "This subclass is absolutely most certainly not an in-place replacement for Eldritch Knight. I am not salty that they literally cannot cast spells if they want to use a shield, or that they are horribly multi-attribute dependant, or that their extra attack is crippled by their own features. This subclass is just yet another spellsword that accomplishes the Eldritch Knight fantasy without being god awful at what it's supposed to do. An Eldritch Knight should be as good at casting as a Bladesinger is at fighting. Thank you for coming to my Ted Talk.",
+                "This subclass is absolutely most certainly not an in-place replacement for Eldritch Knight. I am not salty that they literally cannot cast spells if they want to use a shield, or that they are horribly multi-attribute dependent, or that their extra attack is crippled by their own features. This subclass is just yet another spellsword that accomplishes the Eldritch Knight fantasy without being god awful at what it's supposed to do. An Eldritch Knight should be as good at casting as a Bladesinger is at fighting. Thank you for coming to my Ted Talk.",
                 {
 					"type": "refSubclassFeature",
 					"subclassFeature": "Spellcasting|Fighter||Arcane Knight|FA|3"
@@ -4691,8 +4926,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "Your target is granted temporary hit-points equal to 2d10 plus your Intelligence modifier (minimum of 1)",
-                        "All creatures of your choice within 10 feet of the target take 2d10 plus your Intelligence modifier (minimum of 1) of force damage"
+                        "Your target is granted temporary hit-points equal to {@dice 2d10} plus your Intelligence modifier (minimum of 1)",
+                        "All creatures of your choice within 10 feet of the target take {@dice 2d10} plus your Intelligence modifier (minimum of 1) of force damage"
                     ]
                 },
                 "If you cast {@spell Shield} or {@spell Absorb Elements|XGE} at 2nd-level or higher, you can instead empower it in both ways."
