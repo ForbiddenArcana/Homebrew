@@ -3835,6 +3835,558 @@
             }
         }
     ],
+    "class": [
+		{
+			"name": "Savant",
+			"source": "FA",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"simple",
+					"{@item hand crossbow|phb|hand crossbows}",
+					"{@item shortsword|phb|shortswords}"
+				],
+				"tools": [
+					"One set of tools of your choice"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"history",
+								"insight",
+								"investigation",
+								"medicine",
+								"nature",
+								"persuasion",
+								"religion"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) any two {@filter simple weapons|items|source=phb|category=basic|type=simple weapon} of your choice or (b) a {@item shortsword|phb}",
+					"(a) a {@item light crossbow|phb} and {@item crossbow bolt|phb|20 bolts} or (b) Two {@item dagger|phb|daggers}",
+					"one set of {@item artisan's tools|phb} of your choice",
+					"a {@item scholar's pack|phb}"
+				],
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponSimple",
+								"quantity": 2
+							}
+						],
+                        "b": [
+                            "shortsword"
+                        ]
+					},
+					{
+						"a": [
+							"light crossbow",
+							"bolts"
+						],
+						"b": [
+							"rapier"
+						]
+					},
+					{
+						"_": []
+					},
+					{
+						"_": []
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"arcana",
+									"history",
+									"insight",
+									"investigation",
+									"medicine",
+									"nature",
+									"perception",
+									"persuasion",
+									"religion",
+									"sleight of hand"
+								],
+								"count": 1
+							}
+						}
+					]
+				}
+			},
+			"classFeatures": [
+				"Adroit Analysis|Savant|FA|1",
+				"Unarmored Defense|Savant|FA|1",
+				"Perfect Recall|Savant|FA|1",
+				"Unyielding Mind|Savant|FA|2",
+                "Expert Student|Savant|FA|2",
+				{
+					"classFeature": "Academic Discipline|Savant|FA|3",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Savant|FA|4",
+				"Accelerated Reflexes|Savant|FA|5",
+				"Potent Observation|Savant|FA|5",
+                {
+					"classFeature": "Academic Discipline Feature|Savant|FA|6",
+					"gainSubclassFeature": true
+				},
+                "Keen Awareness|Savant|FA|7",
+				"Ability Score Improvement|Savant|FA|8",
+				"Expert Educator|Savant|FA|9",
+				"Unyielding Mind Improvement|Savant|FA|10",
+				"Flawless Observation|Savant|FA|11",
+                "Potent Observation Improvement|Savant|FA|11",
+				"Ability Score Improvement|Savant|FA|12",
+				{
+					"classFeature": "Academic Discipline Feature|Savant|FA|13",
+					"gainSubclassFeature": true
+				},
+				"Unyielding Will|Savant|FA|14",
+				"Unyielding Mind Improvement|Savant|FA|15",
+				"Ability Score Improvement|Savant|FA|16",
+				{
+					"classFeature": "Academic Discipline Feature|Savant|FA|17",
+					"gainSubclassFeature": true
+				},
+                "Accelerated Reflexes Improvement|Savant|FA|17",
+				"Profound Insight|Savant|FA|18",
+				"Ability Score Improvement|Savant|FA|19",
+				"Undisputed Genius|Savant|FA|20",
+				"Unyielding Mind Improvement|Savant|FA|20"
+			],
+			"subclassTitle": "Academic Disciplines",
+			"fluff": [
+				{
+					"entries": [
+                        {
+                            "type": "inset",
+                            "entries": [
+                                "This class is taken/modified from an older version of The Savant Class: https://www.gmbinder.com/share/-M0ZVK6ndhFyImQPF_aJ"
+                            ]
+                        },
+						"The slender elf cleans his glasses with the corner of his cloak as the dust settles around him. He was the first living thing to set foot in the ancient temple in hundreds of years. His benefactor had paid him a great deal to find this place, and after months of poring over forgotten tomes he had finally figured out its long-lost location. Now, he had a choice to make: would he report back to his benefactor, allowing them to strip the temple of its valuables? Or would he keep the location hidden, and preserve the priceless information found here himself? To a Savant, knowledge is more precious than gold coins.",
+						"The elderly warrior assesses the state of his men; they were exhausted, and almost out of supplies. This was the tenth day of the siege, and the warrior knew that at this point no reinforcements were coming to relieve them. He was too old to be of use in battle, but if his men followed his orders to the letter and without hesitation, they just might have a fighting chance. He stands up, and for what could be the last time, draws his sword.",
+						"A young dwarf bends over his unconscious comrade in the midst of battle, his hands steady as he examines the unconscious soldier's wounds. The elders of his clan had spent a great deal of their fortune to send him to the best university gold could buy. All those hours spent in lectures, libraries, and observation; all for this moment. He thinks back to what he had learned about field medicine from his professors; he begins to dress the soldier's wounds.",
+						{
+							"type": "entries",
+							"name": "Great Minds",
+							"entries": [
+								"There are many intelligent people in the world, but few are true Savants. Born with with an innate desire to learn all they can, and the potential for a genius level intellect, they spend their lives studying anything that those around them are willing to teach them. Savants are often recognized at an early age, and in their hunger for knowledge, they are drawn to great libraries, universities, and other places of higher learning. They will do anything to access the troves of knowledge that lie hidden in the forgotten places of the world; for Savants, no price is too steep to pay for a new discovery.",
+								"Despite their aptitude for learning, most Savants seek to better themselves without having to rely on outside influences. Savants reject the patronage of gods and other powerful beings, and in turn they view wizardry as a shortcut to power for the weak-willed. Relying on their intellect alone, they strive for perfection."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Intense Focus",
+							"entries": [
+								"Savants tend to hyper-focus on their chosen area of expertise. They obsess over it, learning all they can about the subject. Once they reach the climax of learning in that specialty, and there is nothing anyone else can teach them, they do not move on. Instead they will go to great lengths, risking life and limb, to advance their chosen field of study.",
+								"Often at great cost to themselves, Savants will not stop researching, experimenting, and theorizing until they have made an indelible mark on their academic discipline. A Savant's ultimate goal in life is to discover some previously unknown truth about the universe."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Savant",
+							"entries": [
+								"When creating your Savant, consider their upbringing and level of formal education. Were they the star pupil of the kingdom's university? Or did they come from nothing, fighting for any scrap of knowledge they could get their hands on? Were they naturally intelligent, but unable to use their abilities because of obligations to family?",
+								"Whatever their origins, consider why they became an adventurer rather than an academic. Did they learn all they could from the dusty tomes in the library, and now they seek to discover forgotten temples and the knowledge within? Have they advanced beyond study and look to the endless discoveries of a life of adventure?"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"entries": [
+								"You can make a Savant quickly by following these suggestions. First, put your highest ability score in Intelligence, followed by Dexterity. Second, choose the Sage background from the Player's Handbook."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Academic Disciplines",
+							"entries": [
+								"A Savant's Academic Discipline is the focus of their considerable intellect and not a decision they make lightly. The following Academic Disciplines are available to a Savant; Archaeologist, Naturalist, Philosopher, Physician, or Tactician. Your Academic Discipline grants you features at 3rd, 6th, 13th, and 17th levels.",
+								{
+									"type": "entries",
+									"name": "Archaeologist",
+									"entries": [
+										"Specializing in the study of ancient places, forgotten cities, and uncharted lands, Archaeologists boldly walk into the dark and deadly places of the world that they may be illuminated by the light of knowledge. Often funded by powerful politicians, universities, wizards, and other seekers of esoteric knowledge, this way of life has the potential for great profit, if you manage to survive.",
+										"Archaeologists do their best to piece together the lost knowledge of past ages. They tend to feel a sad kinship with the lost civilizations that they study, and will go to great lengths not to destroy or offend their memory. For an Archaeologist, learning from the innovations, and mistakes, of the past is the best way to improve the present and blaze a trail towards a better future."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Naturalist",
+									"entries": [
+										"The Naturalist's classroom begins at the very edges of civilization. They study the environments, flora, and fauna that live beyond the influence of civilized peoples. Naturalists are experts at anticipating weather patterns, knowing the difference between an edible plant and a toxic one, and understanding the behaviors of wild animals. Highly sought after as guides for adventuring parties, Naturalists can safely navigate arid deserts, frigid mountain ranges, and treacherous jungles.",
+										{
+											"type": "inset",
+											"name": "Be Prepared!",
+											"entries": [
+												"Naturalists thrive when they know the challenges that lie ahead. Make sure to use your considerable knowledge to anticipate any dangers that you and your companions may face on your journies.",
+												"However, if things do not go as planned, never fear. A good Naturalist is always prepared for the worst case scenario; their confidence can be a beacon of hope for their allies."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Physician",
+									"entries": [
+										"Mortals have studied the inner workings of living things. Clerics and priests of gods of life and healing, necromancers and despicable liches who seek to raise the dead, and lethal assassins and warriors who learn the most vulnerable points to strike. Unlike all of these, Physicians use their knowledge and mundane science to heal wounds, cure diseases, perform surgeries, and generally improve the quality of life for those that cannot afford the luxury of magical healing.",
+										"As a Physician, you bring you considerable intellect to bear to tend the wounds of any creatures that need your help."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Philosopher",
+									"entries": [
+										"Philosophy is the purest of the Academic Disciplines that Savants pursue. Philosophers spend their lives pondering the deep questions of existence - What is the purpose of life? Why did the gods create the multiverse? What is the nature of the material plane and the planes that surround it?",
+										"Through their study of mathematics, physics, natural sciences, and public speaking, they seek to perfect their knowledge of reality and their place in it. Philosophers make invaluable advisors and thinkers when they are on your side. They range from humble village elders to imperial advisors."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Sleuth",
+									"entries": [
+										"In every society there are those that look to deceive, swindle, and take advantage of the trust of others. Thieves' Guilds that run racketeering schemes, monsters that change their appearance to deceive the innocent, and those who abuse their legitimate authority to extort those who follow the law. Standing in their way is the archetypal Sleuth, those who bend their considerable intellect to uncover the truth.",
+										"As a Sleuth, you excel in rooting out secrets and unraveling mysteries. You rely on your sharp eye for detail, but also on your finely honed ability to read the words and deeds of other creatures to determine their true intent. You excel at defeating creatures that hide among and prey upon ordinary folk, and your mastery of lore and your sharp eye make you well equipped to expose and end hidden evils.",
+										{
+											"type": "inset",
+											"name": "Seekers of Knowledge",
+											"entries": [
+												"Almost every official class in Dungeons & Dragons 5th edition has a subclass whose themes reinforce the base identity of the class. The Champion fighter, the Oath of Devotion paladin, and the Life Domain cleric are some examples. For the Savant, the Sleuth serves this role, improving the potency of the base class abilities without adding too much complexity."
+											]
+										}
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Tactician",
+									"entries": [
+										"Every successful king, conquerer, or rebellion has a master strategist that is responsible for their success on the battlefield. Tacticians constantly work to stay one step ahead of their enemies, and have a plan prepared for every eventuality. They focus on the big picture, and while they may not win every battle, they strive to win the war.",
+										"You have spent your time studying the art of war and long forgotten histories of conquest and glory. You know the strategies that lead to victory, and those that end in ruin. Alone you are no threat, but with powerful allies to command, you are a force to be reckoned with."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Adroit Analysis",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 1,
+			"entries": [
+				"Beginning at 1st level, you can quickly analyze a foe, allowing you to discern their capabilities and land precise strikes. As bonus action on your turn, you can mark a creature within 60 feet that you can see, gaining the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Whenever you make a weapon attack against the marked creature, you can use your Intelligence, in place of your Strength or Dexterity, for the attack and damage rolls.",
+                        "Each time you hit the marked creature with an attack, or observe it for 1 minute, you learn one of the following characteristics of your choice: its Armor Class, maximum hit points, movement speed, or one of its ability scores.",
+                        "As a bonus action, you can make an ability check that uses Intelligence, Wisdom, or Charisma, targeting the creature."
+                    ]
+                },
+				"The creature remains marked for 1 minute or until you are incapacitated or mark another creature with this feature. If multiple creatures you are fighting have the same creature statistics, the mark applies to all of them."
+			]
+		},
+		{
+			"name": "Perfect Recall",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 1,
+			"entries": [
+				"You can recall picture perfect details from things you commit to memory. Starting at 1st level, if you spend at least 1 minute observing something, you can recall any information about it, at any point in the future, without requiring an ability check."
+			]
+		},
+		{
+			"name": "Unarmored Defense",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 1,
+			"entries": [
+				"Your observant way of fighting allows you to anticipate and dodge attacks. Starting at 1st level, when you are not wearing any armor or wielding a shield, your Armor Class is equal to 10 + your Dexterity modifier + your Intelligence modifier."
+			]
+		},
+        {
+			"name": "Expert Student",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 2,
+			"entries": [
+				"Your ability to learn and retain new skills and languages is beyond compare. Starting at 2nd level, each time you finish a long rest, you can choose to learn one additional language, or gain proficiency with one tool, skill, or weapon of your choice.",
+				"You can learn a total number of additional languages and proficiencies through this feature equal to your Intelligence modifier (minimum of 1 language or proficiency), though skill proficiencies gained through this feature count for two. When you choose to learn another language or proficiency while you are at maximum, you must choose one language or proficiency you learned through this feature to forget.",
+                "When you reach 7th level in this class, you can learn one new language or proficiency at the end of each short or long rest."
+			]
+		},
+		{
+			"name": "Unyielding Mind",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 2,
+			"entries": [
+				"You can overexert your intellectual stamina when in need of useful insights or mental fortitude. Beginning at 2nd level, when you make an ability check or saving throw that uses Intelligence, Wisdom, or Charisma, you can choose to add {@dice 1d6} to your roll. You can choose to add this bonus after you roll, but before you learn whether you succeed or fail.",
+				"You can use the feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a short or long rest.",
+                "This bonus increases as you gain levels in this class; at 10th level ({@dice 1d8}), 15th level ({@dice 1d10}), and 20th level ({@dice 1d12})."
+			]
+		},
+		{
+			"name": "Academic Discipline",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 3,
+			"entries": [
+				"At 3rd level, choose an Academic Discipline: Archaeologist, Naturalist, Orator, Physician, Sleuth, or Tactician, each of which is detailed at the end of this class description. Your Academic Discipline grants you features at 3rd level, and again at 6th, 13th, and 17th level in this class."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+			]
+		},
+		{
+			"name": "Accelerated Reflexes",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 5,
+			"entries": [
+				"Your ability to react to the world around you is considerably faster than most creatures. Beginning at 5th level, you gain one additional reaction that you can take in each round of combat. A single effect can only trigger one reaction.",
+				"Upon reaching 17th level, your reflexes increase again, allowing you another reaction per round (for a total of 3)."
+			]
+		},
+		{
+			"name": "Potent Observation",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 5,
+			"entries": [
+				"Starting when you reach 5th level, your observational skills allow you to highlight your foe's weak points for yourself and your allies. When you (or a friendly creature, if you can both see or hear each other) hits your Adroit Analysis marked target with an attack, you can use your reaction to increase the damage of the attack by {@damage 1d10}.",
+                "Starting at 11th level, the bonus damage you add with this reaction becomes {@damage 2d10}."
+			]
+		},
+		{
+			"name": "Academic Discipline Feature",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature granted by your Academic Discipline."
+			]
+		},
+        {
+			"name": "Keen Awareness",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 7,
+			"entries": [
+				"Your mind can react to danger at a moments notice. Starting at 7th level, you gain a bonus to your initiative rolls equal to your Intelligence modifier (minimum of +1), and you cannot be surprised unless you are incapacitated."
+			] 
+        },
+		{
+			"name": "Ability Score Improvement",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats. html}."
+			]
+		},
+		{
+			"name": "Expert Educator",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 9,
+			"entries": [
+				"Your ability to educate others is peerless. Beginning at 9th level, when you finish a long rest, choose a number of willing creatures equal to your Intelligence modifier (minimum of 1), and one tool, skill, or weapon proficiency you have, or one language you know. The chosen creatures gain that proficiency or learn that language until the end of your next long rest."
+			]
+		},
+		{
+			"name": "Unyielding Mind Improvement",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 10,
+			"entries": [
+				"Upon reaching 10th level, increase the size of the die for your Unyielding Mind ability ({@dice 1d8})."
+			]
+		},
+		{
+			"name": "Flawless Observation",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 11,
+			"entries": [
+				"Starting at 11th level, when you (or a friendly creature, if you can both see or hear each other) hit another creature you can see with an attack, you can use your reaction to increase the damage of the attack by {@damage 2d6}."
+			]
+		},
+        {
+			"name": "Potent Observation Improvement",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 11,
+			"entries": [
+				"Upon reaching 11th level, the bonus damage you add with your Potent Observation becomes {@damage 2d10}."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats. html}."
+			]
+		},
+		{
+			"name": "Academic Discipline Feature",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 13,
+			"entries": [
+				"At 13th level, you gain a feature granted by your Academic Discipline."
+			]
+		},
+		{
+			"name": "Unyielding Will",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 14,
+			"entries": [
+				"It is incredibly hard for your foes to dominate you. Starting at 14th level, you have advantage on saving throws to resist being charmed or frightened. If you fail such a saving throw, you can expend two uses of Unyielding Mind to succeed instead."
+			]
+		},
+		{
+			"name": "Unyielding Mind Improvement",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 15,
+			"entries": [
+				"Upon reaching 15th level, increase the size of the die for your Unyielding Mind ability ({@dice d10})."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats. html}."
+			]
+		},
+		{
+			"name": "Academic Discipline Feature",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 17,
+			"entries": [
+				"At 17th level, you gain a feature granted by your Academic Discipline."
+			]
+		},
+		{
+			"name": "Accelerated Reflexes Improvement",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 17,
+			"entries": [
+				"Upon reaching 17th level, you can take up to three reactions per round of combat."
+			]
+		},
+		{
+			"name": "Profound Insight",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 18,
+			"entries": [
+				"Your can predict attacks before they come to pass. Starting at 18th level, any creature marked by your Adroit Analysis has disadvantage on attack rolls they make against you, and you have advantage on any saving throw they force you to make."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats. html}."
+			]
+		},
+		{
+			"name": "Unyielding Mind Improvement",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 20,
+			"entries": [
+				"Upon reaching 20th level, increase the size of the die for your Unyielding Mind ability ({@dice 1d12})."
+			]
+		},
+		{
+			"name": "Undisputed Genius",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 20,
+			"entries": [
+				"Upon reaching 20th level, you realize the true genius-level potential of your mind. Your Intelligence and Wisdom scores increase by 4. Your maximum for those scores is now 24."
+			]
+		}
+	],
     "subclass": [
         {
             "name": "Defiler",
@@ -4254,6 +4806,20 @@
                 "Mystic Aegis|Fighter|PHB|Arcane Knight|FA|10",
                 "Improved Battle Casting|Fighter|PHB|Arcane Knight|FA|15",
                 "Arcane Channeling|Fighter|PHB|Arcane Knight|FA|18"
+            ]
+        },
+        {
+            "name": "Sleuth",
+            "shortName": "Sleuth",
+            "source": "FA",
+            "className": "Savant",
+            "classSource": "FA",
+            "subclassFeatures": [
+                "Sleuth|Savant|FA|Sleuth|FA|3",
+                "Astute Defense|Savant|FA|Sleuth|FA|6",
+                "Sharp Eye|Savant|FA|Sleuth|FA|6",
+                "Peerless Focus|Savant|FA|Sleuth|FA|13",
+                "Master Sleuth|Savant|FA|Sleuth|FA|17"
             ]
         },
         {
@@ -5093,6 +5659,145 @@
                 "The spell is stored in your weapon for up to 1 minute, or until you lose concentration."
             ]
         },
+        {
+			"name": "Sleuth",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"subclassShortName": "Sleuth",
+			"subclassSource": "FA",
+			"level": 3,
+			"entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This subclass is taken/modified from an older version of The Savant Class: https://www.gmbinder.com/share/-M0ZVK6ndhFyImQPF_aJ"
+                    ]
+                },
+				"Excelling at unraveling mysteries and uncovering secrets, the archetypal Sleuth possesses an uncanny ability to read the intent of other creatures. They often spend their lives working against those who look to deceive the innocent and take advantage of the common trust. Their considerable intellect stands in the way of thieves' guilds, monstrous shapeshifters, and officials who abuse their authority. With a keen wit and masterful powers of observation, Sleuths are well equipped to expose and defeat those who hide in the shadows.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Student of Truth|Savant|FA|Sleuth|FA|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Improved Analysis|Savant|FA|Sleuth|FA|3"
+                }
+			]
+		},
+        {
+			"name": "Student of Truth",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"subclassShortName": "Sleuth",
+			"subclassSource": "FA",
+			"level": 3,
+            "header": 1,
+			"entries": [
+				"Your keen observational skills allow you to discern fact from falsehood. When you adopt this Academic Discipline at 3rd level, you gain proficiency in Insight, Investigation, and Perception, and your proficiency bonus is doubled for any ability check you make that uses any of these proficiencies.",
+                "Once you finish a long rest in an area (a given settlement, forest, mountain range, etc.), you have advantage on any Intelligence check you make related to that area or its inhabitants. This benefit lasts until you finish a long rest in a different area."
+			]
+		},
+        {
+			"name": "Improved Analysis",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"subclassShortName": "Sleuth",
+			"subclassSource": "FA",
+			"level": 3,
+            "header": 1,
+			"entries": [
+				"At 3rd level, your quick reads glean even more information from creatures, lending you the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you make an attack against your Adroit Analysis marked target, you can expend a use of Unyielding Mind, adding the bonus to the result of your attack roll.",
+                        "Once per turn, when you hit your Adroit Analysis marked target with a weapon attack, you can choose to re-roll the damage dice, but you must use the new roll.",
+                        "You can learn the following additional characteristics of your Adroit Analysis marked target:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "its alignment",
+                                "whether it's in its true unconcealed form",
+                                "its current hit point total and temp HP total"
+                            ]
+                        }
+                    ]
+                }
+			]
+        },
+		{
+			"name": "Astute Defense",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"subclassShortName": "Sleuth",
+			"subclassSource": "FA",
+			"level": 6,
+            "header": 2,
+			"entries": [
+				"You have an almost supernatural sense that allows you to avoid approaching danger. Starting at 6th level, when a creature you can see hits you with an attack, you can use your reaction to add a bonus equal to your Intelligence modifier (minimum of 1) to your AC against that attack.",
+                "You can use this feature a number of times equal to your Intelligence modifier (minimum of 1), regaining all uses when you finish a long rest."
+			]
+		},
+        {
+			"name": "Sharp Eye",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"subclassShortName": "Sleuth",
+			"subclassSource": "FA",
+			"level": 6,
+            "header": 2,
+			"entries": [
+				"At 6th level, your keen sight improves further, allowing you to notice even the tiniest details and weaknesses, and as such:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You can take the {@action Search} action as a bonus action.",
+                        "You have advantage on any ability check you make to see through illusions or determine if a creature is lying to you.",
+                        "Once per turn, you can re-roll the bonus damage from Potent Observation, but you must use the new roll."
+                    ]
+                }
+			]
+		},
+		{
+			"name": "Peerless Focus",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"subclassShortName": "Sleuth",
+			"subclassSource": "FA",
+			"level": 13,
+            "header": 2,
+			"entries": [
+				"It is rare that you miss even the smallest inconsistency or detail when investigating or looking to exploit a weakness. Starting at 13th level, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When you make an Insight, Investigation, or Perception check, you can treat a roll of 9 or lower on the d20 as a 10.",
+						"You can add your Intelligence modifier to Insight and Perception checks, and can add your Wisdom modifier to Investigation checks.",
+						"You passively detect illusions within 60 feet if your bonus for Investigation checks is equal to or higher than the DC to perceive the illusion."
+					]
+				}
+			]
+		},
+		{
+			"name": "Master Sleuth",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"subclassShortName": "Sleuth",
+			"subclassSource": "FA",
+			"level": 17,
+            "header": 2,
+			"entries": [
+                "At 17th level, your insight into the weak points of your foes allows you and your allies to exploit them with ruthless efficiency. When you (or a friendly creature, if you can both see or hear each other) miss an attack roll, you can use your reaction and expend a use of Unyielding Mind to reroll the attack and add your Unyielding Mind die.",
+				"When you (or a friendly creature, if you can both see or hear each other) hit your Adroit Analysis marked target with an attack, you can use your reaction to turn the attack into a critical hit. Once you use this reaction, you must complete a short or long rest before you can use it again."
+			]
+		},
         {
             "name": "Stone Sorcery",
             "source": "FA",
