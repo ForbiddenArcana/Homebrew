@@ -5399,6 +5399,13 @@
             "source": "FA"
         },
         {
+            "name": "Recharge Abilities",
+            "entries": [
+                "Monsters which have Recharge X-Y abilities roll to recharge them at the end of their turns, instead of the start. The roll is public, as the monster telegraphs its readiness to use the ability."
+            ],
+            "source": "FA"
+        },
+        {
             "name": "Saving Throws",
             "entries": [
                 "You can choose to fail any saving throw."
