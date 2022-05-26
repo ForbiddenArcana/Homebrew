@@ -333,7 +333,7 @@
                     "type": "list",
                     "items": [
                         "When your movement provokes multiple opportunity attacks at once or from adjacent creatures, all of the attacks have disadvantage.",
-                        "You have advantage on ability checks to Tumble through or Overrun other creatures' spaces.",
+                        "You have advantage on ability checks to Tumble through or Overrun other creatures' spaces (see {@variantrule Action Options}).",
                         "Other creatures' spaces don't count as difficult terrain for you, even if they're hostile or part of a crowd."
                     ]
                 }
@@ -4630,7 +4630,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "Starting at 3rd level, you can infuse an additional item. You can infuse a second additional item when you reach 5th level in this class, a third when you reach 9th level in this class, and a fourth when you reach 15th level in this class. All of these additional infusions must be the Replicate Magic Item infusion.",
+                "Starting at 3rd level, you can infuse an additional item. You can infuse a second additional item when you reach 5th level in this class, a third when you reach 9th level in this class, and a fourth when you reach 15th level in this class. All of these additional infusions must be the {@optfeature Replicate Magic Item|FA} infusion.",
                 "When you finish a short rest, you can replace one of your infused items with a new infusion on the same object or a new object. If any charges or uses were expended for the old infusion, the same amount are expended for the new one."
             ]
         },
