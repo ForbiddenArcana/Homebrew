@@ -5315,6 +5315,13 @@
             "source": "FA"
         },
         {
+            "name": "31 Point Buy",
+            "entries": [
+                "When building a player character, instead of rolling for stats, choose your stats following {@book Variant: Customizing Ability Scores|phb|1|Variant: Customizing Ability Scores|0}. You have 31 points to work with instead of 27. You may buy up to a 16 instead of 15, and as low as 7 instead of 8. This site may be helpful: https://chicken-dinner.com/5e/5e-point-buy.html"
+            ],
+            "source": "FA"
+        },
+        {
             "name": "Backgrounds",
             "entries": [
                 "All background features have been replaced by your choice of any {@filter Half Feat|feats|ability bonus=str;dex;con;int;wis;cha} (without the stat increase) except Resilient."
@@ -5325,13 +5332,6 @@
             "name": "Bonus Actions",
             "entries": [
                 "You can use your action as an extra bonus action, but can't use it to take the same bonus action twice on a turn."
-            ],
-            "source": "FA"
-        },
-        {
-            "name": "Spell Rider Effects",
-            "entries": [
-                "Creatures immune to the damage type of the spell don't suffer the rider effect."
             ],
             "source": "FA"
         },
