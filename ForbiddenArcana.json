@@ -978,7 +978,7 @@
                 {
                     "name": "Size",
                     "entries": [
-                        "Grung stand between 2½ and 3½ feet tall and average about 30 pounds. Your size is small."
+                        "Grung stand between 2½ and 3½ feet tall and average about 30 pounds. Your size is Small."
                     ]
                 },
                 {
@@ -1013,7 +1013,7 @@
                     "type": "entries",
                     "entries": [
                         "Any creature that comes into direct contact with your skin for the first time on its turn must succeed on a Constitution saving throw or become {@condition poisoned} until the start of its next turn.",
-                        "You can also apply this poison to any weapon as part of an attack with the weapon. If the target takes any damage from the attack, they must succeed on a Constitution saving throw or take 2d4 poison damage.",
+                        "You can also apply this poison to any weapon as part of an attack with the weapon. If the target takes any damage from the attack, they must succeed on a Constitution saving throw or take {@damage 2d4} poison damage.",
                         "In either case, the DC for the saving throw is equal to 8 + your proficiency bonus + your Constitution modifier."
                     ]
                 },
@@ -1106,7 +1106,7 @@
                 {
                     "name": "Size",
                     "entries": [
-                        "Half-dhampir are the same size as their mortal parent's race but slightly lighter. Your size is medium."
+                        "Half-dhampir are the same size as their mortal parent's race but slightly lighter. Your size is Medium."
                     ]
                 },
                 {
@@ -1257,7 +1257,7 @@
                 {
                     "name": "Size",
                     "entries": [
-                        "Merfolk are around six feet tall including their tails, and weight between 200 and 250 pounds. Your size is medium."
+                        "Merfolk are around six feet tall including their tails, and weight between 200 and 250 pounds. Your size is Medium."
                     ]
                 },
                 {
@@ -1284,7 +1284,7 @@
                     "name": "Deep Sea Survivors",
                     "type": "entries",
                     "entries": [
-                        "You're naturally gifted in survival techniques, especially underwater. You gain proficiency in the Perception and Survival skills. While swimming, moving a creature that you have grappled while they are incapacitated does not halve your speed. Additionally, while swimming, you can {@action Dash} or {@action Disengage} as a bonus action. You have resistance to cold damage, and also ignore any drawbacks related to being underwater including high pressure, and strong currents."
+                        "You're naturally gifted in survival techniques, especially underwater. You gain proficiency in the Perception and Survival skills. While swimming, moving an incapacitated creature that you have grappled doesn't halve your speed, and you can {@action Dash} or {@action Disengage} as a bonus action. You have resistance to cold damage, and ignore any drawbacks related to being underwater including high pressure and strong currents."
                     ]
                 },
                 {
@@ -1420,7 +1420,7 @@
                 {
                     "name": "Size",
                     "entries": [
-                        "Warforged come in a variety of heights and forms, but are humanoid in appearance. Your size is medium."
+                        "Warforged come in a variety of heights and forms, but are humanoid in appearance. Your size is Medium."
                     ]
                 },
                 {
@@ -1483,7 +1483,7 @@
                     "name": "Warforged Resilience",
                     "type": "entries",
                     "entries": [
-                        "You have resistance to poison damage and advantage on saving throws against being {@condition poisoned} or becoming diseased. You don't need to eat, drink, breathe, or sleep, and magic can't put you to sleep."
+                        "You have resistance to poison damage, and advantage on saving throws against being {@condition poisoned} or becoming diseased. You don't need to eat, drink, breathe, or sleep, and magic can't put you to sleep."
                     ]
                 },
                 {
@@ -2204,7 +2204,7 @@
                         "This spell is taken/modified from the Compendium of Forgotten Secrets Awakening: https://www.genfantasypress.com/"
                     ]
                 },
-                "The first time you take the Attack action during your turn, you can cast this spell to infuse your martial weapon with chilling cold and coat the exterior with brittle ice. The first time you hit with this weapon, the target takes an additional {@damage 1d8} cold damage, shattering the ice on your weapon. The target and creatures within 10 feet of the target other than you must make a Dexterity saving throw. If they fail, they take {@damage 1d8} piercing damage. If you do not hit a creature with the martial weapon on your turn, the ice dissipates."
+                "You infuse the martial weapon used as the spell's material component with chilling cold, and coat its exterior with brittle ice. As part of the action used to cast this spell, you can take the {action Attack} action. The first time you hit with the weapon, the target takes an additional {@damage 1d8} cold damage, shattering the ice on your weapon. The target and all creatures within 10 feet of it other than you must make a Dexterity saving throw. If they fail, they take {@damage 1d8} piercing damage."
             ],
             "entriesHigherLevel": [
                 {
