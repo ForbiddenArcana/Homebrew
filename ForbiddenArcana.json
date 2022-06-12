@@ -1958,7 +1958,7 @@
             ],
             "entries": [
                 "Refreshing energy radiates from you in a 30-foot-radius aura. Until the spell ends, the aura moves with you, centered on you. Each friendly creature in the aura (including you) gains a +3 bonus to initiative checks.",
-                "Additionally, any effect on a friendly creature within the aura which is rendering it incapacitated but which may be ended by use of an action (as with Sleep or Hypnotic Pattern) may instead be ended with the use of a bonus action."
+                "Additionally, any effect on a friendly creature within the aura which is rendering it incapacitated but which may be ended by use of an action (as with {@spell Sleep} or {@spell Hypnotic Pattern}) may instead be ended with the use of a bonus action."
             ],
             "classes": {
                 "fromClassList": [
