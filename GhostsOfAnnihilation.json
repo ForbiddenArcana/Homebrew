@@ -1,0 +1,340 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "FA:GoA",
+                "abbreviation": "FA:GoA",
+                "full": "Forbidden Arcana: Ghosts of Annihilation",
+                "authors": [
+                    "ForbiddenArcana"
+                ],
+                "convertedBy": [
+                    "ForbiddenArcana"
+                ],
+                "version": "1.0",
+                "targetSchema": "1.2.0",
+                "color": "427c00"
+            }
+        ]
+    },
+    "variantrule": [
+        {
+            "name": "Ship Combat",
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "These rules are a homebrew tweak of {@link Limithron's Guide to Naval Combat|https://www.limithron.com/naval-combat}"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Ship Statistics",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                "Ship HP and AC will be kept roughly in line with Ghosts of Saltmarsh and Call from the Deep.",
+                                "This is roughly a 1:7 ratio (Limithron's pdf is fake news). I will veer slightly to the side of lower ACs and higher HPs. The carnage is what we're here for after all...",
+                                "A ship's passive Perception is 10, unless there is one or more crew members in the rigging or crow's nest. In which case, the ship's passive Perception is the same as the creature with the highest passive Perception among them (minimum 10)."
+                            ]
+                        }
+
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Movement and Position",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                "We are using similar movement and position rules from Limithron's Guide.",
+                                "Your brigantine must move up to its speed (max 6 hexes), and may turn twice (but not both on the same hex).",
+                                "Travelling one hex with the wind or one hex-face off costs 1 movement. Travelling one hex face off of against the wind costs 2 movement (close to the wind). And finally, travelling one hex straight in to the wind costs 3 movement (in irons).",
+                                "A creature can use its action to interact with the sails to set the ship's speed to whatever is desired between 1 and the ship's max. Reducing a ship's speed to 0 requires dropping anchor. A ship must use its full speed."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Initiative",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                "Ships roll initiative, not creatures (in most cases, more on that later). Ships use Dex for initiative (overriding our homebrew), and may add the Perception bonus of a lookout to the roll. If a lookout adds their Perception bonus to initiative, they must use their action on the crow's nest on the first round round of combat, or your ship is treated as if it had rolled a natural 1 on initiative for all rounds after).",
+                                "In ship-to-ship combat, the crews of take their turns simultaneously: either interacting with components of the ship, casting spells, making attacks or taking any other action they normally could. After the crew takes their turns the ship combat round begins.",
+                                "On their turn, ships then take the actions that were enabled by the crew interacting with components. For example: if a crew member used an action to fire a cannon, firing a cannon is now allowed on the ship's turn. The ship can use its actions in any order, and split them up over movement as the captain sees fit. The ship does not need to use all its available actions. Note that naval combat has no concept of attacks of opportunity or readied actions. Position yourself carefully."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Interacting With Ship Components",
+                    "entries": [
+                        "Using your action to interact with a ship component enables the ship to take the matching action on its turn in initiative. Unless explicitely noted, multiple crew using their action on one component to do the same thing does not stack bonuses.",
+                        {
+                            "type": "list",
+                            "name": "Weapons",
+                            "items": [
+                                "Fire a Cannon",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "Cannons can hit anything within a cone with an origin starting at the center of the ship's hex"
+                                    ]
+                                },
+                                "Load a Cannon",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "Readies the cannon to be fired again"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "list",
+                            "name": "Controls",
+                            "items": [
+                                "Control Helm",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "Allows the ship to turn twice, but not both on the same hex "
+                                    ]
+                                },
+                                "Hold Steady (Requires proficiency with Sea Vehicles)",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "If an action is used on the helm, but the ship does not turn, all cannons fired this round may add the helmsman's proficiency bonus to cannon shots"
+                                    ]
+                                },
+                                "Crow's Nest",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "Allows adding the scouting character's Perception bonus to the ship's initiative roll"
+                                    ]
+                                },
+                                "Raise/Lower Sails",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "Use an action on the sails from the rigging to set the ship's speed to whatever you like >= 1 hex"
+                                    ]
+                                },
+                                "Come About",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "Use an action on the sails from the main deck railings to tilt them in a favourable direction, allowing an extra hex rotation"
+                                    ]
+                                },
+                                "Drop Anchor",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "Set speed to 0 and bring ship to an immediate halt",
+                                        "If sails are not lowered first the ship takes {@dice 8d8} bludgeoning damage, but may turn 3 times on the current hex to do a complete U-turn"
+                                    ]
+                                },
+                                "Cut and Run",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "Detach the anchor chain and free the ship (raising anchor normally typically takes 1 minute)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "list",
+                            "name": "Other",
+                            "items": [
+                                "Brace",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "You have advantage on saves and checks vs. being knocked prone or overboard."
+                                    ]
+                                },
+                                "Lookout",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "You attempt to spot hidden dangers lurking beneath the waves, or yonder at the horizon: make a Perception check to replace the passive Perception of your ship if it's higher"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "source": "FA:GoA"
+        },
+        {
+            "name": "Sea Monsters",
+            "entries": [
+                "Creatures considered Sea Monsters are designed to be an encounter fought from a sea vessel. This may not always be the case (in fact, some sea monsters may go out of their way to knock crew overboard...), but this is the intention when I drop a CR 15 ball of tentacles and teeth on the map.",
+                "Sea Monsters will often be size Gargantuan to allow the use of 12lb cannons, and will also often have two sets of abilities: one targeting crew, and one targeting ships.",
+                {
+                    "type": "entries",
+                    "name": "Initiative",
+                    "entries": [
+                        "When engaging in combat with a Sea Monster, the crew and Sea Monster roll initiative per normal rules on the High Seas combat tracker. On a separate combat tracker, the ships and Sea Monster roll initiative per the naval combat rules.",
+                        "The round of combat on the High Seas will resolve first. In this initiative order, the crew may take any action they normally could, or interact with ship components per the naval combat rules. The Sea Monster also gets to take a turn during this round if it is in the ship's hex, or adjacent to it. Its abilities may be limited to the suite of abilities meant to target crew (loosly referred to as T1, to tear a page out of Glimmer's book).",
+                        "After this round of combat resolves, the ships may then take their turns using the movement and actions enabled by the crew. In this initiative order, the Sea Monster gets to take another turn. Its abilities may be limited to the suite of abilities meant to target ships (T2)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Grappling",
+                    "entries": [
+                        "A ship may not initiate a grapple, however some sea monsters certainly can. For a ship to attempt to escape a grapple, a creature must use their action on the helm. On the ship's next initiative, the ship may make a Strength check to escape the grapple. If the creature who used the helm is proficient with Sea Vehicles, they may add their proficiency bonus to the check."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Scale and Speed",
+                    "entries": [
+                        "To reconcile the difference in scale between the deck of your ship and naval combat, Sea Monsters have different speeds depending which turn they are taking. If on the High Seas and attacking the crew, the creature uses its ordinary speed (often between 20 and 100). The Sea Monster is assumed to be keeping pace with your vessel, and this speed represents how much extra maneuverability it has to position itself.",
+                        "During the naval combat round, the Sea Monster will move by hexes, like your ship does. Sea Monsters are usually not affected by wind like you are, and will often be faster than your ship. Take this into account. As a quick point of reference: the Waverunner sailing with the wind is as fast as a Sea Monster with a swim speed of 50ft.",
+                        "To get hexes from swim speed: Hexes = (Swim Speed * 6) / 50"
+                    ]
+                }
+            ],
+            "source": "FA:GoA"
+        },
+        {
+            "name": "Underwater Combat",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Movement",
+                    "entries": [
+                        "Whole swimming, each foot of movement costs 1 extra foot (2 extra feet in difficult terrain), unless the creature has a swim speed. "
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Breath",
+                    "entries": [
+                        "A creature can hold its breath for a number of minutes equal to 1 + its Constitution modifier (minimum of 30 seconds).",
+                        "A creature takes {@dice 2d6} damage when they end their turn breathless and unable to breathe, and must make a DC 10 Constitution saving throw or fall {@condition unconscious}. A creature that has fallen unconscious in this way continues to take {@dice 2d6} damage at the end of their turns until they are resuscitated with a DC 10 {@skill Medicine} check when they're able to breathe.",
+                        "A creature immediately loses their breath if they are critically hit or fall in to water unexpectedly: such as by being teleported."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Communication",
+                    "entries": [
+                        "Most languages cannot be spoken while holding your breath. Aquan and Deep Speech can be readily spoken and understood without exhaling, but otherwise the only means of communicating without being able to breath underwater is rudimentary sign language. "
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Casting",
+                    "entries": [
+                        "When a creature casts a spell that requires verbal components, they exhale their remaining air. After they finish casting, they become breathless.",
+                        "A breathless creature cannot cast spells requiring verbal components."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Pressure",
+                    "entries": [
+                        "For every 100 feet a creature dives, it must succeed a DC 15 Constitution saving throw or take a level of {@variantrule Stress and Agitation/Exhaustion|FA|Exhaustion}. For every 100 feet a creature ascends, it must pause for 10 minutes or make a DC 15 Constitution saving throw vs. Exhaustion.",
+                        "The spell {@spell Waterbreathing} makes a creature immune to this effect."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Buoyancy",
+                    "entries": [
+                        "At the start of their turn a creature will sink unless they spend movement staying in place. Sinking does not provoke attacks of opportunity. The distance a creature sinks depends on their buoyancy, which is based on the armour they are wearing. Values are in feet, with negative representing sinking and positive representing floating.",
+                        {
+                            "type": "table",
+                            "colLabels": [
+                                "Armour",
+                                "Buoyancy"
+                            ],
+                            "colStyles": [
+                                "col-2",
+                                "col-10"
+                            ],
+                            "rows": [
+                                [
+                                    "Heavy",
+                                    "-20"
+                                ],
+                                [
+                                    "Medium",
+                                    "-10"
+                                ],
+                                [
+                                    "Light",
+                                    "+5"
+                                ],
+                                [
+                                    "None or Natural",
+                                    "0"
+                                ]
+                            ]
+                        },
+                        "Creatures with a swim speed are not affected by buoyancy unless they wish to be. Creature who are climbing or otherwise holding on to something stationary are also not affected. Creatures who are grappling or being grappled sink or float half the normal distance and drag their partner along."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Attacking",
+                    "entries": [
+                        "Attacks with weapons that deal bludgeoning damage are made with disadvantage.",
+                        "Ranged weapon attacks automatically miss against targets more than 30 feet away."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Firearms",
+                    "entries": [
+                        "Firearms cannot be discharged underwater. If a firearm is completely submerged in water, it cannot be shot for 4 hours."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Damage Types",
+                    "entries": [
+                        "Spells, attacks and effects that deal Fire, Lightning or Thunder damage behave somewhat differently underwater.",
+                        {
+							"type": "entries",
+							"name": "Fire",
+							"entries": [
+								"Fire damage is halved while underwater, after which resistance and vulnerability apply as normal.",
+                                "Underwater spaces consumed by fire become Heavily Obscured for one round, due to a cloud of bubbles caused by heated water. Fire spells which affect a single creature consume a 5ft cube located anywhere occupied by the targeted creature."
+							]
+						},
+                        {
+							"type": "entries",
+							"name": "Thunder",
+							"entries": [
+								"Thunder damage is deafening underwater. Any creature that takes 10 or more thunder damage from a single source is also deafened for 1 minute."
+							]
+						},
+                        {
+							"type": "entries",
+							"name": "Lightning",
+							"entries": [
+								"Lightning damage spreads underwater. When a creature takes lightning damage, all other creatures within 10 feet take {@dice 1d6} lightning damage. This does not affect creatures who already took damage from the triggering effect. "
+							]
+						}
+                    ]
+                }
+            ],
+            "source": "FA:GoA"
+        }
+    ]
+}
