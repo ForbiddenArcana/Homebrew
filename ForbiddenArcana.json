@@ -3071,6 +3071,68 @@
             }
         },
         {
+            "name": "Aqueous Blast",
+            "source": "FA",
+            "level": 3,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You conjure a small ball of water and hurl it at a point you can see within range. The ball then expands in an explosive blast of water. Each creature in a 20-foot-radius sphere centered on that point must make a Strength saving throw. On a failed save, a creature takes {@dice 4d8} bludgeoning damage and is pushed 20 feet away from the center of the sphere. On a successful save, a creature takes half as much damage and is pushed half as far.",
+                "The spell produces 50 gallons of water, which spreads out across the ground, extinguishing unprotected flames and forming a thin puddle in the area."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@scaledamage 4d8|3-9|1d8} and the amount of water produced increases by 10 gallons for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "bludeoning"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Bulwark of Protection",
             "source": "FA",
             "level": 3,
@@ -3115,6 +3177,74 @@
                 "fromClassList": [
                     {
                         "name": "Paladin",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Geyser",
+            "source": "FA",
+            "level": 3,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 90
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "vinegar and a handful of salt"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You cause as a blast of steaming hot water to erupt in a 10-foot radius, 60-foot high cylinder centered on a point on the ground or on the surface of water that you can see within range. Each creature in the area must make a Strength saving throw. On a failed save, a target takes {@dice 3d6} bludgeoning damage and {@dice 3d6} fire damage damage and is knocked {@condition prone} if it is Medium or larger. On a successful save, it takes half damage and is not knocked prone. A Tiny or Small creature that fails the save is not knocked prone, but is instead flung 30 feet into the air, and lands 1d6 × 5 feet away in a random direction.",
+                "Water created by this spell then rapidly boils away. If cast on a point on the ground, any loose earth or stone in the area becomes difficult terrain until cleared, with each 5-foot-diameter portion requiring at least 1 minute to clear by hand. If cast on a point on the surface of water, the spell deals an additional 1d6 bludgeoning damage."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 4th level or higher, the bludgeoning damage or the fire damage (your choice) increases by {@scaledamage 3d6|3-9|1d6} for each slot level above 3rd."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "bludeoning",
+                "fire"
+            ],
+            "savingThrow": [
+                "strength"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
                         "source": "PHB"
                     }
                 ]
