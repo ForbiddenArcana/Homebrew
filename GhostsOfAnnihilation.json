@@ -97,8 +97,50 @@
             "spear": true,
             "weapon": true,
             "entries": [
-				"A bayonet must be affixed to the tip of a two-handed firearm or crossbow before it can be used."
-			]
+                "A bayonet must be affixed to the tip of a two-handed firearm or crossbow before it can be used."
+            ]
+        },
+        {
+            "name": "Blunderbus",
+            "source": "FA:GoA",
+            "type": "R",
+            "rarity": "none",
+            "weight": 8,
+            "value": 600,
+            "weaponCategory": "martial",
+            "age": "renaissance",
+            "property": [
+                "AF",
+                "LD",
+                "2H"
+            ],
+            "range": "15/45",
+            "dmg1": "2d8",
+            "dmgType": "P",
+            "firearm": true,
+            "weapon": true,
+            "ammoType": "renaissance bullet"
+        },
+        {
+            "name": "Caliver",
+            "source": "FA:GoA",
+            "type": "R",
+            "rarity": "none",
+            "weight": 10,
+            "value": 450,
+            "weaponCategory": "simple",
+            "age": "renaissance",
+            "property": [
+                "AF",
+                "LD",
+                "2H"
+            ],
+            "range": "30/90",
+            "dmg1": "1d10",
+            "dmgType": "P",
+            "firearm": true,
+            "weapon": true,
+            "ammoType": "renaissance bullet"
         },
         {
             "name": "Cutlass",
@@ -116,6 +158,67 @@
             "dmgType": "S",
             "sword": true,
             "weapon": true
+        },
+        {
+            "name": "Dragon",
+            "source": "FA:GoA",
+            "type": "R",
+            "rarity": "none",
+            "weight": 4,
+            "value": 600,
+            "weaponCategory": "martial",
+            "age": "renaissance",
+            "property": [
+                "AF",
+                "LD"
+            ],
+            "range": "15/45",
+            "dmg1": "2d6",
+            "dmgType": "P",
+            "firearm": true,
+            "weapon": true,
+            "ammoType": "renaissance bullet"
+        },
+        {
+            "name": "Musket",
+            "source": "FA:GoA",
+            "type": "R",
+            "rarity": "none",
+            "weight": 10,
+            "value": 900,
+            "weaponCategory": "martial",
+            "age": "renaissance",
+            "property": [
+                "AF",
+                "LD",
+                "2H"
+            ],
+            "range": "40/120",
+            "dmg1": "1d12",
+            "dmgType": "P",
+            "firearm": true,
+            "weapon": true,
+            "ammoType": "renaissance bullet"
+        },
+        {
+            "name": "Pistol",
+            "source": "FA:GoA",
+            "type": "R",
+            "rarity": "none",
+            "weight": 3,
+            "value": 600,
+            "weaponCategory": "martial",
+            "age": "renaissance",
+            "property": [
+                "AF",
+                "LD"
+            ],
+            "range": "30/90",
+            "dmg1": "1d10",
+            "dmgType": "P",
+            "firearm": true,
+            "weapon": true,
+            "ammoType": "renaissance bullet"
         }
     ],
     "object": [
