@@ -17,6 +17,252 @@
             }
         ]
     },
+    "spell": [
+        {
+            "name": "Torment of the Devoured",
+            "source": "FA:GoA",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a transfusion apparatus worth at least 500gp"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "entries": [
+                "A spell reverse engineered from the strange runes present on the Cubes of the Trickster Gods. With the assistance of a blood transfusion device, this spell finalizes or removes a soul-bonding connection to a Cube. For the casting of this spell to successfully complete or remove the connection, a willing creature must have spent 4 hours in contact with a transfusion apparatus."
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        }
+    ],
+    "baseitem": [
+        {
+            "name": "Bayonet",
+            "source": "FA:GoA",
+            "type": "M",
+            "rarity": "none",
+            "weight": 1,
+            "value": 10,
+            "weaponCategory": "simple",
+            "property": [
+                "S"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "P",
+            "spear": true,
+            "weapon": true,
+            "entries": [
+				"A bayonet must be affixed to the tip of a two-handed firearm or crossbow before it can be used."
+			]
+        },
+        {
+            "name": "Cutlass",
+            "source": "FA:GoA",
+            "type": "M",
+            "rarity": "none",
+            "weight": 3,
+            "value": 250,
+            "weaponCategory": "martial",
+            "property": [
+                "F",
+                "L"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "sword": true,
+            "weapon": true
+        }
+    ],
+    "object": [
+        {
+            "name": "Cannon (6lb)",
+            "source": "FA:GoA",
+            "size": "S",
+            "objectType": "SW",
+            "ac": 19,
+            "hp": 75,
+            "immune": [
+                "poison",
+                "psychic"
+            ],
+            "entries": [
+                "A cannon uses gunpowder to propel heavy balls of cast iron through the air at destructive speeds. In a campaign without gunpowder, a cannon might be an arcane device built by clever gnomes or wizardly engineers.",
+                "Before it can be fired, the cannon must be loaded. It takes one action to load the weapon, one action to fire it.",
+                "A 6lb cannon is usually mounted on a swivel placed on a ship's railing, or a rampart. A 6lb cannon can accurately target Large or bigger creatures and objects."
+            ],
+            "actionEntries": [
+                {
+                    "type": "actions",
+                    "name": "Cannon Ball",
+                    "entries": [
+                        {
+                            "type": "attack",
+                            "attackType": "RW",
+                            "attackEntries": [
+                                "{@hit +6} to hit, range 600/2400 ft., one target."
+                            ],
+                            "hitEntries": [
+                                "21 ({@damage 6d6}) bludgeoning damage."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cannon (12lb)",
+            "source": "FA:GoA",
+            "size": "M",
+            "objectType": "SW",
+            "ac": 19,
+            "hp": 75,
+            "immune": [
+                "poison",
+                "psychic"
+            ],
+            "entries": [
+                "A cannon uses gunpowder to propel heavy balls of cast iron through the air at destructive speeds. In a campaign without gunpowder, a cannon might be an arcane device built by clever gnomes or wizardly engineers.",
+                "Before it can be fired, the cannon must be loaded. It takes one action to load the weapon, one action to fire it.",
+                "A 12lb cannon is usually mounted on a wooden frame with wheels, and is typically seen on lightweight ships like Corvettes and most merchant vessels.",
+                "A 12lb cannon can accurately target Huge or bigger creatures and objects. When a creature or object is struck by a cannon ball, the nearby impact can send shrapnel and a shockwave to nearby creatures. Any creature within 5 feet of the impact must make a DC 14 Dexterity Saving throw. On a failure, the creature takes half the damage of the original impact. On a success, a creature takes a quarter of the damage of the original impact."
+            ],
+            "actionEntries": [
+                {
+                    "type": "actions",
+                    "name": "Cannon Ball",
+                    "entries": [
+                        {
+                            "type": "attack",
+                            "attackType": "RW",
+                            "attackEntries": [
+                                "{@hit +6} to hit, range 600/2400 ft., one target."
+                            ],
+                            "hitEntries": [
+                                "36 ({@damage 8d8}) bludgeoning damage."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cannon (18lb)",
+            "source": "FA:GoA",
+            "size": "M",
+            "objectType": "SW",
+            "ac": 19,
+            "hp": 75,
+            "immune": [
+                "poison",
+                "psychic"
+            ],
+            "entries": [
+                "A cannon uses gunpowder to propel heavy balls of cast iron through the air at destructive speeds. In a campaign without gunpowder, a cannon might be an arcane device built by clever gnomes or wizardly engineers.",
+                "Before it can be fired, the cannon must be loaded. It takes one action to load the weapon, one action to fire it.",
+                "An 18lb cannon is usually mounted on a wooden frame with wheels, and is typically seen on mid-class ships meant for war, such as a Frigate.",
+                "An 18lb cannon can accurately target Huge or bigger creatures and objects. When a creature or object is struck by a cannon ball, the nearby impact can send shrapnel and a shockwave to nearby creatures. Any creature within 10 feet of the impact must make a DC 14 Dexterity Saving throw. On a failure, the creature takes half the damage of the original impact. On a success, a creature takes a quarter of the damage of the original impact."
+            ],
+            "actionEntries": [
+                {
+                    "type": "actions",
+                    "name": "Cannon Ball",
+                    "entries": [
+                        {
+                            "type": "attack",
+                            "attackType": "RW",
+                            "attackEntries": [
+                                "{@hit +6} to hit, range 600/2400 ft., one target."
+                            ],
+                            "hitEntries": [
+                                "36 ({@damage 8d8}) bludgeoning damage."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cannon (48lb)",
+            "source": "FA:GoA",
+            "size": "L",
+            "objectType": "SW",
+            "ac": 19,
+            "hp": 75,
+            "immune": [
+                "poison",
+                "psychic"
+            ],
+            "entries": [
+                "A cannon uses gunpowder to propel heavy balls of cast iron through the air at destructive speeds. In a campaign without gunpowder, a cannon might be an arcane device built by clever gnomes or wizardly engineers.",
+                "Before it can be fired, the cannon must be loaded. It takes one action to load the weapon, one action to fire it.",
+                "A 42lb cannon is usually mounted on a wooden frame with wheels, and is typically used aboard 1st rate vessels such as a Ship of the Line to punch through heavy armoured hulls. 42lb cannons are also used as heavy artillery to support ground infantry.",
+                "A 42lb cannon can accurately target Huge or bigger creatures and objects. When a creature or object is struck by a cannon ball, the nearby impact can send shrapnel and a shockwave to nearby creatures. Any creature within 10 feet of the impact must make a DC 14 Dexterity Saving throw. On a failure, the creature takes half the damage of the original impact. On a success, a creature takes a quarter of the damage of the original impact."
+            ],
+            "actionEntries": [
+                {
+                    "type": "actions",
+                    "name": "Cannon Ball",
+                    "entries": [
+                        {
+                            "type": "attack",
+                            "attackType": "RW",
+                            "attackEntries": [
+                                "{@hit +6} to hit, range 600/2400 ft., one target."
+                            ],
+                            "hitEntries": [
+                                "55 ({@damage 10d10}) bludgeoning damage."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
     "variantrule": [
         {
             "name": "Ship Combat",
@@ -310,27 +556,27 @@
                     "entries": [
                         "Spells, attacks and effects that deal Fire, Lightning or Thunder damage behave somewhat differently underwater.",
                         {
-							"type": "entries",
-							"name": "Fire",
-							"entries": [
-								"Fire damage is halved while underwater, after which resistance and vulnerability apply as normal.",
+                            "type": "entries",
+                            "name": "Fire",
+                            "entries": [
+                                "Fire damage is halved while underwater, after which resistance and vulnerability apply as normal.",
                                 "Underwater spaces consumed by fire become Heavily Obscured for one round, due to a cloud of bubbles caused by heated water. Fire spells which affect a single creature consume a 5ft cube located anywhere occupied by the targeted creature."
-							]
-						},
+                            ]
+                        },
                         {
-							"type": "entries",
-							"name": "Thunder",
-							"entries": [
-								"Thunder damage is deafening underwater. Any creature that takes 10 or more thunder damage from a single source is also deafened for 1 minute."
-							]
-						},
+                            "type": "entries",
+                            "name": "Thunder",
+                            "entries": [
+                                "Thunder damage is deafening underwater. Any creature that takes 10 or more thunder damage from a single source is also deafened for 1 minute."
+                            ]
+                        },
                         {
-							"type": "entries",
-							"name": "Lightning",
-							"entries": [
-								"Lightning damage spreads underwater. When a creature takes lightning damage, all other creatures within 10 feet take {@dice 1d6} lightning damage. This does not affect creatures who already took damage from the triggering effect. "
-							]
-						}
+                            "type": "entries",
+                            "name": "Lightning",
+                            "entries": [
+                                "Lightning damage spreads underwater. When a creature takes lightning damage, all other creatures within 10 feet take {@dice 1d6} lightning damage. This does not affect creatures who already took damage from the triggering effect. "
+                            ]
+                        }
                     ]
                 }
             ],
