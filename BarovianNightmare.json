@@ -1,0 +1,149 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "FA:BN",
+                "abbreviation": "FA:BN",
+                "full": "ForbiddenArcana: Barovian Nightmare",
+                "authors": [
+                    "ForbiddenArcana"
+                ],
+                "convertedBy": [
+                    "ForbiddenArcana"
+                ],
+                "version": "1.0",
+                "targetSchema": "1.2.0",
+                "color": "561D5E"
+            }
+        ]
+    },
+    "feat": [
+        {
+            "name": "Lost Spell Boon",
+            "source": "FA: BN",
+            "entries": [
+                "Your casting of the Lost Spell has permanently altered your connection to the Weave, empowering it. You gain the following permanent benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You count as one full caster level higher for the purposes of spell slots. Ie, a 12th level full caster would now have 7th level spell slots but may not prepare 7th level spells.",
+                        "You learn one cantrip of your choice from any spell list.",
+                        "You may prepare an additional two spells (if you are a Spells prepared caster) or learn an additional two spells (if you are a Spells Known caster, or do not have the Spellcasting feature). You do not gain this benefit multiple time if you have multiple class levels which grant the Spellcasting feature.",
+                        "Choose one 1st level spell from any spell list. You may cast it once per long rest without expending a spell slot."
+                    ]
+                },
+                "You use your spellcasting stat for these spells. If you do not have a spellcasting stat, you may choose one of Intelligence, Wisdom, or Charisma.",
+                "This feature can only be acquired by casting {@spell The Lost Spell}"
+            ]
+        }
+    ],
+    "spell": [
+        {
+            "name": "The Lost Spell",
+            "source": "FA:BN",
+            "level": 0,
+            "school": "N",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "Ink with which to write the fragments on your hand"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "entries": [
+                "Inscribe the 16 spell fragments upon your off hand with ink. Speak the incantation, and then name any person, living, dead, or undead, except for yourself. The spell will then take effect on the target. When the target dies at any point in time in the future (or immediately, if the target is already dead), the following effects will take place:"
+                {
+                    "type": "list",
+                    "items": [
+                        "The target will be resurrected, as by the effect of a {@spell True Resurrection} spell.",
+                        "All curses, diseases, levels of exhaustion, madnesses, or any other negative effects on the target are immediately removed, as though effected by as many castings of {@spell Greater Restoration} as needed.",
+                        "All lingering injuries, missing limbs, or other bodily injuries are immediately healed, as though by the effect of Regenerate. If the target has no body (if they were Disintegrated or their body was destroyed by some other method), the spell creates a new body for the target.",
+                        "Any bindings, chains, restrains, cages, or other trammels are gone, giving the target free range of motion.",
+                        "The target will be teleported to a place of safety (if their current locale is unsafe or hostile), as by the effect of {@spell Teleport}. The location they are teleported to does not require a permanent teleportation circle or associated object. The spell is aware when an area is considered \"unsafe\" for a target, and thus the target will not be brought back at the bottom of the ocean, for example. Alternatively, the target may instead choose where they wish to be teleported, or if they wish to be teleported at all. This {@spell Teleport} will always be On Target.",
+                        "The target will be granted a minute of time, as though they had cast the spell {@spell Time Stop} with a duration of 10 rounds as opposed to a duration of 1d4+1 rounds."
+                    ]
+                },
+                "A creature may be targetted by The Lost Spell multiple times, but may only cast it once.",
+                "There is no time limit for how long a target may be dead for. The spell always works. If the target is a sentient undead (such as a lich, or a vampire), the spell will take effect the next time they are killed, at which point the spell will return them to life as a non-undead.",
+                "You do not need to be a spellcaster to cast The Lost Spell.",
+                "INCANTATION: \"For in the time of greatest need, may I give the greatest gift. From life to life, end to end, may a second chance be granted to ${Target Name}. May they be free, may they be healed, may they be whole. I ask for naught, but to give them the gift of life.\"",
+                "Note: This spell is listed as a cantrip only for the purposes of Foundry. It does not have a level, and can't be replicated by Wish or some other magic or item which allows you to cast spells not normally on your spell list.",
+                "After casting this spell, the caster gains the benefit of {@feat Lost Spell Boon}."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Barbarian",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Fighter",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Monk",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Rogue",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        }
+    ]
+}
