@@ -824,7 +824,7 @@
                 {
                     "type": "inset",
                     "entries": [
-                        "This eldritch invocation is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                        "This eldritch invocation is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
                 "Cursed magic items don't count against the total number of items that you can attune to."
@@ -1809,7 +1809,7 @@
                 {
                     "type": "inset",
                     "entries": [
-                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                        "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
                 "A wire-thin stream of pressurized water shoots from your finger, with devastating yet precise cutting power at point-blank range. Make a melee spell attack against a creature or object you can reach. On a hit, the target takes {@damage 1d8} piercing damage. If the target is a creature or object made of inorganic material such as stone, crystal, or metal, the spell deals maximum damage to it. You can’t target an object that is being worn or carried by an unwilling creature.",
@@ -1882,7 +1882,7 @@
                 {
                     "type": "inset",
                     "entries": [
-                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                        "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
                 "You hurl a rippling fist-sized mass of water at a creature within range. Make a ranged spell attack against the target. On a hit, the creature takes {@damage 1d6} bludgeoning damage, and if the creature is Large or smaller, it is pushed up to 10 feet away from you.",
@@ -2062,7 +2062,7 @@
                 {
                     "type": "inset",
                     "entries": [
-                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                        "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
                 "You summon a squid and fling it at a creature within range. Make a ranged spell attack against the target. On a hit, the squid explodes in a burst of ink. The target takes {@damage 1d12} piercing damage and becomes {@condition blinded} until the end of your next turn."
@@ -2264,7 +2264,7 @@
                 {
                     "type": "inset",
                     "entries": [
-                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                        "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
                 "You create a fast current within a body of water, forming a line 90 feet long and 10 feet wide in a direction of your choice extending away from a point you can see within range. Each creature that starts its turn in the line must succeed on a Strength saving throw or be knocked {@condition prone} and pushed 30 feet in the direction following the line. A creature in the line must spend 2 feet of movement for every 1 foot that it moves when moving against the tide."
@@ -2343,7 +2343,7 @@
                 {
                     "type": "inset",
                     "entries": [
-                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                        "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
                 "A burst of salty ocean mist erupts from your palms. Each creature in a 15-foot cone make a Dexterity saving throw. On a failed save, a target takes an additional {@damage 1d4} necrotic damage each time it takes any piercing or slashing damage before the start of your next turn."
@@ -2428,7 +2428,7 @@
                 {
                     "type": "inset",
                     "entries": [
-                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                        "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
                 "You cause a spout of water to emerge from a 5-foot-square on the ground. Water emerges to fill a 20-foot-tall cylinder with a 5-foot diameter that rises from the chosen square and lasts for the duration.",
@@ -2774,7 +2774,7 @@
                 {
                     "type": "inset",
                     "entries": [
-                        "This spell is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                        "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
                "Choose a creature you can see within range. The target must make an Intelligence saving throw or become bound by a psychic anchor, which weighs it down and slows its movements. While weighed down, the creature’s speed is reduced by 20 feet, it has disadvantage on attack rolls, ability checks, and saving throws that use Strength or Dexterity, and it sinks 30 feet at the start of its turn if it is swimming. At the end of each of its turns, the target can make another Intelligence saving throw. On a success, the spell ends on the target."
@@ -3438,6 +3438,161 @@
             }
         },
         {
+            "name": "Appetence of Acamar",
+            "source": "FA",
+            "level": 4,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a pickled octopus tentacle"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point within range and lasting for the duration. This void is filled with a cacophony of soft whispers and slurping noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are {@condition blinded}",
+                "The void creates a warp in the fabric of space, and the area is {@quickref difficult terrain||3}. Any creature that starts its turn in the area must succeed a Strength saving throw or take {@damage 3d6} cold damage and be pulled 10 feet closer to the center of the void. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take {@damage 3d6} acid damage as milky, otherworldly tentacles rub against it."
+            ],
+            "damageInflict": [
+                "acid",
+                "cold"
+            ],
+            "conditionInflict": [
+                "blinded"
+            ],
+            "savingThrow": [
+                "dexterity",
+                "strength"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Aberrant Mind (UA)",
+                            "source": "UASorcererAndWarlock"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Aberrant Mind",
+                            "source": "TCE"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Drown",
+            "source": "FA",
+            "basicRules": true,
+            "level": 4,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a jug of water"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
+                    ]
+                },
+                "You choose a creature you can see within range and conjure water within its lungs. Roll {@dice 12d8}; if the target has hit points equal to or fewer than the total, it begins suffocating and begin suffocating. If the target has hit points greater than the total, the spell is still cast but doesn't take effect until the target's hit points drop below the total. Creatures that don't have lungs, don't need to breathe, or can breathe water are unaffected by this spell. As an action, the creature can make a Constitution saving throw. On a success, the spell ends. If a creature affected by this spell becomes unconscious as a result of being breathless, they are treated as if they had drowned normally."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, roll an additional {@dice 2d8} for each slot level above 4th to determine if the creature begins to suffocate."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Grasping Roots",
             "source": "FA",
             "level": 4,
@@ -3568,6 +3723,242 @@
                     },
                     {
                         "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Slippery Ice",
+            "source": "FA",
+            "srd": false,
+            "level": 4,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": false,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
+                    ]
+                },
+                "You create a layer of slick ice, 6 inches thick, in a 30-foot radius circle centered on a point on the ground or on the surface of water that you can see within range, which lasts for the duration. The ice suppresses any underlying terrain that doesn't protrude past the surface of the ice.",
+                "A creature walking across the ice spends 1 foot of movement for every 2 feet it moves, and must succeed a Dexterity saving throw when it moves more than 5 feet across the ice for the first time on a turn or be knocked {@condition prone}. When a creature attempts to get up from prone while on the ice, it must succeed on a Dexterity check against your spell save DC. On a failure, it falls {@condition prone} again. When you cast this spell, you can designate any number of creatures you can see to automatically succeed on ability checks and saving throws made against this spell."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the radius of the ice increases by 10 feet for each slot level above 4th."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "dexterity"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "abilityCheck": [
+                "dexterity"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Steam Vent",
+            "source": "FA",
+            "srd": false,
+            "level": 4,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a piece of volcanic rock"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
+                    ]
+                },
+                "You cause a 20-foot tall, 5-foot radius cylinder of searing steam to erupt from point on a surface you can see within range. Each creature in the area must make a Constitution saving throw. A target takes {@damage 6d6} fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistance to this damage.",
+                "On each of your turns until the spell ends, you can use your action to create another vent in this way, targeting the same point or a different one."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@damage 1d6} for each slot level above 4th."
+                    ]
+                }
+            ],
+            "damageInflict": [
+                "fire"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Monk",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Four Elements (Expanded)",
+                            "source": "ABYSS"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Striking Tide",
+            "source": "FA",
+            "srd": false,
+            "level": 4,
+            "school": "V",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": false,
+                "s": true,
+                "m": {
+                    "text": "a melee weapon worth at least 1 sp",
+                    "cost": 10,
+                    "consume": false
+                }
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
+                    ]
+                },
+                "You wreath a weapon with aqueous energy, lashing out with the force of increasingly powerful tides. As part of the action used to cast this spell, you can make up to three melee attacks with a weapon. You can direct the attacks at the same target or at different ones. The first attack deals an additional {@damage 1d10} damage, the second attack deals an additional {@damage 2d10} damage, and the third attack deals an additional {@damage 3d10} damage."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Paladin",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
                         "source": "PHB"
                     },
                     {
@@ -3842,6 +4233,90 @@
                     {
                         "name": "Ranger",
                         "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Voracity of Zhudun",
+            "source": "FA",
+            "level": 5,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 150
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a pickled octopus tentacle"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    },
+                    "concentration": true
+                }
+            ],
+            "entries": [
+                "You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point within range and lasting for the duration. This void is filled with a cacophony of monsterous screeches and slurping noises that can be heard up to 120 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are {@condition blinded} and {@condition deafened}.",
+                "The void creates a warp in the fabric of space, and the area is {@quickref difficult terrain||3}. Any creature that starts its turn within 30 feet of the center of the void must succeed a Strength saving throw or be pulled 10 feet closer to the center. If the creature starts their turn within the void, or enters it for the first time on their turn, they take {@damage 3d6} cold damage. Any creature that ends its turn in the area of the void must succeed on a Dexterity saving throw or take {@damage 3d6} acid damage as milky, otherworldly tentacles rub against it. If a creature fails both the Strength and Dexterity saving throws in the same turn, it is {@condition restrained} by one of the tentacles until the spell ends. A creature {@condition restrained} by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself."
+            ],
+            "damageInflict": [
+                "acid",
+                "cold"
+            ],
+            "conditionInflict": [
+                "blinded",
+                "deafened"
+            ],
+            "savingThrow": [
+                "dexterity",
+                "strength"
+            ],
+            "abilityCheck": [
+                "dexterity",
+                "strength"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ],
+                "fromSubclass": [
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Aberrant Mind (UA)",
+                            "source": "UASorcererAndWarlock"
+                        }
+                    },
+                    {
+                        "class": {
+                            "name": "Sorcerer",
+                            "source": "PHB"
+                        },
+                        "subclass": {
+                            "name": "Aberrant Mind",
+                            "source": "TCE"
+                        }
                     }
                 ]
             }
@@ -5112,7 +5587,7 @@
                 {
                     "type": "inset",
                     "entries": [
-                        "This subclass is taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                        "This subclass is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
                 "A Defiler is a master of deadly substances both caustic and corruptive, using foul mixtures to create sickeningly permanent effects. Any battlefield a Defiler enters is hauntingly marked with cruel magic that scars the landscape and mutilates its victims. Valued for scorched-earth warfare, members of the specialization are summoned when morals and long-term consequences no longer matter.",
@@ -5532,7 +6007,7 @@
                 {
                     "type": "inset",
                     "entries": [
-                        "This subclass taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                        "This subclass taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
                 "The College of Shanties is an “informal” college, a loose community of tradesmen that work in environments with harsh, repetitive labor. Far from studying theory or undertaking long apprenticeships, a shantyman learns practical skills on the job.",
@@ -6252,7 +6727,7 @@
                 {
                     "type": "inset",
                     "entries": [
-                        "This subclass taken/modified from All Beneath the Yonder Seas and Streams: https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view"
+                        "This subclass taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
                 "Your innate magic comes from strange undersea powers, spawned from creatures of the deep that lurk in furtive darkness. Krakens, merrow, sea hags and other marine horrors often abduct thralls from the surface, controlling them with hypnotic magic before discarding them and leaving them forever changed. You have a connection to one of these thralls—or could even be one of these thralls yourself—as the descendant of a deep scion, a child stolen by a sea hag, or someone anointed as an acolyte by a circle of kraken priests. Your inextricable connection to the depths warps your body and soul into strange, alien forms that terrify your terrestrial allies. Above all, the sea lures your mind, bringing you both calm and deep foreboding near the open waters.",
