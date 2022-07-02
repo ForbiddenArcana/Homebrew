@@ -33,7 +33,7 @@
                     ]
                 },
                 "You use your spellcasting stat for these spells. If you do not have a spellcasting stat, you may choose one of Intelligence, Wisdom, or Charisma.",
-                "This feature can only be acquired by casting {@spell The Lost Spell}"
+                "This feature can only be acquired by casting {@spell The Lost Spell|FA:BN}"
             ]
         }
     ],
@@ -86,7 +86,7 @@
                 "You do not need to be a spellcaster to cast The Lost Spell.",
                 "INCANTATION: \"For in the time of greatest need, may I give the greatest gift. From life to life, end to end, may a second chance be granted to ${Target Name}. May they be free, may they be healed, may they be whole. I ask for naught, but to give them the gift of life.\"",
                 "Note: This spell is listed as a cantrip only for the purposes of Foundry. It does not have a level, and can't be replicated by Wish or some other magic or item which allows you to cast spells not normally on your spell list.",
-                "After casting this spell, the caster gains the benefit of {@boon Lost Spell Boon}."
+                "After casting this spell, the caster gains the benefit of {@boon Lost Spell Boon|FA:BN}."
             ],
             "classes": {
                 "fromClassList": [
