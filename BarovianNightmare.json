@@ -17,7 +17,7 @@
             }
         ]
     },
-    "feat": [
+    "boon": [
         {
             "name": "Lost Spell Boon",
             "source": "FA: BN",
@@ -69,7 +69,7 @@
                 "ritual": true
             },
             "entries": [
-                "Inscribe the 16 spell fragments upon your off hand with ink. Speak the incantation, and then name any person, living, dead, or undead, except for yourself. The spell will then take effect on the target. When the target dies at any point in time in the future (or immediately, if the target is already dead), the following effects will take place:"
+                "Inscribe the 16 spell fragments upon your off hand with ink. Speak the incantation, and then name any person, living, dead, or undead, except for yourself. The spell will then take effect on the target. When the target dies at any point in time in the future (or immediately, if the target is already dead), the following effects will take place:",
                 {
                     "type": "list",
                     "items": [
