@@ -20,7 +20,7 @@
     "boon": [
         {
             "name": "Lost Spell Boon",
-            "source": "FA: BN",
+            "source": "FA:BN",
             "entries": [
                 "Your casting of the Lost Spell has permanently altered your connection to the Weave, empowering it. You gain the following permanent benefits:",
                 {
@@ -33,7 +33,7 @@
                     ]
                 },
                 "You use your spellcasting stat for these spells. If you do not have a spellcasting stat, you may choose one of Intelligence, Wisdom, or Charisma.",
-                "This feature can only be acquired by casting {@spell The Lost Spell|FA:BN}"
+                "This feature can only be acquired by casting {@spell The Lost Spell|FA:BN}."
             ]
         }
     ],
@@ -144,6 +144,168 @@
                     }
                 ]
             }
+        }
+    ],
+    "baseitem": [
+        {
+            "name": "Moonshot",
+            "source": "FA:BN",
+            "type": "R",
+            "rarity": "rare",
+            "weight": 2,
+            "weaponCategory": "martial",
+            "property": [
+                "A",
+                "H",
+                "2H"
+            ],
+            "range": "150/600",
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "bow": true,
+            "weapon": true,
+            "ammoType": "arrow|phb",
+            "entries": [
+                "Every arrow fired by the Moonshot glows ever so slightly as it is loosed, glistening in light that may not be there.",
+                {
+                    "type": "entries",
+                    "name": "Illuminor",
+                    "entries": [
+                        "Moonshot has 3 charges. You may choose to expend a charge, granting your next attack an additional {@damage 1d8} to hit, and it deals an additional {@damage 1d8} radiant damage to the target. In addition, the target leaves a magical trail of moonlight behind them for one hour. A creature with Truesight or Detect Magic active can see this trail of moonlight. The trail fades after 1 hour, or the target dies.",
+                        "Moonshot regains 1 charge for every hour it is left outside at night."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Starry Eyed",
+                    "entries": [
+                        "Your eyes glitter with the pale glow of the full moon, granting you 10ft of Truesight."
+                    ]
+                }
+            ],
+            "srd": true,
+            "basicRules": true,
+            "tier": "major",
+            "bonusWeapon": "+1"
+        },
+        {
+            "name": "Singularity Pearl",
+            "source": "FA:BN",
+            "srd": true,
+            "tier": "major",
+            "rarity": "rare",
+            "reqAttune": true,
+            "wondrous": true,
+            "entries": [
+                "This unearthly pearl seems to be both heavy as a cannonball and light as a feather in your hand as the light bends around it. This pearl must be attached to a weapon in order to be used. If the weapon is not magical, its damage becomes magical. If the weapon does not require attunement, it now does.",
+                "Attaching the pearl to the weapon requires pressing it against the weapon for at least 10 minutes. Thereafter, the pearl can't be removed unless you detatch it as an action, or the weapon is destroyed. Not even an antimagic field causes it to fall off. The pearl falls off the weapon if your attunement to the weapon ends.",
+                "The pearl has 3 charges and regains all charges at the end of a Long Rest. While the pearl is attached to a weapon you are attuned to, you may expend a charge to perform one of the following effects:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Meteor Strike: You manipulate gravity to launch yourself into the air and slam into the ground with a concussive blast. As an action, you may jump up to 30 feet. Any creature within 10 feet of where you land must make a Dexterity Saving Throw or take {@damage 2d6} bludgeoning damage and be knocked prone plus an additional {@damage 1d6} bludgeoning damage for every 10 ft you jumped. On a succesful save they tale half damage and are not knocked prone. This damage can not exceed {@damage 8d6} total. You do not take falling damage performing Meteor Strike.",
+                        "Superluminal Projectile: The weapon becomes as light as a feather up until the instant of impact. If the weapon has the thrown property, you can use an action to throw the weapon in a line up to 120 ft long and 5 ft wide. All creatures along the weapon's path must make a Dexterity saving throw, or take damage equal to an Critical Hit from the weapon, or half on a success. The weapon lands at the end of its travel distance, and must be recovered.",
+                        "Event Horizon: As a bonus action, you may manipulate the weapon's weight at choice moments in the strike, increasing the momentum to deal deadly blows. Until the end of your turn, the weapon does an additional {@damage 1d4} damage and any creature hit by an attack must make a Strength Saving Throw or be pushed back 5 ft."
+                    ]
+                },
+                "The DC for the Saving Throws is equal to 8 + your proficiency bonus + your Strength modifier."
+            ]
+        },
+        {
+            "name": "Ring of Healthy Growth",
+            "source": "FA:BN",
+            "type": "RG",
+            "rarity": "very rare",
+            "reqAttune": true,
+            "entries": [
+                "This brass ring is inset with numerous green emeralds which seem to be watching you. While wearing the ring, you gain the following benefits:",
+                {
+                    "type": "entries",
+                    "name": "Growing Strength",
+                    "entries": [
+                        "This ring has 3 charges. As an action, you may expend a charge and cast {@spell heroism} at 1st level. When cast in this way, the spell does not require concentration. The ring recharges {@dice 1d3} charges after being buried in fertile earth (such as a garden, or an area affected by the {@spell plant growth} spell) for 4 hours."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Overgrowth",
+                    "entries": [
+                        "Your Consititution score increases by 1."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Rampant Growth",
+                    "entries": [
+                        "As a reaction before you take damage, you may cause the emeralds in the ring to explode into vines that encircle you and take as much of the triggering damage as possible. The vines grant you total cover, and make the ground within 5 feet of you difficult terrain. The vines have AC 10 + your proficiency bonus, HP 10 x your level, automatically fails saving throws, has vulnerability to fire damage and immunity to psychic damage. Any spell that would target you instead targets the vines. The vines last until they are destroyed, or you dismiss them (no action required). When you use this property, you can't use it again until the ring has regained at least one charge."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fulgurite",
+            "source": "FA:BN",
+            "srd": true,
+            "type": "M",
+            "rarity": "rare",
+            "reqAttune": false,
+            "weight": 4,
+            "weaponCategory": "simple",
+            "property": [
+                "V"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "P",
+            "dmg2": "1d8",
+            "bonusWeapon": "+1",
+            "charges": 5,
+            "recharge": "dawn",
+            "baseItem": "spear|phb",
+            "entries": [
+                "The Fulgurite has 5 charges.",
+                "As an action, you may expend 3 charges to cast {@spell lightning bolt} (Spell Save DC 15) from the spear.",
+                "When you hit a creature with this spear, you may expend any number of charges to deal an additional {@damage 1d8} lightning damage to the creature. If you expend more than 1 charge using this feature, you can either increase the lightning damage by {@damage 1d8} per charge expended, or have the lightning arc to additional creatures. If you choose to have it arc to additional creatures, make an attack roll against a different creature within 10ft of a creature who has taken lightning damage from this spear, with advantage if they are wearing metal. On a hit, they take {@damage 1d8} lightning damage.",
+                "Fulgurite regains {@dice 1+1d4} charges every long rest, and regains an additional charge for every 10 points of lighting damage the wielder takes in a single instance.",
+                "\"Piezoelectric impact absorbers in the haft should be sufficient to offset any inefficiencies in the thermal chargers. This newest prototype should no longer explode unprompted.\""
+            ]
+        },
+        {
+            "name": "Nightliner",
+            "source": "FA:BN",
+            "basicRules": true,
+            "tier": "minor",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                "The fabled Nightliner. It's like Charcoal No. 5, but for eyes. Perfect for edgy teens, edgy adults, or someone who wants to capture the \"hasn't had a full night's sleep in years,\" look.",
+                {
+                    "type": "entries",
+                    "name": "Enchanted Eyes",
+                    "entries": [
+                        "It takes one minute to apply this eyeliner, when it is applied around the eyes you gain Darkvision up to 60ft. Additionally you gain a +5 bonus to any sight based Perception checks. These features last for 12 hours or until the eyeliner is removed or smeared (by rain, mud, swimming, tears, etc). This eyeliner is not waterproof. You can use this make-up 20 times before it completely runs out."
+                    ]
+                }
+            ]
+        },        
+        {
+            "name": "Martyr's Tread",
+            "source": "FA:BN",
+            "tier": "major",
+            "rarity": "rare",
+            "reqAttune": true,
+            "wondrous": true,
+            "bonusAc": "+1",
+            "entries": [
+                "These metal greaves and dented and scarred, but the quality of the craftsmanship is obvious despite the age. While you wear these boots, you gain the following benefit:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain a bonus of +1 to your AC.",
+                        "When your current hitpoints (including temporary hitpoints) are below a quarter of your hitpoint maximum, you or allies who start their turn within 10 feet of you while you are conscious may add 2 to the damage rolls of any melee or spell attacks they make during their turn.",
+                        "When your current hitpoints (including temporary hitpoints) are below a tenth of your hitpoint maximum and you are still conscious, the damage increases to 2 + your Constitution modifier."
+                    ]
+                }
+            ]
         }
     ]
 }
