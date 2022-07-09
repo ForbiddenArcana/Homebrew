@@ -219,7 +219,52 @@
             "firearm": true,
             "weapon": true,
             "ammoType": "renaissance bullet"
-        }
+        },
+        {
+            "name": "Crown of Storms",
+            "source": "FA:GoA",
+            "rarity": "rare",
+            "reqAttune": "by a spellcaster",
+            "wondrous": true,
+            "entries": [
+                "This crown smells faintly of ozone, and you feel a slight static shock each time you touch it. Minute flashes of lightning illuminate the gem from within.",
+                {
+                    "type": "entries",
+                    "name": "Essence of Storms",
+                    "entries": [
+                        "While attuned to this crown, you have resistance to lightning and thunder damage."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Wrath of Talos",
+                    "entries": [
+                        "Once per turn, when you reduce a creature to 0 HP with lightning or thunder damage, you may cast {@spell Lightning Lure|TCE} or {@spell Shocking Grasp} as a bonus action using your spellcasting ability modifier. "
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Thunderous Call",
+                    "entries": [
+                        "As an action, you may cast {@spell Call Lightning} (Save DC 15) from the Crown of Storms. Once you use this feature, you can't use it again until you finish a long rest."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Underbarrel Launcher (Lightning)",
+            "source": "FA:GoA",
+            "basicRules": true,
+            "tier": "minor",
+            "rarity": "rare",
+            "wondrous": true,
+            "charges": 3,
+            "entries": [
+                "This magical device is a steel tube, about 1 inch in diameter and 1 foot long, engraved with lightning bolt patterns down its length. Along the top of the tube are clamps such that it may attach to a two-handed firearm or crossbow.",
+                "The launcher has 3 charges. While holding a two-handed firearm or crossbow with the launcher attached to it, you may use an action to expend a charge and cast {@spell lightning bolt} (save DC 15) from it. When cast in this way, the lightning bolt will ricochet off solid surfaces until the full length of the spell is used (100ft), or the lightning bolt bounces 3 times. Each creature in the path of the lightning bolt may only be struck once.",
+                "The launcher regains all its charges after completing a long rest, or being struck by natural lightning."
+            ]
+        }, 
     ],
     "object": [
         {
