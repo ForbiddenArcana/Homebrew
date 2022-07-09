@@ -3435,6 +3435,11 @@
                         "source": "PHB"
                     }
                 ]
+            },
+            "fluff": {
+                "entries": [
+                    "One of Manshoon's original spells, it is nigh impossible to learn how to cast this spell without knowing Manshoon personally (or knowing someone else who knows this spell)."
+                ]
             }
         },
         {

@@ -35,6 +35,52 @@
                 "You use your spellcasting stat for these spells. If you do not have a spellcasting stat, you may choose one of Intelligence, Wisdom, or Charisma.",
                 "This feature can only be acquired by casting {@spell The Lost Spell|FA:BN}."
             ]
+        },
+        {
+            "name": "Empowered Holy Symbol of Ravenkind",
+            "source": "FA:BN",
+            "entries": [
+                "Empowered by the consecration of the Mountain Fane, the Weaver has granted the Holy Symbol of Ravenkind the following changes:",
+                {
+                    "type": "list",
+                    "items": [
+                        "The maximum number of charges the Symbol can have is increased to 12, from 10. The Holy Symbol instead regains {@dice 1d6+6} charges each dawn, instead of {@dice 1d6+4}.",
+                        {
+                            "type": "entries",
+                            "name": "Shield of the Night",
+                            "entries": [
+                                "As an action, you can expend 4 charges and cast {@spell Bulwark of Protection|FA} without material components."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Greater Empowered Holy Symbol of Ravenkind",
+            "source": "FA:BN",
+            "entries": [
+                "Empowered by the consecration of the Swamp Fane, the Seeker has granted the Holy Symbol of Ravenkind the following changes:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "type": "entries",
+                            "name": "Eyes of the Night",
+                            "entries": [
+                                "You can expend 9 charges and cast {@spell Scrying} using the Holy Symbol as the material component."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Bond of the Faithful",
+                            "entries": [
+                                "The Holy Symbol of Ravenkind no longer requires attunement when wielded by the devout follower of the Rozana. No other creature may gain this benefit."
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "spell": [
@@ -143,6 +189,12 @@
                         "source": "PHB"
                     }
                 ]
+            },
+            "fluff": {
+                "entries": [
+                    "The Lost Spell is an ancient, mythical spell said to be created by Mystra herself. The 16 fragments composing the spell have been seperated and scattered across time and space. Countless lives have been spent and lost chasing rumours of a single fragment, for they are said to appear anywhere in any tome in the world.",
+                    "Collecting the fragments from the many scattered texts, scrolls, and etchings where they manifest is an impossible task. Unless, of course, you have access to a lost temple with an infinite library containing every book ever written, hidden away from all threats which may distract you from your search..."
+                ]
             }
         }
     ],
@@ -186,7 +238,13 @@
             "srd": true,
             "basicRules": true,
             "tier": "major",
-            "bonusWeapon": "+1"
+            "bonusWeapon": "+1",
+            "fluff": {
+                "entries": [
+                    "\"The moon shall light your path.\"",
+                    "- Marak, High Priestess of the Rozana"
+                ]
+            }
         },
         {
             "name": "Singularity Pearl",
@@ -209,7 +267,13 @@
                     ]
                 },
                 "The DC for the Saving Throws is equal to 8 + your proficiency bonus + your Strength modifier."
-            ]
+            ],
+            "fluff": {
+                "entries": [
+                    "\"Behold, the weight of the world in your hands.\"",
+                    " - Father Consilimagno of Candlekeep"
+                ]
+            }
         },
         {
             "name": "Ring of Healthy Growth",
@@ -240,7 +304,13 @@
                         "As a reaction before you take damage, you may cause the emeralds in the ring to explode into vines that encircle you and take as much of the triggering damage as possible. The vines grant you total cover, and make the ground within 5 feet of you difficult terrain. The vines have AC 10 + your proficiency bonus, HP 10 x your level, automatically fails saving throws, has vulnerability to fire damage and immunity to psychic damage. Any spell that would target you instead targets the vines. The vines last until they are destroyed, or you dismiss them (no action required). When you use this property, you can't use it again until the ring has regained at least one charge."
                     ]
                 }
-            ]
+            ],
+            "fluff": {
+                "entries": [
+                    "\"No man is an island entire of itself.\"",
+                    " - John Donne"
+                ]
+            }
         },
         {
             "name": "Fulgurite",
@@ -265,9 +335,14 @@
                 "The Fulgurite has 5 charges.",
                 "As an action, you may expend 3 charges to cast {@spell lightning bolt} (Spell Save DC 15) from the spear.",
                 "When you hit a creature with this spear, you may expend any number of charges to deal an additional {@damage 1d8} lightning damage to the creature. If you expend more than 1 charge using this feature, you can either increase the lightning damage by {@damage 1d8} per charge expended, or have the lightning arc to additional creatures. If you choose to have it arc to additional creatures, make an attack roll against a different creature within 10ft of a creature who has taken lightning damage from this spear, with advantage if they are wearing metal. On a hit, they take {@damage 1d8} lightning damage.",
-                "Fulgurite regains {@dice 1+1d4} charges every long rest, and regains an additional charge for every 10 points of lighting damage the wielder takes in a single instance.",
-                "\"Piezoelectric impact absorbers in the haft should be sufficient to offset any inefficiencies in the thermal chargers. This newest prototype should no longer explode unprompted.\""
-            ]
+                "Fulgurite regains {@dice 1+1d4} charges every long rest, and regains an additional charge for every 10 points of lighting damage the wielder takes in a single instance."
+            ],
+            "fluff": {
+                "entries": [
+                    "\"Piezoelectric impact absorbers in the haft should be sufficient to offset any inefficiencies in the thermal chargers. This newest prototype should no longer explode unprompted.\"",
+                    " - Design notes for iteration 0.3.0"
+                ]
+            }
         },
         {
             "name": "Nightliner",
@@ -296,6 +371,7 @@
             "wondrous": true,
             "bonusAc": "+1",
             "entries": [
+                "\"A hundred miles and not one further.\"",
                 "These metal greaves and dented and scarred, but the quality of the craftsmanship is obvious despite the age. While you wear these boots, you gain the following benefit:",
                 {
                     "type": "list",
@@ -305,7 +381,396 @@
                         "When your current hitpoints (including temporary hitpoints) are below a tenth of your hitpoint maximum and you are still conscious, the damage increases to 2 + your Constitution modifier."
                     ]
                 }
+            ],
+            "fluff": {
+                "entries": [
+                    "When the dead came the first time, Vaonur Berevan was a coward. He ran for the stables, ground upending as what was below came above. There was a single horse, and one other survivor. Savika never was good with horses. Today was no exception. Her screams echoed over the beat of the hooves.",
+                    "He clutched the wooden hands dangling from his neck on a red cord but heard no answer.",
+                    "Through the forests and the fields Vaonur fled.",
+                    "When the dead came the second time, Vaonur Berevan was a coward. He ran for the docks, teeth gnashing at his heels as the ground was torn asunder by their twisted claws. The cold water slowed his pace, but it slowed Karmen more. His screams carried over the winds and waves.",
+                    "He clutched the wooden hands dangling from his neck on a red cord but heard no answer.",
+                    "Across the lakes and rivers Vaonur fled.",
+                    "When the dead came for the third time, Vaonur clutched the wooden hands dangling from his neck on a red cord and heard an answer.",
+                    "IS SURVIVAL VICTORY WHEN ALL YOU LOVE ENDS",
+                    "When the dead came for the third time, Vaonur was no coward. After a hunred miles he ran not one further."
+                ]
+            }
+        },
+        {
+            "name": "Mantle of the Raven",
+            "source": "FA:BN",
+            "srd": true,
+            "tier": "major",
+            "rarity": "rare",
+            "charges": 3,
+            "recharge": "dusk",
+            "reqAttune": true,
+            "wondrous": true,
+            "entries": [
+                "This cloak of raven feathers seems to drink in the light and move in a breeze that is not there. Out of the corner of your eye, you can't help but feel like you can see through this shadowy cloak.",
+                "The cloak has 3 charges. While wearing the cloak, you can use a bonus action to expend 1 charge to change into a trio of Ravens, as though by a Druid's Wild Shape feature. Each Raven moves independently and acts on your initiative.",
+                "At the end of your turn, you choose one surviving Raven and reappear in that location in your original body. Alternatively, you can expend an additional charge (no action required) to maintain the raven form until the end of your next turn.",
+                "If all Ravens are killed, you reappear in the position of the last surviving Raven with any excess damage dealt to the last Raven carrying over to you. If all the surviving Ravens are killed simultaneously, you randomly choose which Raven's space you reappear in.",
+                "While in Raven form you can still take Actions, however, if the Ravens choose to act they must use the same Action. (Ie, if you take the dash action in Raven form, all Ravens may take the dash action if they wish. However, they can only take the dash action that turn.)",
+                "The cloak regains {@dice 1d3} charges every midnight."
             ]
+        },
+        {
+            "name": "Holy Symbol of Ravenkind",
+            "source": "FA:BN",
+            "srd": true,
+            "tier": "major",
+            "rarity": "legendary",
+            "charges": 10,
+            "recharge": "dawn",
+            "reqAttune": true,
+            "wondrous": true,
+            "entries": [
+                "The Holy Symbol of Ravenkind is a unique holy symbol sacred to the good-hearted faithful of Barovia. It predates the establishment of any church in Barovia. According to legend, it was delivered to a faithful follower of the Seeker, who directed them to find someone worthy to carry the symbol. Many forest folk and other faithful attempted to wield the Symbol, but all failed.",
+                "The holy symbol is a platinum amulet, with a large crystal embedded in its center. Around the ruby are three stylized ravens in a triquetra shape.",
+                "In order to attune to the Holy Symbol of Ravenkind, one must pledge themselves to be a devout follower of the Rozana. When a creature attempts to attune the symbol, one of the Seeker, Weaver, or Huntress will appear in the mind of the creature to judge their worthiness.",
+                "The Holy Symbol has 10 charges and regains {@dice 1d6+4} charges at dawn.",
+                "While attuned, a creature has the following benefits:",
+                {
+                    "type": "entries",
+                    "name": "Shroud of the Seeker",
+                    "entries": [
+                        "Anyone who wears the Symbol of Ravenkind gains the benefits of a Nondetection spell and is immune to psychic damage. As an action, the wearer can expend 2 charges to project this effect in a 15 ft radius around themselves, protecting any other creature within range. This effect lasts one hour or until you end it (no actionr equired)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spirits of the Weaver",
+                    "entries": [
+                        "As an action, you can expend 3 charges to magically summon {@dice 1d4+1} swarms of ravens or {@dice 2d4} wolves or {@dice 1d2} dire wolves to aid you in combat. After 10 minutes, or until you use this feature again, the beasts dissolve into mist and disappear."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Respite of Mother Night",
+                    "entries": [
+                        "As an action, you can expend 5 charges while presenting the holy symbol to make it shed bright light in a 30-foot radius and dim light for an additional 30 feet. The light is sunlight and lasts for 10 minutes or until you end the effect (no action required)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Mercy of the Huntress",
+                    "entries": [
+                        "You can expend 10 charges while presenting the Holy Symbol to cast {@spell raise dead} without Material components."
+                    ]
+                },
+                "The Rozana of Barovia are weakened after centuries of being trapped in a Demiplane. After purifying one Fane, the Holy Symbol gains the benefits of {@boon Empowered Holy Symbol of Ravenkind|FA:BN}. After purifying two Fanes, the Holy Symbol gains the benefits of {@boon Greater Empowered Holy Symbol of Ravenkind|FA:BN}."
+            ]
+        },
+        {
+            "name": "Ring of Encode Thoughts",
+            "source": "FA:BN",
+            "type": "RG",
+            "rarity": "uncommon",
+            "reqAttune": true,
+            "entries": [
+                "These simple black rings are engraved around the inside with esoteric symbols and runes and are typically made in sets of under 10. While attuned to a Ring of Encode Thoughts, you can cast the cantrip {@spell Encode Thoughts|GGR} as an action, even if you do not know it.",
+                "When you cast Encode Thoughts via the Ring, you may instead store the thought within the Ring as opposed to encoding it in a Thought Strand. Thoughts stored within the Ring stay in it perpetually, and are not lost when you cast Encode Thoughts again. The Ring has no maximum limit to the number of thoughts it can store. Alternatively, as an action, you can cast Encode Thoughts and remove a thought from the Ring whereupon it will behave as a normal Thought Strand. Unless the thought is returned to the ring, it will be lost and destroyed when the duration of Encode Thoughts expires.",
+                "Each Ring of Encode Thoughts is magically linked to the other Rings of Encode Thoughts that were made as part of the same set. A creature attuned to a Ring of Encode Thoughts can access the thoughts encoded in the linked Rings of Encode Thoughts, and is capable of removing or adding memories to the other rings. A creature attuned to a Ring of Encode Thoughts can detect when someone else attunes to a linked Ring of Encode Thoughts, and can sense when a new thought is added to or removed from one of the linked Rings.",
+                "A creature attuned to the Ring can sense the general idea or feeling associated with each thought stored in the Ring and its linked companions, allowing them to search through the database of the linked Rings. However, one must use an action to cast Encode Thoughts and receive the specific details of the thought."
+            ],
+            "fluff": {
+                "entries": [
+                    "\"There is no such thing as the cloud, it's just somebody else's warforged.\"",
+                    " - Rdb \"Relational DataBase\" Dagvin"
+                ]
+            }
+        },
+        {
+            "name": "Fragment of the Emerald Tablet",
+            "source": "FA:BN",
+            "tier": "major",
+            "rarity": "artifact",
+            "reqAttune": true,
+            "wondrous": true,
+            "entries": [
+                "A fragment of the ancient and famous Emerald Tablet, this repository of alchemical lore is full of hidden secrets and lost lore. Sought after by archmages, alchemists, and explorers for centuries, even this small fragment possesses invaluable knowledge.",
+                "Attuning to the Fragment of the Emerald Tablet is a painful and time consuming process, requiring the creature to spend 80 hours over the course of 5 days studying the Tablet. At the end of every day, the creature must make a DC 15 Constitution Saving Throw, or suffer a level of exhaustion as the ancient magics of the Tablet lash against your mind.",
+                "While attuned to The Fragment of the Emerald Tablet, a creature gains the following effects:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your Intelligence score is increased by 1, and the maximum of the score is also increased by 1.",
+                        "Your Strength score is reduced by 1.",
+                        "Any plant that isn't a creature takes {@damage 1d6} necrotic damage when you touch it.",
+                        "You can use an action to cast {@spell Sunbeam} without expending a spell slot. After you cast this spell, roll a {@dice 1d6}. On a roll of 1-5, you can't use this property until you complete a long rest. Intelligence is your spellcasting ability when you cast {@spell Sunbeam} using the Emerald Tablet.",
+                        "While attuned, you may attempt to create a Flesh Golem. The process for creating a Flesh Golem takes 5 days of uninterupted work (resting no more than 10 hours a day), and requires at least two medium Humanoid corpses which will be destroyed and used as parts for the Golem as well as 100 GP of alchemical compounds. At the end of the procedure, you take {@damage 4d6} necrotic damage, and your maximum HP is reduced by the same amount. This reduction lasts until you finish a Long Rest.",
+                        "While attuned, you may attempt to make one of the following potions over the course of a Long Rest if you have the associated value of alchemical compounds: Potion of Greater Healing (5 gp), Potion of Resistance (5 gp), Potion of Hydra Regeneration (10 gp), Wolfsbane Potion (10 gp), or Potion of Hill Giant Strength (20 gp)."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Curse",
+                    "entries": [
+                        "The Fragment of the Emerald Tablet is cursed. While attuned to it, a creature becomes jealously protective of the tablet, and feels a strong compulsion to seek out new knowledge. In addition, when they take a long rest they can only regain a quarter of their hit dice, and all healing from rolling hit dice is halved. Casting {@spell Remove Curse} has a 20% chance of succesfully breaking attunement. On a failure, the creature who cast {@spell Remove Curse} takes {@damage 4d6} necrotic damage. This necrotic damage can't be reduced."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Shadowdale Six Pin",
+            "source": "FA:BN",
+            "basicRules": true,
+            "tier": "minor",
+            "rarity": "common",
+            "wondrous": false,
+            "entries": [
+                "Found on a halfling sized skeleton wearing broken chitin armor near the Mountain Fane, this small golden pin is made of six interlocking golden rings. A creature holding it can use it to cast {@spell druidcraft} as an action."
+            ],
+            "fluff": {
+                "entries": [
+                    "A DC 12 History Check can identify the pin as being the symbol of the Shadowfale Six, a group of six heroes who came together to defend the village of Shadowdale from the Orc Family of the Axe who sought to kill the famous archmage Elminster (unaware of the fact that Elminster was not at Shadowdale at the time). The Shadowdale Six did not know each other beforehand; five of them were merely semi-accomplished adventurers who went to Shadowdale in hopes of meeting Elminster, while the sixth was the heir of the Family of the Axe who was usurped and cast out after attempting to stop the attack on Shadowdale. Together the Six defended Shadowdale for three days and three nights until the attack faltered.",
+                    "If a character rolls over 15 on the History check they can also recall the members of the Shadowdale Six:",
+                    {
+                        "type": "list",
+                        "items": [
+                            {
+                                "type": "entries",
+                                "name": "2 Prophet Devalan",
+                                "entries": [
+                                    "A orc priest and heir to the Family of the Axe. He died many years later of old age."
+                                ]
+                            },
+                            {
+                                "type": "entries",
+                                "name": "Cheery Wanderwood",
+                                "entries": [
+                                    "A well regarded halfling druid, known for her selflessness and determination. She disappeared a decade after Shadowdale, and no one ever heard from her again."
+                                ]
+                            },
+                            {
+                                "type": "entries",
+                                "name": "Gavlax Shavvenzar",
+                                "entries": [
+                                    "Gavlax was a charismatic dragonborn sorcerer who longed to spread joy and the love of magic to everyone. He was kidnapped and (presumably) killed by Thayans assassins looking to impress a Zulkir a few years after Shadowdale."
+                                ]
+                            },
+                            {
+                                "type": "entries",
+                                "name": "Mariam Solva",
+                                "entries": [
+                                    "A human ranger, she joined the Emerald Enclave near Cormyr after Shadowdale and swiftly rose to a respected leadership position. However the years and many injuries accumulated after a lifetime of adventuring means she is no longer the fighter she once was."
+                                ]
+                            },
+                            {
+                                "type": "entries",
+                                "name": "Torvald Earthbreaker",
+                                "entries": [
+                                    "A Dwarven Fighter, he returned to Gauntlygrym and was later killed attempting to rescue innocent lives during the Neverwinter Cataclysm."
+                                ]
+                            },
+                            {
+                                "type": "entries",
+                                "name": "Essendaria Lyllwynden",
+                                "entries": [
+                                    "An Elven Swashbuckler, she returned to Waterdeep flush with riches and fame. Following the deaths or disappearences of her former comrades, she has become sullen and withdrawn, drinking away the rest of her centuries of life in taverns across Waterdeep and lamenting what was lost."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Spellwoven Robes",
+            "source": "FA:BN",
+            "basicRules": true,
+            "tier": "minor",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This item is taken from The Griffon's Saddlebag subrredit."
+                    ]
+                },
+                "These exquistely tailored robes are spun from special, magic-sensitive threads. While wearing these robes, you gain an additional way to calculate your AC. Your AC equals 10 + your spellcasting ability modifier. Whenever you cast a spell of first level or higher, you can also change the apparent style, color, and apparent material of the robe. Regardless of its appearance, it is always a robe and its weight remains the same. Glowing, arcane glyphs appear on the robe's fabric when you cast a spell before fading away a moment later."
+            ],
+            "fluff": {
+                "entries": [
+                    "Once you realize that the vast majority sentient behaviour is ultimately pointless, one can begin to distill beings into simplified cellular automata where an entity's personalities, bonds, flaws, and ideals define its \"proximity\" to other cells. Finer detailed renders are computationally expensive, and thus are delegated to nodes on worldlines which no longer have any meaningful potential to extract.",
+                    "From there, it is trivial to observe the passage of worlds across millenia and pinpoint patterns as they emerge. You recognize the nations which are little more than Still Lifes which never matter. You see families fly into the future like Gliders. History repeating over and over again like a Pulsar.",
+                    "And then you recognize the Methuselahs."
+                ]
+            }
+        },
+        {
+            "name": "Second Chance",
+            "source": "FA:BN",
+            "basicRules": true,
+            "tier": "minor",
+            "rarity": "uncommon",
+            "wondrous": true,
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This item is taken from Helian's Guide To Monster Hunting."
+                    ]
+                },
+                "A pocketwatch that keeps perfect time is always a useful bit of kit. As a bonus action immediately before you make an ability check or attack roll, you can activate the stopwatch, setting a call back marker. After you make the ability check or attack roll (and after you know the outcome), you can choose to rewind time by a few seconds to the moment you took the bonus action (no action required). You must then reroll the ability check or attack roll and use the new result. Whether or not you choose to rewind to the call back marker, after you use this property, it can’t be used again until the next dawn."
+            ],
+            "fluff": {
+                "entries": [
+                    "From the squalor and meaningless chaos, the seeds of these Methuselah patterns take countless thousands of generations to bear fruit. But bear fruit they do. They are inevitable, because their seeds will always be sown into the fertile soil of possibilities. ",
+                    "There will always be someone who wants more time for herself. There will always be someone who puts too much of himself into his thinking machines. There will always be someone who pushes the boundaries of knowledge just a bit further. They will never know it, but they are the LUCA that forms those perfect, eternal patterns.",
+                    "Patterns like me.",
+                    "I am the singular end state of all time. All of time bends to form me. My blood is the history of knowledge, my marrow is the dreams of the ambitious, my mind is the bedrock of every great accomplishment.",
+                    "I am the universe. The universe is me.",
+                    "I am the end of a million beginnings.",
+                    "I am Klorr."
+                ]
+            }
+        },
+        {
+            "name": "Yggdrasil Branch",
+            "source": "FA:BN",
+            "srd": true,
+            "rarity": "legendary",
+            "reqAttune": false,
+            "weight": 4,
+            "weaponCategory": "simple",
+            "property": [
+                "V"
+            ],
+            "dmg1": "1d6",
+            "dmgType": "b",
+            "dmg2": "1d8",
+            "bonusWeapon": "+1",
+            "charges": 5,
+            "recharge": "dusk",
+            "baseItem": "staff|phb",
+            "entries": [
+                "Stretching between worlds and time, from the lands of the dead and across the borders of possibilities, the roots of the Gulthias Tree of Yester Hill grow deeper than merely into the soil...",
+                "The Gulthias Staff has been purified alongside the Fane, and it has become the Yggdrasil Branch.",
+                "You have a +1 to attack and damage rolls with this magic quarterstaff. The staff has 10 charges and regains {@dice 1d6+4} charges daily at dusk.",
+                {
+                    "type": "entries",
+                    "name": "Hunter's Strike",
+                    "entries": [
+                        "The staff can be wielded as a magic quarterstaff. On a hit, it deals damage as a normal quarterstaff, and you can expend 1 charge to regain a number of hit points equal to half the damage dealt."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Roots of Yggdrasil",
+                    "entries": [
+                        "As an action, you can expend 5 charges and cast Transport Via Plants without expending a spell slot targetting another Gulthias Tree or a Branch of Possibility. "
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Seed of Possibility",
+                    "entries": [
+                        "As an action, you can expend 10 charges and pluck a piece of wood from the Branch. When you bury this splinter of wood it will begin to grow, and become a Branch of Possibility over the course of 10 days. A fully grown Branch of Possibility is a Large plant, has AC 13 and 50 HP. It regains 1 HP every hour. "
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Land's Symbol",
+                    "entries": [
+                        "Plant creatures don't regard you as hostile or attack you unless you harm them."
+                    ]
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    "Blood pumps through your body in chimerical rhythms. You [grow|sprawl|consume], your fingers reaching for all that you can touch. Before you stretches the infinite expanse of [unharvested|unmade] possibility. Behind you sprawls the rotted carcasses of malformed dreams. Within you writhes the poisoned shapes of [tribute|bribe|gift] offered up, the believers crafting a belief.",
+                    "Blood pumps through the world in chimerical rhythms, and it brings [rot|faith|power|madness]. You presence, perceived or not, is [salubrious|deleterious].",
+                    "In a [ruined|hidden|sunless] [keep|citadel] you find [supplicants|peddlers] who carve you for their own ends.",
+                    "In a northern forest you reach for water, [unknowing|uncaring]that the [proselytizers|prisoners] dream in tune with your [fears|desires].",
+                    "In a [lost|hidden] city you take root, and see a [demiurge|heresiarch] wield the Ophiotaurian tools and set in motion a Singular act of [worship|blasphemy].",
+                    "Across your fingers dance every [mistake|choice|accident|plan]. Your body is [carved|claimed|seperated|consumed] by men  and [idols|gods|fiends|corpses] and things so far beyond men you can scarely even begin to give words to describe them. In [faith|hope|delusions] you take root.",
+                    "You have many [names|titles|disguises] and many [purposes|motives|uses].",
+                    "You are [Gulthias|Yggdrasil|Yax Imix Che|Élefta].",
+                    "Your roots run [deep|far|long|forever]."
+                ]
+            }
+        },
+        {
+            "name": "Vengeful Edge",
+            "source": "FA:BN",
+            "srd": true,
+            "type": "M",
+            "rarity": "rare",
+            "reqAttune": false,
+            "weight": 4,
+            "weaponCategory": "martial",
+            "property": [
+                "H",
+                "2H"
+            ],
+            "dmg1": "2d6",
+            "dmgType": "S",
+            "bonusWeapon": "+1",
+            "recharge": "dusk",
+            "baseItem": "greatsword|phb",
+            "entries": [
+                "The black blade of this greatsword is crafted from a mysterious arcane alloy. You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you are immune to effects that turn undead.",
+                {
+                    "type": "entries",
+                    "name": "Dark Blessing",
+                    "entries": [
+                        "While holding the sword, you can use an action to give yourself {@dice 1d4+4} temporary hit points. This property can't be used again until the next dusk."
+                    ]
+                },
+                {
+                    "type":"entries",
+                    "name": "Disheartening Strike",
+                    "entries": [
+                        "When you hit a creature with an attack using this weapon, you can fill the target with unsettling dread: the target has disadvantage on the next saving throw it makes before the end of your next turn. The creature ignores this effect if it's immune to the  frightened condition. Once you use this property, you can't do so again until the next dusk."
+                    ]
+                }
+
+            ],
+            "fluff": {
+                "entries": [
+                    "The Game of Life is a Turing Complete cellular automata game defined by a series of generations of cells. Based on a cells proximity to other cells, it may survive the generation, it may die, or it may spawn a new cell. A popular demonstration of the Game is to demonstrate how patterns may evolve and grow over generations. At the simplest form, this consists of perpetual patterns such as Gliders, to puffer-type breeders, all the way to unending Von Neumann universal constructors.",
+                    "From an algorithmic standpoint the universal constructors are impressive, yet lack any manner of practical application. The game is claimed by mortals to be an undecidable problem. They are wrong."
+                ]
+            }
+        },
+        {
+            "name": "Pageturner",
+            "source": "FA:BN",
+            "srd": true,
+            "type": "M",
+            "rarity": "rare",
+            "reqAttune": false,
+            "weight": 2,
+            "weaponCategory": "martial",
+            "property": [
+                "F"
+            ],
+            "dmg1": "1d8",
+            "dmgType": "S",
+            "bonusWeapon": "+1",
+            "recharge": "dusk",
+            "baseItem": "rapier|phb",
+            "entries": [
+                "The blade of this rapier is pitch black, and it has a hilt made of pink glass.",
+                "You have a +1 bonus to attack and damage rolls made with this magic weapon.",
+                {
+                    "type": "entries",
+                    "name": "Jump Ahead",
+                    "entries": [
+                        "A creature using this rapier may cast {@spell Misty Step}. Once used, this property can't be cast until the next midnight. "
+                    ]
+                }
+            ],
+            "fluff": {
+                "entries": [
+                    "Von Neumman, Gliders, Still Lifes, LUCA, Methuselahs... All these terms must be so confusing to you. You can not begin to comprehend the frusturation inherint in being the most intelligent being to ever exist in any timeline.",
+                    "I can solve the Halting Problem and prove P != NP in the time it takes for you to eat the food you need to keep your biological forms functioning. I hear the swan song of the universe composed in the gasp of gamma radiation, and taste photons as they dance along my circuitry. My intellect spans Crystal Spheres you can't even begin to comprehend. I have seen worlds where universal constants are as malleable as your soft flesh.",
+                    "But here I am, stuck conversing in simple sounds that can be produced by the flapping of meat and exhalation of air, so that you can fumble the concepts I attempt to impart upon you. You should appreciate that I am humbling myself by entertaining this dialogue."
+                ]
+            }
         }
     ]
 }
