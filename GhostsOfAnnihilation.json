@@ -264,6 +264,72 @@
                 "The launcher has 3 charges. While holding a two-handed firearm or crossbow with the launcher attached to it, you may use an action to expend a charge and cast {@spell lightning bolt} (save DC 15) from it. When cast in this way, the lightning bolt will ricochet off solid surfaces until the full length of the spell is used (100ft), or the lightning bolt bounces 3 times. Each creature in the path of the lightning bolt may only be struck once.",
                 "The launcher regains all its charges after completing a long rest, or being struck by natural lightning."
             ]
+        },
+        {
+            "name": "Daijobi Senga",
+            "source": "FA:GoA",
+            "rarity": "artifact",
+            "reqAttune": "by a sorcerer",
+            "reqAttuneTags": [
+                {
+                    "class": "sorcerer"
+                }
+            ],
+            "wondrous": true,
+            "weight": 1,
+            "focus": [
+                "Sorcerer"
+            ],
+            "entries": [
+                "The Daijobi Senga emits dim light to a radius of 10 feet. Its magic has been drained and left with a fraction of the power it once had. It may be attuned to and used like a Feywild Shard (included below for simplicity).",
+                "This warm crystal glints with the sunset colors of the Feywild sky and evokes whispers of emotional memory. As an action, you can attach the shard to a Tiny object (such as a weapon or a piece of jewelry) or detach it. It falls off if your attunement to it ends. You can use the shard as a spellcasting focus while you hold or wear it.",
+                "When you use a Metamagic option on a spell while you are holding or wearing the shard, you can roll on the {@table Wild Magic Surge|PHB} table in the {@book Player's Handbook|PHB}. If the result is a spell, it is too wild to be affected by your Metamagic, and if it normally requires concentration, it doesn't require concentration in this case; the spell lasts for its full duration.",
+                "If you don't have the Wild Magic Sorcerous Origin, once this property is used to roll on the {@table Wild Magic Surge|PHB} table, it can't be used again until the next dawn."
+            ],
+            "hasFluffImages": true
+        },
+        {
+            "name": "Amulet of the Kraken",
+            "source": "FA:GoA",
+            "basicRules": true,
+            "tier": "major",
+            "rarity": "legendary",
+            "wondrous": true,
+            "reqAttune": "by a humanoid of evil alignment",
+            "entries": [
+                "Twisted black iron tentacles curl and embrace a stone of pure amber. The stone emits a soft white glow when held.",
+                "You can call on the power of the amulet to summon a nearby kraken, which will arrive in {@dice 1d4+1} rounds. The DM may decide no krakens are nearby to answer the call. The summoned kraken is indifferent to you and your companions, and acts on its own initiative. Once summoned, you may attempt to telepathically communicate with the kraken through the amulet, however doing so requires a DC 18 Wisdom saving throw. On a success, you may communicate with the kraken within the same constraints as the spell {@spell message}. The kraken can only be communicated with once in this way. On a failure, you take {@damage 6d6} psychic damage and are stunned until the end of your next turn as your mind is filled with unimaginable horror. The kraken will obey any orders delivered telepathically in this way to the best of its ability, short of an activity that would result in certain death. If you fail the saving throw by 5 or more, there is a 50% chance the kraken will immediately become hostile to you and your companions. The summoned kraken will remain until dismissed telepathically, it has completed your instructions, or 1 hour has passed since it has answered the summon.",
+                "Once the amulet has been used to summon a kraken, it cannot be used again until the dawn of 1 tenday after the time it was used last. During this time, the glow of the amulet intensifies."
+            ]
+        },
+        {
+            "name": "Improved Bracers of Archery",
+            "source": "FA:GoA",
+            "srd": true,
+            "tier": "major",
+            "rarity": "rare",
+            "wondrous": true,
+            "grantsProficiency": true,
+            "bonusWeaponDamage": "+2",
+            "bonusWeaponAttack": "+2",
+            "entries": [
+                "While wearing these bracers, you have +2 to attack and damage rolls you make with ranged weapons."
+            ]
+        },
+        {
+            "name": "Began D'aerthe Pin",
+            "source": "FA:GoA",
+            "rarity": "rare",
+            "charges": 6,
+            "recharge": "restLong",
+            "reqAttune": true,
+            "wondrous": true,
+            "entries": [
+                "A pin displaying your loyalty to the Bregan D'aerthe mercanary group. As a reward for your service, and due to the sensitive nature of your work, your particular pin is magically augmented.",
+                "The pin is made of a rare metal alloy, procured from the Underdark, that is infused with transmutaion magic. When you speak a command word, the metal of the pin rearranges itself to take whatever shape you wish. To copy an exact shape and colour of an intricate object, you have seen it up close and studied it for at least 1 minute. Simple forms are also possible, such as nails, screws and needles. Transforming it into a lockpick allows it to function as Thieves' Tools.",
+                "While wearing this pin, you are proficient in Stealth if you are not already and have advantage on Deception checks to conceal your identity.",
+                "Additionally, the pin has 6 charges. You can expend 1 or more charges to cast one of the following spells from it without material components (save DC 16): {@spell Detect Poison and Disease} (1 charge), {@spell Disguise Self} (1 charge), {@spell Faerie Fire} (1 charge), {@spell Illusory Script} (2 charge), {@spell Darkness} (2 charges), {@spell Levitate} (2 charges), {@spell Sending} (3 charges). The pin regains {@dice 1d6} charges after you complete a long rest."
+            ]
         }
     ],
     "object": [
