@@ -264,7 +264,7 @@
                 "The launcher has 3 charges. While holding a two-handed firearm or crossbow with the launcher attached to it, you may use an action to expend a charge and cast {@spell lightning bolt} (save DC 15) from it. When cast in this way, the lightning bolt will ricochet off solid surfaces until the full length of the spell is used (100ft), or the lightning bolt bounces 3 times. Each creature in the path of the lightning bolt may only be struck once.",
                 "The launcher regains all its charges after completing a long rest, or being struck by natural lightning."
             ]
-        }, 
+        }
     ],
     "object": [
         {
