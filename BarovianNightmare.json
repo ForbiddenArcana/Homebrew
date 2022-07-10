@@ -771,6 +771,366 @@
                     "But here I am, stuck conversing in simple sounds that can be produced by the flapping of meat and exhalation of air, so that you can fumble the concepts I attempt to impart upon you. You should appreciate that I am humbling myself by entertaining this dialogue."
                 ]
             }
+        },
+        {
+            "name": "Sunword",
+            "srd": true,
+            "source": "FA:BN",
+            "baseItem": "longsword|phb",
+            "type": "M",
+            "tier": "major",
+            "rarity": "legendary",
+            "reqAttune": true,
+            "weight": 3,
+            "weaponCategory": "martial",
+            "property": [
+                "F",
+                "V"
+            ],
+            "dmg1": "1d10",
+            "dmgType": "R",
+            "dmg2": "2d6",
+            "bonusWeapon": "+2",
+            "entries": [
+                "The Sunsword was a unique greatsword once possessed by Strahd's brother, Sergei von Zarovich and Alek Gwilym before him. In its original form, it had a platinum hilt and guard, and was enchanted to enhance the wielder's strength to superhuman levels. Parts of the enchantment still linger, allowing anyone proficient with shortswords or longswords to be proficient with the Sunsword.",
+                "The blade was destroyed by Khazan after Sergei's death, but in its destruction he created for it a blade of pure sunlight as part of his and Eva's gambit to free Barovia.",
+                "This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property. If you are proficient with {@item shortsword|phb|shortswords} or {@item longsword|phb|longswords}, you are proficient with the sun blade.",
+                "You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra {@damage 2d6} radiant damage.",
+                "The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each.",
+                "The sword counts as a heavy weapon for the purposes of Great Weapon Fighting."
+            ]
+        },
+        {
+            "name": "Deer Totem",
+            "source": "FA:BN",
+            "tier": "minor",
+            "rarity": "common",
+            "wondrous": true,
+            "entries": [
+                "Carved from whittled wood and dabbed with long dried blood that flakes away at the touch, this palm-sized totem depicts a skeletal deer head.",
+                "Once per day, a creature holding the totem may use an action to call upon its magic and become fluent in Druidic or Sylvan (creature's choice) for 10 minutes."
+            ],
+            "fluff": {
+                "entries": [
+                    "The roots of the tree burrow through water and worlds, the branches reach past sky and stars."
+                ]
+            }
+        },
+        {
+            "name": "Fear",
+            "source": "FA:BN",
+            "type": "M",
+            "rarity": "uncommon",
+            "weight": 2,
+            "weaponCategory": "simple",
+            "property": [
+                "L",
+                "T"
+            ],
+            "range": "20/60",
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "axe": true,
+            "weapon": true,
+            "entries": [
+                "When wielding both Fear and Terror, you have advantage on saves against being frightened."
+            ],
+            "srd": true,
+            "basicRules": true,
+            "tier": "major",
+            "bonusWeapon": "+1",
+            "fluff": {
+                "entries": [
+                    "\"I said, Hazlik want's him alive!\"",
+                    "\"Who cares what he wants? He's not even one of the Head Researchers yet! And if we bring Tam this guy's corpse who cares if Hazlik doesn't cut us in on his new experiments?\"",
+                    "\"I care! Because unlike you, I've been looking at the writing on the wall! Indreficus and Hazlik are on the fast track up! We get in their good books now and next time another Zulkir position gets freed up we'll ride their coattails to our own promotions!\"",
+                    "\"Yeah but Ta-\"",
+                    "\"Fuck him! Respectfully. He's too busy to care about what people like us. Do you know how many people have tried to impress him? He's got vaults of gold and items he doesn't touch! The only thing that matters to him is keeping Thay running, and people like you or me don't factor into that. So make time for the people who will pay attention to us!\"",
+                    "\"...I suppose so. But don't you want to anyway? I mean, think of the bragging rights. They say Gavlax knows 7th, maybe even 8th circle spells! And no one but us needs to know it was poison thats got him on the floor. As far as everyone else will know, we won a duel against him fair and square.\"",
+                    "\"Heh... maybe another time.\"",
+                    "\"You wonder if he can hear us in there? I wonder how it feels, listening to two people debate how you're going to die.\""
+                ]
+            }
+        },
+        {
+            "name": "Terror",
+            "source": "FA:BN",
+            "type": "M",
+            "rarity": "uncommon",
+            "weight": 2,
+            "weaponCategory": "simple",
+            "property": [
+                "L",
+                "T"
+            ],
+            "range": "20/60",
+            "dmg1": "1d6",
+            "dmgType": "S",
+            "axe": true,
+            "weapon": true,
+            "entries": [
+                "When wielding both Fear and Terror, you have advantage on saves against being frightened."
+            ],
+            "srd": true,
+            "basicRules": true,
+            "tier": "major",
+            "bonusWeapon": "+1",
+            "fluff": {
+                "entries": [
+                    "The world is alive. Not in the way a person you pass on the street is alive, but it lives all the same. Great forests make the hair, giving way to beards of grassy fields, to a body of water.",
+                    "Magma pumps like blood through deep caves, flowing and spilling through wounds we rend in the surface. Wounds that Torvald rent. Before Shadowdale he was a miner, and all too familiar with the world's body.",
+                    "And as the ground split beneath him and the city of Neverwinter howled in agony, Torvald was reminded that just like any living thing, the world was hungry."
+                ]
+            }
+        },
+        {
+            "name": "Moondust",
+            "source": "FA:BN",
+            "type": "R",
+            "rarity": "uncommon",
+            "weight": 2,
+            "weaponCategory": "martial",
+            "property": [
+                "A",
+                "H",
+                "2H"
+            ],
+            "range": "200/650",
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "bow": true,
+            "weapon": true,
+            "ammoType": "arrow|phb",
+            "entries": [
+                "This weapon's short and long range are both increased by 50 feet."
+            ],
+            "srd": true,
+            "basicRules": true,
+            "tier": "major",
+            "bonusWeapon": "+1",
+            "fluff": {
+                "entries": [
+                    "Grave robbing didn't have to be literal. It could be far cleaner. And as Essendaria watched the kobold solict more nibs from the drunken revelers of the Yawning Portal she felt a disgust build up in her throat.",
+                    "They were supposed to be safe. The day had been saved, they'd all been heroes, and that was supposed to be the end of it. You weren't supposed to try and Sending Cheery to find that no one knew where she disappeared to. You weren't supposed to find out that 2 Prophet Devalan had passed away from old age when he seemed so young. You weren't supposed to hear that Torvald had been killed in Neverwinter.",
+                    "And you weren't supposed to find a stranger claiming to have been Gavlax's friend slander his name and legacy for ale money.",
+                    "The day had been saved. They were supposed to have been fine. But Essendaria had never felt more defeated."
+                ]
+            }
+        },
+        {
+            "name": "Shiver",
+            "source": "FA:BN",
+            "type": "M",
+            "rarity": "rare",
+            "weight": 6,
+            "weaponCategory": "martial",
+            "property": [
+                "H",
+                "2H"
+            ],
+            "dmg1": "2d6",
+            "dmgType": "S",
+            "sword": true,
+            "reqAttune": true,
+            "weapon": true,
+            "entries": [
+                "The greatsword of Vladimir Horngaard. The pommel of this greatsword is formed to resemble the great wings of a dragon. Dangling from a small chain on the pommel is a ring, beaten and worn.",
+                "While attuned to Shiver, you have resistance to cold damage."
+            ],
+            "srd": true,
+            "basicRules": true,
+            "tier": "major",
+            "bonusWeapon": "+2",
+            "fluff": {
+                "entries": [
+                    "...cold...",
+                    "...emptiness...",
+                    "...nothing...",
+                    "Then, a pull.",
+                    "I was resurrected, gasping for life to see the disproving eyes of Cheery Wanderwood as the lingering energy of the spell faded.",
+                    "Groaning I check my body. Two eyes, two ears, nose, mouth, all my teeth. Copper on my toung told me I still had my sense of taste. Two arms, but one less finger this time. Legs intact, my greaves still shining.",
+                    "\"Stop martyring yourself, Vaonur.\"",
+                    "\"We're in a diamond mine. You have the supplies. I can handle it.\"",
+                    "\"They have the numbers.\"",
+                    "\"You faced worst odds at Shadowdale.\"",
+                    "\"We were the Shadowdale Six, not Underdark Mine Two.\"",
+                    "\"Then my apologies. But if this is the price to pay to save the others I will gladly give my life until the job is done.\"",
+                    "Cheery was failing to live up to her name, eyes sunken and ringed with bags, fingers covered in a menagerie of bloody bandages where she forwent magical healing in favour of others. Cracks spiderwebbed across her chitin armor, held together by scavenged leather and rope.",
+                    "\"You sound like Torvald.\" The melancholy in her voice cut deeper than any sword. \"More concerned with hunting for a good death than creating a good life.\"",
+                    "\"It's all I am good at,\" I reply, clutching the holy symbol of Illmater the hung from my neck. \"People like us are cursed. Once we pick up the sword to help another we're damned to a violent death.\"",
+                    "\"Maybe that doesn't have to be the case. I hope that isn't the case.\"",
+                    "\"Hope is a duplicitous draught.\"",
+                    "A moment of grim silence passed through the cave.",
+                    "\"What is dying, death, like?\"",
+                    "I studied her face for a time, trying to think of what to say before turning away so my own wouldn't betray me.",
+                    "\"It is warm. An embrace from your entire family. An open field during a spring day. A smile, or promise kept. It's like going home.\""
+                ]
+            }
+        },
+        {
+            "name": "Time's Weight",
+            "source": "FA:BN",
+            "type": "M",
+            "rarity": "uncommon",
+            "weight": 3,
+            "weaponCategory": "martial",
+            "property": [
+                "V"
+            ],
+            "dmg1": "1d8",
+            "dmgType": "S",
+            "dmg2": "1d10",
+            "sword": true,
+            "weapon": true,
+            "entries": [
+                "You have advantage on Intelligence (History) checks while wielding this sword."
+            ],
+            "srd": true,
+            "basicRules": true,
+            "tier": "major",
+            "bonusWeapon": "+1",
+            "fluff": {
+                "entries": [
+                    "Mariam Solva was tired. She'd expected this when she accepted the leadership position for the Enclave. There were few prominent members of the Enclave in Cormyr, and the existing ones lept at the opportunity to have a semi-famous hero represent them.",
+                    "But she had been unprepared for just how tired she'd be. The two decades since Shadowdale had been rough. First it had been Torvald in Neverwinter. Then Cheery vanished without a trace. Then Gavlax had been kidnapped (everyone said he'd been killed by the Thayans, but Mariam held out hope), and then 2 Prophet Devalan.",
+                    "But that was nothing compared to the ravages of time. Turning 60 in the middle of the Second Sundering didn't help the number of grey hairs on her head.",
+                    "The nobles summoning her to get her insight on what to do with the fact that Artus Cimber had disappeared made her insurmountable workload impossible to overcome. On and on and on life went.",
+                    "Always more to do. Always another fire. Another cataclysm. And every day, Mariam was a bit slower and the monsters were a bit faster."
+                ]
+            }
+        },
+        {
+            "name": "Grief",
+            "source": "FA:BN",
+            "type": "M",
+            "rarity": "legendary",
+            "weight": 3,
+            "weaponCategory": "martial",
+            "property": [
+                "V"
+            ],
+            "dmg1": "1d8 + 3d6",
+            "dmgType": "S",
+            "dmg2": "1d10 + 3d6",
+            "sword": true,
+            "reqAttune": true,
+            "weapon": true,
+            "entries": [
+                "An imitation of a real Moonblade crafted by the Artificer, Patrina's sword is a near perfect replica. Grief deals an extra {@damage 3d6} lightning damage on hit."
+            ],
+            "srd": true,
+            "basicRules": true,
+            "tier": "major",
+            "bonusWeapon": "+1",
+            "fluff": {
+                "entries": [
+                    "Do you remember the fire, as it swept through your life, consuming everything you ever held dear? Can you taste the ash in your mouth, and feel the burning smoke in your lungs?",
+                    "Remember that they hated you because of what you are. They didn't remember that an infant child had nothing to do with the war of the Dusk Elves. They didn't remember how many were left homeless and destitute when Rahadin and Barov swept through the lands like that same fire.",
+                    "Remember that when you needed help, no one was there for you. But I am here now. I can save you from being another lost soul left in the wake of Rahadin, of Strahd.",
+                    "Trust me, and I can help you. I can protect you from the curse which robs the Dusk Elves of their rightfully long lives. I can protect you from the fearful and the hateful. No one else can do this. No one else ever has.",
+                    "But I can.",
+                    "All you need to do is invite me in."
+                ]
+            }
+        },
+        {
+            "name": "Wand of the Wormhole",
+            "source": "FA:BN",
+            "type": "WD",
+            "rarity": "rare",
+            "weight": 1,
+            "bonusSpellAttack": "+1",
+            "bonusSavingThrow": "+1",
+            "reqAttune": true,
+            "recharge": "dawn",
+            "charges": 5,
+            "entries": [
+                "No light is reflected off this pitch black wand which seems to have a faint golden halo surrounding it.",
+                "While you are holding this wand, you gain a +1 bonus to spell attack rolls, and your spell save DC.",
+                "Once per day, as a reaction when you take damage, you can reduce the damage by half, and teleport to a point you see within 30ft as a wormhole sucks you away at the moment of danger.",
+                "The Wand has 5 charges and regains {@dice 1d4 + 1} charges every day at dawn. While wielding the wand, you can use an action to cast one of the following spells: {@spell Magnify Gravity|EGW} (1 charge), {@spell Immovable Object|EGW} (2 charges),  {@spell Pulse Wave|EGW} (3 charges). The DC for these spells is 15.",
+                "If you expend the last charge, roll a {@dice 1d20}. On a 1, the singularity forming the wand collapses. Every creature within 20 ft must make a DC 15 Strength Save or be pulled in a straight line directly towards the wielder of the wand, stopping within 5 ft and falling prone. The Wand loses all its special properties except for its +1 bonus to spell attack rolls and spell save DCs."
+            ],
+            "attachedSpells": [
+                "Magnify Gravity|EGW",
+                "Immovable Object|EGW",
+                "Pulse Wave|EGW"
+            ],
+            "fluff": {
+                "entries": [
+                    "\"Who can say what lies beyond the accretion disk of a singularity? Besides us, of course.\"",
+                    "- Melegaunt Tanthul, Prince of Shade"
+                ]
+            }
+        },
+        {
+            "name": "Wand of the Perfect Crystal",
+            "source": "FA:BN",
+            "type": "WD",
+            "rarity": "rare",
+            "weight": 1,
+            "bonusSpellAttack": "+1",
+            "bonusAc": "+1",
+            "recharge": "special",
+            "reqAttune": true,
+            "charges": 7,
+            "entries": [
+                "This wand feels cold to the touch, and embeded in its tip is a single perfect crystal. A perfect crystal is a crystal which contains no planar defects. Its structure is perfectly ordered, with every single molecule lined such that the entropy of the solid is absolute zero.",
+                "While wielding this wand, you have a +1 bonus to spell attack rolls and Armor Class.",
+                "This wand has 7 charges, and regains {@dice 1d4 + 3} charges after being encased in ice, snow, or cold water for at least 4 hours.",
+                "When wielding this wand, you can use your action to cast one of the following spells: {@spell Sapping Sting|EGW} (no charges, or 1 charge to cast as a 5th level PC), {@spell Cold Snap|FA} (2 charges), {@spell Spirit Shroud|TCE} (3 charges, cold damage only), {@spell Ice Storm} (4 charges). The DC for these spells is 15. These spells treat Immunity to Cold damage as Resistance.",
+                "If you expend the last charge, roll a {@dice d20}. On a 1, the entropy of the area around the wand suddenly drops, freezing it to your hand. You take {@damage 2d6} cold and {@damage 2d6} necrotic damage and the wand is frozen in your hand until you spend a short rest melting the ice. In addition, you can't perform delicate actions such as the Somatic components of spells or Sleight of Hand checks with your hand until you are healed by a {@spell Greater Restoration}. After this happens, the Wand can no longer regain charges, but retains its +1 bonus to spell attack rolls and AC."
+            ],
+            "attachedSpells": [
+                "Sapping Sting|EGW",
+                "Cold Snap|FA",
+                "Spirit Shroud|TCE",
+                "ICe Storm|PHB"
+            ],
+            "fluff": {
+                "entries": [
+                    "\"I desire nothing more than nothing.\"",
+                    "- Kaestra Karanok, High Priestess of Entropy"
+                ]
+            }
+        },
+        {
+            "name": "Anathema",
+            "source": "FA:BN",
+            "type": "M",
+            "rarity": "artifact",
+            "weight": 5,
+            "weaponCategory": "simple",
+            "property": [
+                "F"
+            ],
+            "dmg1": "1d8",
+            "dmgType": "P",
+            "sword": true,
+            "weapon": true,
+            "entries": [
+                "A stake of amber, sharpened by magic and pain. The Anathema manifests during the Ritual of Binding Vampyr after Vampyr has been weakened. In order to be bound by the ritual, Vampyr must be reduced to 0 HP and then have the Anathema driven into its heart.",
+                "Any strike against Vampyr, a Heart, or a Vampire Spawn is an automatic critical hit.",
+                "All characters are proficient with the Anathema.",
+                {
+                    "type": "entries",
+                    "name": "Lunge",
+                    "entries": [
+                        "As a bonus action while wielding the Anathema you may lunge, moving up to 10ft forward without provoking opportunity attacks if the end of your lunge would put you within melee range of a hostile creature. This lunge does not cost movement."
+                    ]
+                }
+            ],
+            "tier": "major",
+            "bonusWeapon": "+3",
+            "fluff": {
+                "entries": [
+                    "This is the quill with which the truth of truths shall be written in stone and blood: all that is will end. Nothing is infinite. Nothing is promised. Nothing is sacred. All that can be certain is that which you make certain. Understand your entelechy; to make this truth real.",
+                    "Upon the skeins of memories we thread these facts into the bones of history, to be remembered and grown into legacies enshrined and cherished by eyes and tongues of the deafened masses.",
+                    "And as those legacies rot into the fallow earth they sow the crop for the truth once more. And so it shall be, until the last drop of rain falls and the last fire burns.",
+                    "And then, in the shadowed silence or crushing heat before the closure of time the truth will be all that matters, infinitely repeated until it is as intrinsic to the end and beginning as the half life of unseen particles: Nothing is forever.",
+                    "Let dead gods die once more."
+                ]
+            }
         }
     ]
 }
