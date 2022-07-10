@@ -797,7 +797,21 @@
                 "This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property. If you are proficient with {@item shortsword|phb|shortswords} or {@item longsword|phb|longswords}, you are proficient with the sun blade.",
                 "You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra {@damage 2d6} radiant damage.",
                 "The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each.",
-                "The sword counts as a heavy weapon for the purposes of Great Weapon Fighting."
+                "The sword counts as a heavy weapon for the purposes of Great Weapon Fighting.",
+                {
+                    "name": "Sentience",
+                    "type": "entries",
+                    "entries": [
+                        "The Sunsword is a sentient chaotic good weapon with an Intelligence of 11, a Wisdom of 17, and a Charisma of 16. It has hearing and normal vision out to a range of 60 feet. The weapon communicates by transmitting emotions to the creature carrying it or wielding it."
+                    ]
+                },
+                {
+                    "name": "Personality",
+                    "type": "entries",
+                    "entries": [
+                        "The Sunsword contains the soul of Aleksandra Gwilym, sister of Godfrey Gwilym. Alek was struck down by Strahd as he was forging his pact with Vampyr, and died bleeding upon her own blade. After Barovia was trapped in a Demiplane, Alek awoke to find her mind locked within the blade, unable to speak or communicate except with whoever wielded the sword. As one of Strahd's closest friends in life, Alek is horrified by what has happened in Barovia, and mourns the corruption of the man she fiught alongside. Alek wants to see the curse placed upon Barovia ended."
+                    ]
+                }
             ]
         },
         {
