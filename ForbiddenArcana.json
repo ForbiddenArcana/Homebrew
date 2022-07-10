@@ -1974,6 +1974,50 @@
             }
         },
         {
+            "name": "Continuity Glitch",
+            "source": "FA",
+            "level": 1,
+            "school": "T",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You create a stutter in the flow of time, affording you a moment to slip away from harm. As part of casting this spell, you may take the {@action Disengage} action."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Enhance Potion",
             "source": "FA",
             "level": 1,
@@ -2162,6 +2206,52 @@
                     {
                         "name": "Artificer",
                         "source": "TCE"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Reactive",
+            "source": "FA",
+            "level": 1,
+            "school": "T",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You choose a willing creature you can see within range. The target gains 3 reactions that can be used during the duration of the spell. These reactions don't count toward the number of reactions that the target usually regains at the start of their turn, and a creature affected by this spell can only spend one reaction per turn. Once this spell's reactions have been used, the spell ends. "
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
                     }
                 ]
             }
@@ -2392,6 +2482,127 @@
             }
         },
         {
+            "name": "Slow Metabolism",
+            "source": "FA",
+            "level": 1,
+            "school": "T",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a wafer, cracker, or chunk of hard tack"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "day",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "When this spell is cast on a willing creature, it drastically increases the period of time that creature can go without meals. The recipient does not require food or water for the spell's duration, and pauses the effects of starvation and dehydration. If the creature is suffering from a non-magical ailment (such as a disease or poison) with an effect that takes an amount of time to manifest symptoms or harmful effects, this spell will delay the onset for it's duration."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Cleric",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Timeline Projection",
+            "source": "FA",
+            "level": 1,
+            "school": "I",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 30
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a wafer, cracker, or chunk of hard tack"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You tap in to the natural flow of time, and project an image of events past or future onto your surroundings. Choose one creature within range. You may create a slightly delayed image of that creature to confuse enemies, resulting in +2 AC. Alternatively, you may project an image a few seconds ahead of the creature to make it easier to lead your target, resulting in -2 AC. An unwilling creature must make a Wisdom saving throw to avoid this effect."
+            ],
+            "savingThrow": [
+                "wisdom"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Waterspout",
             "source": "FA",
             "level": 1,
@@ -2457,6 +2668,74 @@
                     },
                     {
                         "name": "Ranger",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Victor's Temporal Displacement",
+            "source": "FA",
+            "level": 1,
+            "school": "D",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "an hourglass"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You warp time around a creature that you can see within range. The creature must make an Intelligence saving throw. On a failure, the creature's position in the initiative order is reduced by {@dice 1d10}. This may cause a creature to have a second turn in a round. A willing creature can choose to fail the saving throw."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 2nd level or higher, the creature's initiative order is reduced by an additional {@dice 1d10} for every spell slot level above 2nd."
+                    ]
+                }
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
                         "source": "PHB"
                     },
                     {
@@ -2739,6 +3018,66 @@
             }
         },
         {
+            "name": "Opportune",
+            "source": "FA",
+            "level": 2,
+            "school": "D",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when initiative is rolled"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "an hourglass"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "Choose up to three willing creatures that you can see within range. The chosen creatures must reroll their initiative. After a creature rolls their new initiative, you may then choose to add or subtract {@dice 1d4} to their initiative bonus. The creature must take the new roll and initiative bonus."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, you may target an additional creature for every spell slot level above 2nd."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Psychic Anchor",
             "source": "FA",
             "level": 2,
@@ -2795,6 +3134,77 @@
                     {
                         "name": "Bard",
                         "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Shadowmantle's Timeslip",
+            "source": "FA",
+            "level": 2,
+            "school": "C",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "reaction",
+                    "condition": "which you take when you are hit by an attack"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a broken pocket watch"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "quote",
+                    "entries": [
+                        "The gods may play with dice, but I don't."
+                    ],
+                    "by": "The Shadowmantle"
+                },
+                "You bend the strands of time to your favour to avoid danger. As a reaction when you are hit by an attack, you can teleport to the space you occupied at the start of your last turn and the attack misses you. If that space is occupied, the spell fails."
+            ],
+            "entriesHigherLevel": [
+                {
+                    "type": "entries",
+                    "name": "At Higher Levels",
+                    "entries": [
+                        "When you cast this spell using a spell slot of 3rd level or higher, you can instead teleport to a space you occupied a number of turns previous equal to 1 + the number of levels upcast by."
+                    ]
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
                     },
                     {
                         "name": "Sorcerer",
@@ -2944,6 +3354,61 @@
                     },
                     {
                         "name": "Paladin",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Timeswitch",
+            "source": "FA",
+            "level": 2,
+            "school": "D",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a double convex lens"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You warp time between two creatures that you can see within range and that have different initiatives. The targets must be within 30 feet of each other. Each target must make an Intelligence saving throw. If both fail, the targets switch places in the initiative order. This may cause a creature to have a second turn in a round, or no turn at all. A willing creature can choose to fail the saving throw.",
+                "If one target fails their saving throw, they roll a {@dice 1d4} and permanently add or subtract it from their initiative. This may result in a creature losing a turn, or having a second turn in a single round."
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
                         "source": "PHB"
                     }
                 ]
@@ -3183,6 +3648,61 @@
             }
         },
         {
+            "name": "Causal Strife",
+            "source": "FA",
+            "level": 3,
+            "school": "T",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 60
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a cracked glass globe"
+            },
+            "duration": [
+                {
+                    "type": "instant"
+                }
+            ],
+            "entries": [
+                "You selectively reorder the events of your timeline to devastating effect. Choose up to 3 willing creatures within range. Each creature may immediately move up to their speed, take an action and a bonus action. All affected creatures are then {@condition incapacitated} and have a speed of 0 until the end of their next turn."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Geyser",
             "source": "FA",
             "level": 3,
@@ -3369,6 +3889,63 @@
                         "name": "Artificer",
                         "source": "TCE"
                     },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Tachyon Burst",
+            "source": "FA",
+            "level": 3,
+            "school": "T",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "touch"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a confusing penrose diagram"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "round",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You touch a willing creature and dissolve its body into a stream of tachyons such that it can surge forward with reality-defying speed. Until the start of your next turn, its speed is quadrupled, it does not provoke attacks of opportunity, and it can move through creatures as if they were rough terrain. If the creature is occupying the same space as another creature when the spell ends, it takes {@damage 4d6} force damage and is shunted to the nearest unoccupied space."
+            ],
+            "damageInflict": [
+                "force"
+            ],
+            "classes": {
+                "fromClassList": [
                     {
                         "name": "Sorcerer",
                         "source": "PHB"
@@ -3974,6 +4551,169 @@
             }
         },
         {
+            "name": "Time Dilation",
+            "source": "FA",
+            "level": 4,
+            "school": "T",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a page of graph paper"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "When you cast this spell, you choose whether you want to expand or contract time in a 15 foot radius centered on yourself. This radius moves with you.",
+                "If time is contracted: when a hostile creature starts its turn within the radius, or enters it for the first time on its turn, it must succeed a Charisma saving throw to preserve its frame of reference. On a failure, the creature's speed is halved, it takes a -2 penalty to AC and Dexterity saving throws and it can't use reactions. On its turn, the creature can use its action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn. This effect lasts until the start of the creature's next turn.",
+                "If time is expanded: when a willing creature other than you starts its turn within the radius, until the start of its next turn the creature's speed is doubled, it gains a +2 to AC, it has advantage on Dexterity saving throws, and it gains an additional action. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.",
+                "When the spell ends, you can't move or take actions until after your next turn, as the continuity of time snaps back in to place around you."
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Veil of Reality",
+            "source": "FA",
+            "level": 4,
+            "school": "C",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 120
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "By folding the fabric of spacetime to overlap two points in space, you teleport and take the place of a creature you can see within range. The creature must make a Charisma saving throw. On a failure, the creature is forcibly switched spaces with you and may not take reactions until the end of its next turn. On a success, the creature remains in its space and you appear in the nearest unoccupied space to the creature you attempted to switch with.",
+                "Until the spell ends, when you use your reaction for any purpose, you may attempt to teleport in this way again. Once you have teleported in this way, you cannot do so again until the start of your next turn."
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Expedient Fate",
+            "source": "FA",
+            "level": 5,
+            "school": "D",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "an hourglass filled with diamond dust worth at least 25gp"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                "You gain insights into the fabric that links cause and effect. Roll {@dice 1d20} and save the result of the roll.",
+                "Once per turn when a creature within 60 feet of you makes an ability check or attack roll, you can force the creature to make a Charisma saving throw. On a failure, you swap the result of their d20 roll with your roll. After swapping, the d20 roll of the creature becomes your saved roll for this spell and is used for future dice swaps. On a success, nothing happens.",
+                "You can attempt to swap dice with a creature in this way a number of times equal to twice your spellcasting ability modifier. After all uses have been consumed, the spell ends."
+            ],
+            "savingThrow": [
+                "charisma"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Eye of the Storm",
             "source": "FA",
             "level": 5,
@@ -4322,6 +5062,62 @@
                             "name": "Aberrant Mind",
                             "source": "TCE"
                         }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Contact Alternate Self",
+            "source": "FA",
+            "level": 6,
+            "school": "D",
+            "subschools": [
+                "chronurgy"
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "a cracked mirror"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "quote",
+                    "entries": [
+                        "This is one of my newer developments. I've only cast this spell once, and I didn't like what I saw. Think carefully before using this, the universe has a sick sense of humour."
+                    ],
+                    "by": "The Shadowmantle"
+                },
+                "You contact a version of yourself from an alternate timeline or reality. The alternate individual has cast this spell simultaneously with you. The DM controls this version of you, including their reasoning for contacting you though this spell.",
+                "You have 10 minutes to freely converse. You can inquire about recent events, talk about the results of your choices, or provide misleading information. The alternate individual can do the same.",
+                "You can choose to either have a clear or distorted mirror. When distorted, the alternate's view of your side of the mirror is clouded in a dark haze and everything, except yourself, are indiscernible. Sounds made on your side of the mirror are unintelligible, except for yourself. Anyone on the other side of the mirror that makes a successful Wisdom (Perception) check against your own spell save DC can clear the distortion."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
                     }
                 ]
             }
