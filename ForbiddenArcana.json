@@ -2237,7 +2237,11 @@
             },
             "duration": [
                 {
-                    "type": "instant"
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
                 }
             ],
             "entries": [
@@ -2709,12 +2713,7 @@
             },
             "duration": [
                 {
-                    "type": "timed",
-                    "concentration": true,
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    }
+                    "type": "instant"
                 }
             ],
             "entries": [
