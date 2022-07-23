@@ -2301,7 +2301,7 @@
                         "This spell is taken/modified from the Compendium of Forgotten Secrets Awakening: https://www.genfantasypress.com/"
                     ]
                 },
-                "You infuse the martial weapon used as the spell's material component with chilling cold, and coat its exterior with brittle ice. As part of the action used to cast this spell, you can take the {action Attack} action. The first time you hit with the weapon, the target takes an additional {@damage 1d8} cold damage, shattering the ice on your weapon. The target and all creatures within 10 feet of it other than you must make a Dexterity saving throw. If they fail, they take {@damage 1d8} piercing damage."
+                "You infuse the martial weapon used as the spell's material component with chilling cold, and coat its exterior with brittle ice. As part of the action used to cast this spell, you can take the {@action Attack} action. The first time you hit with the weapon, the target takes an additional {@damage 1d8} cold damage, shattering the ice on your weapon. The target and all creatures within 10 feet of it other than you must make a Dexterity saving throw. If they fail, they take {@damage 1d8} piercing damage."
             ],
             "entriesHigherLevel": [
                 {
@@ -2446,7 +2446,7 @@
                         "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
-                "A burst of salty ocean mist erupts from your palms. Each creature in a 15-foot cone make a Dexterity saving throw. On a failed save, a target takes an additional {@damage 1d4} necrotic damage each time it takes any piercing or slashing damage before the start of your next turn."
+                "A burst of salty ocean mist erupts from your palms. Each creature in a 15-foot cone must make a Dexterity saving throw. On a failed save, a target takes an additional {@damage 1d4} necrotic damage each time it takes any piercing or slashing damage before the start of your next turn."
             ],
             "entriesHigherLevel": [
                 {
@@ -2590,13 +2590,14 @@
                 }
             ],
             "entries": [
-                "You tap in to the natural flow of time, and project an image of events past or future onto your surroundings. Choose one creature within range. You may create a slightly delayed image of that creature to confuse enemies, resulting in +2 AC. Alternatively, you may project an image a few seconds ahead of the creature to make it easier to lead your target, resulting in -2 AC. An unwilling creature must make a Wisdom saving throw to avoid this effect."
+                "You tap in to the natural flow of time, and project an image of events past or future onto your surroundings. Choose one creature you can see within range. You may create a slightly delayed image of that creature to confuse enemies, resulting in +2 AC. Alternatively, you may project an image a few seconds ahead of the creature to make it easier to lead your target, resulting in -2 AC. An unwilling creature must make a Wisdom saving throw to avoid this effect."
             ],
             "savingThrow": [
                 "wisdom"
             ],
             "miscTags": [
-                "MAC"
+                "MAC",
+                "SGT"
             ],
             "classes": {
                 "fromClassList": [
@@ -3469,7 +3470,7 @@
                 }
             ],
             "entries": [
-               "As part of the action to cast this spell, you may take the Attack Action to summon a swirl of purple hyacinth petals to surround your weapon, filling you with hope and enabling you to strike with great power. Each successful hit you make with this weapon before the spell ends, the target must make a Wisdom saving throw or have a new effect apply. Once you've made three weapon attacks the spell ends, regardless of whether the attacks hit.",
+               "As part of the action to cast this spell, you may take the {@action Attack} action to summon a swirl of purple hyacinth petals to surround your weapon, filling you with hope and enabling you to strike with great power. Each successful hit you make with this weapon before the spell ends, the target must make a Wisdom saving throw or have a new effect apply. Once you've made three weapon attacks the spell ends, regardless of whether the attacks hit.",
                {
                    "type": "entries",
                    "entries": [
