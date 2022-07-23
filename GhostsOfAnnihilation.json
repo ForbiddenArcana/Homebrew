@@ -971,7 +971,7 @@
                     "type": "entries",
                     "name": "Movement",
                     "entries": [
-                        "Whole swimming, each foot of movement costs 1 extra foot (2 extra feet in difficult terrain), unless the creature has a swim speed. "
+                        "While swimming, each foot of movement costs 1 extra foot (2 extra feet in difficult terrain), unless the creature has a swim speed. "
                     ]
                 },
                 {
@@ -1002,8 +1002,8 @@
                     "type": "entries",
                     "name": "Pressure",
                     "entries": [
-                        "For every 100 feet a creature dives, it must succeed a DC 15 Constitution saving throw or take a level of {@variantrule Stress and Agitation/Exhaustion|FA|Exhaustion}. For every 100 feet a creature ascends, it must pause for 10 minutes or make a DC 15 Constitution saving throw vs. Exhaustion.",
-                        "The spell {@spell Waterbreathing} makes a creature immune to this effect."
+                        "For every 100 feet a creature dives, it must succeed on a DC 15 Constitution saving throw or take a level of {@variantrule Stress and Agitation/Exhaustion|FA|Agitation}. For every 100 feet a creature ascends, it must pause for 10 minutes or make a DC 15 Constitution saving throw vs. {@variantrule Stress and Agitation/Exhaustion|FA|Exhaustion}.",
+                        "The spell {@spell Water Breathing} makes a creature immune to this effect."
                     ]
                 },
                 {
@@ -1075,7 +1075,7 @@
                             "type": "entries",
                             "name": "Thunder",
                             "entries": [
-                                "Thunder damage is deafening underwater. Any creature that takes 10 or more thunder damage from a single source is also deafened for 1 minute."
+                                "Thunder damage is deafening underwater. Any creature that takes 10 or more thunder damage from a single source is also {@condition deafened} for 1 minute."
                             ]
                         },
                         {
