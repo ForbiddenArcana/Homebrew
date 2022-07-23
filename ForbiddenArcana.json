@@ -2589,6 +2589,9 @@
             "savingThrow": [
                 "wisdom"
             ],
+            "miscTags": [
+                "MAC"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -3882,6 +3885,9 @@
             "savingThrow": [
                 "dexterity"
             ],
+            "miscTags": [
+                "MAC"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -4592,6 +4598,9 @@
             ],
             "savingThrow": [
                 "charisma"
+            ],
+            "miscTags": [
+                "MAC"
             ],
             "classes": {
                 "fromClassList": [
