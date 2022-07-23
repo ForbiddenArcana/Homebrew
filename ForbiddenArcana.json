@@ -5180,64 +5180,6 @@
                     }
                 ]
             }
-        },
-        {
-            "name": "The Ole Switcheroo",
-            "source": "FA",
-            "level": 9,
-            "school": "C",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "self"
-                }
-            },
-            "components": {
-                "v": true,
-                "m": {
-                    "text": "a small statuette of yourself worth 150 gp, which the spell consumes",
-                    "cost": 15000,
-                    "consume": true
-                }
-            },
-            "duration": [
-                {
-                    "type": "permanent",
-                    "ends": [
-                        "dispel"
-                    ]
-                }
-            ],
-            "entries": [
-                "When you cast this spell for the first time, you conjure a partially-real illusory duplicate of yourself which appears within 5 feet of you and retains all personality, memories, and statistics, but is formed without any equipment. It appears nonmagical to spells and magical effects, such as {@spell Detect Magic|PHB}. It can gain knowledge, but lacks the ability to meaningfully change. Thus, it can't gain levels or other abilities, nor can it ever react differently to a situation than you would have at the moment you conjured it if you had the knowledge it currently possesses. While your double exists, it can cast spells using your spell slots - it has no spell slots of its own.",
-                "Either of you can cast the spell again to either create a new double, or to teleport the other (if willing) to an unoccupied space within 60 feet of the caster. The teleportation option does not require the spell's material component. Either way, when the spell is cast again by either of you while a double lives, you gain all the memories and knowledge your double possesses and can distinguish them from your own. The double's max HP then becomes 1 hit point, and it dies at the end of its next turn; this cannot be prevented by any means. The double is reduced to ash when it dies, and cannot be returned from death. The spell ends upon its death."
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Bard",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Warlock",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "PHB"
-                    }
-                ]
-            }
         }
     ],
     "class": [
