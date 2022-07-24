@@ -1903,6 +1903,9 @@
             "spellAttack": [
                 "R"
             ],
+            "miscTags": [
+                "FMV"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -2125,11 +2128,18 @@
             },
             "duration": [
                 {
-                    "type": "instant"
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
                 }
             ],
             "entries": [
                 "You choose a willing creature you can see within range. The target gains 3 reactions that can be used during the duration of the spell. These reactions don't count toward the number of reactions that the target usually regains at the start of their turn, and a creature affected by this spell can only spend one reaction per turn. Once this spell's reactions have been used, the spell ends. "
+            ],
+            "miscTags": [
+                "SGT"
             ],
             "classes": {
                 "fromClassList": [
@@ -2182,7 +2192,7 @@
                         "This spell is taken/modified from the Compendium of Forgotten Secrets Awakening: https://www.genfantasypress.com/"
                     ]
                 },
-                "You infuse the martial weapon used as the spell's material component with chilling cold, and coat its exterior with brittle ice. As part of the action used to cast this spell, you can take the {action Attack} action. The first time you hit with the weapon, the target takes an additional {@damage 1d8} cold damage, shattering the ice on your weapon. The target and all creatures within 10 feet of it other than you must make a Dexterity saving throw. If they fail, they take {@damage 1d8} piercing damage."
+                "You infuse the martial weapon used as the spell's material component with chilling cold, and coat its exterior with brittle ice. As part of the action used to cast this spell, you can take the {@action Attack} action. The first time you hit with the weapon, the target takes an additional {@damage 1d8} cold damage, shattering the ice on your weapon. The target and all creatures within 10 feet of it other than you must make a Dexterity saving throw. If they fail, they take {@damage 1d8} piercing damage."
             ],
             "entriesHigherLevel": [
                 {
@@ -2261,6 +2271,10 @@
             "savingThrow": [
                 "strength"
             ],
+            "miscTags": [
+                "FMV",
+                "SGT"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -2324,7 +2338,7 @@
                         "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
-                "A burst of salty ocean mist erupts from your palms. Each creature in a 15-foot cone make a Dexterity saving throw. On a failed save, a target takes an additional {@damage 1d4} necrotic damage each time it takes any piercing or slashing damage before the start of your next turn."
+                "A burst of salty ocean mist erupts from your palms. Each creature in a 15-foot cone must make a Dexterity saving throw. On a failed save, a target takes an additional {@damage 1d4} necrotic damage each time it takes any piercing or slashing damage before the start of your next turn."
             ],
             "entriesHigherLevel": [
                 {
@@ -2468,10 +2482,14 @@
                 }
             ],
             "entries": [
-                "You tap in to the natural flow of time, and project an image of events past or future onto your surroundings. Choose one creature within range. You may create a slightly delayed image of that creature to confuse enemies, resulting in +2 AC. Alternatively, you may project an image a few seconds ahead of the creature to make it easier to lead your target, resulting in -2 AC. An unwilling creature must make a Wisdom saving throw to avoid this effect."
+                "You tap in to the natural flow of time, and project an image of events past or future onto your surroundings. Choose one creature you can see within range. You may create a slightly delayed image of that creature to confuse enemies, resulting in +2 AC. Alternatively, you may project an image a few seconds ahead of the creature to make it easier to lead your target, resulting in -2 AC. An unwilling creature must make a Wisdom saving throw to avoid this effect."
             ],
             "savingThrow": [
                 "wisdom"
+            ],
+            "miscTags": [
+                "MAC",
+                "SGT"
             ],
             "classes": {
                 "fromClassList": [
@@ -2548,6 +2566,9 @@
             "savingThrow": [
                 "dexterity"
             ],
+            "miscTags": [
+                "FMV"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -2597,12 +2618,7 @@
             },
             "duration": [
                 {
-                    "type": "timed",
-                    "concentration": true,
-                    "duration": {
-                        "type": "minute",
-                        "amount": 1
-                    }
+                    "type": "instant"
                 }
             ],
             "entries": [
@@ -2619,6 +2635,9 @@
             ],
             "savingThrow": [
                 "intelligence"
+            ],
+            "miscTags": [
+                "SGT"
             ],
             "classes": {
                 "fromClassList": [
@@ -2948,6 +2967,9 @@
                     ]
                 }
             ],
+            "miscTags": [
+                "SGT"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -3016,6 +3038,10 @@
             ],
             "savingThrow": [
                 "intelligence"
+            ],
+            "miscTags": [
+                "FMV",
+                "SGT"
             ],
             "classes": {
                 "fromClassList": [
@@ -3087,6 +3113,9 @@
                         "When you cast this spell using a spell slot of 3rd level or higher, you can instead teleport to a space you occupied a number of turns previous equal to 1 + the number of levels upcast by."
                     ]
                 }
+            ],
+            "miscTags": [
+                "TP"
             ],
             "classes": {
                 "fromClassList": [
@@ -3285,6 +3314,9 @@
             "savingThrow": [
                 "intelligence"
             ],
+            "miscTags": [
+                "SGT"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -3334,7 +3366,7 @@
                 }
             ],
             "entries": [
-               "As part of the action to cast this spell, you may take the Attack Action to summon a swirl of purple hyacinth petals to surround your weapon, filling you with hope and enabling you to strike with great power. Each successful hit you make with this weapon before the spell ends, the target must make a Wisdom saving throw or have a new effect apply. Once you've made three weapon attacks the spell ends, regardless of whether the attacks hit.",
+               "As part of the action to cast this spell, you may take the {@action Attack} action to summon a swirl of purple hyacinth petals to surround your weapon, filling you with hope and enabling you to strike with great power. Each successful hit you make with this weapon before the spell ends, the target must make a Wisdom saving throw or have a new effect apply. Once you've made three weapon attacks the spell ends, regardless of whether the attacks hit.",
                {
                    "type": "entries",
                    "entries": [
@@ -3410,6 +3442,9 @@
             "savingThrow": [
                 "wisdom"
             ],
+            "miscTags": [
+                "RO"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -3467,6 +3502,10 @@
             ],
             "savingThrow": [
                 "strength"
+            ],
+            "miscTags": [
+                "FMV",
+                "SGT"
             ],
             "classes": {
                 "fromClassList": [
@@ -3637,6 +3676,10 @@
             "savingThrow": [
                 "strength"
             ],
+            "miscTags": [
+                "FMV",
+                "SGT"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -3771,6 +3814,9 @@
             "savingThrow": [
                 "dexterity"
             ],
+            "miscTags": [
+                "MAC"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -3889,6 +3935,9 @@
             "savingThrow": [
                 "strength"
             ],
+            "miscTags": [
+                "SGT"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -3954,6 +4003,9 @@
             "savingThrow": [
                 "dexterity",
                 "strength"
+            ],
+            "miscTags": [
+                "FMV"
             ],
             "classes": {
                 "fromClassList": [
@@ -4041,6 +4093,9 @@
             "savingThrow": [
                 "constitution"
             ],
+            "miscTags": [
+                "SGT"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -4108,6 +4163,10 @@
             "savingThrow": [
                 "dexterity"
             ],
+            "miscTags": [
+                "FMV",
+                "SGT"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -4172,6 +4231,9 @@
             ],
             "savingThrow": [
                 "charisma"
+            ],
+            "miscTags": [
+                "SGT"
             ],
             "classes": {
                 "fromClassList": [
@@ -4263,6 +4325,9 @@
             "abilityCheck": [
                 "dexterity"
             ],
+            "miscTags": [
+                "SGT"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -4342,6 +4407,9 @@
             ],
             "savingThrow": [
                 "constitution"
+            ],
+            "miscTags": [
+                "SGT"
             ],
             "classes": {
                 "fromClassList": [
@@ -4482,6 +4550,9 @@
             "savingThrow": [
                 "charisma"
             ],
+            "miscTags": [
+                "MAC"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -4539,6 +4610,10 @@
             ],
             "savingThrow": [
                 "charisma"
+            ],
+            "miscTags": [
+                "SGT",
+                "TP"
             ],
             "classes": {
                 "fromClassList": [
@@ -4733,6 +4808,9 @@
             "savingThrow": [
                 "strength"
             ],
+            "miscTags": [
+                "SGT"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -4923,6 +5001,9 @@
                 "dexterity",
                 "strength"
             ],
+            "miscTags": [
+                "FMV"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -5061,64 +5142,6 @@
                     },
                     {
                         "name": "Sorcerer",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "PHB"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "The Ole Switcheroo",
-            "source": "FA",
-            "level": 9,
-            "school": "C",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "self"
-                }
-            },
-            "components": {
-                "v": true,
-                "m": {
-                    "text": "a small statuette of yourself worth 150 gp, which the spell consumes",
-                    "cost": 15000,
-                    "consume": true
-                }
-            },
-            "duration": [
-                {
-                    "type": "permanent",
-                    "ends": [
-                        "dispel"
-                    ]
-                }
-            ],
-            "entries": [
-                "When you cast this spell for the first time, you conjure a partially-real illusory duplicate of yourself which appears within 5 feet of you and retains all personality, memories, and statistics, but is formed without any equipment. It appears nonmagical to spells and magical effects, such as {@spell Detect Magic|PHB}. It can gain knowledge, but lacks the ability to meaningfully change. Thus, it can't gain levels or other abilities, nor can it ever react differently to a situation than you would have at the moment you conjured it if you had the knowledge it currently possesses. While your double exists, it can cast spells using your spell slots - it has no spell slots of its own.",
-                "Either of you can cast the spell again to either create a new double, or to teleport the other (if willing) to an unoccupied space within 60 feet of the caster. The teleportation option does not require the spell's material component. Either way, when the spell is cast again by either of you while a double lives, you gain all the memories and knowledge your double possesses and can distinguish them from your own. The double's max HP then becomes 1 hit point, and it dies at the end of its next turn; this cannot be prevented by any means. The double is reduced to ash when it dies, and cannot be returned from death. The spell ends upon its death."
-            ],
-            "classes": {
-                "fromClassList": [
-                    {
-                        "name": "Bard",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Warlock",
                         "source": "PHB"
                     },
                     {

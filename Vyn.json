@@ -1,0 +1,232 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "FA:V",
+                "abbreviation": "FA:V",
+                "full": "ForbiddenArcana: Vyn",
+                "authors": [
+                    "ForbiddenArcana"
+                ],
+                "convertedBy": [
+                    "ForbiddenArcana"
+                ],
+                "version": "1.0",
+                "targetSchema": "1.2.0",
+                "color": "e4c9a8"
+            }
+        ]
+    },
+    "feat": [
+    ],
+    "optionalfeature": [
+        {
+            "name": "Shield Slinger",
+            "entries": [
+                "You can manipulate your shield with a sling around your neck instead of your hands. As a bonus action, you can don or doff your shield, swinging it from across your back to by your side. When your shield is donned in this way, it has a -1 penalty to its AC bonus, but can be used without requiring a free hand."
+            ],
+            "source": "FA:V",
+            "featureType": [
+                "FS:F",
+                "FS:P",
+                "FS:R"
+            ]
+        }
+    ],
+    "race": [
+    ],
+    "spell": [
+        {
+            "name": "The Ole Switcheroo",
+            "source": "FA:V",
+            "level": 9,
+            "school": "C",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "m": {
+                    "text": "a small statuette of yourself worth 150 gp, which the spell consumes",
+                    "cost": 15000,
+                    "consume": "optional"
+                }
+            },
+            "duration": [
+                {
+                    "type": "permanent",
+                    "ends": [
+                        "dispel"
+                    ]
+                }
+            ],
+            "entries": [
+                "When you cast this spell for the first time, you conjure a duplicate of yourself which appears within 5 feet of you and retains all personality, memories, and statistics, but is formed without any equipment. It appears nonmagical to spells and magical effects, such as {@spell Detect Magic|PHB}. It can gain knowledge, but lacks the ability to meaningfully change. Thus, it can't gain levels or other abilities, nor can it ever react differently to a situation than you would have at the moment you conjured it if you had the knowledge it currently possesses. While your double exists, it can cast spells using your spell slots - it has no spell slots of its own.",
+                "Either of you can cast the spell again to either create a new double, or to teleport the other (if willing) to an unoccupied space within 60 feet of the caster. The teleportation option does not require the spell's material component. Either way, when the spell is cast again by either of you while a double lives, you gain all the memories and knowledge your double possesses and can distinguish them from your own. The double's max HP then becomes 1 hit point, and it dies at the end of its next turn; this cannot be prevented by any means.",
+                "The double's body vanishes completely when it dies, and it cannot be returned from death. The spell ends upon its death."
+            ],
+            "miscTags": [
+                "PRM"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        }
+    ],
+    "class": [
+    ],
+    "classFeature": [
+    ],
+    "subclass": [
+    ],
+    "subclassFeature": [
+    ],
+    "variantrule": [
+        {
+            "name": "Martial Checks",
+            "source": "FA:V",
+            "entries": [
+                "While in combat, you can use the {@action Search} action to make a special kind of ability check, a martial check. This check may be made using your choice of Intelligence ({@skill Investigation}) or Wisdom ({@skill Insight}). You most likely won't be able to make this check outside of combat, as it's hard to ascertain a creature's abilities without seeing it fight. However, exceptions in special circumstances may occasionally be made. The DC for martial checks is generally 10 plus half the CR of the target.",
+                "With each martial check, you can ask for one of the following:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "entries": [
+                                "Base AC (i.e. including armour/shield)."
+                            ]
+                        },
+                        {
+                            "entries": [
+                                "Damage resistances, immunities, and vulnerabilities; and condition immunities."
+                            ]
+                        },
+                        {
+                            "entries": [
+                                "Max HP, rounded down to the nearest multiple of 10."
+                            ]
+                        },
+                        {
+                            "entries": [
+                                "Saving throw proficiencies."
+                            ]
+                        },
+                        {
+                            "entries": [
+                                "Senses - types, as well as relevant features like Keen Hearing."
+                            ]
+                        },
+                        {
+                            "entries": [
+                                "Speeds - types and magnitudes, as well as relevant features like a bonus action Disengage or Dash."
+                            ]
+                        },
+                        {
+                            "entries": [
+                                "Full information on a single action it can take."
+                            ]
+                        },
+                        {
+                            "entries": [
+                                "Its full list of actions (but not any details on what the actions are)."
+                            ]
+                        }
+                    ]
+                },
+                "You may make a general check instead of asking a specific question, which cumulatively reveal information as follows, representing any prior knowledge your character may be able to apply to or discern from the enemy:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "entries": [
+                                "For every multiple of 5 on your result, you get the name and description of a single combat trait."
+                            ]
+                        },
+                        {
+                            "entries": [
+                                "Once all combat traits are revealed, you get the name and description of a single creature trait per 5 on the result."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Multi-tiered Initiative",
+            "source": "FA:V",
+            "entries": [
+                "While I understand the problem that legendary actions/resistances fix, I don't like some of the consequences of the legendary action/resistance route. I'll be heavily reducing/limiting their use. My solution comes mostly from multi-tiered initiative, with occasional use of effect management to add extra resilience.",
+                "<b>Multi-tiered initiative</b> replaces legendary actions and partially replaces legendary resistances. It gives a monster multiple set initiative turns every round which are placed as far from each other as possible - this means the monster does not roll initiative. One of those turns (the \"Tier 1\" turn) is a normal combat turn, on which the monster can perform any basic action or attack, move up to its speed, and use any Tier 1 abilities. On all its other turns in a round, the monster can only perform a basic attack or use abilities specific to that tier, and nothing else (including moving). Tiered monsters have an action and a bonus action available on each of their turns. They only have one reaction per round, which they regain at the start of their Tier 1 turn. Recharge abilities only get recharge rolls on their corresponding tier's turn. Each of a tiered monster's turns in a round count as independent turns for the purpose of all other effects and timings which occur at the start or end of their turn.",
+                "<b>Effect management</b> replaces legendary resistances, and comes in the form of abilities as diverse as the monsters that possess them. Generally, on its turn, a monster can perform an exchange (such as sacrificing HP or losing use of an ability or trait) to automatically remove an effect it's subjected to. The trade will always be in the monster's favour when the effect is completely locking it down or preventing it from participating in normal combat, but minor effects will generally not be worth the cost of such a trade-off. These sacrifices will generally still require use of an action or bonus action, so incapacitation effects remain particularly detrimental to tiered monsters."
+            ]
+        },
+        {
+            "name": "Multi-tiered Initiative Turns",
+            "source": "FA:V",
+            "entries": [
+                "These are the base values, with the monster taking its T1 turn at the highest value and its last tier's turn at the lowest value. The monster's Int modifier is added to each of these.",
+                "If I ever run an encounter with more than 6 tiers, each additional initiative is 5 higher (i.e. 30, 35, 40). It probably won't happen though.",
+                {
+                    "type": "table",
+                    "caption": "Turns",
+                    "colLabels": [
+                        "Tier",
+                        "Initiatives"
+                    ],
+                    "colStyles": [
+                        "text-center",
+                        "text-left"
+                    ],
+                    "rows": [
+                        [
+                            "2",
+                            "15, 5"
+                        ],
+                        [
+                            "3",
+                            "18, 11, 4"
+                        ],
+                        [
+                            "4",
+                            "20, 15, 10, 5"
+                        ],
+                        [
+                            "5",
+                            "25, 20, 15, 10, 5"
+                        ],
+                        [
+                            "6",
+                            "25, 20, 15, 10, 5, 0"
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+}
