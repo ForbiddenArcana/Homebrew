@@ -58,7 +58,7 @@
                 "m": {
                     "text": "a small statuette of yourself worth 150 gp, which the spell consumes",
                     "cost": 15000,
-                    "consume": optional
+                    "consume": "optional"
                 }
             },
             "duration": [
