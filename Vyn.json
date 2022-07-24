@@ -74,6 +74,9 @@
                 "Either of you can cast the spell again to either create a new double, or to teleport the other (if willing) to an unoccupied space within 60 feet of the caster. The teleportation option does not require the spell's material component. Either way, when the spell is cast again by either of you while a double lives, you gain all the memories and knowledge your double possesses and can distinguish them from your own. The double's max HP then becomes 1 hit point, and it dies at the end of its next turn; this cannot be prevented by any means.",
                 "The double's body vanishes completely when it dies, and it cannot be returned from death. The spell ends upon its death."
             ],
+            "miscTags": [
+                "PRM"
+            ],
             "classes": {
                 "fromClassList": [
                     {
