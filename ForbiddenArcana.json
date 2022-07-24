@@ -1903,6 +1903,9 @@
             "spellAttack": [
                 "R"
             ],
+            "miscTags": [
+                "FMV"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -2381,6 +2384,7 @@
                 "strength"
             ],
             "miscTags": [
+                "FMV",
                 "SGT"
             ],
             "classes": {
@@ -2673,6 +2677,9 @@
             ],
             "savingThrow": [
                 "dexterity"
+            ],
+            "miscTags": [
+                "FMV"
             ],
             "classes": {
                 "fromClassList": [
@@ -3145,6 +3152,7 @@
                 "intelligence"
             ],
             "miscTags": [
+                "FMV",
                 "SGT"
             ],
             "classes": {
@@ -3546,6 +3554,9 @@
             "savingThrow": [
                 "wisdom"
             ],
+            "miscTags": [
+                "RO"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -3605,6 +3616,7 @@
                 "strength"
             ],
             "miscTags": [
+                "FMV",
                 "SGT"
             ],
             "classes": {
@@ -3777,6 +3789,7 @@
                 "strength"
             ],
             "miscTags": [
+                "FMV",
                 "SGT"
             ],
             "classes": {
@@ -4103,6 +4116,9 @@
                 "dexterity",
                 "strength"
             ],
+            "miscTags": [
+                "FMV"
+            ],
             "classes": {
                 "fromClassList": [
                     {
@@ -4260,6 +4276,7 @@
                 "dexterity"
             ],
             "miscTags": [
+                "FMV",
                 "SGT"
             ],
             "classes": {
@@ -5095,6 +5112,9 @@
             "abilityCheck": [
                 "dexterity",
                 "strength"
+            ],
+            "miscTags": [
+                "FMV"
             ],
             "classes": {
                 "fromClassList": [
