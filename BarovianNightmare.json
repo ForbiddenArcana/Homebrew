@@ -196,6 +196,118 @@
                     "Collecting the fragments from the many scattered texts, scrolls, and etchings where they manifest is an impossible task. Unless, of course, you have access to a lost temple with an infinite library containing every book ever written, hidden away from all threats which may distract you from your search..."
                 ]
             }
+        },
+        {
+            "name": "Enhance Potion",
+            "source": "FA:BN",
+            "level": 1,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true,
+                "m": "alchemist supplies"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 24,
+                        "type": "hour"
+                    }
+                }
+            ],
+            "entries": [
+                "Using your Alchemist's Supplies, you can enhance a potion. You touch a potion or an Experimental Elixir and choose one of the following effects:",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "entries": [
+                                "If the potion has a duration, you may double the duration of the potion, up to a maximum of one additional hour. When you cast this spell using a spell slot of 2nd level or higher and choose this option, the maximum additional time increases by one hour for each slot level above 1st."
+                            ]
+                        },
+                        {
+                            "entries": [
+                                "If the potion deals damage or heals, you roll one additional die to determine the healing or damage done. When you cast this spell using a spell slot of 2nd level or higher, you roll an additional die to determine the healing or damage done for each slot level above 1st."
+                            ]
+                        }
+                    ]
+                },
+                "These effects last for the spell's duration, or until you cast this spell again on the same potion."
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Poisoned Weapon",
+            "source": "FA:BN",
+            "level": 1,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "bonus"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "s": true,
+                "m": "A poisoner's kit or alchemist supplies"
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "concentration": true,
+                    "duration": {
+                        "amount": 1,
+                        "type": "minute",
+                        "upTo": true
+                    }
+                }
+            ],
+            "entries": [
+                "As a bonus action, you touch a weapon and coat it with a poisonous substance. The next time that weapon deals damage during the spell's duration, it deals an additional {@damage 2d6} poison damage. Additionally, if the target is a creature it must make a Constitution saving throw or become {@condition poisoned} for the duration of the spell. A creature may repeat the saving throw at the end of its turn, ending the effect on a success."
+            ],
+            "damageInflict": [
+                "poison"
+            ],
+            "conditionInflict": [
+                "poisoned"
+            ],
+            "savingThrow": [
+                "constitution"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Artificer",
+                        "source": "TCE"
+                    }
+                ]
+            }
         }
     ],
     "baseitem": [
