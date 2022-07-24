@@ -364,6 +364,9 @@
                 "If the target worldline is not your native one, you do no exist there long enough for the actions you take to impact yourself or your companions and create a paradox unless you go out of your way to do so (such as visiting the same date/location twice with this spell). If you cumulatively spend 30 days or more on a worldline other than your native one, it also becomes considered your native worldline for the sake of this and other chronurgy spells.",
                 "If the target worldline is your native one, traveling forward in time is impossible and the spell fails. Going backwards in time on your native worldline is possible but risky. You must not take any action that could result in a paradox (such as killing your grandfather). Additionally, for every hour you spend in the past, there is a 10% chance you create an unknown paradox emerging through the butterfly effect. If a paradox occurs, the worldline is thrust into chaos. See the sidebar on resolving paradoxes."
             ],
+            "miscTags": [
+                "TP"
+            ],
             "classes": {
                 "fromClassList": [
                     {
