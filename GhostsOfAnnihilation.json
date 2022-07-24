@@ -776,6 +776,202 @@
     ],
     "variantrule": [
         {
+            "name": "Jungle Hexcrawl",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Special Roles",
+                    "entries": [
+                        "The party may elect someone to navigate, and someone (or multiple people) to forage for food and water. Navigators and foragers, or anyone doing a similar task that requires their attention, suffers a -5 penalty to passive {@skill Perception}, since they are focused on their tasks and are not on the lookout for danger. People with these roles will make skill checks at certain times of day to determine their success."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Morning",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "DM rolls for weather conditions."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Party elects navigator and forager(s)."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Navigator makes a blind Wisdom ({@skill Survival}) check to determine if the party gets lost."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Party advances 1 tile in jungle, or 2 tiles on a river",
+                                        {
+                                            "type": "list",
+                                            "items": [
+                                                {
+                                                    "entries": [
+                                                        "Movement is doubled if backtracking"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "DM rolls for morning encounters"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Midday",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "Navigator makes a blind Wisdom ({@skill Survival}) check to determine if the party gets lost."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Party advances 1 tile in jungle, or 2 tiles on a river",
+                                        {
+                                            "type": "list",
+                                            "items": [
+                                                {
+                                                    "entries": [
+                                                        "Movement is doubled if backtracking"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "DM rolls for midday encounters"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Evening",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "Navigator makes a blind Wisdom ({@skill Survival}) check to determine if the party gets lost."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Party advances 1 tile in jungle, or 2 tiles on a river",
+                                        {
+                                            "type": "list",
+                                            "items": [
+                                                {
+                                                    "entries": [
+                                                        "Movement is doubled if backtracking"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "DM rolls for evening encounters"
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Forager(s) roll a Wisdom ({@skill Survival}) check to determine how much food/water they found over the day",
+                                        {
+                                            "type": "list",
+                                            "items": [
+                                                {
+                                                    "entries": [
+                                                        "If a forager passes their Wisdom ({@skill Survival}) check, they find 1d4 + Wis pounds of food and 1d4 + Wis gallons of water"
+                                                    ]
+                                                },
+                                                {
+                                                    "entries": [
+                                                        "Rain catchers can harvest 8 gallons of water in heavy rain, 4 gallons in medium rain, 2 gallons in light rain, 0 gallons in no rain or tropical storms"
+                                                    ]
+                                                },
+                                                {
+                                                    "entries": [
+                                                        "Rain catcher jug can store up to 8 gallons of water"
+                                                    ]
+                                                },
+                                                {
+                                                    "entries": [
+                                                        "If adjacent to a river, water is unlimited but should be purified"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Calculate food/water profit/deficit, and expend stored food and water accordingly",
+                                        {
+                                            "type": "list",
+                                            "items": [
+                                                {
+                                                    "entries": [
+                                                        "Medium and Small creatures require 1 pound of food (or 1 ration) and 2 gallons of fresh water"
+                                                    ]
+                                                },
+                                                {
+                                                    "entries": [
+                                                        "Foraged food keeps for 1d4 days after being found"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Deduct 1 application of insect repellant per creature"
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Party agrees on overnight watch rotation"
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "DM rolls for (several) overnight encounters"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "source": "FA:GoA"
+        },
+        {
             "name": "Ship Combat",
             "entries": [
                 {
