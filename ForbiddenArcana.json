@@ -4079,7 +4079,7 @@
                         "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
-                "You choose a creature you can see within range and conjure water within its lungs. Roll {@dice 12d8}; if the target has hit points equal to or fewer than the total, it begins suffocating and begin suffocating. If the target has hit points greater than the total, the spell is still cast but doesn't take effect until the target's hit points drop below the total. Creatures that don't have lungs, don't need to breathe, or can breathe water are unaffected by this spell. As an action, the creature can make a Constitution saving throw. On a success, the spell ends. If a creature affected by this spell becomes unconscious as a result of being breathless, they are treated as if they had drowned normally."
+                "You choose a creature you can see within range and conjure water within its lungs. Roll {@dice 12d8}; if the target has hit points equal to or fewer than the total, it becomes breathless and begins suffocating. If the target has hit points greater than the total, the spell is still cast but doesn't take effect until the target's hit points drop below the total. Creatures that don't have lungs, don't need to breathe, or can breathe water are unaffected by this spell. As an action, the creature can make a Constitution saving throw. On a success, the spell ends. If a creature affected by this spell becomes unconscious as a result of being breathless, they are treated as if they had drowned normally."
             ],
             "entriesHigherLevel": [
                 {
