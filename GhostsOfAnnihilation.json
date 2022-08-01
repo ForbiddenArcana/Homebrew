@@ -972,6 +972,132 @@
             "source": "FA:GoA"
         },
         {
+            "name": "Risk Points",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "What Gets you RP Points",
+                    "entries": [
+                        "The purpose of RP points are to encourage {@i fun} gameplay over {@i smart} gameplay. Your character will get RP points for taking actions that are in the good spirit of exploration. This can include taking side-quests, exploring interesting areas that may not be relevant to the plot, or any other course of action aligned with adventuring for the sake of adventure and not just to solve the biggest problem on your plate right now.",
+                        "You can also get RP points for taking fun risks: such as volunteering to be the first to walk into a dangerous room, or triggering a trap.",
+                        "You will often find this side content gains you other benefits anyways to make them worthwhile: such as treasure, quest rewards or the goodwill of an NPC. RP points are not intended to be the main reason for your characters to do things, and are just a nice incentive to grease the wheels a bit. Don't expect to receive more than 20rp at a time. "
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Feature Table",
+                    "entries": [
+                        "The following table outlines some things you can buy with RP.", 
+                        "These features are meant to be {@i flavourful} and not to be used to min-max (no buying Lucky, Fey Touched or Resilient, gtfo). Use these to buy spells or feats that fit your character's story and personality, but you could not justify room in the build for.",
+                        "Additionally, feel free to write up a unique homebrew feature for your character and work with the DM to balance it and assign a RP value to it. Try to keep features atomic and mechanically simple such that they are easy to balance and compare with existing feats and spells. The DM has final approval, and these will inherently land on the more expensive end of the table.",
+                        {
+                            "type": "table",
+                            "colLabels": [
+                                "Feature",
+                                "Cost",
+                                "Prerequisite"
+                            ],
+                            "colStyles": [
+                                "col-6",
+                                "col-1",
+                                "col-5"
+                            ],
+                            "rows": [
+                                [
+                                    "Cantrip (Any spell list)",
+                                    "100rp",
+                                    ""
+                                ],
+                                [
+                                    "Feat",
+                                    "200rp",
+                                    ""
+                                ],
+                                [
+                                    "Half-Feat (No attribute bonus)",
+                                    "125rp",
+                                    ""
+                                ],
+                                [
+                                    "+1 Attribute",
+                                    "100rp",
+                                    ""
+                                ],
+                                [
+                                    "Maneuver",
+                                    "75rp",
+                                    "Class: Fighter, or Feat: Martial Adept"
+                                ],
+                                [
+                                    "+1 Superiority Dice",
+                                    "75rp",
+                                    "Class: Fighter, or Feat: Martial Adept"
+                                ],
+                                [
+                                    "Eldritch Invocation",
+                                    "150rp",
+                                    "Class: Warlock, or Feat: Eldritch Adept"
+                                ],
+                                [
+                                    "Metamagic",
+                                    "100rp",
+                                    "Class: Sorcerer, or Feat: Metamagic Adept"
+                                ],
+                                [
+                                    "+1 Sorcery Point",
+                                    "50rp",
+                                    "Class: Sorcerer, or Feat: Metamagic Adept"
+                                ],
+                                [
+                                    "+1 Infused Items",
+                                    "175rp",
+                                    "Class: Artificer"
+                                ],
+                                [
+                                    "+1 Spell Prepared",
+                                    "75rp",
+                                    "Class: Artificer, Cleric, Druid, Paladin, Wizard"
+                                ],
+                                [
+                                    "Spell Known (Must be on your spell list)",
+                                    "100rp",
+                                    "Class: Bard, Ranger, Sorcerer, Warlock, Wizard"
+                                ],
+                                [
+                                    "+1 Ki Point",
+                                    "75rp",
+                                    "Class: Monk"
+                                ],
+                                [
+                                    "SR Recharge 6 on LR Ability",
+                                    "Varies",
+                                    ""
+                                ],
+                                [
+                                    "Class/Subclass Feature",
+                                    "Varies",
+                                    ""
+                                ],
+                                [
+                                    "Homebrew Stuff?",
+                                    "Varies",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "What if the Fun Thing Gets Me Killed?",
+                    "entries": [
+                        "If you engage with entirely optional content, and it {@i directly} leads to the death of a PC that has been played for at least 5 sessions, the RP points you would have gotten for engaging with that content are doubled and carry over to your new PC. You also get a nice crisp high five, or solemn virtual pat on the back (player's choice)."
+                    ]
+                }
+            ],
+            "source": "FA:GoA"
+        },
+        {
             "name": "Ship Combat",
             "entries": [
                 {
