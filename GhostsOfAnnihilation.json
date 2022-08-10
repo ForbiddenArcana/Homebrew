@@ -308,9 +308,7 @@
             },
             "duration": [
                 {
-                    "duration": {
-                        "type": "special"
-                    }
+                    "type": "special"
                 }
             ],
             "entries": [

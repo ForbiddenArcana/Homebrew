@@ -1741,7 +1741,7 @@
                     "type": "timed",
                     "duration": {
                         "amount": 8,
-                        "type": "hours"
+                        "type": "hour"
                     }
                 }
             ],
