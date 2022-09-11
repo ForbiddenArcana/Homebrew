@@ -2338,7 +2338,7 @@
                         "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
-                "A burst of salty ocean mist erupts from your palms. Each creature in a 15-foot cone must make a Dexterity saving throw. On a failed save, a target takes an additional {@damage 1d4} necrotic damage each time it takes any piercing or slashing damage before the start of your next turn."
+                "A burst of salty ocean mist erupts from your palms. Each creature in a 30-foot cone must make a Dexterity saving throw. On a failed save, a target takes an additional {@damage 1d4} necrotic damage each time it takes any piercing, slashing or bludgeoning damage before the start of your next turn."
             ],
             "entriesHigherLevel": [
                 {
@@ -2827,15 +2827,14 @@
             ],
             "entries": [
                "A beam of crackling, blue energy lances out towards two creatures within range. Make a ranged spell attack against each target. On a hit, the creature takes {@damage 2d6} lightning damage, and a sustained arc of lightning forms between you and that target.",
-               "On each of your subsequent turns for the spell's duration, you can use an action to rejuvenate the arcs. The arc to a creature is broken if that creature is outside the spell's range or behind total cover when you use this action. Each creature that is still linked to you by an arc after you've taken this action takes {@damage 2d6} lightning damage.",
-               "You can use your reaction when a target is reduced to 0 hit points to attempt to shift the arc to another creature within 10 feet of the target. Make a ranged spell attack against the new target; on a hit, the sustained arc shifts to link you and the new target. Hit or miss, until the start of your next turn you can attempt to shift targets when linked creatures are reduced to 0 hit points without requiring your reaction.",
-               "The spell ends if all arcs are broken, if you don't use an action on your turn to sustain the arcs, or if you are holding objects other than the focus or material component you used to cast the spell in both hands."
+               "On each of your subsequent turns for the spell's duration, you can use an action to rejuvenate the arcs. The arc to a creature is broken if that creature is outside the spell's range or behind total cover when you use this action. As part of this action, you can make a new attack roll for each broken arc against different creatures within range, creating a new sustained arc to a target on a hit. Each creature that is linked to you by an arc after you've taken this action automatically takes {@damage 2d6} lightning damage.",
+               "The spell ends if you don't use an action on your turn to rejuvinate the arcs."
             ],
             "entriesHigherLevel": [
                 {
                     "name": "At Higher Levels",
                     "entries": [
-                        "For each slot level above 2nd, you may target an additional creature and the initial damage increases by {@damage 1d6}."
+                        "For each slot level above 2nd, you may target an additional creature."
                     ]
                 }
             ],
@@ -3244,7 +3243,7 @@
                 }
             ],
             "entries": [
-               "You summon a giant sword of light at a point within range, which immediately crashes down in a line 30 feet long and 10 feet wide. Each creature in the area must succeed on a Dexterity saving throw or take {@damage 2d10} radiant damage and be knocked {@condition prone}. A creature knocked prone by the spell must repeat the saving throw the first time it tries to stand up before the end of its next turn, falling {@condition prone} again on a failure."
+               "You summon a giant sword of light at a point within range, which immediately crashes down in a line 30 feet long and 10 feet wide. Each creature in the area must succeed on a Dexterity saving throw or take {@damage 2d10} radiant damage and be knocked {@condition prone}. Until the end of its next turn, a creature knocked prone by the spell can't crawl and must spend all of its movement to stand up."
             ],
             "entriesHigherLevel": [
                 {
