@@ -2827,14 +2827,14 @@
             ],
             "entries": [
                "A beam of crackling, blue energy lances out towards two creatures within range. Make a ranged spell attack against each target. On a hit, the creature takes {@damage 2d6} lightning damage, and a sustained arc of lightning forms between you and that target.",
-               "On each of your subsequent turns for the spell's duration, you can use an action to rejuvenate the arcs. The arc to a creature is broken if that creature is outside the spell's range or behind total cover when you use this action. As part of this action, you can make a new attack roll for each broken arc against different creatures within range, creating a new sustained arc to a target on a hit. Each creature that is linked to you by an arc after you've taken this action automatically takes {@damage 2d6} lightning damage.",
-               "The spell ends if you don't use an action on your turn to rejuvinate the arcs."
+               "On each of your turns for the spell's duration, you can use an action to rejuvenate the arcs. The arc to a creature is broken if that creature is outside the spell's range or behind total cover when you use this action. As part of this action, you can make a new attack roll for each broken arc against different creatures within range, creating a new sustained arc to a target on a hit. Each creature that is linked to you by an arc after you've taken this action automatically takes {@damage 2d6} lightning damage.",
+               "The spell ends if you don't use an action on your turn to rejuvenate the arcs."
             ],
             "entriesHigherLevel": [
                 {
                     "name": "At Higher Levels",
                     "entries": [
-                        "For each slot level above 2nd, you may target an additional creature."
+                        "When you cast this spell using a spell slot of 3rd level or higher, you may target an additional creature for each slot level above 2nd."
                     ]
                 }
             ],
@@ -3249,7 +3249,7 @@
                 {
                     "name": "At Higher Levels",
                     "entries": [
-                        "For each slot level above 2nd, the damage increases by {@damage 1d10} and the length of the line increases by 10 feet."
+                        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@damage 1d10} and the length of the line increases by 10 feet for each slot level above 2nd."
                     ]
                 }
             ],
