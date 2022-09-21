@@ -4932,7 +4932,7 @@
                         "This spell is a buffed version of {@spell Tree Stride} published in the Player's Handbook."
                     ]
                 },
-                "You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. If you pass into one of those trees, you likewise learn the location of other trees of the same kind within 500 feet of the new tree, and can pass into one of them by spending another 5 feet of movement. If you have no movement left or step out of a tree, you appear within 5 feet of the final tree you entered. You must end each turn outside a tree."
+                "You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter or pass into a tree. You instantly know the location of all other trees of the same kind within 500 feet, and must either pass into one of those trees or step out of the tree you're in. If you have no movement left or step out of a tree, you appear within 5 feet of the final tree you entered. After exiting a tree, you can't cast spells other than cantrips until the end of your turn. You must end each turn outside a tree."
             ],
             "classes": {
                 "fromClassList": [
