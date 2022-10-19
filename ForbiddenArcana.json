@@ -4180,6 +4180,76 @@
             }
         },
         {
+            "name": "Mort's Memetic Mindbender",
+            "source": "FA",
+            "level": 4,
+            "school": "E",
+            "time": [
+                {
+                    "number": 10,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "feet",
+                    "amount": 10
+                }
+            },
+            "components": {
+                "s": true,
+                "v": true,
+                "m": {
+                    "text": "magic-infused inks worth at least 2.5 gp, which the spell consumes",
+                    "cost": 250,
+                    "consume": true
+                }
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "amount": 8,
+                        "type": "hour"
+                    }
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "entries": [
+                "As you cast the spell, you inscribe a surface with arcane sigils that divert attention. An area no larger than a 20-foot cube, which contains the markings at the center or along the borders of one of its faces, becomes guarded from attention.",
+                "Creatures and objects which have been in the area for at least one minute without attacking or casting spells become protected by the spell until they leave the area or attack or cast a spell. When an unaffected creature sees the area, it must succeed on an Intelligence saving throw or find anything protected by the spell as undeserving of its attention, causing it to be effectively {@condition blinded} and {@condition deafened} in regard to protected targets. Creatures you designate when you cast the spell, as well as creatures that can't be charmed, automatically pass the save. An affected creature can use its action to make an Intelligence (Investigation) check against your spell save DC to see through the enchantment. A creature that succeeds on the save or the check is unaffected by the spell, and can't be affected again until a minute passes without it seeing the area.",
+                "The spell immediately ends if the surface is moved more than 10 feet from where you cast the spell. Casting this spell on the same area every day for a year makes the effect last until dispelled."
+            ],
+            "savingThrow": [
+                "intelligence"
+            ],
+            "areaTags": [
+                "C"
+            ],
+            "miscTags": [
+                "PRM"
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Bard",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
+                ]
+            }
+        },
+        {
             "name": "Shackles of Pain",
             "source": "FA",
             "level": 4,
