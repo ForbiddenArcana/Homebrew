@@ -17,6 +17,363 @@
             }
         ]
     },
+    "baseitem": [
+        {
+            "name": "Brigandine",
+            "source": "FA:V",
+            "type": "HA",
+            "rarity": "none",
+            "weight": 50,
+            "value": 2000,
+            "ac": 16,
+            "strength": "15",
+            "armor": true,
+            "stealth": true,
+            "entries": [
+                "This armor is a garment of heavy cloth or leather, lined internally with many small steel plates riveted to the fabric. Flexible chain mail protects the inside of the joints. It includes a tunic that can be worn over the armor, often stylized with family or faction symbology, which fully covers the metal. Since the metal is not exposed, it's not considered to be metal armour for the purpose of effects like {@spell Shocking Grasp}."
+            ]
+        },
+        {
+            "name": "Buckler",
+            "source": "FA:V",
+            "type": "S",
+            "rarity": "none",
+            "weight": 2,
+            "value": 100,
+            "ac": 1,
+            "entries": [
+                "A shield is made from wood or metal and is carried in one hand. You can benefit from only one shield at a time.",
+                "Wielding a buckler increases your AC by 1, and it counts as an item instead of as armour for the purpose of (un)equipping it.",
+                "Bucklers require proficiency with either shields or light armor to wield effectively."
+            ]
+        },
+        {
+            "name": "Gambeson (2-layer)",
+            "source": "FA:V",
+            "type": "MA",
+            "rarity": "none",
+            "weight": 6,
+            "value": 200,
+            "ac": 12,
+            "armor": true,
+            "entries": [
+                "Gambeson consists of quilted layers of cloth and batting. This is a shoddy, mass-produced vest with fewer layers than normal, sacrificing protection for affordability. It can be worn as padding under heavier armors."
+            ]
+        },
+        {
+            "name": "Gambeson (4-layer)",
+            "source": "FA:V",
+            "type": "MA",
+            "rarity": "none",
+            "weight": 12,
+            "value": 750,
+            "ac": 13,
+            "armor": true,
+            "entries": [
+                "Gambeson consists of quilted layers of cloth and batting. This is a well-padded jacket or vest, but is still light enough to allow relatively unrestricted movement and to be worn as padding under heavier armors."
+            ]
+        },
+        {
+            "name": "Gambeson (6-layer)",
+            "source": "FA:V",
+            "type": "MA",
+            "rarity": "none",
+            "weight": 18,
+            "value": 1000,
+            "ac": 14,
+            "armor": true,
+            "stealth": true,
+            "entries": [
+                "Gambeson consists of quilted layers of cloth and batting. This is a heavy coat, offering the best protection that fabric alone can but somewhat encumbering movement."
+            ]
+        },
+        {
+            "name": "Gambeson (Masterwork)",
+            "source": "FA:V",
+            "type": "MA",
+            "rarity": "none",
+            "weight": 12,
+            "value": 6000,
+            "ac": 14,
+            "armor": true,
+            "entries": [
+                "Gambeson consists of quilted layers of cloth and batting. This is a heavy greatspider silk coat with more layers over the vitals than the joints, offering equal protection to thicker gambesons without heavily restricting movement."
+            ]
+        },
+        {
+            "name": "Greatbow",
+            "source": "FA:V",
+            "type": "R",
+            "rarity": "none",
+            "weight": 3,
+            "value": 800,
+            "weaponCategory": "martial",
+            "property": [
+                "A",
+                "H",
+                "S",
+                "2H"
+            ],
+            "range": "250/1000",
+            "dmg1": "1d10",
+            "dmgType": "P",
+            "bow": true,
+            "weapon": true,
+            "ammoType": "arrow|phb",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Special",
+                    "entries": [
+                        "If you have a Strength score of 12 or less, you can't fire this weapon."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Hand Cannon (2 lb)",
+            "source": "FA:V",
+            "type": "R",
+            "rarity": "none",
+            "weight": 30,
+            "weaponCategory": "simple",
+            "property": [
+                "A",
+                "H",
+                "S",
+                "2H"
+            ],
+            "range": "60/240",
+            "dmg1": "2d12",
+            "dmgType": "B",
+            "savingThrow": [
+                "constitution"
+            ],
+            "weapon": true,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Special",
+                    "entries": [
+                        "Firing this weapon creates a thunderous boom audible out to 1 mile. When fired in an indoor space, all creatures within 30 feet of it must succeed on a DC 13 Constitution saving throw or take {@damage 1d12} thunder damage and be {@condition deafened} for one minute. Creatures within 5 feet of it have disadvantage on the save.",
+                        "After firing this weapon, you must use an action to reload it before you can fire it again. If you have a Strength score of 12 or less, you are knocked {@condition prone} and pushed backwards 5 feet when you fire this weapon."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Longsword",
+            "source": "FA:V",
+            "type": "M",
+            "rarity": "none",
+            "weight": 3,
+            "value": 150,
+            "weaponCategory": "martial",
+            "property": [
+                "S",
+                "V"
+            ],
+            "dmg1": "1d8",
+            "dmgType": "S",
+            "dmg2": "1d10",
+            "sword": true,
+            "weapon": true,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Special",
+                    "entries": [
+                        "This weapon also gains the Finesse property when used with two hands."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Military Crossbow",
+            "source": "FA:V",
+            "type": "R",
+            "rarity": "none",
+            "weight": 22,
+            "value": 800,
+            "weaponCategory": "martial",
+            "property": [
+                "A",
+                "H",
+                "LD",
+                "S",
+                "2H"
+            ],
+            "range": "200/800",
+            "dmg1": "1d12",
+            "dmgType": "P",
+            "crossbow": true,
+            "weapon": true,
+            "ammoType": "crossbow bolt|phb",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Special",
+                    "entries": [
+                        "If you have a Strength score of 12 or less, it takes an action to load this weapon, and after you take this action you are {@condition restrained} and cannot fire it until the start of your next turn. You also can't load it on a turn after moving 5 feet or more, or if you're not proficient with it."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Pike",
+            "source": "FA:V",
+            "type": "M",
+            "rarity": "none",
+            "weight": 18,
+            "value": 100,
+            "weaponCategory": "martial",
+            "property": [
+                "H",
+                "S",
+                "2H"
+            ],
+            "dmg1": "1d10",
+            "dmgType": "P",
+            "weapon": true,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Special",
+                    "entries": [
+                        "This weapon can't be used to attack creatures within 5 feet of you, but adds 10 feet to your reach (instead of 5) when you attack with it. This property also determines your reach for opportunity attacks with the weapon. Longer pikes that add 15 feet to the wielder's reach are also commonly available, but can't be used to attack creatures within 10 feet of the wielder."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sending Relay",
+            "source": "FA:V",
+            "tier": "minor",
+            "rarity": "uncommon",
+            "reqAttune": true,
+            "wondrous": true,
+            "entries": [
+                "This smooth stone resembles a Sending Stone, but has a carving of a circular chain comprised of six links. Whenever you are the caster or target of a {@spell Sending} spell, you can choose to relay the message and response to up to 5 other willing creatures you can see. Those creatures recognize that they are receiving relayed messages from you, and recognize the other creature involved with the {@spell Sending} if they know the other creature.",
+                "Additionally, whenever you cast {@spell Sending} while touching a willing creature attuned to a Sending Relay, you can target any creature they are familiar with."
+            ],
+            "hasFluffImages": true
+        },
+        {
+            "name": "Swordbreaker",
+            "source": "FA:V",
+            "type": "M",
+            "rarity": "none",
+            "weight": 2,
+            "value": 50,
+            "weaponCategory": "martial",
+            "property": [
+                "L",
+                "S"
+            ],
+            "dmg1": "1d4",
+            "dmgType": "B",
+            "weapon": true,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Special",
+                    "entries": [
+                        "When you're wielding a swordbreaker with proficiency and take the {@action Attack} action, you can attempt to disarm a creature wielding a melee weapon or holding a wand-like object in one hand. If you're able to make multiple attacks with the {@action Attack} action, this attempt replaces one of them. If you have a free hand or are wielding two swordbreakers, you can attempt to disarm objects held with two hands.",
+                        "You make a melee attack with the swordbreaker, and the creature makes a contesting melee attack with the object it's holding. You have disadvantage on the attack if the creature's object is not sword-like. Neither attack causes any damage or other ill effect, but if you win the contest, the creature drops its object."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Timepiece (High-quality)",
+            "source": "FA:V",
+            "type": "G",
+            "rarity": "none",
+            "weight": 2,
+            "value": 500,
+            "entries": [
+                "A timepiece is a roughly hand-sized enclosure of wood or metal containing the intricate mechanisms required to keep time, with a lid or additional case to protect the clock face. When closed, most cases have rudimentary water resistance. The clock itself typically has 2 hands, hour and minute. As present timepiece accuracy is not great, most clock faces only have 12 marks, indicating each hour and 5-minute interval.",
+                "High-quality timepieces go for 5 gold, and are accurate to within 5 minutes over 2 hours and to within 2 hours over 24 hours. They rarely run fast, typically running slow instead, so that inaccuracy can be somewhat mentally accounted for. The enclosure must be opened to access the mechanism to wind it with a key, but high-quality timepieces are good for close to 48 hours between rewinds."
+            ]
+        },
+        {
+            "name": "Timepiece (Mid-quality)",
+            "source": "FA:V",
+            "type": "G",
+            "rarity": "none",
+            "weight": 2,
+            "value": 400,
+            "entries": [
+                "A timepiece is a roughly hand-sized enclosure of wood or metal containing the intricate mechanisms required to keep time, with a lid or additional case to protect the clock face. When closed, most cases have rudimentary water resistance. The clock itself typically has 2 hands, hour and minute. As present timepiece accuracy is not great, most clock faces only have 12 marks, indicating each hour and 5-minute interval.",
+                "Mid-quality timepieces go for 4 gold, and are accurate to within 8 minutes over 2 hours and to within 3 hours over 24 hours. They rarely run fast, typically running slow instead, so that inaccuracy can be somewhat mentally accounted for. The enclosure must be opened to access the mechanism to wind it with a key, but mid-quality timepieces are good for close to 36 hours between rewinds."
+            ]
+        },
+        {
+            "name": "Timepiece (Low-quality)",
+            "source": "FA:V",
+            "type": "G",
+            "rarity": "none",
+            "weight": 2,
+            "value": 300,
+            "entries": [
+                "A timepiece is a roughly hand-sized enclosure of wood or metal containing the intricate mechanisms required to keep time, with a lid or additional case to protect the clock face. When closed, most cases have rudimentary water resistance. The clock itself typically has 2 hands, hour and minute. As present timepiece accuracy is not great, most clock faces only have 12 marks, indicating each hour and 5-minute interval.",
+                "Low-quality timepieces go for 3 gold, and are accurate to within 10 minutes over 2 hours and to within 4 hours over 24 hours. They rarely run fast, typically running slow instead, so that inaccuracy can be somewhat mentally accounted for. The enclosure must be opened to access the mechanism to wind it with a key, but low-quality timepieces are good for close to 24 hours between rewinds."
+            ]
+        },
+        {
+            "name": "Timepiece (Timer)",
+            "source": "FA:V",
+            "type": "G",
+            "rarity": "none",
+            "weight": 2,
+            "value": 200,
+            "entries": [
+                "A timepiece is a roughly hand-sized enclosure of wood or metal containing the intricate mechanisms required to keep time, with a lid or additional case to protect the clock face. When closed, most cases have rudimentary water resistance. The clock itself typically has 2 hands, hour and minute. As present timepiece accuracy is not great, most clock faces only have 12 marks, indicating each hour and 5-minute interval.",
+                "Timepiece timers go for 2 gold, and lose accuracy quickly so they're only used to keep rough track of a handful of hours. They're accurate to within 15 minutes over 2 hours and to within 1 hour over 6 hours. They rarely run fast, typically running slow instead, so that inaccuracy can be somewhat mentally accounted for. The enclosure must be opened to access the mechanism to wind it with a key. Timepiece timers run for up to 6 hours before the mechanism is halted as it strikes a small bell."
+            ]
+        },
+        {
+            "name": "Tower Shield",
+            "source": "FA:V",
+            "type": "S",
+            "rarity": "none",
+            "weight": 10,
+            "strength": 15,
+            "value": 400,
+            "ac": 3,
+            "entries": [
+                "A shield is made from wood or metal and is carried in one hand. You can benefit from only one shield at a time.",
+                "Wielding a tower shield increases your AC by 3. While wielding one, you can plant it as an action to create total cover from one direction. You are {@condition restrained} for as long as you brace it, and can stop bracing it on your turn (no action required).",
+                "Tower shields require proficiency with both shields and heavy armor and a Strength score of 15 or higher to wield effectively."
+            ]
+        },
+        {
+            "name": "Whip",
+            "source": "FA:V",
+            "type": "M",
+            "rarity": "none",
+            "weight": 3,
+            "value": 30,
+            "weaponCategory": "martial",
+            "property": [
+                "F",
+                "L",
+                "S"
+            ],
+            "dmg1": "1d4",
+            "dmgType": "S",
+            "weapon": true,
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Special",
+                    "entries": [
+                        "This weapon adds 10 feet to your reach (instead of 5) when you attack with it. This property also determines your reach for opportunity attacks with the weapon."
+                    ]
+                }
+            ]
+        }
+    ],
     "feat": [
     ],
     "optionalfeature": [
@@ -247,85 +604,6 @@
                         "name": "Artificer",
                         "source": "PHB"
                     },
-                    {
-                        "name": "Bard",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Sorcerer",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Warlock",
-                        "source": "PHB"
-                    },
-                    {
-                        "name": "Wizard",
-                        "source": "PHB"
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Unknown Tragedy",
-            "source": "FA:V",
-            "level": 4,
-            "school": "E",
-            "time": [
-                {
-                    "number": 1,
-                    "unit": "action"
-                }
-            ],
-            "range": {
-                "type": "point",
-                "distance": {
-                    "type": "touch"
-                }
-            },
-            "components": {
-                "v": true,
-                "s": true
-            },
-            "duration": [
-                {
-                    "type": "timed",
-                    "duration": {
-                        "type": "minute",
-                        "amount": 10
-                    },
-                    "concentration": true
-                }
-            ],
-            "entries": [
-                "A humanoid you touch is unacknowledged and ignored by all creatures (including you, unless you are the target) for the spell's duration. An unwilling target that succeeds on a Charisma save is unaffected. Creatures that can't be charmed still notice the target.",
-                "If the target stands out for any reason or draws attention to itself, observing creatures must succeed on a Wisdom save at disadvantage against your spell save DC to acknowledge its presence. When the target damages a creature or casts a spell that affects one, that creature automatically succeeds on this save. An observer who has passed the save may bring the target to other observers' attention, removing disadvantage on the save for them. Creatures that passed the save begin ignoring the target again after a minute passes without them observing it.",
-                "Once the spell ends, creatures acknowledge the target again and remember anything they observed it doing during the spell's duration."
-            ],
-            "entriesHigherLevel": [
-                {
-                    "type": "entries",
-                    "name": "At Higher Levels",
-                    "entries": [
-                        "When you cast this spell using a spell slot of 6th level or higher, the duration is concentration up to 1 hour. If you use a spell slot of 8th level or higher, the duration is 24 hours."
-                    ]
-                }
-            ],
-            "fluff": {
-                "type": "entries",
-                "entries": [
-                    "Legend has it that this spell was once named after a disgraced samurai who failed to accomplish his duty and failed to redeem himself. If that was ever true, the name has long since been lost to time."
-                ]
-            },
-            "savingThrow": [
-                "wisdom",
-                "charisma"
-            ],
-            "areaTags": [
-                "ST"
-            ],
-            "classes": {
-                "fromClassList": [
                     {
                         "name": "Bard",
                         "source": "PHB"
