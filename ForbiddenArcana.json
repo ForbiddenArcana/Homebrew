@@ -5373,7 +5373,7 @@
             "classSource": "FA",
             "level": 2,
             "entries": [
-                "Never satisfied with your current knowledge you are always looking to expand your horizons. You master two Scholarly Pursuits of your choice from the list at end of this class.",
+                "Never satisfied with your current knowledge you are always looking to expand your horizons. At 2nd level you master two Scholarly Pursuits of your choice from the list at end of this class.",
                 "When you reach certain levels in this class, as indicated in the Scholarly Pursuits column of the Savant table above, you master additional Scholarly Pursuits of your choice."
             ]
         },
@@ -5384,7 +5384,7 @@
             "classSource": "FA",
             "level": 2,
             "entries": [
-                "Your mind is capable of wondrous bursts of intuition. When you make an ability check or saving throw that uses Wisdom or Intelligence, or when you make a damage roll against your Mark, you add your Intellect Die, which is a d6, to the roll.",
+                "At 2nd level, your mind is capable of wondrous bursts of intuition. When you make an ability check or saving throw that uses Wisdom or Intelligence, or when you make a damage roll against your Mark, you add your Intellect Die, which is a d6, to the roll.",
                 "Moreover, when a creature that can see or hear you hits your Mark with an attack, you can use your reaction to grant it a bonus to its damage roll equal to your Intellect Die.",
                 "At certain savant levels, your Intellect Die increases: at 5th level (d8), at 10th level (d10), and at 15th level (d12)."
             ]
@@ -5416,7 +5416,7 @@
             "classSource": "FA",
             "level": 5,
             "entries": [
-                "Your ability to process and react to your surroundings is near supernatural. You gain a bonus to initiative rolls equal to your Intelligence modifier, and you gain a second reaction you can take each round. A single effect can only trigger one reaction.",
+                "Your ability to process and react to your surroundings is near supernatural. At 5th level you gain a bonus to initiative rolls equal to your Intelligence modifier, and you gain a second reaction you can take each round. A single effect can only trigger one reaction.",
                 "When you reach 17th level in this class, you gain another reaction you can use each round (for a total of 3 reactions)."
             ]
         },
@@ -5427,7 +5427,7 @@
             "classSource": "FA",
             "level": 5,
             "entries": [
-                "You are able to gain a working knowledge of new concepts exceptionally fast. You gain proficiency with one skill, tool, or weapon, or learn to speak one language of your choice.",
+                "You are able to gain a working knowledge of new concepts exceptionally fast. At 5th level you gain proficiency with one skill, tool, or weapon, or learn to speak one language of your choice.",
                 "Over the course of 1 hour, which can be during a short or long rest, you can replace this proficiency or language with another proficiency or language of your choice, so long as you have an example to learn from. Examples include a willing teacher, a book in another language, or a tool set manual."
             ]
         },
@@ -5448,7 +5448,7 @@
             "classSource": "FA",
             "level": 7,
             "entries": [
-                "You cannot be surprised unless you are incapacitated.",
+                "Starting at 7th level, you cannot be surprised unless you are incapacitated.",
                 "Moreover, when you roll initiative you can use a reaction to do one of the following before any other creatures act:",
                 {
                     "type": "list",
@@ -5478,7 +5478,7 @@
             "classSource": "FA",
             "level": 9,
             "entries": [
-                "As a reaction when a creature within 30 feet makes a saving throw, you can shout a snippet of potent advice, granting it a bonus to its roll equal to one roll of your Intellect Die. The creature must be able to hear you to gain this benefit."
+                "At 9th level, as a reaction when a creature within 30 feet makes a saving throw, you can shout a snippet of potent advice, granting it a bonus to its roll equal to one roll of your Intellect Die. The creature must be able to hear you to gain this benefit."
             ]
         },
         {
@@ -5488,7 +5488,7 @@
             "classSource": "FA",
             "level": 10,
             "entries": [
-                "You always seem to be one step ahead of your foes. So long as you aren't incapacitated, you have advantage on any ability checks or saving throws that your Mark forces you to make."
+                "You always seem to be one step ahead of your foes. Starting at 10th level, as long as you aren't incapacitated, you have advantage on any ability checks or saving throws that your Mark forces you to make."
             ]
         },
         {
@@ -5498,7 +5498,7 @@
             "classSource": "FA",
             "level": 11,
             "entries": [
-                "You are able to identify even the smallest weaknesses and exploit them with ruthless efficiency. You can use a reaction to add a roll of your Intellect Die roll to any damage roll, so long as you can see the target and the attacker can hear you.",
+                "At 11th level, you are able to identify even the smallest weaknesses and exploit them with ruthless efficiency. You can use a reaction to add a roll of your Intellect Die roll to any damage roll, so long as you can see the target and the attacker can hear you.",
                 "Also, whenever you use your reaction to add an Intellect Die to another creature's damage roll against your Mark, you can roll your Intellect Die twice and use the higher result."
             ]
         },
@@ -5530,18 +5530,8 @@
             "classSource": "FA",
             "level": 14,
             "entries": [
-                "You gain proficiency in Charisma saving throws. Whenever you are forced make a Charisma saving throw you gain a bonus to your roll equal to one roll of your Intellect Die.",
+                "At 14th level, you gain proficiency in Charisma saving throws. Whenever you are forced make a Charisma saving throw you gain a bonus to your roll equal to one roll of your Intellect Die.",
                 "Also, when an effect allows you to make an Intelligence, Wisdom, or Charisma saving throw to avoid damage, you take no damage on a successful save and half on a failure."
-            ]
-        },
-        {
-            "name": "Unyielding Mind Improvement",
-            "source": "FA",
-            "className": "Savant",
-            "classSource": "FA",
-            "level": 15,
-            "entries": [
-                "Upon reaching 15th level, increase the size of the die for your Unyielding Mind ability ({@dice d10})."
             ]
         },
         {
@@ -5572,7 +5562,7 @@
             "classSource": "FA",
             "level": 18,
             "entries": [
-                "As an action, you can predict your Mark's next move and alert your allies to its plans. Until the start of your next turn, your Mark has disadvantage on all ability checks, attack rolls, and saving throws, and creatures of your choice have advantage on any saving throw your Mark forces them to make.",
+                "At 18th level, as an action, you can predict your Mark's next move and alert your allies to its plans. Until the start of your next turn, your Mark has disadvantage on all ability checks, attack rolls, and saving throws, and creatures of your choice have advantage on any saving throw your Mark forces them to make.",
                 "Once you use this feature you must finish a short or long rest before you can use it again."
             ]
         },
@@ -5594,7 +5584,7 @@
             "classSource": "FA",
             "level": 20,
             "entries": [
-                "You realize your true genius potential. Your Intelligence score increases by 4, up to a maximum of 24. Also, when you roll an Intellect Die and roll lower than your Intelligence modifier, you can replace the roll with your Intelligence modifier."
+                "You realize your true genius potential at 20th level. Your Intelligence score increases by 4, up to a maximum of 24. Also, when you roll an Intellect Die and roll lower than your Intelligence modifier, you can replace the roll with your Intelligence modifier."
             ]
         }
     ],
@@ -7063,7 +7053,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You gain proficiency in Insight and Investigation, and your proficiency bonus is doubled for any check you make with either skill. If you are already proficient in these skills you gain proficiency in another skill from the savant skill list.",
+                "At 3rd level you gain proficiency in Insight and Investigation, and your proficiency bonus is doubled for any check you make with either skill. If you are already proficient in these skills you gain proficiency in another skill from the savant skill list.",
                 "Your intuitive nature grants you the following benefits:",
                 {
                     "type": "list",
@@ -7086,7 +7076,7 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "You use your knowledge of warfare to direct your allies on the field of battle. As an action on your turn, you can issue one of the Orders detailed below to a willing creature that can see or hear you within 60 feet. A creature can only benefit from one Order at a time, and you can't issue an Order to yourself.",
+                "Starting at 3rd level, you use your knowledge of warfare to direct your allies on the field of battle. As an action on your turn, you can issue one of the Orders detailed below to a willing creature that can see or hear you within 60 feet. A creature can only benefit from one Order at a time, and you can't issue an Order to yourself.",
                 {
                     "type": "entries",
                     "name": "Attack Order",
@@ -7127,7 +7117,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Your wondrous intuition grants you a heightened sense for danger. When a creature that you can see targets you with a melee attack and misses, you can force it to make a Dexterity saving throw against your Investigator save DC as a reaction.",
+                "Your wondrous intuition grants you a heightened sense for danger. At 6th level, when a creature that you can see targets you with a melee attack and misses, you can force it to make a Dexterity saving throw against your Investigator save DC as a reaction.",
                 "On a failed save, you can cause the creature to be blinded, deafened, or silenced until the start of your next turn, or if the creature is Large or smaller, you can knock it prone instead.",
                 "If you use this reaction against your Mark, it also takes bludgeoning damage equal to your Intellect Die on a failure."
             ]
@@ -7142,7 +7132,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "Your line of work has granted you a unique familiarity with the underbelly of civilized society. You learn to speak, read, decipher, and write in Thieves' Cant.",
+                "Your line of work has granted you a unique familiarity with the underbelly of civilized society. At 6th level, you learn to speak, read, decipher, and write in Thieves' Cant.",
                 "Also, once you spend a long rest in a settlement, you have advantage on any ability checks you make to gather information on that settlement and its culture, active factions, or important figures.",
                 "Finally, if you spend at least 10 minutes talking with your Mark, you can force it to (unknowingly) make a Wisdom saving throw against your Investigator save DC. On a failed save, your Mark cannot willingly lie to you for the remainder of that conversation."
             ]
@@ -7157,7 +7147,7 @@
             "level": 13,
             "header": 2,
             "entries": [
-                "Your genius allows you to coordinate multiple allies. When you use an action to issue an Order, you can issue the same Order to another willing creature within range."
+                "At 13th level, your genius allows you to coordinate multiple allies. When you use an action to issue an Order, you can issue the same Order to another willing creature within range."
             ]
         },
         {
@@ -7170,7 +7160,7 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "Your sense for the truth has reached near-supernatural levels. You gain Truesight in a 60-foot radius. Though, your Truesight from this feature cannot see into the Ethereal Plane.",
+                "Your sense for the truth has reached near-supernatural levels by level 17. You gain Truesight in a 60-foot radius. Though, your Truesight from this feature cannot see into the Ethereal Plane.",
                 "Also, when you, or a creature you can see, hits your Mark with a weapon attack, you can use your reaction to turn that attack into an automatic critical hit.",
                 "Once you use this feature to turn a hit into a critical hit, you must finish a short or long rest before you can use it again."
             ]
