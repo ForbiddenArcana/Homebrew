@@ -932,6 +932,115 @@
             "featureType": [
                 "MM"
             ]
+        },
+        {
+            "name": "Astrology",
+            "source": "FA",
+            "featureType": [
+                "SP"
+            ],
+            "entries": [
+                "You are a student of star charts and constellations, and can use the movements of celestial bodies to predict the future. During a long rest when you can see the night sky, roll one d20 and record the number you rolled. You can replace any attack roll, saving throw, or ability check you make with this foretelling roll. You must use this feature before you roll.",
+                "Your foretelling roll can be used only once. If you do not use this roll before the end of your next long rest it is lost."
+            ]
+        },
+        {
+            "name": "Falconry",
+            "source": "FA",
+            "featureType": [
+                "SP"
+            ],
+            "entries": [
+                "You have spent many months learning to train birds of prey. You gain a Falcon companion which uses the Hawk statblock from the Player's Handbook, but it has an Intelligence score of 8. You and your Falcon can communicate simple ideas with each other using simple gestures and sounds. Your Falcon is unwaveringly loyal to you and obeys your commands.",
+                "In combat, your Falcon shares your initiative and acts on your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use a bonus action to command it to take an action from its stat block, or another action. If you are incapacitated, your Falcon acts on its own."
+            ]
+        },
+        {
+            "name": "Fencing",
+            "source": "FA",
+            "featureType": [
+                "SP"
+            ],
+            "entries": [
+                "You gain proficiency with long swords, rapiers, and scimitars.",
+                "When a creature you can see targets you with a melee attack while you are wielding one of these weapons, you can use your reaction to roll your Intellect Die and add it to your Armor class against the attack. If it misses, you can make one melee weapon attack against it as part of the same reaction."
+            ]
+        },
+        {
+            "name": "Marksmanship",
+            "source": "FA",
+            "featureType": [
+                "SP"
+            ],
+            "entries": [
+                "You gain proficiency with all martial ranged weapons.",
+                "When you make a ranged weapon attack, you can use your Intellect Die in place of the weapon's damage die. Moreover, if your setting includes firearms, and your savant has been exposed to the inner workings of such devices, they are considered to be proficient with all simple and martial firearms."
+            ]
+        },
+        {
+            "name": "Linguistics",
+            "source": "FA",
+            "featureType": [
+                "SP"
+            ],
+            "entries": [
+                "You learn to speak, read, and write a number of languages equal to your Intelligence modifier.",
+                "Whenever you make a Charisma (Persuasion) check while speaking with a creature in its native tongue (other than Common) you can treat a roll of 9 or lower on the d20 as a 10."
+            ]
+        },
+        {
+            "name": "Perfect Recall",
+            "source": "FA",
+            "featureType": [
+                "SP"
+            ],
+            "entries": [
+                "You can recall picture-perfect details from things that you commit to memory. If you spend at least 1 minute observing an object or creature, you can perfectly recall any observable information about that creature or object point in the future, without requiring a successful Intelligence check."
+            ]
+        },
+        {
+            "name": "Riddles",
+            "source": "FA",
+            "featureType": [
+                "SP"
+            ],
+            "entries": [
+                "You have spent a great deal of time pondering and pouring over riddles and rhymes. When you speak, you can choose to speak in Riddles. When you do so, you appear to be speaking normally, but there are hidden messages laced in your words.",
+                "Over a period of 1 hour, which can be during the course of a short or long rest, you can teach a creature to understand your Riddles. A creature with an Intelligence of 13 or higher that understands your Riddles can respond to you in Riddles."
+            ]
+        },
+        {
+            "name": "Secrets & Whispers",
+            "source": "FA",
+            "featureType": [
+                "SP"
+            ],
+            "entries": [
+                "You have a way of finding out news and gathering rumors, even from distant lands. Each time you finish a long rest in a city, town, or settlement, you learn of a one important event that has taken place within the past week.",
+                "Moreover, when you spend a long rest in a town, city, or settlement, you can spend 5 sp to gather news and rumors, including knowledge of secret events, related to that town. For example, you may learn of a conversation between conspirators or the location of a thieves' guild meeting."
+            ]
+        },
+        {
+            "name": "Skill Mastery",
+            "source": "FA",
+            "featureType": [
+                "SP"
+            ],
+            "entries": [
+                "You have spent significant time, effort, and research honing a singular skill. Choose a skill or tool that you are proficient with. When you make an ability check that uses the chosen skill or tool proficiency, you can treat a roll of 7 or lower on the d20 as an 8.",
+                "You can master this Scholarly Pursuit more than once, but you must choose a different proficiency each time."
+            ]
+        },
+        {
+            "name": "Traditions",
+            "source": "FA",
+            "featureType": [
+                "SP"
+            ],
+            "entries": [
+                "You are a student of culture, politics, and traditions. When you make an Intelligence (History) check related to a local custom, culture, or tradition, you have advantage on the roll.",
+                "This eclectic knowledge of local customs and traditions also makes you an excellent ambassador. The first time you meet a leader or otherwise important local figure, you have advantage on any Charisma checks you make."
+            ]
         }
     ],
     "race": [
@@ -5224,6 +5333,111 @@
                     }
                 ]
             },
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "Intellect Die",
+                        "Scholarly Pursuits"
+                    ],
+                    "rows": [
+                        [
+                            "-",
+                            "-"
+                        ],
+                        [
+                            "1d6",
+                            2
+                        ],
+                        [
+                            "1d6",
+                            2
+                        ],
+                        [
+                            "1d6",
+                            3
+                        ],
+                        [
+                            "1d8",
+                            3
+                        ],
+                        [
+                            "1d8",
+                            3
+                        ],
+                        [
+                            "1d8",
+                            3
+                        ],
+                        [
+                            "1d8",
+                            4
+                        ],
+                        [
+                            "1d8",
+                            4
+                        ],
+                        [
+                            "1d10",
+                            4
+                        ],
+                        [
+                            "1d10",
+                            4
+                        ],
+                        [
+                            "1d10",
+                            5
+                        ],
+                        [
+                            "1d10",
+                            5
+                        ],
+                        [
+                            "1d10",
+                            5
+                        ],
+                        [
+                            "1d12",
+                            5
+                        ],
+                        [
+                            "1d12",
+                            6
+                        ],
+                        [
+                            "1d12",
+                            6
+                        ],
+                        [
+                            "1d12",
+                            6
+                        ],
+                        [
+                            "1d12",
+                            6
+                        ],
+                        [
+                            "1d12",
+                            6
+                        ]
+                    ]
+                }
+            ],
+            "optionalfeatureProgression": [
+                {
+                    "name": "Scholarly Pursuits",
+                    "featureType": [
+                        "SP"
+                    ],
+                    "progression": {
+                        "2": 2,
+                        "4": 3,
+                        "8": 4,
+                        "12": 5,
+                        "16": 6
+                    }
+                }
+            ],
             "multiclassing": {
                 "requirements": {
                     "int": 13
@@ -5374,7 +5588,53 @@
             "level": 2,
             "entries": [
                 "Never satisfied with your current knowledge you are always looking to expand your horizons. At 2nd level you master two Scholarly Pursuits of your choice from the list at end of this class.",
-                "When you reach certain levels in this class, as indicated in the Scholarly Pursuits column of the Savant table above, you master additional Scholarly Pursuits of your choice."
+                "When you reach certain levels in this class, as indicated in the Scholarly Pursuits column of the Savant table above, you master additional Scholarly Pursuits of your choice.",
+                {
+                    "type": "options",
+                    "count": 2,
+                    "entries": [
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Astrology|FA"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Falconry|FA"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Fencing|FA"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Marksmanship|FA"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Linguistics|FA"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Perfect Recall|FA"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Riddles|FA"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Secrets & Whispers|FA"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Skill Mastery|FA"
+                        },
+                        {
+                            "type": "refOptionalfeature",
+                            "optionalfeature": "Traditions|FA"
+                        }
+                    ]
+                }
             ]
         },
         {
