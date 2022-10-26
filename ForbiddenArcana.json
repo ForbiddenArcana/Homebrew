@@ -5471,7 +5471,7 @@
                 "Adroit Analysis|Savant|FA|1",
                 "Predictive Defense|Savant|FA|1",
                 "Scholarly Pursuits|Savant|FA|2",
-                "Wonderous Intellect|Savant|FA|2",
+                "Wondrous Intellect|Savant|FA|2",
                 {
                     "classFeature": "Academic Discipline|Savant|FA|3",
                     "gainSubclassFeature": true
@@ -5486,7 +5486,7 @@
                 "Keen Awareness|Savant|FA|7",
                 "Ability Score Improvement|Savant|FA|8",
                 "Flash of Brilliance|Savant|FA|9",
-                "Predictive Expert|Savant|FA|10",
+                "Predictive Defense Improvement|Savant|FA|10",
                 "Potent Observation|Savant|FA|11",
                 "Ability Score Improvement|Savant|FA|12",
                 {
@@ -5561,12 +5561,12 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you hit your Mark with an attack or observe it for 1 minute, you learn one of the following characteristics of your choice: its highest ability score, lowest ability score, Armor Class, speed, maximum hit points, or creature type.",
+                        "When you hit your Mark with an attack or observe it for 1 minute, you learn one of the following characteristics of your choice: its highest ability score, lowest ability score, Armor Class, speed, current and maximum hit points, or creature type.",
                         "You can use Intelligence, in place of Strength or Dexterity, for weapon attack and damage rolls against your Mark",
-                        "You have advantage on Intelligence and Wisdom ability checks to analyze or recall information about your Mark."
+                        "You have advantage on Intelligence and Wisdom ability checks to analyze or recall information about your Mark, and can take the {@action Search} action as a bonus action against your Mark."
                     ]
                 },
-                "The creature remains your Mark indefinitely. This Mark ends early if the creature is Hidden from you, or if you use this feature on another creature."
+                "The creature remains your Mark for 1 minute or until you are incapacitated or Mark another creature with this feature. When you Mark a creature, any other creatures with the same creature statistics that you're fighting also become your Mark."
             ]
         },
         {
@@ -5577,7 +5577,8 @@
             "level": 1,
             "entries": [
                 "Your observant way of fighting allows you to anticipate and dodge attacks. Starting at 1st level, when calculating your Armor Class you can use your Intelligence modifier, in place of your Dexterity.",
-                "Moreover, so long as you are not incapacitated, your Mark has disadvantage on any attack roll it makes against you."
+                "Also, when your Mark attacks you, you can use a reaction to impose disadvantage on all attack rolls it makes against you on that turn.",
+                "Starting at 10th level, as long as you aren't incapacitated, your Mark has disadvantage on any attack rolls it makes against you, and you have advantage on any ability checks and saving throws it forces you to make."
             ]
         },
         {
@@ -5638,14 +5639,14 @@
             ]
         },
         {
-            "name": "Wonderous Intellect",
+            "name": "Wondrous Intellect",
             "source": "FA",
             "className": "Savant",
             "classSource": "FA",
             "level": 2,
             "entries": [
-                "At 2nd level, your mind is capable of wondrous bursts of intuition. When you make an ability check or saving throw that uses Wisdom or Intelligence, or when you make a damage roll against your Mark, you add your Intellect Die, which is a d6, to the roll.",
-                "Moreover, when a creature that can see or hear you hits your Mark with an attack, you can use your reaction to grant it a bonus to its damage roll equal to your Intellect Die.",
+                "At 2nd level, your mind is capable of wondrous bursts of intuition. When you make an ability check or saving throw that uses Wisdom or Intelligence, you add your Intellect Die, which is a d6, to the roll. Once per turn, you can also add your Intellect Die to a damage roll you make against your Mark.",
+                "If you can both see or hear each other, when a friendly creature hits your Mark with an attack, you can use your reaction to increase the damage of their attack by a roll of your Intellect Die.",
                 "At certain savant levels, your Intellect Die increases: at 5th level (d8), at 10th level (d10), and at 15th level (d12)."
             ]
         },
@@ -5687,8 +5688,8 @@
             "classSource": "FA",
             "level": 5,
             "entries": [
-                "You are able to gain a working knowledge of new concepts exceptionally fast. At 5th level you gain proficiency with one skill, tool, or weapon, or learn to speak one language of your choice.",
-                "Over the course of 1 hour, which can be during a short or long rest, you can replace this proficiency or language with another proficiency or language of your choice, so long as you have an example to learn from. Examples include a willing teacher, a book in another language, or a tool set manual."
+                "You are able to gain a working knowledge of new concepts exceptionally fast. At 5th level you gain proficiency with either one skill or a total of two tools, weapons, or languages of your choice.",
+                "Over the course of 1 hour, which can be during a short or long rest, you can replace any proficiencies gained through this feature with others of your choice, so long as you have an example to learn from. Examples include a willing teacher, a book in another language, or a tool set manual."
             ]
         },
         {
@@ -5715,7 +5716,7 @@
                     "items": [
                         "Use Adroit Analysis to Mark a creature you can see.",
                         "Make an Intelligence ability check to recall information.",
-                        "Take either the Help, Ready, or Search action."
+                        "Take the {@action Help}, {@action Ready}, or {@action Search} action."
                     ]
                 }
             ] 
@@ -5738,17 +5739,17 @@
             "classSource": "FA",
             "level": 9,
             "entries": [
-                "At 9th level, as a reaction when a creature within 30 feet makes a saving throw, you can shout a snippet of potent advice, granting it a bonus to its roll equal to one roll of your Intellect Die. The creature must be able to hear you to gain this benefit."
+                "At 9th level, as a reaction when a friendly creature within 30 feet makes a saving throw, you can provide guidance if you can both see or hear each other, granting it a bonus to its roll equal to one roll of your Intellect Die."
             ]
         },
         {
-            "name": "Predictive Expert",
+            "name": "Predictive Defense Improvement",
             "source": "FA",
             "className": "Savant",
             "classSource": "FA",
             "level": 10,
             "entries": [
-                "You always seem to be one step ahead of your foes. Starting at 10th level, as long as you aren't incapacitated, you have advantage on any ability checks or saving throws that your Mark forces you to make."
+                "Starting at 10th level, as long as you aren't incapacitated, your Mark has disadvantage on any attack rolls it makes against you, and you have advantage on any ability checks and saving throws it forces you to make."
             ]
         },
         {
@@ -5758,8 +5759,8 @@
             "classSource": "FA",
             "level": 11,
             "entries": [
-                "At 11th level, you are able to identify even the smallest weaknesses and exploit them with ruthless efficiency. You can use a reaction to add a roll of your Intellect Die roll to any damage roll, so long as you can see the target and the attacker can hear you.",
-                "Also, whenever you use your reaction to add an Intellect Die to another creature's damage roll against your Mark, you can roll your Intellect Die twice and use the higher result."
+                "At 11th level, you are able to identify even the smallest weaknesses and exploit them with ruthless efficiency. When you (or a friendly creature, if you can both see or hear each other) hit another creature you can see with an attack, you can use your reaction to increase the damage of the attack by a roll of your Intellect Die.",
+                "Also, whenever you add an Intellect Die to a damage roll against your Mark, you can roll your Intellect Die twice and use the higher result."
             ]
         },
         {
@@ -6316,8 +6317,7 @@
             "className": "Savant",
             "classSource": "FA",
             "subclassFeatures": [
-                "Student of Truth|Savant|FA|Investigator|FA|3",
-                "Tactical Commander|Savant|FA|Investigator|FA|3",
+                "Investigator|Savant|FA|Investigator|FA|3",
                 "Astute Defense|Savant|FA|Investigator|FA|6",
                 "Ear to the Ground|Savant|FA|Investigator|FA|6",
                 "Strategic Genius|Savant|FA|Investigator|FA|13",
@@ -7313,14 +7313,13 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "At 3rd level you gain proficiency in Insight and Investigation, and your proficiency bonus is doubled for any check you make with either skill. If you are already proficient in these skills you gain proficiency in another skill from the savant skill list.",
+                "At 3rd level you gain proficiency in Investigation and Perception, and your proficiency bonus is doubled for any check you make with either skill. If you are already proficient in these skills you gain proficiency in another skill from the savant skill list.",
                 "Your intuitive nature grants you the following benefits:",
                 {
                     "type": "list",
                     "items": [
                         "Whenever you would make a Wisdom (Perception) check, you can make an Intelligence (Perception) check instead.",
-                        "You have advantage on any ability check you make to detect illusions, shapeshifters, or if a creature is lying.",
-                        "You gain a bonus to your Passive Perception equal to your Intelligence modifier (minimum of +1)."
+                        "You have advantage on any ability check you make to detect illusions, whether a creature is in its true unconcealed form, or if a creature is lying."
                     ]
                 }
 
@@ -7341,7 +7340,7 @@
                     "type": "entries",
                     "name": "Attack Order",
                     "entries": [
-                        "The next time the target of this Order takes the Attack action before the start of your next turn, it can make one additional weapon attack as part of its Attack action."
+                        "The next time the target of this Order takes the {@action Attack} action before the start of your next turn, it can make one additional weapon attack as part of that action."
                     ]
                 },
                 {
@@ -7378,7 +7377,7 @@
             "header": 2,
             "entries": [
                 "Your wondrous intuition grants you a heightened sense for danger. At 6th level, when a creature that you can see targets you with a melee attack and misses, you can force it to make a Dexterity saving throw against your Investigator save DC as a reaction.",
-                "On a failed save, you can cause the creature to be blinded, deafened, or silenced until the start of your next turn, or if the creature is Large or smaller, you can knock it prone instead.",
+                "On a failed save, you can cause the creature to be {@condition blinded}, {@condition deafened}, or silenced until the start of your next turn, or if the creature is Large or smaller, you can knock it {@condition prone} instead.",
                 "If you use this reaction against your Mark, it also takes bludgeoning damage equal to your Intellect Die on a failure."
             ]
         },
@@ -7420,8 +7419,8 @@
             "level": 17,
             "header": 2,
             "entries": [
-                "Your sense for the truth has reached near-supernatural levels by level 17. You gain Truesight in a 60-foot radius. Though, your Truesight from this feature cannot see into the Ethereal Plane.",
-                "Also, when you, or a creature you can see, hits your Mark with a weapon attack, you can use your reaction to turn that attack into an automatic critical hit.",
+                "Your sense for the truth has reached near-supernatural levels by level 17. You gain Truesight in a 60-foot radius, though your Truesight from this feature cannot see into the Ethereal Plane.",
+                "Also, when you (or a friendly creature, if you can both see or hear each other) hit your Mark with an attack, you can use your reaction to turn that attack into an automatic critical hit.",
                 "Once you use this feature to turn a hit into a critical hit, you must finish a short or long rest before you can use it again."
             ]
         },
