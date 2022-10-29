@@ -117,7 +117,10 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a transfusion apparatus worth at least 500gp"
+                "m": {
+                    "text": "a transfusion apparatus worth at least 500 gp",
+                    "cost": 50000
+                }
             },
             "duration": [
                 {
@@ -246,7 +249,8 @@
                 "s": true,
                 "m": {
                     "text": "a focus worth at least 100 gp, such as a crystal ball, a silver mirror, or a font filled with holy water, fine diamond dust power worth at least 20gp which the spell consumes",
-                    "cost": 10000
+                    "cost": 10000,
+                    "consume": true
                 }
             },
             "duration": [
@@ -381,8 +385,9 @@
                 "v": true,
                 "s": true,
                 "m": {
-                    "text": "a perfect crystal sphere worth 50gp, which the spell consumes",
-                    "cost": 5000
+                    "text": "a perfect crystal sphere worth 50 gp, which the spell consumes",
+                    "cost": 5000,
+                    "consume": true
                 }
             },
             "duration": [

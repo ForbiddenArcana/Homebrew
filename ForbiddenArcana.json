@@ -995,7 +995,7 @@
                 "SP"
             ],
             "entries": [
-                "You can recall picture-perfect details from things that you commit to memory. If you spend at least 1 minute observing an object or creature, you can perfectly recall any observable information about that creature or object point in the future, without requiring a successful Intelligence check."
+                "You can recall picture-perfect details from things that you commit to memory. If you spend at least 1 minute observing an object or creature, you can perfectly recall any observable information about that creature or object at any point in the future, without requiring a successful Intelligence check."
             ]
         },
         {
@@ -1785,7 +1785,11 @@
             },
             "components": {
                 "s": true,
-                "m": "a melee weapon worth at least 1sp"
+                "m": {
+                    "text": "a melee weapon worth at least 1 sp",
+                    "cost": 10,
+                    "consume": false
+                }
             },
             "duration": [
                 {
@@ -1907,7 +1911,11 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "garnet dust worth at least 5sp"
+                "m": {
+                    "text": "garnet dust worth at least 5 sp",
+                    "cost": 50,
+                    "consume": false
+                }
             },
             "duration": [
                 {
@@ -2283,7 +2291,11 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a martial weapon"
+                "m": {
+                    "text": "a martial weapon worth at least 1 sp",
+                    "cost": 10,
+                    "consume": false
+                }
             },
             "duration": [
                 {
@@ -2577,8 +2589,7 @@
             },
             "components": {
                 "v": true,
-                "s": true,
-                "m": "a wafer, cracker, or chunk of hard tack"
+                "s": true
             },
             "duration": [
                 {
@@ -3462,7 +3473,11 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "a weapon worth at least 1sp"
+                "m": {
+                    "text": "a weapon worth at least 1 sp",
+                    "cost": 10,
+                    "consume": false
+                }
             },
             "duration": [
                 {
@@ -3653,7 +3668,11 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "A weapon worth at least 1 sp"
+                "m": {
+                    "text": "a weapon worth at least 1 sp",
+                    "cost": 10,
+                    "consume": false
+                }
             },
             "duration": [
                 {
@@ -3667,7 +3686,7 @@
                 }
             ],
             "entries": [
-                "You stab the the weapon into the ground, and a 15-foot-radius dome of shimmering, translucent force appears around and above you and remains stationary for the duration. Spells and other magical effects can't pass through the dome or be cast through it. Weapon attacks and ammunition from weapon attacks likewise can't pass through the dome.",
+                "You stab the weapon used as a material component into the ground, and a 15-foot-radius dome of shimmering, translucent force appears around and above you and remains stationary for the duration. Spells and other magical effects can't pass through the dome or be cast through it. Weapon attacks and ammunition from weapon attacks likewise can't pass through the dome.",
                 "A creature can only pass through the dome once per turn.",
                 "When a friendly creature enters the dome on its turn or starts its turn there, it gains {@dice 1d6} temporary hitpoints. The temporary hitpoints are lost upon exiting the dome.",
                 "In addition, any friendly creature in the dome can't be frightened, and they can choose to no longer be frightened if they are (no action required).",
@@ -4023,7 +4042,7 @@
             },
             "components": {
                 "s": true,
-                "m": "A clay claw with three talons"
+                "m": "a clay claw with three talons"
             },
             "duration": [
                 {
@@ -4031,7 +4050,7 @@
                 }
             ],
             "entries": [
-                "Choose a point you can see on the ground within range. The ground transmutes into grasping claws of stone and earth which lash out at in a 15-foot-radius circle centered on that point. Each creature in that area must make a Strength Saving Throw.",
+                "Choose a point you can see on the ground within range. The ground transmutes into grasping claws of stone and earth which lash out in a 15-foot-radius circle centered on that point. Each creature in that area must make a Strength saving throw.",
                 "A creature takes {@damage 4d6} bludgeoning damage on a failed save and is {@condition restrained} until the end of your next turn, or half as much on a successful saving throw and isn't restrained. "
             ],
             "damageInflict": [
@@ -4165,8 +4184,8 @@
                 }
             },
             "components": {
-                "s": true,
-                "v": true
+                "v": true,
+                "s": true
             },
             "duration": [
                 {
@@ -4746,7 +4765,11 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "an hourglass filled with diamond dust worth at least 25gp"
+                "m": {
+                    "text": "an hourglass filled with diamond dust worth at least 25 gp",
+                    "cost": 2500,
+                    "consume": false
+                }
             },
             "duration": [
                 {
@@ -4812,7 +4835,7 @@
                 {
                     "type": "list",
                     "items": [
-                        "You have a Fly (hover) speed equal to your walking speed.",
+                        "You have a flying speed equal to your walking speed.",
                         "You have resistance to lightning damage.",
                         "When a creature hits you with a melee attack, crackling electricity leaps from your body, dealing {@damage 1d8} lightning damage to the attacker. A creature can only be harmed by this once a turn.",
                         "When you cast this spell, and as an action on following turns, lightning erupts from your body in a massive storm of electricity. All creatures within 20 feet of you must make a Dexterity saving throw or take {@damage 4d8} lightning damage, or half on a success. Until the start of your next turn, you instead have immunity to lightning damage."
@@ -4948,7 +4971,7 @@
             "components": {
                 "v": true,
                 "s": true,
-                "m": "A meteorite Shard"
+                "m": "a meteorite shard"
             },
             "duration": [
                 {
@@ -5011,8 +5034,8 @@
                 }
             },
             "components": {
-                "s": true,
-                "v": true
+                "v": true,
+                "s": true
             },
             "duration": [
                 {
@@ -7809,8 +7832,8 @@
         {
             "name": "Critical Hits",
             "entries": [
-                "When a player character scores a critical hit, instead of rolling an additional weapon damage die, they add the maximum possible result of the die to the roll. Damage dice from spells and abilities are not maximized.",
-                "This rule does not apply to monsters."
+                "Barbarians, Fighters, Monks, and Rogues all gain the Barbarian's Brutal Critical feature at level 5, to help close the gap with spell crits. This stacks with the Barbarian's existing Brutal Critical chain.",
+                "Subject to DM approval, Rangers also receive this benefit."
             ],
             "source": "FA"
         },
@@ -7894,7 +7917,7 @@
                     "rows": [
                         [
                             "1",
-                            "You have disadvantage on ability checks based on Intelligence, Wisdom or Charisma."
+                            "You have disadvantage on ability checks using your Intelligence, Wisdom, or Charisma."
                         ],
                         [
                             "2",
@@ -7902,11 +7925,11 @@
                         ],
                         [
                             "3",
-                            "You have disadvantage on attacks and saving throws based on Intelligence, Wisdom or Charisma. Enemies have advantage on saving throws where the DC is calculated based on your Intelligence, Wisdom or Charisma."
+                            "You have disadvantage on attacks and saving throws using your Intelligence, Wisdom, or Charisma. Enemies have advantage on saving throws where your DC is calculated using any of these attributes."
                         ],
                         [
                             "4",
-                            "You must make a DC 12 Constitution saving throw versus exhaustion at the end of each long rest. When you fail an important ability check or task, you take {@dice 1d12} minus CHA mod psychic damage (minimum of 1)."
+                            "You must make a DC 12 Constitution saving throw versus exhaustion at the end of each long rest. When you fail an important ability check or task, you take {@dice 1d12} minus your Charisma modifier in psychic damage (minimum of 1)."
                         ],
                         [
                             "5",
@@ -7932,7 +7955,7 @@
                     "rows": [
                         [
                             "1",
-                            "You have disadvantage on ability checks based on Strength, Dexterity or Constitution."
+                            "You have disadvantage on ability checks using your Strength, Dexterity, or Constitution."
                         ],
                         [
                             "2",
@@ -7940,7 +7963,7 @@
                         ],
                         [
                             "3",
-                            "You have disadvantage on attacks and saving throws based on Strength, Dexterity or Constitution. Enemies have advantage on saving throws where the DC is calculated based on your Strength, Dexterity or Constitution."
+                            "You have disadvantage on attacks and saving throws using your Strength, Dexterity, or Constitution. Enemies have advantage on saving throws where your DC is calculated using any of these attributes."
                         ],
                         [
                             "4",
