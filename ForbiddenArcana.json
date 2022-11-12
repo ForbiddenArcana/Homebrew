@@ -5502,6 +5502,7 @@
                 "Ability Score Improvement|Savant|FA|4",
                 "Accelerated Reflexes|Savant|FA|5",
                 "Quick Study|Savant|FA|5",
+                "Brutal Critical|Savant|FA|5",
                 {
                     "classFeature": "Academic Discipline Feature|Savant|FA|6",
                     "gainSubclassFeature": true
@@ -5713,6 +5714,16 @@
             "entries": [
                 "You are able to gain a working knowledge of new concepts exceptionally fast. At 5th level you gain proficiency with either one skill or a total of two tools, weapons, or languages of your choice.",
                 "Over the course of 1 hour, which can be during a short or long rest, you can replace any proficiencies gained through this feature with others of your choice, so long as you have an example to learn from. Examples include a willing teacher, a book in another language, or a tool set manual."
+            ]
+        },
+        {
+            "name": "Brutal Critical",
+            "source": "FA",
+            "className": "Savant",
+            "classSource": "FA",
+            "level": 5,
+            "entries": [
+                "Beginning at 5th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack."
             ]
         },
         {
@@ -7336,12 +7347,13 @@
             "level": 3,
             "header": 1,
             "entries": [
-                "At 3rd level you gain proficiency in Investigation and Perception, and your proficiency bonus is doubled for any check you make with either skill. If you are already proficient in these skills you gain proficiency in another skill from the savant skill list.",
+                "At 3rd level you gain proficiency in {@skill Investigation} and {@skill Perception}, and your proficiency bonus is doubled for any check you make with either skill. If you are already proficient in these skills you gain proficiency in another skill from the savant skill list.",
                 "Your intuitive nature grants you the following benefits:",
                 {
                     "type": "list",
                     "items": [
-                        "Whenever you would make a Wisdom (Perception) check, you can make an Intelligence (Perception) check instead.",
+                        "Whenever you would make a Wisdom ({@skill Perception}) check, you can make an Intelligence ({@skill Perception}) check instead.",
+                        "You may add a bonus equal to your Intelligence modifier to your passive {@skill Perception}.",
                         "You have advantage on any ability check you make to detect illusions, whether a creature is in its true unconcealed form, or if a creature is lying."
                     ]
                 }
