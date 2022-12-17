@@ -7836,7 +7836,7 @@
         {
             "name": "Casting Times",
             "entries": [
-                "You may cast spells with a casting time of a bonus action or reaction as an action.",
+                "You may cast spells with a casting time of a bonus action or reaction as an action. You can maintain a {@action Ready||Readied} spell as long as you maintain concentration and continue taking the {@action Ready} action on each of your turns.",
                 "Bonus-action-cast cantrips don't restrict action-cast spells."
             ],
             "source": "FA"
