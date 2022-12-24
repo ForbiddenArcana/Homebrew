@@ -7375,28 +7375,28 @@
                     "type": "entries",
                     "name": "Attack Order",
                     "entries": [
-                        "The next time the target of this Order takes the {@action Attack} action before the start of your next turn, it can make one additional weapon attack as part of that action."
+                        "The target of this Order can immediately use its reaction to make one weapon attack."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Defense Order",
                     "entries": [
-                        "Until the start of your next turn, the target of this Order gains an Armor Class bonus equal to your Intelligence modifier."
+                        "Until the start of your next turn, the target of this Order can add a bonus to its Armor Class and saving throws equal to your Intelligence modifier."
                     ]
                 },
                 {
                     "type": "entries",
                     "name": "Maneuvering Order",
                     "entries": [
-                        "The target of this Order can use its reaction to move up to its full movement speed without provoking opportunity attacks."
+                        "Without provoking opportunity attacks, the target of this Order can immediately move up to half its movement speed and can also use its reaction to {@action Dash}."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Steadfast Order",
+                    "name": "Guiding Order",
                     "entries": [
-                        "Until the beginning of your next turn, the target of this Order add your Intelligence modifier to any Strength, Dexterity, and Constitution ability checks and saving throws it makes."
+                        "Until the start of your next turn, the target of this Order can add your Intelligence modifier to any ability checks it makes."
                     ]
                 }
             ]
