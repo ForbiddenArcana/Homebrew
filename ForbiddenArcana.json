@@ -6052,6 +6052,57 @@
             ]
         },
         {
+            "name": "Circle of the Damned",
+            "shortName": "Damned",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassSpells": [
+                "Cause Fear|XGE",
+                "Hellish Rebuke",
+                "Wither And Bloom|SCC",
+                "Scorching Ray",
+                "Fireball",
+                "Summon Lesser Demons|XGE",
+                "Shadow of Moil|XGE",
+                "Summon Greater Demon|XGE",
+                "Infernal Calling|XGE",
+                "Negative Energy Flood|XGE"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "s1": [
+                            "cause fear|xge",
+                            "hellish rebuke"
+                        ],
+                        "s2": [
+                            "wither and bloom|scc",
+                            "scorching ray"
+                        ],
+                        "s3": [
+                            "fireball",
+                            "summon lesser demons|xge"
+                        ],
+                        "s4": [
+                            "shadow of moil|xge",
+                            "summon greater demon|xge"
+                        ],
+                        "s5": [
+                            "infernal calling|xge",
+                            "negative energy flood|xge"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Circle of the Damned|Druid||Damned|FA|2",
+                "Consumption of Life|Druid||Damned|FA|6",
+                "Dreadful Form|Druid||Damned|FA|10",
+                "Master of the Lower Planes|Druid||Damned|FA|14"
+            ]
+        },
+        {
             "name": "Arcane Knight",
             "shortName": "Arcane Knight",
             "source": "FA",
@@ -7125,6 +7176,180 @@
             "header": 2,
             "entries": [
                 "At 17th level, you have advantage on saving throws against spells. In addition, when you succeed on a saving throw against a spell, you gain 5 temporary hit points for each slot level of the spell."
+            ]
+        },
+        {
+            "name": "Circle of the Damned",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Damned",
+            "subclassSource": "FA",
+            "level": 2,
+            "entries": [
+                "Not all that is of the natural order is of this plane. While it may seem strange, dangerous, or eldritch the lower planes are as much a part of the natural order as any plant in the dirt, animal on the land, or fish in the sea. Druids of the Damned are experts on the Nine Hells, the Grey Wastes, Pandemonium, and all in between.",
+                "Some Druids of the Damned seek to keep these planes seperate from the Prime Material, using the powers of those same planes to prevent the darker forces from encroaching upon the rest of the universe. Others believe that the Lower Planes should be allowed to grow and flourish like any other natural system, even if that means encroaching upon others.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Form of the Damned|Druid||Damned|FA|2"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Circle of the Damned Spells|Druid||Damned|FA|2"
+                }
+            ]
+        },
+        {
+            "name": "Form of the Damned",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Damned",
+            "subclassSource": "FA",
+            "level": 2,
+            "entries": [
+                "You can call upon the fell magics of the Lower Planes to empower yourself in horrifying ways. As an bonus action, you can expend a use of your Wild Shape feature to take on some aspects of a denizen of the Lower Planes rather than a beast form. Your Form of the Damned lasts for 10 minutes, or until you dismiss it (no action required), are incapacitated, die, or use the feature again.",
+                "Whenever you take on the form of the damned, choose which Lower Plane you wish to channel. Your choice gives you certain benefits while you are in your Form of the Damned.",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "The Hells",
+                            "entries": [
+                                "The scent of fire and brimstone fills the air around you as you call upon the powers of the Nine Hells. When you take on this form, you gain resistance to Fire damage, and once on your turn when you deal damage to a creature with a spell or weapon you can deal an extra 1d8 Fire damage to that creature."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "The Grey Wastes",
+                            "entries": [
+                                "Shadows lengthen and light grows dim around you as you call upon the deathly magics of the Grey Wastes. When you take on this form, you gain resistance to Necrotic damage, and can Hide as a bonus action while you are in Dim Light or Darkness. In addition, you can move through hostile creatures as though they were difficult terrain, and opportunity attacks against you have disadvantage."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "The Abyss",
+                            "entries": [
+                                "Madness and chaos empower you as call upon the twisting infinities of the Abyss. When you take on this form, you gain resistance to Psychic damage, as well as immunity to being Frightened. In addition, when you become this form and as a bonus action on your subsequent turn you can force a creature you can see within 30 feet to make a Wisdom Saving throw. On a failure, they are frightened until the end of their next turn. On a success, they are immune to this effect for 24 hours."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Circle of the Damned Spells",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Damned",
+            "subclassSource": "FA",
+            "level": 2,
+            "entries": [
+                "You have learned how to harness the powers of the Lower Planes to your own ends, granting you access to magics that many other Druids can only dream of wielding. You gain access to some spells when you reach certain levels in this class, as shown on Circle of the Damned Spells table.",
+                "Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.",
+                {
+                    "type": "table",
+                    "caption": "Circle of the Damned Spells",
+                    "colLabels": [
+                        "Spell Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell Cause Fear|xge}, {@spell Hellish Rebuke}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell Wither and Bloom|SCC}, {@spell Scorching Ray}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell Fireball}, {@spell Summon Lesser Demons|XGE}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell Shadow of Moil|XGE}, {@spell Summon Greater Demon|XGE}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Infernal Calling|XGE}, {@spell Negative Energy Flood|XGE}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Consumption of Life",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Damned",
+            "subclassSource": "FA",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "You have learned to use the corrupting influences of the lower planes to turn creatures healing against themselves. When a creature you can see within 30 feet regains hitpoints, you can use your reaction to twist the healing against them. The creature must make a Charisma saving throw. On a failure, the creature takes 2d8 necrotic damage and does not regain hitpoints. On a success, the creature regains half as much hitpoints.",
+                "You can use this feature a number of times equal to your Wisdom Modifier, and regain all usages on a Long Rest."
+            ]
+        },
+        {
+            "name": "Dreadful Form",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Damned",
+            "subclassSource": "FA",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "Experience with the dark has granted you a measure of baleful strength, empowering your Form of the Damned.",
+                "Whenever you enter your Form of the Damned, you gain additional benefits depending on the Plane you choose to channel:",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "The Hells",
+                            "entries": [
+                                "The 1d8 fire damage becomes 2d8. In addition, when you reduce a creature to 0 hitpoints with Fire damage you can use your reaction to cause the creature to erupt in flames. All other creatures within 10 ft must make a Dexterity Saving Throw or take 2d10 Fire damage, or half on a success."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "The Grey Wastes",
+                            "entries": [
+                                "When you are in Dim Light or Darkness, you can use a bonus action to teleport to another point of Dim Light or Darkness you can see within 30 feet. In addition, when you reduce a creature to 0 hitpoints with necrotic damage, you can use your reaction to draw their fading life force into yourself and regain 1d6 hitpoints."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "The Abyss",
+                            "entries": [
+                                "When you cause a creature to become Frightened you can use your reaction to cause all creatures of your choice within 15 feet of the initial creature to make a Wisdom Saving Throw against your Druid Spell Save DC. On a failure, those creatures are frightened until the end of their next turn."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "MAster of the Lower Planes",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Damned",
+            "subclassSource": "FA",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "Your Form of the Damned grants damage immunity instead of damage resistance."
             ]
         },
         {
