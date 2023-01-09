@@ -8129,6 +8129,13 @@
             "source": "FA"
         },
         {
+            "name": "Resting",
+            "entries": [
+                "Rests cannot be taken back-to-back (i.e. resting for 4 hours is a single 4-hour short rest, not four short rests), and the DM can prevent cheese at their discretion (i.e. warlocks can't short rest, cast one spell, then immediately short rest again)."
+            ],
+            "source": "FA"
+        },
+        {
             "name": "Saving Throws",
             "entries": [
                 "You can choose to fail any saving throw."
