@@ -8067,6 +8067,54 @@
             "source": "FA"
         },
         {
+            "name": "Compressed Economy",
+            "entries": [
+                "To make copper/silver pieces useful and fix basic problems with the economy, prices listed by the corresponding coin have been adjusted as follows. This conveniently results in the following approximate comparison to our market:",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "Coin",
+                        "Listed Price Adjustment",
+                        "Approx. CAD Value",
+                        "Typical Uses"
+                    ],
+                    "colStyles": [
+                        "text-center",
+                        "text-left",
+                        "text-center",
+                        "text-left"
+                    ],
+                    "rows": [
+                        [
+                            "Copper",
+                            "None",
+                            "$5",
+                            "Food, trinkets, tips, wooden weapons"
+                        ],
+                        [
+                            "Silver",
+                            "None",
+                            "$50",
+                            "Clothes, tools, daily pay, simple weapons"
+                        ],
+                        [
+                            "Gold",
+                            "Divide by 10 (eyeball if result is below 10sp)",
+                            "$500",
+                            "Armour, livestock, rent, martial weapons"
+                        ],
+                        [
+                            "Platinum",
+                            "Divide by 10",
+                            "$5000",
+                            "Bulk goods, housing, siege weapons"
+                        ]
+                    ]
+                }
+            ],
+            "source": "FA"
+        },
+        {
             "name": "Critical Hits",
             "entries": [
                 "Barbarians, Fighters, Monks, and Rogues all gain the Barbarian's Brutal Critical feature at level 5, to help close the gap with spell crits. This stacks with the Barbarian's existing Brutal Critical chain.",
@@ -8097,6 +8145,13 @@
             "entries": [
                 "For player characters, Initiative is an Intelligence ability check with your Dexterity score as tie-breaker.",
                 "Monsters continue to use Dexterity for initiative rolls."
+            ],
+            "source": "FA"
+        },
+        {
+            "name": "Inspiration",
+            "entries": [
+                "After any d20 roll, you can spend inspiration to reroll it. You must use the new roll."
             ],
             "source": "FA"
         },
@@ -8139,6 +8194,14 @@
             "name": "Saving Throws",
             "entries": [
                 "You can choose to fail any saving throw."
+            ],
+            "source": "FA"
+        },
+        {
+            "name": "Spell Scrolls",
+            "entries": [
+                "If you have the Spellcasting or Pact Magic feature and use a spell scroll to cast or copy a spell that is on your spell list, you don't need to make an ability check.",
+                "If you have the Spellcasting or Pact Magic feature, you can use a spell scroll to cast a spell that is not on your spell list, but must succeed on a spellcasting ability check, DC equal to 10 plus the spell's level, or else the scroll is wasted."
             ],
             "source": "FA"
         },
@@ -8227,17 +8290,9 @@
             "source": "FA"
         },
         {
-            "name": "Inspiration",
+            "name": "Summoning Spells",
             "entries": [
-                "After any d20 roll, you can spend inspiration to reroll it. You must use the new roll."
-            ],
-            "source": "FA"
-        },
-        {
-            "name": "Spell Scrolls",
-            "entries": [
-                "If you have the Spellcasting or Pact Magic feature and use a spell scroll to cast or copy a spell that is on your spell list, you don't need to make an ability check.",
-                "If you have the Spellcasting or Pact Magic feature, you can use a spell scroll to cast a spell that is not on your spell list, but must succeed on a spellcasting ability check, DC equal to 10 plus the spell's level, or else the scroll is wasted."
+                "Any spell which summons/conjures/creates extra allies (i.e. {@spell Conjure Animals}, {@spell Animate Objects}) cannot be used to create more than 4 allies."
             ],
             "source": "FA"
         },
@@ -8245,54 +8300,6 @@
             "name": "Tasha's Optional Features",
             "entries": [
                 "All additional options for existing features (fighting styles, metamagic options, etc.) are approved for use. All other features must be approved on a case-by-case basis by the current DM."
-            ],
-            "source": "FA"
-        },
-        {
-            "name": "Compressed Economy",
-            "entries": [
-                "To make copper/silver pieces useful and fix basic problems with the economy, prices listed by the corresponding coin have been adjusted as follows. This conveniently results in the following approximate comparison to our market:",
-                {
-                    "type": "table",
-                    "colLabels": [
-                        "Coin",
-                        "Listed Price Adjustment",
-                        "Approx. CAD Value",
-                        "Typical Uses"
-                    ],
-                    "colStyles": [
-                        "text-center",
-                        "text-left",
-                        "text-center",
-                        "text-left"
-                    ],
-                    "rows": [
-                        [
-                            "Copper",
-                            "None",
-                            "$5",
-                            "Food, trinkets, tips, wooden weapons"
-                        ],
-                        [
-                            "Silver",
-                            "None",
-                            "$50",
-                            "Clothes, tools, daily pay, simple weapons"
-                        ],
-                        [
-                            "Gold",
-                            "Divide by 10 (eyeball if result is below 10sp)",
-                            "$500",
-                            "Armour, livestock, rent, martial weapons"
-                        ],
-                        [
-                            "Platinum",
-                            "Divide by 10",
-                            "$5000",
-                            "Bulk goods, housing, siege weapons"
-                        ]
-                    ]
-                }
             ],
             "source": "FA"
         }
