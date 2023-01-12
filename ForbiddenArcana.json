@@ -6103,6 +6103,57 @@
             ]
         },
         {
+            "name": "Circle of the Divine",
+            "shortName": "Divine",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassSpells": [
+                "Bles",
+                "Guiding Bolt",
+                "Blindness/Deafness",
+                "Lesser Restoration",
+                "Aura of Vitality",
+                "Spirit Guardians",
+                "Banishment",
+                "Death Ward",
+                "Dawn|XGE",
+                "Greater Restoration"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "s1": [
+                            "bless",
+                            "guiding bolt"
+                        ],
+                        "s2": [
+                            "blindness/deafness",
+                            "lesser restoration"
+                        ],
+                        "s3": [
+                            "aura of vitality",
+                            "spirit guardians"
+                        ],
+                        "s4": [
+                            "banishment",
+                            "death ward"
+                        ],
+                        "s5": [
+                            "dawn",
+                            "greater restoration"
+                        ]
+                    }
+                }
+            ],
+            "subclassFeatures": [
+                "Circle of the Divine|Druid||Divine|FA|2",
+                "Growing Radiance|Druid||Divine|FA|6",
+                "Benevolent Dawn|Druid||Divine|FA|10",
+                "Divine Protection|Druid||Divine|FA|14"
+            ]
+        },
+        {
             "name": "Arcane Knight",
             "shortName": "Arcane Knight",
             "source": "FA",
@@ -7217,7 +7268,7 @@
                             "type": "entries",
                             "name": "The Hells",
                             "entries": [
-                                "The scent of fire and brimstone fills the air around you as you call upon the powers of the Nine Hells. When you take on this form, you gain resistance to Fire damage, and once on your turn when you deal damage to a creature with a spell or weapon you can deal an extra 1d8 Fire damage to that creature."
+                                "The scent of fire and brimstone fills the air around you as you call upon the powers of the Nine Hells. When you take on this form, you gain resistance to Fire damage, and once on your turn when you deal damage to a creature with a spell or weapon you can deal an extra {@dice 1d8} Fire damage to that creature."
                             ]
                         },
                         {
@@ -7279,7 +7330,7 @@
                         ],
                         [
                             "5th",
-                            "{@spell Infernal Calling|XGE}, {@spell Negative Energy Flood|XGE}"
+                            "{@spell Lunar Manifestation|FA}, {@spell Negative Energy Flood|XGE}"
                         ]
                     ]
                 }
@@ -7295,7 +7346,7 @@
             "level": 6,
             "header": 2,
             "entries": [
-                "You have learned to use the corrupting influences of the lower planes to turn creatures healing against themselves. When a creature you can see within 30 feet regains hitpoints, you can use your reaction to twist the healing against them. The creature must make a Charisma saving throw. On a failure, the creature takes 2d8 necrotic damage and does not regain hitpoints. On a success, the creature regains half as much hitpoints.",
+                "You have learned to use the corrupting influences of the lower planes to turn creatures healing against themselves. When a creature you can see within 30 feet regains hitpoints, you can use your reaction to twist the healing against them. The creature must make a Charisma saving throw. On a failure, the creature takes {@dice 2d8} necrotic damage and does not regain hitpoints. On a success, the creature regains half as much hitpoints.",
                 "You can use this feature a number of times equal to your Wisdom Modifier, and regain all usages on a Long Rest."
             ]
         },
@@ -7318,14 +7369,14 @@
                             "type": "entries",
                             "name": "The Hells",
                             "entries": [
-                                "The 1d8 fire damage becomes 2d8. In addition, when you reduce a creature to 0 hitpoints with Fire damage you can use your reaction to cause the creature to erupt in flames. All other creatures within 10 ft must make a Dexterity Saving Throw or take 2d10 Fire damage, or half on a success."
+                                "The {@dice 1d8} fire damage becomes {@dice 2d8}. In addition, when you reduce a creature to 0 hitpoints with Fire damage you can use your reaction to cause the creature to erupt in flames. All other creatures within 10 ft must make a Dexterity Saving Throw or take {@dice 2d10} Fire damage, or half on a success."
                             ]
                         },
                         {
                             "type": "entries",
                             "name": "The Grey Wastes",
                             "entries": [
-                                "When you are in Dim Light or Darkness, you can use a bonus action to teleport to another point of Dim Light or Darkness you can see within 30 feet. In addition, when you reduce a creature to 0 hitpoints with necrotic damage, you can use your reaction to draw their fading life force into yourself and regain 1d6 hitpoints."
+                                "When you are in Dim Light or Darkness, you can use a bonus action to teleport to another point of Dim Light or Darkness you can see within 30 feet. In addition, when you reduce a creature to 0 hitpoints with necrotic damage, you can use your reaction to draw their fading life force into yourself and regain {@dice 1d6} hitpoints."
                             ]
                         },
                         {
@@ -7340,7 +7391,7 @@
             ]
         },
         {
-            "name": "MAster of the Lower Planes",
+            "name": "Master of the Lower Planes",
             "source": "FA",
             "className": "Druid",
             "classSource": "PHB",
@@ -7350,6 +7401,135 @@
             "header": 2,
             "entries": [
                 "Your Form of the Damned grants damage immunity instead of damage resistance."
+            ]
+        },
+        {
+            "name": "Circle of the Divine",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Divine",
+            "subclassSource": "FA",
+            "level": 2,
+            "entries": [
+                "The divine domains of many gods extend to the natural world. From the fearsome nature gods of Umberlee and Auril, to the peaceful tunes of Eldath, there are many ways a Druid of the Divine may be called to serve the world.",
+                "Druids of the Circle of the Divine are often caretakers and protectors, guiding and nurturing life in the name of their chosen deity. They excel in providing support to those they call allies, knowing that we grow stronger together.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Nurturing Light|Druid||Divine|FA|2"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Circle of the Divine Spells|Druid||Divine|FA|2"
+                }
+            ]
+        },
+        {
+            "name": "Circle of the Divine Spells",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Divine",
+            "subclassSource": "FA",
+            "level": 2,
+            "entries": [
+                "Your pious service has been rewarded by your deity, granting you access to new spells. You gain access to some spells when you reach certain levels in this class, as shown on Circle of the Divine Spells table. In addition, you may use a Holy Symbol as a spellcasting focus for your spells.",
+                "Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.",
+                {
+                    "type": "table",
+                    "caption": "Circle of the Divine Spells",
+                    "colLabels": [
+                        "Spell Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell Bless}, {@spell Guiding Bolt}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell Blindness/Deafness}, {@spell Lesser Restoration}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell Aura of Vitality}, {@spell Spirit Guardians}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell Banishment}, {@spell Death Ward}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Dawn|XGE}, {@spell Greater Restoration}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Nurturing Light",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Divine",
+            "subclassSource": "FA",
+            "level": 2,
+            "entries": [
+                "As a bonus action, you may expend a usage of your Wild Shape feature to attempt to assume a divine form of a steward of nature, allowing you to manipulate the world around you to your allies benefit. This form lasts for 10 minutes or until you dismiss it (no action required), become incapacitated, or use Wild Shape again.",
+                "While in your divine form, you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You ignore the effects of difficult terrain created by natural causes, such as rubble, heavy foliage, or slippery ice.",
+                        "You have a swimming and climbing speed equal to you walking speed.",
+                        "As an action you can cause plants to rapidly grow in a 10 foot cube on a point on the ground you can see within 60 feet of you. These plants are difficult terrain for all hostile creatures.",
+                        "When you cast a spell of 1st level or higher on a friendly creature, the creature gains hitpoints equal to your Wisdom Modifier (minimum of +1)."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Growing Radiance",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Divine",
+            "subclassSource": "FA",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "Your divine connection enhances others, empowering them as you yourself are empowered. When you restore hit points to a friendly creature using a spell slot, or cast {@spell Lesser Restoration} or {@spell Greater Restoration} on a friendly creature you may empower them. Until the end of their next turn, the next time the creature hits with a weapon or spell attack, the attack deals extra radiant damage. The damage bonus is a number of {@dice d4}s equal to the level of the spell cast on them."
+            ]
+        },
+        {
+            "name": "Benevolent Dawn",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Divine",
+            "subclassSource": "FA",
+            "level": 10,
+            "header": 2,
+            "entries": [
+                "As an action you cause yourself to glow with divine radiance for 1 minute, or until you lose concentration as if concentrating on a spell. A number of friendly creatures up your proficiency bonus within 30 feet of you regain {@dice 1d8} + your Wisdom modifier hit points. On this and subsequent turns, you can use your bonus action to grant a creature you can see within 30 feet temporary hit points equal to your Druid level. The temporary hit points last for 1 minute, and as long as the creature has them, they are affected by the Bless spell. You can use this feature twice and regain all uses after a long rest."
+            ]
+        },
+        {
+            "name": "Divine Protection",
+            "source": "FA",
+            "className": "Druid",
+            "classSource": "PHB",
+            "subclassShortName": "Divine",
+            "subclassSource": "FA",
+            "level": 14,
+            "header": 2,
+            "entries": [
+                "While you are concentrating on a spell, fiends and undead have disadvantage on attack rolls against you, and you have advantage on saves against their abilities or spells. "
             ]
         },
         {
