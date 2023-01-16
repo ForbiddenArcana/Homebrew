@@ -8472,7 +8472,7 @@
         {
             "name": "Summoning Spells",
             "entries": [
-                "Any spell which summons/conjures/creates extra allies (i.e. {@spell Conjure Animals}, {@spell Animate Objects}) cannot be used to create more than 4 allies."
+                "Any spell which summons/conjures/creates extra creatures (i.e. {@spell Conjure Animals}, {@spell Animate Objects}) cannot be used to create more than 4 creatures."
             ],
             "source": "FA"
         },
