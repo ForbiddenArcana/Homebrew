@@ -19,6 +19,28 @@
     },
     "baseitem": [
         {
+            "name": "Blunted Arrow",
+            "source": "FA:V",
+            "type": "A",
+            "rarity": "none",
+            "weight": 0.05,
+            "value": 5,
+            "entries": [
+                "These arrows have blunted arrowheads to avoid piercing their target, and deal bludgeoning damage instead of piercing. Whenever you hit a creature or object using this ammunition, the target has resistance to the damage dealt by the attack, and if the damage reduces a creature to 0 hit points, the creature falls {@condition unconscious} and is stable."
+            ]
+        },
+        {
+            "name": "Blunted Bolt",
+            "source": "FA:V",
+            "type": "A",
+            "rarity": "none",
+            "weight": 0.075,
+            "value": 5,
+            "entries": [
+                "These crossbow bolts have blunted tips to avoid piercing their target, and deal bludgeoning damage instead of piercing. Whenever you hit a creature or object using this ammunition, the target has resistance to the damage dealt by the attack, and if the damage reduces a creature to 0 hit points, the creature falls {@condition unconscious} and is stable."
+            ]
+        },
+        {
             "name": "Brigandine",
             "source": "FA:V",
             "type": "HA",
