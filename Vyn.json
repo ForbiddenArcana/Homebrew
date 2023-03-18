@@ -397,6 +397,82 @@
         }
     ],
     "feat": [
+        {
+            "name": "Battering Ram",
+            "source": "FA:V",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "con"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This feat is a buffed version of {@feat Charger|PHB} published in the Player's Handbook."
+                    ]
+                },
+                "When you need to spend precious time moving into position, you make up for it by taking advantage of your momentum to make a deadlier entrance:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you use your action to {@action Dash}, you can use a bonus action to make one melee weapon attack or to {@action shove} or {@action grapple} a creature. If you move at least 20 feet in a straight line immediately before taking this bonus action, you have advantage on the attack roll or ability check.",
+                        "If you take this bonus action, you gain a +5 bonus to the attack's damage roll (if you make a weapon attack and hit), can push the target twice as far (if you shove and succeed), or can move the grappled target at full speed until the end of your turn (if you grapple and succeed)."
+                    ]
+                }
+			]
+        },
+        {
+            "name": "Crack Shot",
+            "source": "FA:V",
+            "ability": [
+                {
+                    "dex": 1
+                }
+            ],
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This feat is a nerfed version of {@feat Sharpshooter|PHB} published in the Player's Handbook."
+                    ]
+                },
+                "You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits when using ranged weapons you are proficient with:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Your ranged weapon attacks ignore half cover, and treat three-quarters cover as half cover.",
+                        "Before you make a ranged weapon attack, you can choose to forgo applying your proficiency bonus to the attack roll, and instead apply it to the attack's damage if it hits."
+                    ]
+                }
+			]
+        },
+        {
+            "name": "Executioner",
+            "source": "FA:V",
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This feat is a nerfed version of {@feat Great Weapon Master|PHB} published in the Player's Handbook."
+                    ]
+                },
+                "You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.",
+                        "Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to forgo applying your proficiency bonus to the attack roll, and instead apply it to the attack's damage if it hits."
+                    ]
+                }
+            ]
+        }
     ],
     "optionalfeature": [
         {

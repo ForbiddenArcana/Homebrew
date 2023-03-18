@@ -96,6 +96,12 @@
                 }
             ],
             "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "This feat is a buffed version of {@feat Defensive Duelist|PHB} published in the Player's Handbook."
+                    ]
+                },
                 "While wielding a melee weapon with proficiency, you gain the following benefits:",
                 {
                     "type": "list",
@@ -153,20 +159,12 @@
                 }
             ],
             "entries": [
-                "You project an air of confidence that unsettles your foes.",
+                "You project an air of deadly confidence that unsettles your foes and makes you appear even more dangerous than you are:",
                 {
                     "type": "list",
                     "items": [
-                        "When hidden and outnumbered by enemies, for one minute after revealing yourself to them, you have advantage on Charisma ability checks and you may take the maximum result on initiative checks."
-                    ]
-                },
-                "If you roll initiative during that time, you gain the following benefits during the first round:",
-                {
-                    "type": "list",
-                    "items": [
-                        "One additional action which you may take at the end of any one turn, which can only be {@action Attack} (one weapon attack), {@action Dash}, {@action Dodge}, {@action Hide}, or {@action Use an Object}.",
-                        "Advantage on attacks, ability checks, and saving throws.",
-                        "Enemy attacks against you have disadvantage, and they have disadvantage on saving throws against your abilities."
+                        "When hidden from your enemies, for one minute after revealing yourself, you have advantage on Charisma ability checks.",
+                        "Until the end of the first round of combat, you have advantage on all attacks, ability checks, and saving throws, and enemies have disadvantage on attacks against you and saving throws you force."
                     ]
                 }
             ]
@@ -196,23 +194,6 @@
                         "When a creature attempts to take the high ground from you, you may use your reaction to make a melee attack against them with advantage. If it hits, they can't take the high ground from you on that turn."
                     ]
                 }
-            ]
-        },
-        {
-            "name": "Lucky",
-            "source": "FA",
-            "entries": [
-                {
-                    "type": "inset",
-                    "entries": [
-                        "This feat is a nerfed version of the {@feat Lucky|PHB} published in the Player's Handbook."
-                    ]
-                },
-                "You have inexplicable luck that seems to kick in at just the right moment.",
-                "You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional {@dice d20}. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw.",
-                "You can also spend one luck point when an attack roll is made against you. Roll a {@dice d20}, and then choose whether the attack uses the attacker's roll or yours. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled.",
-                "When you spend a luck point, if you had advantage or disadvantage on the roll, the d20 replaces the lower die from that roll. If you spend a luck point on an attack against you which had advantage or disadvantage, the d20 replaces the higher die from that roll.",
-                "You regain your expended luck points when you finish a long rest."
             ]
         },
         {
@@ -492,7 +473,7 @@
             ]
         },
         {
-            "name": "Weapon Master",
+            "name": "Weapon Specialist",
             "source": "FA",
             "ability": [
                 {
@@ -517,7 +498,7 @@
                 {
                     "type": "inset",
                     "entries": [
-                        "This feat is a buffed version of the {@feat Weapon Master|PHB} published in the Player's Handbook."
+                        "This feat is a buffed version of {@feat Weapon Master|PHB} published in the Player's Handbook."
                     ]
                 },
                 "You have trained extensively with the use of four weapons in particular, gaining the following benefits:",
