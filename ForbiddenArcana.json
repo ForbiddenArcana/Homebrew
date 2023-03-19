@@ -8228,6 +8228,20 @@
             "source": "FA"
         },
         {
+            "name": "Combo Bans",
+            "entries": [
+                "The following combinations of RAW 5e feats are banned. If there's interest in combining these feats, at least one of them must be a nerfed version approved by the DM.",
+                {
+                    "type": "list",
+                    "items": [
+                        "{@feat Crossbow Expert|PHB} and {@feat Sharpshooter|PHB} (Sharpshooter has two nerfed versions already: the OneD&D version and {@feat Crack Shot|FA:V})",
+                        "{@feat Polearm Master|PHB} and {@feat Sentinel|PHB}"
+                    ]
+                }
+            ],
+            "source": "FA"
+        },
+        {
             "name": "Compressed Economy",
             "entries": [
                 "To make copper/silver pieces useful and fix basic problems with the economy, prices listed by the corresponding coin have been adjusted as follows. This conveniently results in the following approximate comparison to our market:",
