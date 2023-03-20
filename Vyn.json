@@ -476,6 +476,26 @@
     ],
     "optionalfeature": [
         {
+            "name": "Adrenaline",
+            "entries": [
+                "You can expend a superiority die to use an extra bonus action on your turn, but cannot use a bonus action on your next turn. Roll the superiority die and add it to the result of an ability check or a damage roll made as part of the extra bonus action."
+            ],
+            "source": "FA:V",
+            "featureType": [
+                "MV:B"
+            ]
+        },
+        {
+            "name": "All In",
+            "entries": [
+                "When you take the {@action Attack} action on your turn, you can forgo one of your attacks and expend a superiority die to attempt to deliver an overpowering blow. Roll the superiority die, and increase your critical hit range by the number rolled for the first weapon attack you make before the end of your turn."
+            ],
+            "source": "FA:V",
+            "featureType": [
+                "MV:B"
+            ]
+        },
+        {
             "name": "Friend of One",
             "prerequisite": [
                 {
