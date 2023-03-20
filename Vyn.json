@@ -1075,6 +1075,161 @@
     ],
     "variantrule": [
         {
+            "name": "Hexcrawl",
+            "entries": [
+                {
+                    "type": "entries",
+                    "name": "Overview",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Timeslots",
+                            "entries": [
+                                "Both 6-hour timeslots include not only active travel, but also camp setup/teardown, breaks taken, etc. The clock may continue to run during travel for the purpose of notetaking, but this doesn't affect when the timeslot ends."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Roles",
+                            "entries": [
+                                "In each timeslot, each traveller can choose one role to perform from Forager, Leader, Navigator, Sentry, or a special duty like continuous spellcasting. Any role other than Sentry takes a -5 to their passive {@skill Perception} during the timeslot."
+                            ]
+                        },
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "Each Forager makes a {@skill Survival} check and the group takes the highest result. On a success, they find {@dice 1d4} pounds of food (which spoils after a day) and a source of potable water while advancing through their hexes. The water DC is generally higher than the food DC unless the party can purify water. The Delan River is clean enough to safely drink upriver of Kildale."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "The Leader (there can only be one) makes a Charisma skill check of their choice. On a success, they grant the party {@dice 1d6} temporary hit points each for the duration of the timeslot, and each traveller has advantage on saving throws against {@variantrule Stress and Agitation/Exhaustion|FA|Agitation and Exhaustion} while they have these hit points."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Each Navigator makes a blind {@skill Survival} check to determine whether the party gets lost and the group takes the highest result. Backtracking results in an automatic success, and no Navigator is required when travelling along the Delan Highway."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Each Sentry can use their reaction immediately after initiative is rolled during the timeslot to grant one traveller a bonus of {@dice 1d6} to that traveller's initiative check."
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Navigation",
+                            "entries": [
+                                "Each hex is 20 km, and an encounter roll happens in each. If the party gets lost, the DM secretly rolls a {@dice d4} which determines whether the party goes in circles (moves one fewer hex), drifts off course (rotates one face from desired heading), or accidentally stays on course."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Travel Pace",
+                    "entries": [
+                        "After setting a travel pace, you can later slow down, but can't speed up due to lost time. If you slow down or begin travelling partway through a timeslot, you move one less hex in the second timeslot for each slower pace or delay.",
+                        {
+                            "type": "entries",
+                            "name": "Slow",
+                            "entries": [
+                                "You only move one hex per day (during the second timeslot), but can use stealth while traveling (even against ambushers and pursuers) and gain a +5 to {@skill Survival} checks."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Normal",
+                            "entries": [
+                                "You move one hex per timeslot. Your passive Stealth may be taken into consideration in encounters where the opposition was significantly distracted during your approach, but otherwise the opposition will automatically notice you."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Fast",
+                            "entries": [
+                                "You move two hexes during the second timeslot, but take a -5 to passive Perception during both timeslots which stacks with the -5 from performing a role."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Forced March",
+                            "entries": [
+                                "When you start traveling, you can choose to take no breaks at all. You move two hexes during each timeslot, but at the end of each timeslot you must make a DC 10 Constitution saving throw against {@variantrule Stress and Agitation/Exhaustion|FA|Exhaustion}."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Morning",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "DM determines the weather, which may change throughout the day."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Party determines their starting travel pace."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Party determines their roles and performs their duties."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Party advances a number of hexes depending on their travel pace. DM rolls for an encounter each hex. After each hex, party can decide to slow down."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Afternoon",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "Party optionally redetermines their roles and performs their duties."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Party advances a number of hexes depending on their travel pace. DM rolls for an encounter each hex. After each hex, party can decide to slow down."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Expend food stores, and water stores if water was not foraged that day. Medium and Small creatures require 1 pound of food (or 1 ration) and 1 gallon of fresh water."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Party determines overnight watch rotation (if any), and DM rolls for encounters."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "source": "FA:V"
+        },
+        {
             "name": "Martial Checks",
             "source": "FA:V",
             "entries": [
@@ -1175,6 +1330,170 @@
                             "6",
                             "25, 20, 15, 10, 5, 0"
                         ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Weather Effects",
+            "source": "FA:V",
+            "entries": [
+                "Apply all effects from the current type and intensity of precipitation, and from the current intensity of wind. Heavy precipitation + heavy wind together results in a STORM which applies additional effects.",
+                {
+                    "type": "entries",
+                    "name": "Light Rain",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "Disadvantage on ability checks to climb or maintain balance."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Heavy Rain",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "Disadvantage on ability checks to climb or maintain balance."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "The area becomes lightly obscured (see {@quickref vision and light||2}), and open flames are extinguished."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Disadvantage on ability checks relying on hearing or scent or to track creatures."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Foraging water automatically succeeds."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Light Snow",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "Advantage on ability checks to track creatures if tracks made since it snowed."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Heavy Snow",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "The area becomes lightly obscured (see {@quickref vision and light||2}), and is {@quickref difficult terrain||3}."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Advantage on ability checks to track creatures if tracks made since it snowed, but cannot track creatures if tracks made more than 6 hours ago."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Foraging water automatically succeeds."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Light Wind",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "Clears light fog and gases, and counts as \"moderate wind\" where relevant."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Heavy Wind",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "Clears all fog and gases, open flames are extinguished and counts as \"strong wind\" where relevant."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Disadvantage on ability checks relying on hearing or scent."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Disadvantage on ranged attacks, and they automatically miss at long range."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Large and smaller flying (not hovering) creatures fall at the start of their turn."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "STORM",
+                    "entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "The area becomes heavily obscured (see {@quickref vision and light||2}), and is {@quickref difficult terrain||3}."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "All creatures in the area test passive {@skill Stealth} vs passive {@skill Perception} to be automatically {@book Hidden|PHB|9|unseen attackers and targets} at the end of their turns."
+                                    ]
+                                }
+                            ]
+                        }
                     ]
                 }
             ]
