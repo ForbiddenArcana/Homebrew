@@ -834,6 +834,26 @@
             ]
         },
         {
+            "name": "Adrenaline",
+            "entries": [
+                "You can expend a superiority die to use an extra bonus action on your turn, but cannot use a bonus action on your next turn. Roll the superiority die and add it to the result of an ability check or a damage roll made as part of the extra bonus action."
+            ],
+            "source": "FA",
+            "featureType": [
+                "MV:B"
+            ]
+        },
+        {
+            "name": "All In",
+            "entries": [
+                "When you take the {@action Attack} action on your turn, you can forgo one of your attacks and expend a superiority die to attempt to deliver an overpowering blow. Roll the superiority die, and increase your critical hit range by the number rolled for the first weapon attack you make before the end of your turn."
+            ],
+            "source": "FA",
+            "featureType": [
+                "MV:B"
+            ]
+        },
+        {
             "name": "Disorienting Blow",
             "consumes": {
                 "name": "Superiority Dice"
@@ -866,6 +886,17 @@
             },
             "entries": [
                 "When you hit a creature no more than two sizes larger than you with a two-handed melee weapon attack, you can expend one superiority die to try to stagger it. Add the superiority die to the attack's damage roll, and the creature must succeed on a Strength saving throw or have its speed reduced to 0 and be rendered breathless and unable to speak until the end of its next turn."
+            ],
+            "source": "FA",
+            "featureType": [
+                "MV:B"
+            ]
+        },
+        {
+            "name": "Sudden Leap",
+            "entries": [
+                "As an action on your turn, you can expend a superiority die to jump without provoking opportunity attacks. The jump can be up to twice as long as your running long jump and twice as high as your running high jump, which can exceed your remaining movement.",
+                "At the end of your jump, you can use a bonus action to move up to 10 feet towards a creature and make a melee weapon attack against it. You add the superiority die to the attack's damage roll."
             ],
             "source": "FA",
             "featureType": [
