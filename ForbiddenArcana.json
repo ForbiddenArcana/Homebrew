@@ -8290,14 +8290,6 @@
             "source": "FA"
         },
         {
-            "name": "Critical Hits",
-            "entries": [
-                "Barbarians, Fighters, Monks, and Rogues all gain the Barbarian's Brutal Critical feature at level 5, to help close the gap with spell crits. This stacks with the Barbarian's existing Brutal Critical chain.",
-                "Subject to DM approval, Rangers also receive this benefit."
-            ],
-            "source": "FA"
-        },
-        {
             "name": "Falling",
             "entries": [
                 "You fall 500' at the start of your first midair turn, and 1000' on subsequent turns.", 
@@ -8334,6 +8326,14 @@
             "name": "Known Spells",
             "entries": [
                 "You can swap one Spellcasting known spell per long rest. You can swap one Pact Magic known spell per long rest, but the new spell must be the same level (see these charts: https://homebrewery.naturalcrit.com/share/1NaRUxDE3IKD) for creating a Warlock at higher than 1st level). You can swap one cantrip per level-up."
+            ],
+            "source": "FA"
+        },
+        {
+            "name": "Martial Buffs",
+            "entries": [
+                "Barbarians, Fighters, Monks, and Rogues all gain the Barbarian's Brutal Critical feature at level 5, to help close the gap with spell crits. This stacks with the Barbarian's existing Brutal Critical chain. Subject to DM approval, Rangers also receive this benefit.",
+                "Barbarians, Fighters, Monks, and Rogues all gain the {@feat Martial Adept} feat at all standard ASI levels (4, 8, 12, 16, and 19), to give them extra versatility in combat."
             ],
             "source": "FA"
         },
