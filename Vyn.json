@@ -422,36 +422,41 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you use your action to {@action Dash}, you can use a bonus action to make one melee weapon attack or to {@action shove} or {@action grapple} a creature. If you move at least 20 feet in a straight line immediately before taking this bonus action, you have advantage on the attack roll or ability check.",
-                        "If you take this bonus action, you gain a +5 bonus to the attack's damage roll (if you make a weapon attack and hit), can push the target twice as far (if you shove and succeed), or can move the grappled target at full speed until the end of your turn (if you grapple and succeed)."
+                        "When you use your action to {@action Dash}, you can use a bonus action to make one melee weapon attack or to {@action shove} or {@action grapple} a creature. You gain a +5 bonus to the attack's damage roll (if you make a weapon attack and hit), can push the target twice as far (if you shove and succeed), or can move the grappled target at full speed until the end of your turn (if you grapple and succeed). If you move at least 20 feet in a straight line immediately before taking this bonus action, you have advantage on the attack roll or ability check."
                     ]
                 }
-			]
+            ]
         },
         {
             "name": "Crack Shot",
             "source": "FA:V",
             "ability": [
                 {
-                    "dex": 1
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex"
+                        ],
+                        "amount": 1
+                    }
                 }
             ],
             "entries": [
                 {
                     "type": "inset",
                     "entries": [
-                        "This feat is a nerfed version of {@feat Sharpshooter|PHB} published in the Player's Handbook."
+                        "{@feat Sharpshooter|PHB} (published in the Player's Handbook) did way too much for a single feat, so it's been split into two half-feats: This one (providing the close-range, risky-but-deadly shots), and {@feat Indirect Fire|FA:V} (providing the distant and impossible shots)."
                     ]
                 },
-                "You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits when using ranged weapons you are proficient with:",
+                "You have mastered the art of taking risky but deadly shots. You gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
-                        "Your ranged weapon attacks ignore half cover, and treat three-quarters cover as half cover.",
-                        "Before you make a ranged weapon attack, you can choose to forgo applying your proficiency bonus to the attack roll, and instead apply it to the attack's damage if it hits."
+                        "When using weapons you are proficient with, your ranged attacks ignore half cover and treat three-quarters cover as half cover.",
+                        "Before you make a ranged weapon attack, you can choose to forgo applying your proficiency bonus to the attack roll and instead apply it to the attack's damage roll."
                     ]
                 }
-			]
+            ]
         },
         {
             "name": "Executioner",
@@ -463,12 +468,43 @@
                         "This feat is a nerfed version of {@feat Great Weapon Master|PHB} published in the Player's Handbook."
                     ]
                 },
-                "You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:",
+                "You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes at the cost of some accuracy. You gain the following benefits:",
                 {
                     "type": "list",
                     "items": [
                         "On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.",
-                        "Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to forgo applying your proficiency bonus to the attack roll, and instead apply it to the attack's damage if it hits."
+                        "Before you make a melee attack with a heavy weapon, you can choose to forgo applying your proficiency bonus to the attack roll and instead apply it to the attack's damage roll."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Indirect Fire",
+            "source": "FA:V",
+            "ability": [
+                {
+                    "choose": {
+                        "from": [
+                            "str",
+                            "dex"
+                        ],
+                        "amount": 1
+                    }
+                }
+            ],
+            "entries": [
+                {
+                    "type": "inset",
+                    "entries": [
+                        "{@feat Sharpshooter|PHB} (published in the Player's Handbook) did way too much for a single feat, so it's been split into two half-feats: {@feat Crack Shot|FA:V} (providing the close-range, risky-but-deadly shots), and this one (providing the distant and impossible shots)."
+                    ]
+                },
+                "You have mastered ranged weapon attacks and can take shots others find impossible. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "When you use a weapon you are proficient with to make a ranged attack, attacking at long range doesn't impose disadvantage on your attack roll.",
+                        "When you use a weapon you are proficient with to make a ranged attack, if a creature has total cover from you but wouldn't if either of you moved up to 5 feet in any direction, you can still target it. These attacks cannot benefit from advantage, but as long as your target isn't hidden from you, these attacks don't suffer disadvantage due to the cover blocking your sight."
                     ]
                 }
             ]
