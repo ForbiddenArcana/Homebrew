@@ -959,6 +959,49 @@
             }
         },
         {
+            "name": "Contact ?",
+            "source": "FA:V",
+            "level": 5,
+            "school": "D",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "minute"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 1
+                    }
+                }
+            ],
+            "meta": {
+                "ritual": true
+            },
+            "entries": [
+                "You mentally contact something extraplanar - whatever it is, this spell contacts the same \"it\" every time. Contacting this extraplanar intelligence(?) can strain your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a failure, you take {@damage 6d6} psychic damage and your mind is muddled until you finish a long rest. While muddled, you can't use reactions, can't understand what other creatures say unless they are speaking clearly and directly to you, and can only read slowly and speak falteringly. A {@spell Greater Restoration} spell cast on you ends this effect.",
+                "On a successful save, you can ask the extraplanar intelligence(?) up to two questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as \"yes,\" \"no,\" \"maybe,\" \"never,\" \"irrelevant,\" or \"unclear\"; or may answer with a short phrase. The extraplanar intelligence(?) is under no obligation to be truthful with its responses."
+            ],
+            "damageInflict": [
+                "psychic"
+            ],
+            "savingThrow": [
+                "intelligence"
+            ]
+        },
+        {
             "name": "Arcane Permanence",
             "source": "FA:V",
             "level": 6,
