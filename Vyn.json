@@ -1304,6 +1304,34 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Steeds",
+                    "entries": [
+                        "During each timeslot, a mounted traveller decides whether they'll be primarily mounted or primarily unmounted during their travels. This determines:",
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "entries": [
+                                        "Whether they'll be mounted at the beginning of an encounter."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Which creature (the rider or the steed) must make the Constitution saving throw against Exhaustion from a forced march."
+                                    ]
+                                },
+                                {
+                                    "entries": [
+                                        "Which creature rolls certain ability checks (i.e. Stealth checks when travelling at a slow pace)."
+                                    ]
+                                }
+                            ]
+                        },
+                        "Mounted travellers can't forage unless their steed is a natural predator, and if they do, their steed makes an attack roll instead of a Survival check, and the attack's damage roll instead of 1d4, to determine the results."
+                    ]
                 }
             ],
             "source": "FA:V"
