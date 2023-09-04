@@ -163,8 +163,8 @@
                 {
                     "type": "list",
                     "items": [
-                        "When hidden from your enemies, for one minute after revealing yourself, you have advantage on Charisma ability checks.",
-                        "Until the end of the first round of combat, you have advantage on all attacks, ability checks, and saving throws, and enemies have disadvantage on attacks against you and saving throws you force."
+                        "When you're hidden from enemies and become unhidden, you have advantage on Charisma ability checks for the next minute.",
+                        "When initiative is called for, until the end of the first round of combat, you have advantage on all attacks, ability checks, and saving throws, and enemies have disadvantage on attacks against you and saving throws you force."
                     ]
                 }
             ]
