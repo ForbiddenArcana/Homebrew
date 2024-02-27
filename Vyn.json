@@ -17,6 +17,22 @@
             }
         ]
     },
+    "condition": [
+        {
+            "name": "Hindered",
+            "source": "FA:V",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A hindered creature's speed is halved.",
+                        "The creature has disadvantage on attack rolls, ability checks, and Strength and Dexterity saving throws.",
+                        "Other creatures have advantage on attack rolls against the creature, and on initial (not repeated) saving throws that the creature forces."
+                    ]
+                }
+            ]
+        }
+    ],
     "baseitem": [
         {
             "name": "Blunted Arrow",
@@ -541,6 +557,19 @@
                 "FS:F",
                 "FS:P",
                 "FS:R"
+            ]
+        },
+        {
+            "name": "Blinding Strike",
+            "consumes": {
+                "name": "Superiority Dice"
+            },
+            "entries": [
+                "When you hit a creature with a melee weapon attack, you can use your bonus action and expend one superiority die to attempt a quick follow-up at your target's eyes, forcing the target to make a Dexterity saving throw. On a failed save, it is {@condition blinded} until the start of your next turn. Roll the superiority die and add it to the attack's damage roll."
+            ],
+            "source": "FA:V",
+            "featureType": [
+                "MV:B"
             ]
         }
     ],
