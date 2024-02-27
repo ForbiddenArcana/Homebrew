@@ -31,6 +31,20 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Sluggish",
+            "source": "FA:V",
+            "entries": [
+                {
+                    "type": "list",
+                    "items": [
+                        "A sluggish creature's speed is halved.",
+                        "The creature can use an action or a bonus action on its turn but not both, and its reaction is expended and wasted at the end of its turn.",
+                        "The casting time of any spells the creature casts is extended by 1 action (without requiring concentration during the extended casting period)."
+                    ]
+                }
+            ]
         }
     ],
     "baseitem": [
