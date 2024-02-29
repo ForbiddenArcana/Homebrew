@@ -25,9 +25,9 @@
                 {
                     "type": "list",
                     "items": [
-                        "A hindered creature's speed is halved.",
-                        "The creature has disadvantage on attack rolls, ability checks, and Strength and Dexterity saving throws.",
-                        "Other creatures have advantage on attack rolls against the creature, and on initial (not repeated) saving throws that the creature forces."
+                        "A hindered creature has disadvantage on all attack rolls and ability checks other than the first roll on its turns.",
+                        "The creature has disadvantage on initial (not repeated) saving throws.",
+                        "Other creatures have advantage on initial (not repeated) saving throws that the creature forces."
                     ]
                 }
             ]
@@ -41,7 +41,7 @@
                     "items": [
                         "A sluggish creature's speed is halved.",
                         "The creature can use an action or a bonus action on its turn but not both, and its reaction is expended and wasted at the end of its turn.",
-                        "The casting time of any spells the creature casts is extended by 1 action (without requiring concentration during the extended casting period)."
+                        "The casting/activation time of any spells/psionics the creature uses is extended by 1 action (without requiring concentration during the extended casting period)."
                     ]
                 }
             ]
