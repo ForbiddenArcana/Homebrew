@@ -452,7 +452,16 @@
                 {
                     "type": "list",
                     "items": [
-                        "When you use your action to {@action Dash}, you can use a bonus action to make one melee weapon attack or to {@action shove} or {@action grapple} a creature. You gain a +5 bonus to the attack's damage roll (if you make a weapon attack and hit), can push the target twice as far (if you shove and succeed), or can move the grappled target at full speed until the end of your turn (if you grapple and succeed). If you move at least 20 feet in a straight line immediately before taking this bonus action, you have advantage on the attack roll or ability check."
+                        "If you use your action to {@action Dash}, you can use a bonus action to make one melee weapon attack or to {@action shove} or {@action grapple} a creature, and have advantage on the attack roll or ability check.",
+                        "Each time you {@action Dash}, the next melee weapon attack, {@action shove}, or {@action grapple} you make before the end of your turn gains special benefits as follows if you moved at least 30 feet in a straight line immediately before the attack:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "You gain a +5 bonus to the attack's damage roll.",
+                                "You can push the shoved target twice as far, or force it to require all of its movement instead of half in order to stand up before the end of its next turn.",
+                                "You can move the grappled target at full speed until the end of your turn (you don't gain this benefit for other creatures you already had grappled)."
+                            ]
+                        }
                     ]
                 }
             ]

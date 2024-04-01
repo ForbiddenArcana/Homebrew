@@ -149,22 +149,14 @@
                     "cha": 1
                 }
             ],
-            "prerequisite": [
-                {
-                    "ability": [
-                        {
-                            "cha": 13
-                        }
-                    ]
-                }
-            ],
             "entries": [
                 "You project an air of deadly confidence that unsettles your foes and makes you appear even more dangerous than you are:",
                 {
                     "type": "list",
                     "items": [
                         "When you're hidden from enemies and become unhidden, you have advantage on Charisma ability checks for the next minute.",
-                        "When initiative is called for, until the end of the first round of combat, you have advantage on all attacks, ability checks, and saving throws, and enemies have disadvantage on attacks against you and saving throws you force."
+                        "When initiative is called for, until the end of the first round of combat, you have advantage on all attacks, ability checks, and saving throws, and can reroll one damage die per damage roll and use either result.",
+                        "Until the end of the first round of combat, enemies have disadvantage on attacks against you and ability checks that you force."
                     ]
                 }
             ]
