@@ -1392,54 +1392,30 @@
             "name": "Martial Checks",
             "source": "FA:V",
             "entries": [
-                "While in combat, you can use the {@action Search} action to make a special kind of ability check, a martial check. This check may be made using your choice of Intelligence ({@skill Investigation}) or Wisdom ({@skill Insight}). You most likely won't be able to make this check outside of combat, as it's hard to ascertain a creature's abilities without seeing it fight. However, exceptions in special circumstances may occasionally be made. The DC for martial checks is generally 10 plus half the CR of the target, and if your skill check beats the DC by 5 or more you also get one piece of insight into how the trait is used in the creature's strategy.",
-                "With each martial check, you can ask for one of the following:",
+                "While in combat, you can use the {@action Search} action to make a special kind of ability check, a Martial Check. This check may be made using your choice of Intelligence ({@skill Investigation}) or Wisdom ({@skill Insight}). You most likely won't be able to make this check outside of combat, as it's hard to ascertain a creature's abilities without seeing it fight. However, exceptions in special circumstances may occasionally be made.",
+                "The DC for martial checks is generally 10 plus half the CR of the target. On a success, you learn one of the following, and if your skill check beats the DC by 5 or more, you also gain some additional insight into the creature's strategy:",
                 {
                     "type": "list",
                     "items": [
                         {
                             "entries": [
-                                "Base AC (i.e. including armour/shield) and max HP."
+                                "<b>Actions</b>: Its list of actions/tiers, as well as full information on a single action it can take."
                             ]
                         },
                         {
                             "entries": [
-                                "Damage resistances, immunities, and vulnerabilities; and condition immunities."
+                                "<b>Defenses</b>: AC and HP; damage resistances, immunities, and vulnerabilities; and condition immunities."
                             ]
                         },
                         {
                             "entries": [
-                                "Skill and saving throw proficiencies."
-                            ]
-                        },
-                        {
-                            "entries": [
-                                "Senses and speeds - types, as well as relevant features like Keen Hearing or a bonus action Disengage or Dash."
-                            ]
-                        },
-                        {
-                            "entries": [
-                                "Full information on a single action it can take."
-                            ]
-                        },
-                        {
-                            "entries": [
-                                "Its full list of actions (but not any details on what the actions are)."
+                                "<b>Proficiencies</b>: Skill and saving throw proficiencies; and senses and speeds (their types, as well as relevant features like Keen Hearing or a bonus action Disengage or Dash)."
                             ]
                         }
                     ]
                 },
-                "You may make a general check instead of asking a specific question, which cumulatively reveal information as follows, representing any prior knowledge your character may be able to apply to or discern from the enemy:",
-                {
-                    "type": "list",
-                    "items": [
-                        {
-                            "entries": [
-                                "For every multiple of 5 on your result, you get the name and description of a single trait the creature possesses."
-                            ]
-                        }
-                    ]
-                }
+                "Also on a success, you can adjust you or your allies' timing to better counter your target. You can immediately use your reaction to change your initiative to be one count higher or lower than another creature's, or to similarly change the initiative of one willing creature who can see or hear you. If a creature would gain a second turn this round as a result, that turn is skipped. If a creature would take no turn this round as a result, it takes a turn immediately after your turn ends.",
+                "Regardless of whether your check succeeded or failed, for every multiple of 5 on your result, you learn the name and description of a single trait the creature possesses. The DM should tell you the most important traits first."
             ]
         },
         {
