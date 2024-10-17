@@ -1447,8 +1447,76 @@
             "source": "FA:V",
             "entries": [
                 "While I understand the problem that legendary actions/resistances fix, I don't like some of the consequences of the legendary action/resistance route. I'll be heavily reducing/limiting their use. My solution comes mostly from multi-tiered initiative, with occasional use of effect management to add extra resilience.",
-                "<b>Multi-tiered initiative</b> replaces legendary actions and partially replaces legendary resistances. It gives a monster multiple set initiative turns every round which are placed as far from each other as possible - this means the monster does not roll initiative. One of those turns (the \"Tier 1\" turn) is the \"normal\" combat turn, on which the monster can perform any basic action or attack or use a Tier 1 ability like Multiattack, and move up to its speed. On all its other turns in a round, the monster can only perform a basic attack or use abilities specific to that tier, and nothing else (including moving). Tiered monsters have an action and a bonus action available on each of their turns. They only have one reaction per round, which they regain at the start of their Tier 1 turn. Recharge abilities only get recharge rolls on their corresponding tier's turn. Each of a tiered monster's turns in a round count as independent turns for the purpose of all other effects and timings which occur at the start or end of their turn. Any creature traits apply to all turns unless specifically marked otherwise",
-                "<b>Effect management</b> replaces legendary resistances, and comes in the form of abilities as diverse as the monsters that possess them. Generally, on its turn, a monster can perform an exchange (such as sacrificing HP or losing use of an ability or trait) to automatically remove an effect it's subjected to. The trade will always be in the monster's favour when the effect is completely locking it down or preventing it from participating in normal combat, but minor effects will generally not be worth the cost of such a trade-off. These sacrifices will generally still either require use of an action or bonus action or will occur at the end of a tiered turn, so incapacitation effects remain particularly detrimental to tiered monsters."
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "entries": [
+                                "<b>Multi-tiered initiative</b> replaces legendary actions, and partially replaces legendary resistances:",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        {
+                                            "entries": [
+                                                "Monsters have multiple set initiative turns every round which are placed as far from each other as possible - this means the monster does not roll initiative."
+                                            ]
+                                        },
+                                        {
+                                            "entries": [
+                                                "One of those turns (the \"Tier 1\" turn) is the \"normal\" combat turn, on which the monster can perform any basic action or attack or use a Tier 1 ability like Multiattack, and move up to its speed."
+                                            ]
+                                        },
+                                        {
+                                            "entries": [
+                                                "On all its other turns in a round, the monster can only perform a basic attack or use abilities specific to that tier, and nothing else (including moving)."
+                                            ]
+                                        },
+                                        {
+                                            "entries": [
+                                                "Tiered monsters have an action and a bonus action available on each of their turns. They only have one reaction per round, which they regain at the start of their Tier 1 turn."
+                                            ]
+                                        },
+                                        {
+                                            "entries": [
+                                                "Recharge abilities only get recharge rolls on their corresponding tier's turn."
+                                            ]
+                                        },
+                                        {
+                                            "entries": [
+                                                "Each of a tiered monster's turns in a round count as independent turns for the purpose of all other effects and timings which occur at the start or end of their turn. When afflicted with effects that don't allow repeated saves, they get to repeat one of those saves at the end of each of their turns."
+                                            ]
+                                        },
+                                        {
+                                            "entries": [
+                                                "Any creature traits apply to all turns unless specifically marked otherwise."
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "entries": [
+                                "<b>Effect management</b> replaces legendary resistances, and comes in the form of abilities as diverse as the monsters that possess them:",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        {
+                                            "entries": [
+                                                "On its turn, a monster can perform an exchange (such as sacrificing HP or losing use of an ability or trait) to automatically remove an effect it's subjected to."
+                                            ]
+                                        },
+                                        {
+                                            "entries": [
+                                                "The trade will always be in the monster's favour when the effect is completely locking it down or preventing it from participating in normal combat, but minor effects will generally not be worth the cost of such a trade-off."
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
