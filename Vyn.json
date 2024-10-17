@@ -1392,8 +1392,8 @@
             "name": "Martial Checks",
             "source": "FA:V",
             "entries": [
-                "While in combat, you can use the {@action Search} action to make a special kind of ability check, a Martial Check. This check may be made using your choice of Intelligence ({@skill Investigation}) or Wisdom ({@skill Insight}). You most likely won't be able to make this check outside of combat, as it's hard to ascertain a creature's abilities without seeing it fight. However, exceptions in special circumstances may occasionally be made.",
-                "The DC for martial checks is generally 10 plus half the CR of the target. On a success, you learn one of the following, and if your skill check beats the DC by 5 or more, you also gain some additional insight into the creature's strategy:",
+                "While in combat, you can use the {@action Search} action to make a special kind of ability check, a martial check. This check may be made using your choice of Intelligence ({@skill Investigation}) or Wisdom ({@skill Insight}). You most likely won't be able to make this check outside of combat, as it's hard to ascertain a creature's abilities without seeing it fight. However, exceptions in special circumstances may occasionally be made.",
+                "The DC for martial checks is generally 10 plus half the CR of the target. On a success, you learn everything listed in one of the following bullet points, and if your check beats the DC by 5 or more, you also gain some additional insight into the creature's strategy:",
                 {
                     "type": "list",
                     "items": [
@@ -1414,8 +1414,8 @@
                         }
                     ]
                 },
-                "Also on a success, you can adjust you or your allies' timing to better counter your target. You can immediately use your reaction to change your initiative to be one count higher or lower than another creature's, or to similarly change the initiative of one willing creature who can see or hear you. If a creature would gain a second turn this round as a result, that turn is skipped. If a creature would take no turn this round as a result, it takes a turn immediately after your turn ends.",
-                "Regardless of whether your check succeeded or failed, for every multiple of 5 on your result, you learn the name and description of a single trait the creature possesses. The DM should tell you the most important traits first."
+                "Also on a success, you can adjust your own or an ally's timing to better counter your target. You can immediately use your reaction to change your initiative to be one count higher or lower than another creature's, or to similarly change the initiative of one willing creature who can see or hear you. If a creature would gain an extra turn this round as a result, that turn is skipped. If a creature would lose a turn this round as a result, it takes a turn immediately after your turn ends.",
+                "Regardless of whether your check succeeded or failed, for every multiple of 5 on your result, you learn the name and description of a trait the creature possesses. The DM should tell you the most important traits first."
             ]
         },
         {
@@ -1464,7 +1464,7 @@
                                         },
                                         {
                                             "entries": [
-                                                "Any creature traits apply to all turns unless specifically marked otherwise."
+                                                "Creature traits apply to all turns, unless specifically marked otherwise."
                                             ]
                                         }
                                     ]
@@ -1484,7 +1484,7 @@
                                         },
                                         {
                                             "entries": [
-                                                "The trade will always be in the monster's favour when the effect is completely locking it down or preventing it from participating in normal combat, but minor effects will generally not be worth the cost of such a trade-off."
+                                                "The trade will always be in the monster's favour when the effect is completely locking it down or preventing it from participating in normal combat, but less severe effects will generally not be worth the cost of such a trade-off."
                                             ]
                                         }
                                     ]
