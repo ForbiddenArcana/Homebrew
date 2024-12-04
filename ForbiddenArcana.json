@@ -2174,7 +2174,7 @@
                         "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
-                "You summon a squid and fling it at a creature within range. Make a ranged spell attack against the target. On a hit, the squid explodes in a burst of ink. The target takes {@damage 1d12} piercing damage and becomes {@condition blinded} until the end of your next turn."
+                "You summon a squid and fling it at a creature within range. Make a ranged spell attack against the target. On a hit, the squid explodes in a burst of ink. The target takes {@damage 1d12} piercing damage and becomes {@condition blinded} until the start of your next turn."
             ],
             "entriesHigherLevel": [
                 {
@@ -2885,7 +2885,7 @@
                         "This spell is taken/modified from the Compendium of Forgotten Secrets Awakening: https://www.genfantasypress.com/"
                     ]
                 },
-               "You whisper a phrase into the mind of the target, unknown to you but clear and terrifying to them. Until the end of your next turn, you have advantage on all ability checks, attack rolls, and saving throws involving your target or actions it has taken. During this time, the target has disadvantage on all ability checks and attack rolls involving you or actions you have taken. Targets that are immune to being frightened are immune to this effect."
+               "You whisper a phrase into the mind of a creature you can see within 60 feet of you, a message unknown to you but clear and terrifying to them. Until the end of your next turn, you have advantage on all ability checks, attack rolls, and saving throws targeting or forced by the target. During this time, the target has disadvantage on all ability checks and attack rolls targeting or forced by you. Targets that are immune to being frightened are immune to this effect."
             ],
             "entriesHigherLevel": [
                 {
@@ -3125,7 +3125,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 120
+                    "amount": 60
                 }
             },
             "components": {
@@ -3149,7 +3149,7 @@
                         "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
-               "Choose a creature you can see within range. The target must make an Intelligence saving throw or become bound by a psychic anchor, which weighs it down and slows its movements. While weighed down, the creature’s speed is reduced by 20 feet, it has disadvantage on attack rolls, ability checks, and saving throws that use Strength or Dexterity, and it sinks 30 feet at the start of its turn if it is swimming. At the end of each of its turns, the target can make another Intelligence saving throw. On a success, the spell ends on the target."
+               "You attempt to bind the mind of a creature you can see within range, and force it to make an Intelligence saving throw. A creature has advantage on the save if it's not the same creature type as you, due to its foreign physiology. On a failed save, the target becomes bound by a psychic anchor, which weighs it down and slows its movements. While weighed down, the creature’s speed is reduced by 20 feet, it has disadvantage on attack rolls, ability checks, and saving throws that use Strength or Dexterity, and it sinks 30 feet at the start of its turn if it is swimming. At the end of each of its turns, the target can make another Intelligence saving throw. On a success, the spell ends on the target."
             ],
             "entriesHigherLevel": [
                 {
@@ -3691,9 +3691,9 @@
             ],
             "entries": [
                 "You stab the weapon used as a material component into the ground, and a 15-foot-radius dome of shimmering, translucent force appears around and above you and remains stationary for the duration. Spells and other magical effects can't pass through the dome or be cast through it. Weapon attacks and ammunition from weapon attacks likewise can't pass through the dome.",
-                "A creature can only pass through the dome once per turn.",
+                "A creature can only move through the dome once per turn.",
                 "When a friendly creature enters the dome on its turn or starts its turn there, it gains {@dice 1d6} temporary hitpoints. The temporary hitpoints are lost upon exiting the dome.",
-                "In addition, any friendly creature in the dome can't be frightened, and they can choose to no longer be frightened if they are (no action required).",
+                "In addition, friendly creatures in the dome can't be {@condition frightened}, and they can choose to end any effect on themselves causing them to be frightened (no action required).",
                 "At the start of each of your turns, a friendly creature occupying the center space of the dome regains {@dice 1d6} hitpoints."
             ],
             "classes": {
@@ -4122,7 +4122,7 @@
             ],
             "entries": [
                 "You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point within range and lasting for the duration. This void is filled with a cacophony of soft whispers and slurping noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are {@condition blinded}",
-                "The void creates a warp in the fabric of space, and the area is {@quickref difficult terrain||3}. Any creature that starts its turn in the area must succeed a Strength saving throw or take {@damage 3d6} cold damage and be pulled 10 feet closer to the center of the void. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take {@damage 3d6} acid damage as milky, otherworldly tentacles rub against it."
+                "The void creates a warp in the fabric of space, and the area is {@quickref difficult terrain||3}. Any creature that starts its turn in the area takes {@damage 3d6} cold damage and is pulled 5 feet closer to the center of the void. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take {@damage 3d6} acid damage as milky, otherworldly tentacles rub against it."
             ],
             "damageInflict": [
                 "acid",
@@ -4317,7 +4317,7 @@
                 "type": "point",
                 "distance": {
                     "type": "feet",
-                    "amount": 60
+                    "amount": 30
                 }
             },
             "components": {
@@ -4346,7 +4346,14 @@
                         "This spell is taken/modified from Heliana's Guide to Monster Hunting (https://monsterhunting5e.backerkit.com/hosted_preorders) and Divinity: Original Sin II"
                     ]
                 },
-                "You link your vitality to the psyche of another creature you can see within range. The target must succeed on a Charisma saving throw or become linked to you by spectral shackles for the spell's duration. Each time you take damage, the shackled target takes psychic damage equal to half the damage you took. A target shackled to you can make another Charisma saving throw at the end of each of its turns, breaking free of the shackles on a success."
+                {
+                    "type": "quote",
+                    "entries": [
+                        "Seven interns gave their lives before we understood the recursion problem. Unfortunately, modifying the spell that late in production would have led to missed deadlines, so we shipped it anyway."
+                    ],
+                    "by": "Unknown Thayan researcher"
+                },
+                "You link your vitality to the psyche of another creature you can see within range. The target must succeed on a Charisma saving throw or become linked to you by spectral shackles for the spell's duration. Each time you take damage, if you succeed on your saving throw to maintain concentration on this spell, the shackled target takes psychic damage equal to the damage you took. A target shackled to you can make another Charisma saving throw at the end of each of its turns, breaking free of the shackles on a success."
             ],
             "damageInflict": [
                 "psychic"
@@ -4427,7 +4434,7 @@
                     ]
                 },
                 "You create a layer of slick ice, 6 inches thick, in a 30-foot radius circle centered on a point on the ground or on the surface of water that you can see within range, which lasts for the duration. The ice suppresses any underlying terrain that doesn't protrude past the surface of the ice.",
-                "A creature walking across the ice spends 1 foot of movement for every 2 feet it moves, and must succeed a Dexterity saving throw when it moves more than 5 feet across the ice for the first time on a turn or be knocked {@condition prone}. When a creature attempts to get up from prone while on the ice, it must succeed on a Dexterity check against your spell save DC. On a failure, it falls {@condition prone} again. When you cast this spell, you can designate any number of creatures you can see to automatically succeed on ability checks and saving throws made against this spell."
+                "A creature walking across the ice spends only 1 foot of movement for every 2 feet it moves, and must succeed a Dexterity saving throw when it moves more than 5 feet across the ice for the first time on a turn, or be knocked {@condition prone}. When a creature attempts to stand up from prone while on the ice, it must succeed on a Dexterity check against your spell save DC. On a failure, it falls {@condition prone} again. When you cast this spell, you can designate any number of creatures you can see to automatically succeed on ability checks and saving throws made against this spell."
             ],
             "entriesHigherLevel": [
                 {
@@ -4605,7 +4612,7 @@
                         "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
-                "You wreath a weapon with aqueous energy, lashing out with the force of increasingly powerful tides. As part of the action used to cast this spell, you can make up to three melee attacks with a weapon. You can direct the attacks at the same target or at different ones. The first attack deals an additional {@damage 1d10} damage, the second attack deals an additional {@damage 2d10} damage, and the third attack deals an additional {@damage 3d10} damage."
+                "You wreath a weapon with aqueous energy, lashing out with the force of increasingly powerful tides. As part of the action used to cast this spell, you can make up to three melee attacks with the weapon used as the spell's material component. You can direct the attacks at the same target or at different ones. The first attack deals an additional {@damage 1d10} damage, the second attack deals an additional {@damage 2d10} damage, and the third attack deals an additional {@damage 3d10} damage."
             ],
             "classes": {
                 "fromClassList": [
@@ -5108,8 +5115,8 @@
                 }
             ],
             "entries": [
-                "You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point within range and lasting for the duration. This void is filled with a cacophony of monsterous screeches and slurping noises that can be heard up to 120 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are {@condition blinded} and {@condition deafened}.",
-                "The void creates a warp in the fabric of space, and the area is {@quickref difficult terrain||3}. Any creature that starts its turn within 30 feet of the center of the void must succeed a Strength saving throw or be pulled 10 feet closer to the center. If the creature starts their turn within the void, or enters it for the first time on their turn, they take {@damage 3d6} cold damage. Any creature that ends its turn in the area of the void must succeed on a Dexterity saving throw or take {@damage 3d6} acid damage as milky, otherworldly tentacles rub against it. If a creature fails both the Strength and Dexterity saving throws in the same turn, it is {@condition restrained} by one of the tentacles until the spell ends. A creature {@condition restrained} by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself."
+                "You open a gateway to the dark between the stars, a region infested with unknown horrors. A 25-foot-radius sphere of blackness and bitter cold appears, centered on a point within range and lasting for the duration. This void is filled with a cacophony of monsterous screeches and slurping noises that can be heard up to 150 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are {@condition blinded} and {@condition deafened}.",
+                "The void creates a warp in the fabric of space, and the area is {@quickref difficult terrain||3}. Any creature that starts its turn in the area or enters it for the first time on a turn takes {@damage 3d6} cold damage and is pulled 5 feet closer to the center of the void. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take {@damage 3d6} acid damage and have its speed reduced by 10 feet until the end of its next turn, as atrophying otherworldly tentacles rub against it."
             ],
             "damageInflict": [
                 "acid",

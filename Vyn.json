@@ -960,7 +960,7 @@
                     ]
                 },
                 "If they die, you are set to five levels of {@variantrule Stress and Agitation/Exhaustion|FA|Agitation} and the effects of the bond cease. Passing a DC 17 Charisma save delays taking the agitation until any adrenaline runs out.",
-                "If you die, they lose the bond's benefits except for the Dexterity increase, and are set to five levels of {@variantrule Stress and Agitation/Exhaustion|FA|Exhaustion} after any adrenaline runs out. They have disadvantage on death saves for a month while experiencing a fatalistic desire for vengeance, then lose the bond's Dexterity increase.",
+                "If you die, they lose the bond's benefits and are set to five levels of {@variantrule Stress and Agitation/Exhaustion|FA|Exhaustion} after any adrenaline runs out. They have disadvantage on death saves for a month while experiencing a fatalistic desire for vengeance.",
                 "You can only bond one humanoid at a time, and there is currently no confirmed way to release or suppress the bond without consequence. However, you can transfer your side of the bond to someone else if you both cast this spell targeting each other, either transferring it immediately or specifying a condition to trigger the transfer.",
                 "The permanent bond cannot be dispelled by Dispel Magic."
             ],
