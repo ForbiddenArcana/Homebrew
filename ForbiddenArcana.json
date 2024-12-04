@@ -2174,7 +2174,7 @@
                         "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
-                "You summon a squid and fling it at a creature within range. Make a ranged spell attack against the target. On a hit, the squid explodes in a burst of ink. The target takes {@damage 1d12} piercing damage and becomes {@condition blinded} until the start of your next turn."
+                "You summon a squid and fling it at a creature within range. Make a ranged spell attack against the target. On a hit, the squid explodes in a burst of ink. The target takes {@damage 1d12} piercing damage and becomes {@condition blinded} until the end of your next turn."
             ],
             "entriesHigherLevel": [
                 {
@@ -3149,7 +3149,7 @@
                         "This spell is taken/modified from {@link All Beneath the Yonder Seas and Streams|https://drive.google.com/file/d/1QfoBtuqEpGQMcVuvbBbZKOAVQJFOOiy2/view}"
                     ]
                 },
-               "You attempt to bind the mind of a creature you can see within range, and force it to make an Intelligence saving throw. A creature has advantage on the save if it's not the same creature type as you, due to its foreign physiology. On a failed save, the target becomes bound by a psychic anchor, which weighs it down and slows its movements. While weighed down, the creature’s speed is reduced by 20 feet, it has disadvantage on attack rolls, ability checks, and saving throws that use Strength or Dexterity, and it sinks 30 feet at the start of its turn if it is swimming. At the end of each of its turns, the target can make another Intelligence saving throw. On a success, the spell ends on the target."
+               "You attempt to bind the mind of a creature you can see within range, and force it to make an Intelligence saving throw. On a failed save, the target becomes bound by a psychic anchor, which weighs it down and slows its movements. While weighed down, the creature’s speed is reduced by 20 feet, it has disadvantage on attack rolls, ability checks, and saving throws that use Strength or Dexterity, and it sinks 30 feet at the start of its turn if it is swimming. At the end of each of its turns, the target can make another Intelligence saving throw. On a success, the spell ends on the target."
             ],
             "entriesHigherLevel": [
                 {
