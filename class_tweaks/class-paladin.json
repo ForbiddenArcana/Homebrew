@@ -1343,7 +1343,8 @@
 			"classSource": "PHB",
 			"level": 2,
 			"entries": [
-				"Once per turn when you make a melee weapon attack, you can expend a spell slot to infuse your attack with divine might. If your attack hits, the target takes an extra {@damage 2d8} radiant damage, plus {@damage 1d8} for each spell level higher than 1st to a maximum of {@damage 5d8}. The damage increases by {@damage 1d8} if the target is an undead or a fiend, to a maximum of {@damage 6d8}."
+				"Starting at 2nd level, when you strike a target, you can channel divine energy to smite it. Immediately after you hit a target with an attack roll using a weapon or Unarmed Strike, you can expend one Spell Slot to deal Radiant damage to the target. The damage is {@dice 2d8} for a 1st-level spell slot, plus {@dice 1d8} for each spell level higher than 1st.",
+				"You can use Divine Smite no more than once during a turn, and you can't use it on the same turn that you cast a spell."
 			]
 		},
 		{

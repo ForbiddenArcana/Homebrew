@@ -5511,31 +5511,36 @@
                     "gainSubclassFeature": true
                 },
                 "Ability Score Improvement|Savant|FA|4",
+                "(FA) Martial Adept|Savant|FA|4",
                 "Accelerated Reflexes|Savant|FA|5",
                 "Quick Study|Savant|FA|5",
-                "Brutal Critical|Savant|FA|5",
+                "(FA) Brutal Critical|Savant|FA|5",
                 {
                     "classFeature": "Academic Discipline Feature|Savant|FA|6",
                     "gainSubclassFeature": true
                 },
                 "Keen Awareness|Savant|FA|7",
                 "Ability Score Improvement|Savant|FA|8",
+                "(FA) Martial Adept|Savant|FA|8",
                 "Flash of Brilliance|Savant|FA|9",
                 "Predictive Defense Improvement|Savant|FA|10",
                 "Potent Observation|Savant|FA|11",
                 "Ability Score Improvement|Savant|FA|12",
+                "(FA) Martial Adept|Savant|FA|12",
                 {
                     "classFeature": "Academic Discipline Feature|Savant|FA|13",
                     "gainSubclassFeature": true
                 },
                 "Unyielding Will|Savant|FA|14",
                 "Ability Score Improvement|Savant|FA|16",
+                "(FA) Martial Adept|Savant|FA|16",
                 {
                     "classFeature": "Academic Discipline Feature|Savant|FA|17",
                     "gainSubclassFeature": true
                 },
                 "Profound Insight|Savant|FA|18",
                 "Ability Score Improvement|Savant|FA|19",
+                "(FA) Martial Adept|Savant|FA|19",
                 "Undisputed Genius|Savant|FA|20"
             ],
             "subclassTitle": "Academic Disciplines",
@@ -5705,6 +5710,16 @@
                 "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
             ]
         },
+		{
+			"name": "(FA) Martial Adept",
+			"source": "FA",,
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 4,
+			"entries": [
+				"At 4th level, you gain the {@feat Martial Adept} feat, and it is repeatable for you."
+			]
+		},
         {
             "name": "Accelerated Reflexes",
             "source": "FA",
@@ -5728,7 +5743,7 @@
             ]
         },
         {
-            "name": "Brutal Critical",
+            "name": "(FA) Brutal Critical",
             "source": "FA",
             "className": "Savant",
             "classSource": "FA",
@@ -5777,6 +5792,16 @@
                 "If your DM allows the use of feats, you may instead take a {@5etools feat|feats. html}."
             ]
         },
+		{
+			"name": "(FA) Martial Adept",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 8,
+			"entries": [
+				"At 8th level, you gain the {@feat Martial Adept} feat again."
+			]
+		},
         {
             "name": "Flash of Brilliance",
             "source": "FA",
@@ -5819,6 +5844,16 @@
                 "If your DM allows the use of feats, you may instead take a {@5etools feat|feats. html}."
             ]
         },
+		{
+			"name": "(FA) Martial Adept",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 12,
+			"entries": [
+				"At 12th level, you gain the {@feat Martial Adept} feat again."
+			]
+		},
         {
             "name": "Academic Discipline Feature",
             "source": "FA",
@@ -5851,6 +5886,16 @@
                 "If your DM allows the use of feats, you may instead take a {@5etools feat|feats. html}."
             ]
         },
+		{
+			"name": "(FA) Martial Adept",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 16,
+			"entries": [
+				"At 16th level, you gain the {@feat Martial Adept} feat again."
+			]
+		},
         {
             "name": "Academic Discipline Feature",
             "source": "FA",
@@ -5883,6 +5928,16 @@
                 "If your DM allows the use of feats, you may instead take a {@5etools feat|feats. html}."
             ]
         },
+		{
+			"name": "(FA) Martial Adept",
+			"source": "FA",
+			"className": "Savant",
+			"classSource": "FA",
+			"level": 19,
+			"entries": [
+				"At 19th level, you gain the {@feat Martial Adept} feat again."
+			]
+		},
         {
             "name": "Undisputed Genius",
             "source": "FA",
